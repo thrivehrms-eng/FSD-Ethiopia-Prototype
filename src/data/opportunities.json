@@ -9,21 +9,24 @@
       "kind": "Call for proposals",
       "deadline": "2026-10-14",
       "url": "https://fsdethiopia.org/procurement-opportunities/",
-      "note": "Exact formal title not retrieved; paraphrased."
+      "note": "Exact formal title not retrieved; paraphrased.",
+      "shortTitle": "Investor relations capacity consultancy"
     },
     {
       "id": "nsmabl-2026",
       "title": "Formulation of a National Strategy for Movable Asset Based Lending",
       "kind": "Request for proposals",
       "deadline": "2026-02-20",
-      "url": "https://fsdethiopia.org/wp-content/pdf/Request%20for%20Proposal%20-%20NSMABF%20Formulation.pdf"
+      "url": "https://fsdethiopia.org/wp-content/pdf/Request%20for%20Proposal%20-%20NSMABF%20Formulation.pdf",
+      "shortTitle": "Movable asset based lending strategy"
     },
     {
       "id": "climate-finance-strategy-2026",
       "title": "Ethiopia’s National Climate Finance Strategy",
       "kind": "Request for proposals",
       "deadline": "2026-01-16",
-      "url": "https://fsdethiopia.org/wp-content/pdf/Request%20for%20Proposals%20-%20Ethiopia%E2%80%99s%20National%20Climate%20Finance%20Strategy%20(3).pdf"
+      "url": "https://fsdethiopia.org/wp-content/pdf/Request%20for%20Proposals%20-%20Ethiopia%E2%80%99s%20National%20Climate%20Finance%20Strategy%20(3).pdf",
+      "shortTitle": "National Climate Finance Strategy"
     }
   ],
   "careers": [
@@ -32,14 +35,16 @@
       "title": "Internship – Program Support (3 months, Addis Ababa)",
       "kind": "Internship",
       "deadline": "2026-10-02",
-      "url": "https://fsdethiopia.org/work-with-us-2/"
+      "url": "https://fsdethiopia.org/work-with-us-2/",
+      "shortTitle": "Programme support internship"
     },
     {
       "id": "director-of-programmes-2026",
       "title": "Director of Programmes",
       "kind": "Vacancy",
       "deadline": "2026-06-27",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/06/Director-of-Programmes-Vacancy-1.pdf"
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/06/Director-of-Programmes-Vacancy-1.pdf",
+      "shortTitle": "Director of Programmes"
     }
   ]
 }

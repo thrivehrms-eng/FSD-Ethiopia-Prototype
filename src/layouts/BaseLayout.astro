@@ -1,7 +1,11 @@
 ---
 import '../styles/global.css';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import AnnouncementBar from '../components/chrome/AnnouncementBar.astro';
+import SiteHeader from '../components/chrome/SiteHeader.astro';
+import ClosingBand from '../components/chrome/ClosingBand.astro';
+import SiteFooter from '../components/chrome/SiteFooter.astro';
+import SearchDialog from '../components/chrome/SearchDialog.astro';
+import NewsletterDialog from '../components/chrome/NewsletterDialog.astro';
 import CookieConsent from '../components/CookieConsent.astro';
 import { t, localePath, type Lang } from '../i18n';
 
@@ -13,9 +17,15 @@ interface Props {
   path: string;
   schema?: Record<string, unknown>;
   ogType?: 'website' | 'article';
+  /** The page opens with a dark hero that the transparent header overlaps. */
+  overlayHeader?: boolean;
+  /** Show the skyline closing band above the footer. */
+  closingBand?: boolean;
+  /** Preload the hero image (an <link rel=preload> for the LCP). */
+  preload?: { href: string; type: string; imagesrcset?: string; imagesizes?: string };
 }
 
-const { lang, title, description, path, schema, ogType = 'website' } = Astro.props;
+const { lang, title, description, path, schema, ogType = 'website', overlayHeader = false, closingBand = true, preload } = Astro.props;
 const site = Astro.site!;
 const canonical = new URL(localePath(lang, path), site).href;
 const alternates = (['en', 'am'] as Lang[]).map((l) => ({ lang: l, href: new URL(localePath(l, path), site).href }));
@@ -51,6 +61,9 @@ const staging = import.meta.env.PUBLIC_STAGING !== 'false';
     <link rel="preload" href={lang === 'am' ? '/fonts/noto-sans-ethiopic.woff2' : '/fonts/khand-700.woff2'} as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin />
 
+    {preload && <link rel="preload" as="image" href={preload.href} type={preload.type} imagesrcset={preload.imagesrcset} imagesizes={preload.imagesizes} fetchpriority="high" />}
+    <!-- Mark that scripts run, so reveal-on-scroll never hides content without JS. -->
+    <script is:inline>document.documentElement.classList.add('js');</script>
     <!-- Return visitors to the language they chose last time. -->
     <script is:inline>
       (function () {
@@ -75,11 +88,25 @@ const staging = import.meta.env.PUBLIC_STAGING !== 'false';
     >
       {t(lang, 'a11y.skip')}
     </a>
-    <Header lang={lang} path={path} />
+    <AnnouncementBar lang={lang} />
+    {
+      lang === 'am' && (
+        <p class="relative z-50 bg-yellow-400 px-4 py-1.5 text-center text-[0.8125rem] font-medium leading-snug text-teal-900">
+          <span lang="am">{t('am', 'lang.amNote')}</span>
+          <span class="mx-2" aria-hidden="true">/</span>
+          <span lang="en">{t('en', 'lang.amNote')}</span>
+        </p>
+      )
+    }
+    <SiteHeader lang={lang} path={path} overlay={overlayHeader} />
+    {!overlayHeader && <div class="h-[var(--header-h)]" aria-hidden="true"></div>}
     <main id="main" tabindex="-1" class="outline-none">
       <slot />
     </main>
-    <Footer lang={lang} />
+    {closingBand && <ClosingBand lang={lang} />}
+    <SiteFooter lang={lang} />
+    <SearchDialog lang={lang} />
+    <NewsletterDialog lang={lang} />
     <CookieConsent lang={lang} />
     <script>
       import '../scripts/app.ts';

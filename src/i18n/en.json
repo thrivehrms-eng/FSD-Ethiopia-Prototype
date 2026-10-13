@@ -21,7 +21,12 @@
     "opportunities": "Opportunities",
     "contact": "Contact",
     "menu": "Menu",
-    "close": "Close menu"
+    "close": "Close menu",
+    "whoWeAre": "Who we are",
+    "ourWork": "Our work",
+    "newsroom": "Newsroom",
+    "search": "Search",
+    "menuTitle": "Site menu"
   },
   "lang": {
     "label": "Language",
@@ -157,7 +162,38 @@
     "accessibility": "Accessibility statement",
     "cookies": "Cookie settings",
     "copyright": "© {year} FSD Ethiopia",
-    "prototype": "Prototype by Digital Tailor Agency. Not the live FSD Ethiopia website."
+    "prototype": "Prototype by Digital Tailor Agency. Not the live FSD Ethiopia website.",
+    "contactCta": "Contact us",
+    "colWho": "Who we are",
+    "colWork": "Our work",
+    "colInsights": "Insights",
+    "colNews": "Newsroom",
+    "colOpps": "Opportunities",
+    "colContact": "Contact",
+    "aboutUs": "About us",
+    "team": "Our team",
+    "board": "Board",
+    "network": "FSD Network",
+    "fi": "Financial Inclusion",
+    "ac": "Access to Capital",
+    "cf": "Climate Finance",
+    "boardReadyWomen": "Board Ready Women",
+    "resources": "Resource library",
+    "data": "Data hub",
+    "newsletters": "Newsletters",
+    "news": "News",
+    "blogs": "Blogs",
+    "press": "Press releases",
+    "events": "Events",
+    "careers": "Careers",
+    "procurement": "Procurement",
+    "partnersTitle": "Funders, incubator and network",
+    "fundedBy": "Funded by",
+    "incubatedBy": "Incubated by",
+    "partOf": "Part of",
+    "regionalTitle": "Regional coordination",
+    "regionalIntro": "FSD Ethiopia has regional coordinators in seven regions.",
+    "legalLabel": "Legal and settings"
   },
   "newsletter": {
     "title": "Get our newsletter",
@@ -170,7 +206,8 @@
     "submit": "Subscribe",
     "errorEmail": "Enter an email address in the format name@organisation.org",
     "errorConsent": "Tick the box to agree before subscribing",
-    "success": "Subscribed. On the live site, Mailchimp would now send a confirmation email. This prototype sent no data."
+    "success": "Subscribed. On the live site, Mailchimp would now send a confirmation email. This prototype sent no data.",
+    "dialogClose": "Close newsletter sign-up"
   },
   "cookies": {
     "title": "Cookies on this site",
@@ -237,5 +274,30 @@
     "onDark": "On dark",
     "slideSample": "Slide {n}",
     "slideSampleBody": "A slide in the manual slider. Use the arrow buttons or the left and right arrow keys."
+  },
+  "announce": {
+    "nowOpen": "Now open: {title}, closes {date}",
+    "fallback": "See current job and procurement opportunities",
+    "dismiss": "Dismiss this announcement",
+    "label": "Announcement"
+  },
+  "search": {
+    "title": "Search the site",
+    "label": "Search news, publications and pages",
+    "loading": "Loading search…",
+    "empty": "Type at least two letters to search.",
+    "noResults": "No results for “{q}”. Try a programme name, such as climate finance.",
+    "count": "{n} results",
+    "close": "Close search",
+    "types": {
+      "page": "Page",
+      "news": "News",
+      "publication": "Publication"
+    }
+  },
+  "closing": {
+    "tagline": "We help build innovative, inclusive, and sustainable financial markets for all.",
+    "subscribe": "Subscribe to our newsletter",
+    "contact": "Contact us"
   }
 }

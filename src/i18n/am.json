@@ -24,7 +24,7 @@
       "review": "native-speaker"
     },
     "insights": {
-      "text": "ጥናቶችና ዜናዎች",
+      "text": "ጥናቶችና መረጃዎች",
       "review": "native-speaker"
     },
     "opportunities": {
@@ -41,6 +41,26 @@
     },
     "close": {
       "text": "ምናሌውን ዝጋ",
+      "review": "native-speaker"
+    },
+    "whoWeAre": {
+      "text": "እኛ ማን ነን",
+      "review": "native-speaker"
+    },
+    "ourWork": {
+      "text": "ሥራዎቻችን",
+      "review": "native-speaker"
+    },
+    "newsroom": {
+      "text": "ዜናዎች",
+      "review": "native-speaker"
+    },
+    "search": {
+      "text": "ፈልግ",
+      "review": "native-speaker"
+    },
+    "menuTitle": {
+      "text": "የድረ-ገጹ ምናሌ",
       "review": "native-speaker"
     }
   },
@@ -232,6 +252,42 @@
     "cookies": {
       "text": "የኩኪ ቅንብሮች",
       "review": "native-speaker"
+    },
+    "contactCta": {
+      "text": "ያግኙን",
+      "review": "native-speaker"
+    },
+    "colWho": {
+      "text": "እኛ ማን ነን",
+      "review": "native-speaker"
+    },
+    "colWork": {
+      "text": "ሥራዎቻችን",
+      "review": "native-speaker"
+    },
+    "colInsights": {
+      "text": "ጥናቶችና መረጃዎች",
+      "review": "native-speaker"
+    },
+    "colNews": {
+      "text": "ዜናዎች",
+      "review": "native-speaker"
+    },
+    "colOpps": {
+      "text": "ዕድሎች",
+      "review": "native-speaker"
+    },
+    "colContact": {
+      "text": "ያግኙን",
+      "review": "native-speaker"
+    },
+    "partnersTitle": {
+      "text": "የገንዘብ ደጋፊዎች፣ አቋቋሚና ኔትወርክ",
+      "review": "native-speaker"
+    },
+    "regionalTitle": {
+      "text": "የክልል ቅንጅት",
+      "review": "native-speaker"
     }
   },
   "newsletter": {
@@ -241,6 +297,10 @@
     },
     "submit": {
       "text": "ይመዝገቡ",
+      "review": "native-speaker"
+    },
+    "dialogClose": {
+      "text": "የምዝገባ ቅጹን ዝጋ",
       "review": "native-speaker"
     }
   },
@@ -281,6 +341,40 @@
     },
     "next": {
       "text": "ቀጣይ",
+      "review": "native-speaker"
+    }
+  },
+  "announce": {
+    "fallback": {
+      "text": "ወቅታዊ የሥራና የግዥ ዕድሎችን ይመልከቱ",
+      "review": "native-speaker"
+    },
+    "dismiss": {
+      "text": "ይህን ማስታወቂያ ዝጋ",
+      "review": "native-speaker"
+    }
+  },
+  "search": {
+    "title": {
+      "text": "ድረ-ገጹን ይፈልጉ",
+      "review": "native-speaker"
+    },
+    "close": {
+      "text": "ፍለጋውን ዝጋ",
+      "review": "native-speaker"
+    }
+  },
+  "closing": {
+    "tagline": {
+      "text": "ለሁሉም ፈጠራ የታከለበት፣ አካታችና ዘላቂ የፋይናንስ ገበያ እንዲገነባ እናግዛለን።",
+      "review": "native-speaker"
+    },
+    "subscribe": {
+      "text": "ለጋዜጣችን ይመዝገቡ",
+      "review": "native-speaker"
+    },
+    "contact": {
+      "text": "ያግኙን",
       "review": "native-speaker"
     }
   }

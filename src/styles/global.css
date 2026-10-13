@@ -77,6 +77,14 @@
 }
 
 @layer base {
+  :root {
+    --header-h: 4.5rem;
+  }
+  @media (min-width: 64rem) {
+    :root {
+      --header-h: 6.5rem;
+    }
+  }
   html {
     color: var(--color-ink);
     background: #fff;

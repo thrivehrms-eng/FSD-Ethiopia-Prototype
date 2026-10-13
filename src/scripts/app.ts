@@ -314,6 +314,17 @@ Alpine.data('slider', (mode: 'single' | 'scroll' = 'single') => ({
 
 // Site search with Fuse.js, loaded only when the search dialog opens.
 Alpine.data('siteSearch', () => ({
+  labels: { loading: '', empty: '', noResults: '', count: '', types: {} as Record<string, string> },
+  init() {
+    this.labels = JSON.parse((this.$el as HTMLElement).dataset.labels ?? '{}');
+  },
+  status() {
+    const q = this.query.trim();
+    if (!this.ready) return this.labels.loading;
+    if (q.length < 2) return this.labels.empty;
+    if (!this.results.length) return this.labels.noResults.replace('{q}', q);
+    return this.labels.count.replace('{n}', String(this.results.length));
+  },
   query: '',
   results: [] as { title: string; url: string; type: string; summary: string }[],
   ready: false,
@@ -330,7 +341,7 @@ Alpine.data('siteSearch', () => ({
   },
   search() {
     const q = this.query.trim();
-    this.results = q && this.fuse ? this.fuse.search(q, { limit: 8 }).map((r) => r.item) : [];
+    this.results = q.length >= 2 && this.fuse ? this.fuse.search(q, { limit: 8 }).map((r) => r.item) : [];
   },
 }));
 
