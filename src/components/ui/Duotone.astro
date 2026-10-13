@@ -14,18 +14,35 @@ interface Props {
   priority?: boolean;
   /** Hide the photo below this breakpoint to save weight; the gradient stays. */
   desktopOnly?: boolean;
+  /** "bottom": the photo keeps its own ratio along the bottom edge (no upscaling). */
+  fit?: 'cover' | 'bottom';
+  /** Slot width ÷ height for the upscale check when fit is "cover". */
+  aspect?: number;
   class?: string;
 }
 
-const { id, sizes, maxWidth, strength = 0.4, priority = false, desktopOnly = false, class: className } = Astro.props;
+const { id, sizes, maxWidth, strength = 0.4, priority = false, desktopOnly = false, fit = 'cover', aspect, class: className } = Astro.props;
 ---
 
-<div class:list={['duotone absolute inset-0 overflow-hidden', className]} aria-hidden="true">
+<!-- The strength is applied to the img itself (via --duo): opacity on a wrapper would
+     isolate it and stop the multiply blend reaching the gradient. -->
+<div class:list={['duotone absolute inset-0 overflow-hidden', className]} style={`--duo:${strength}`} aria-hidden="true">
   {
     hasImage(id) && (
-      <div class:list={['absolute inset-0', desktopOnly && 'hidden md:block']} style={`opacity:${strength}`}>
-        <Img id={id} sizes={sizes} maxWidth={maxWidth} priority={priority} decorative class="h-full w-full" />
+      <div class:list={[fit === 'bottom' ? 'duotone__bottom absolute inset-x-0 bottom-0' : 'absolute inset-0', desktopOnly && 'hidden md:block']}>
+        {fit === 'bottom' ? (
+          <Img id={id} sizes={sizes} maxWidth={maxWidth} priority={priority} decorative fit="natural" class="w-full" />
+        ) : (
+          <Img id={id} sizes={sizes} maxWidth={maxWidth} aspect={aspect} priority={priority} decorative class="h-full w-full" />
+        )}
       </div>
     )
   }
 </div>
+
+<style>
+  /* A bottom-aligned photo fades in from the gradient, so its top edge never shows as a seam. */
+  .duotone__bottom {
+    mask-image: linear-gradient(to bottom, transparent 0%, #000 45%);
+  }
+</style>

@@ -11,6 +11,8 @@ import PortraitCard from '../components/ui/PortraitCard.astro';
 import NewsCard from '../components/ui/NewsCard.astro';
 import ThreeStrokes from '../components/ui/ThreeStrokes.astro';
 import { t, type Lang } from '../i18n';
+import { getImage } from '../lib/images';
+import news from '../data/news.json';
 
 const lang: Lang = 'en';
 const k = (key: string) => t(lang, `styleguide.${key}`);
@@ -26,16 +28,15 @@ const swatches = [
   ['slate', '#4A5560', 'text-white'],
   ['mist', '#F4F6F5', 'text-ink'],
 ];
-const samplePost = {
-  title: 'Ethiopia’s Open Finance Future Is Closer Than It Looks',
-  date: '2026-07-20',
-  type: 'blog' as const,
-  excerpt: 'Why letting customers share their own transaction records could open credit to women and rural households.',
-  url: 'https://fsdethiopia.org/2026/07/20/ethiopias-open-finance-future-is-closer-than-it-looks/',
-  image: 'news-open-finance',
-  byline: 'Abel Taddele',
-  authorImage: 'staff-abel-tadelle',
-};
+const samplePost = news.find((n) => n.id === 'open-finance') as Parameters<typeof NewsCard>[0]['post'];
+const tile = (id: string, image: string, lines: number) => ({
+  id,
+  image,
+  title: t(lang, `home.focus.${id}.title`),
+  lines: Array.from({ length: lines }, (_, i) => t(lang, `home.focus.${id}.lines.${i}`)),
+});
+const tiles = [tile('fi', 'programme-fin01', 3), tile('ac', 'programme-acctocap01', 3), tile('cf', 'programme-climate-fina01', 3)];
+const people = ['hikmet-abdella', 'abel-tadelle', 'bezawit-eshetu'].map((id) => ({ id: `staff-${id}`, ...getImage(`staff-${id}`).person! }));
 ---
 
 <BaseLayout lang={lang} title={k('metaTitle')} description={k('metaDescription')} path="/styleguide/">
@@ -48,9 +49,12 @@ const samplePost = {
       <ul class="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-5">
         {
           swatches.map(([name, hex, text]) => (
-            <li class={`flex aspect-[4/3] flex-col justify-end rounded-sm p-3 ${text} ${name === 'mist' ? 'ring-1 ring-line' : ''}`} style={`background:${hex}`}>
-              <span class="t-label text-[0.75rem]">{name}</span>
-              <span class="font-mono text-[0.8125rem]">{hex}</span>
+            <li class="overflow-hidden rounded-sm ring-1 ring-line">
+              <span class="block aspect-[16/9]" style={`background:${hex}`} aria-hidden="true"></span>
+              <span class="block bg-white px-3 py-2">
+                <span class="t-label block text-[0.75rem] text-ink">{name}</span>
+                <span class="font-mono text-[0.8125rem] text-slate">{hex}</span>
+              </span>
             </li>
           ))
         }
@@ -92,7 +96,7 @@ const samplePost = {
         <h2 class="t-label text-green-600">{k('sectionTitle')}</h2>
         <div class="mt-6">
           <SectionTitle lang={lang} k="styleguide.sectionTitleSample" id="sg-sample-title" level={3}>
-            <ArrowButton dir="prev" label={t(lang, 'slider.prev')} disabled />
+            <ArrowButton dir="prev" label={t(lang, 'slider.prev')} aria-disabled="true" />
             <ArrowButton dir="next" label={t(lang, 'slider.next')} />
           </SectionTitle>
         </div>
@@ -119,18 +123,14 @@ const samplePost = {
       <div class="mt-14">
         <h2 class="t-label text-green-600">{k('tiles')}</h2>
         <div class="mt-6 grid gap-0.5 sm:grid-cols-3">
-          <ImageTile id="programme-fin01" href="#" title="Financial inclusion" lines={['Digital payments', 'Agent networks', 'Open finance']} sizes="(min-width: 640px) 33vw, 100vw" maxWidth={640} />
-          <ImageTile id="programme-acctocap01" href="#" title="Access to capital" lines={['Capital markets', 'Investor relations', 'ESX Academy']} sizes="(min-width: 640px) 33vw, 100vw" maxWidth={640} />
-          <ImageTile id="programme-climate-fina01" href="#" title="Climate finance" lines={['Green finance instruments', 'Climate Finance Summit']} sizes="(min-width: 640px) 33vw, 100vw" maxWidth={640} />
+          {tiles.map((x) => <ImageTile id={x.image} href="#" title={x.title} lines={x.lines} sizes="(min-width: 640px) 33vw, 100vw" maxWidth={640} />)}
         </div>
       </div>
 
       <div class="mt-14">
         <h2 class="t-label text-green-600">{k('portraits')}</h2>
         <div class="mt-6 grid max-w-3xl grid-cols-2 gap-6 sm:grid-cols-3">
-          <PortraitCard id="staff-hikmet-abdella" name="Hikmet Abdella" role="Chief Executive Officer" href="#" sizes="(min-width: 640px) 240px, 45vw" maxWidth={260} />
-          <PortraitCard id="staff-abel-tadelle" name="Abel Tadelle" role="Dir. of Financial Inclusion" href="#" sizes="(min-width: 640px) 240px, 45vw" maxWidth={260} />
-          <PortraitCard id="staff-bezawit-eshetu" name="Bezawit Eshetu" role="Climate Finance Lead" href="#" sizes="(min-width: 640px) 240px, 45vw" maxWidth={260} />
+          {people.map((x) => <PortraitCard id={x.id} name={x.name!} role={x.role} href="#" sizes="(min-width: 640px) 240px, 45vw" maxWidth={260} />)}
         </div>
       </div>
 
@@ -145,8 +145,8 @@ const samplePost = {
         <div class="flex items-center justify-between gap-4">
           <h2 id="sg-slider" class="t-label text-green-600">{k('slider')}</h2>
           <div class="flex gap-3">
-            <ArrowButton dir="prev" label={t(lang, 'slider.prev')} x-on:click="prev()" x-bind:disabled="atStart" />
-            <ArrowButton dir="next" label={t(lang, 'slider.next')} x-on:click="next()" x-bind:disabled="atEnd" />
+            <ArrowButton dir="prev" label={t(lang, 'slider.prev')} x-on:click="prev()" x-bind:aria-disabled="atStart.toString()" aria-disabled="true" />
+            <ArrowButton dir="next" label={t(lang, 'slider.next')} x-on:click="next()" x-bind:aria-disabled="atEnd.toString()" aria-disabled="false" />
           </div>
         </div>
         <div class="mt-6" aria-live="polite">
@@ -161,7 +161,7 @@ const samplePost = {
                 x-bind:hidden={`index !== ${i}`}
                 class="bg-mist p-8"
               >
-                <p class="t-card">{k('slideSample').replace('{n}', String(n))}</p>
+                <p class="t-card">{t(lang, 'styleguide.slideSample', { n })}</p>
                 <p class="mt-2">{k('slideSampleBody')}</p>
               </div>
             ))

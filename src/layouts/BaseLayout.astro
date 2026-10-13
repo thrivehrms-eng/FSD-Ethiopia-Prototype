@@ -21,8 +21,8 @@ interface Props {
   overlayHeader?: boolean;
   /** Show the skyline closing band above the footer. */
   closingBand?: boolean;
-  /** Preload the hero image (an <link rel=preload> for the LCP). */
-  preload?: { href: string; type: string; imagesrcset?: string; imagesizes?: string };
+  /** Preload hero images (the LCP); `media` limits a preload to some viewports. */
+  preload?: { href: string; type: string; imagesrcset?: string; imagesizes?: string; media?: string }[];
 }
 
 const { lang, title, description, path, schema, ogType = 'website', overlayHeader = false, closingBand = true, preload } = Astro.props;
@@ -61,7 +61,11 @@ const staging = import.meta.env.PUBLIC_STAGING !== 'false';
     <link rel="preload" href={lang === 'am' ? '/fonts/noto-sans-ethiopic.woff2' : '/fonts/khand-700.woff2'} as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin />
 
-    {preload && <link rel="preload" as="image" href={preload.href} type={preload.type} imagesrcset={preload.imagesrcset} imagesizes={preload.imagesizes} fetchpriority="high" />}
+    {
+      preload?.map((p) => (
+        <link rel="preload" as="image" href={p.href} type={p.type} imagesrcset={p.imagesrcset} imagesizes={p.imagesizes} media={p.media} fetchpriority="high" />
+      ))
+    }
     <!-- Mark that scripts run, so reveal-on-scroll never hides content without JS. -->
     <script is:inline>document.documentElement.classList.add('js');</script>
     <!-- Return visitors to the language they chose last time. -->
@@ -91,11 +95,11 @@ const staging = import.meta.env.PUBLIC_STAGING !== 'false';
     <AnnouncementBar lang={lang} />
     {
       lang === 'am' && (
-        <p class="relative z-50 bg-yellow-400 px-4 py-1.5 text-center text-[0.8125rem] font-medium leading-snug text-teal-900">
+        <aside aria-label={t('en', 'lang.noteLabel')} class="relative z-50 bg-yellow-400 px-4 py-1.5 text-center text-[0.8125rem] font-medium leading-snug text-teal-900">
           <span lang="am">{t('am', 'lang.amNote')}</span>
           <span class="mx-2" aria-hidden="true">/</span>
           <span lang="en">{t('en', 'lang.amNote')}</span>
-        </p>
+        </aside>
       )
     }
     <SiteHeader lang={lang} path={path} overlay={overlayHeader} />

@@ -2,7 +2,7 @@
 // Site search (Fuse.js). The index is a static JSON file built from src/data, and
 // both are loaded only when the dialog first opens.
 import { X, Search } from '@lucide/astro';
-import { t, langOf, type Lang } from '../../i18n';
+import { t, langOf, localePath, type Lang } from '../../i18n';
 
 interface Props {
   lang: Lang;
@@ -28,10 +28,11 @@ const labels = JSON.stringify({
     x-ref="dialog"
     x-on:open-request="open($event.detail); $dispatch('dialog-opened')"
     x-on:close="restoreFocus()"
+    x-on:keydown.escape.prevent="close()"
     aria-labelledby="site-search-title"
     class="m-auto mt-[10vh] w-[min(44rem,calc(100%-2rem))] rounded-sm bg-white p-0 text-ink backdrop:bg-teal-950/70"
   >
-    <div class="p-5 sm:p-8" x-data="siteSearch" data-labels={labels} x-init="$el.closest('dialog').addEventListener('dialog-opened', () => { load(); $refs.q.focus() })">
+    <div class="p-5 sm:p-8" x-data="siteSearch" data-labels={labels} data-index={localePath(lang, '/search-index.json')} x-init="$el.closest('dialog').addEventListener('dialog-opened', () => { load(); $refs.q.focus() })">
       <div class="flex items-start justify-between gap-4">
         <h2 id="site-search-title" class="t-section text-[1.875rem]" lang={langOf(lang, 'search.title')}>{t(lang, 'search.title')}</h2>
         <button type="button" x-on:click="close()" class="flex size-11 shrink-0 cursor-pointer items-center justify-center rounded-full hover:bg-mist" aria-label={t(lang, 'search.close')}>

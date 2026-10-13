@@ -14,15 +14,15 @@ const { lang } = Astro.props;
 ---
 
 <section class="on-dark relative isolate overflow-hidden bg-teal-900 text-white" aria-labelledby="closing-tagline">
-  <Duotone id="skyline-panorama" sizes="100vw" maxWidth={1900} strength={0.45} class="-z-10" />
+  <Duotone id="skyline-panorama" sizes="100vw" maxWidth={1900} aspect={1440 / 420} strength={0.45} class="-z-10" />
   <div class="absolute inset-x-0 bottom-0 -z-10 h-1/2 bg-gradient-to-b from-transparent to-teal-900" aria-hidden="true"></div>
   <ThreeStrokes tone="yellow" class="pointer-events-none absolute left-1/2 top-1/2 -z-10 w-[min(1100px,140vw)] -translate-x-1/2 -translate-y-1/2 opacity-[0.08]" />
-  <div class="container-site flex min-h-[26rem] flex-col items-center justify-center py-16 text-center lg:min-h-[26.25rem]">
-    <img src="/brand/fsd-logo-reversed.svg" alt="" width="170" height="120" loading="lazy" class="h-24 w-auto sm:h-30" />
-    <p id="closing-tagline" class="t-hero mt-6 max-w-4xl text-[clamp(1.875rem,4vw,3.25rem)] leading-none" lang={langOf(lang, 'closing.tagline')}>
+  <div class="container-site flex min-h-[26rem] flex-col items-center justify-center py-14 text-center lg:h-[26.25rem] lg:min-h-0 lg:py-0">
+    <img src="/brand/fsd-logo-reversed.svg" alt="" width="170" height="120" loading="lazy" class="h-20 w-auto lg:h-24" />
+    <p id="closing-tagline" class="t-hero mt-5 max-w-4xl text-[clamp(1.875rem,4vw,3.25rem)] leading-none" lang={langOf(lang, 'closing.tagline')}>
       {t(lang, 'closing.tagline')}
     </p>
-    <div class="mt-8 flex flex-wrap justify-center gap-3">
+    <div class="mt-7 flex flex-wrap justify-center gap-3">
       <button type="button" data-open-dialog="newsletter-dialog" class="btn btn-on-dark" aria-haspopup="dialog" lang={langOf(lang, 'closing.subscribe')}>
         {t(lang, 'closing.subscribe')}
       </button>

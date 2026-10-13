@@ -34,7 +34,8 @@
     "am": "አማርኛ",
     "enName": "English",
     "amName": "Amharic",
-    "amNote": "Amharic sample – final copy supplied by FSD Ethiopia"
+    "amNote": "Amharic sample – final copy supplied by FSD Ethiopia",
+    "noteLabel": "Language note"
   },
   "common": {
     "source": "Source",
@@ -65,21 +66,21 @@
       },
       "who": {
         "eyebrow": "Financial Sector Deepening Ethiopia",
-        "title": "Financial markets that work for every Ethiopian",
+        "title": "Finance that works for every Ethiopian",
         "lead": "We find what holds Ethiopia’s financial system back and help market actors fix it, with technical assistance, grants and research.",
         "cta1": "Explore our work",
         "cta2": "Browse resources"
       },
       "work": {
         "eyebrow": "Financial inclusion, capital and climate",
-        "title": "Closing the gaps in Ethiopia’s financial system",
+        "title": "Closing Ethiopia’s finance gaps",
         "lead": "Our programmes widen access to financial services, open up capital for businesses and mobilise finance for climate action.",
         "cta1": "See where we focus",
         "cta2": "View featured work"
       },
       "join": {
         "eyebrow": "Careers, procurement and partnerships",
-        "title": "Build Ethiopia’s financial future with us",
+        "title": "Build the financial future with us",
         "lead": "We hire, procure and partner openly, and publish every opportunity with its deadline.",
         "cta1": "View opportunities",
         "cta2": "Contact us"
@@ -120,7 +121,7 @@
     },
     "featured": {
       "title": "Featured work",
-      "region": "Featured work",
+      "region": "Featured work slides",
       "noSecond": "Second photo to come"
     },
     "focus": {
@@ -362,7 +363,7 @@
     "slideSampleBody": "A slide in the manual slider. Use the arrow buttons or the left and right arrow keys."
   },
   "announce": {
-    "nowOpen": "Now open: {title}, closes {date}",
+    "nowOpen": "Now open: {title} — closes {date}",
     "fallback": "See current job and procurement opportunities",
     "dismiss": "Dismiss this announcement",
     "label": "Announcement"
@@ -379,7 +380,8 @@
       "page": "Page",
       "news": "News",
       "publication": "Publication"
-    }
+    },
+    "publicationSummary": "PDF publication from the FSD Ethiopia resource library."
   },
   "closing": {
     "tagline": "We help build innovative, inclusive, and sustainable financial markets for all.",

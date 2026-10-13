@@ -1,65 +1,59 @@
-# FSD Ethiopia — design system (master)
+# FSD Ethiopia — design system (master, v2)
 
 Source of truth for every page. Page-specific overrides go in `pages/<page>.md`.
+The binding specification is CLAUDE.md section 3; this file records how it is
+implemented and what the `ui-ux-pro-max` skill contributed. `/styleguide/` shows
+every token and component live.
 
-Generated with the `ui-ux-pro-max` skill (`--design-system`, variance 5, motion 3,
-density 4) and then reconciled with the interim brand in `CLAUDE.md`. Where the
-two disagreed, the brand wins. Official guidelines replace this at inception.
+## Direction
 
-## What we kept from the skill, and what we overrode
+Image-led institutional site. Structure, rhythm and interaction patterns are borrowed
+from r-o.com (patterns only, CLAUDE.md 2.3); everything visible is FSD's own.
 
-| Skill output | Decision | Why |
-| --- | --- | --- |
-| Style: Swiss Modernism 2.0 (12-column grid, rational spacing, clear hierarchy) | **Kept** | Fits an evidence-led institution read by policymakers and donors. |
-| Landing pattern: Trust & Authority (mission hero, proof, solution overview, clear next step) | **Kept**, adapted | Proof means sourced figures and partners, not sales badges. Next step is "read the evidence" or "work with us", not "get a quote". |
-| Pattern: Portfolio Grid | **Rejected** | Built for visual portfolios; FSD Ethiopia's homepage is about work areas and evidence. |
-| Palette: navy #1E3A5F, blue #2563EB, ochre #A16207 | **Overridden** | Brand palette below. |
-| Type: EB Garamond / Crimson Text | **Overridden** | Brand type is Khand, Poppins and Noto Sans Ethiopic. |
-| Motion: subtle scroll reveal (GSAP) | **Rejected** | GSAP is not in the stack. One motion moment only (hero waffle fill), and none under reduced motion. |
-| Chart: waffle chart for a percentage gap | **Kept** | Used in the hero for the women/men digital-payment gap, with a text and table fallback. |
-| Cookie consent, language switch | No database match | Follows `CLAUDE.md` requirements and WCAG defaults. |
+| Skill output (v1 run) | v2 decision |
+| --- | --- |
+| Swiss Modernism 2.0 grid, clear hierarchy | Kept: 12-column grid in a 1280px container |
+| Trust & Authority landing pattern (mission, proof, solution, next step) | Kept: hero, stats band, our role, how we work, featured work, opportunities |
+| Waffle chart for a gap | Replaced by the data snapshot (KPI tiles plus a bar chart with a table) |
+| GSAP scroll motion | Rejected: CSS only, one 16px fade-rise per element, off under reduced motion |
 
-## Colour tokens
+## Tokens
 
-| Token | Hex | Use | Contrast note |
+`src/styles/global.css` (`@theme`). Contrast checked with WCAG formulae.
+
+| Token | Hex | Use | Contrast |
 | --- | --- | --- | --- |
-| `teal-900` | #0F3639 | Header, footer, dark bands | White text 13.1:1 |
-| `teal-700` | #165054 | Headings on white | 9.1:1 on white |
-| `green-600` | #276C4B | Primary buttons, links | 6.3:1 on white (5.6:1 on mist) |
-| `green-500` | #267A40 | Hover, icons | 5.3:1 on white |
-| `yellow-400` | #F7DE4D | Accents on dark only | Fails on white (1.35:1); 9.7:1 on teal-900 |
-| `red-600` | #C93129 | Small accents, alerts | 5.3:1 on white |
-| `ink` | #1C2B2D | Body text | 14.7:1 on white |
-| `mist` | #EEF3F1 | Quiet section background | |
-| `line` | #C9D6D2 | Decorative rules only | Inputs use a `teal-700` border (9.1:1) |
+| teal-950 | #0B2A2C | Regional strip, deepest band | white 15.2:1 |
+| teal-900 | #0F3639 | Header on scroll, footer, dark bands | white 13.1:1 |
+| teal-700 | #165054 | Section titles on white or mist | 9.1:1 / 8.4:1 |
+| green-600 | #276C4B | The single accent: stats, labels, rules, arrows, links | 6.3:1 on white, 5.8:1 on mist |
+| green-logo | #3E8740 | Logo stroke only | 4.4:1, decorative only |
+| yellow-400 | #F7DE4D | Glow, tab indicator, highlights on dark only | 9.7:1 on teal-900; fails on white |
+| red-600 | #C93129 | Hero cut line, alerts | white 5.3:1 |
+| ink | #141516 | Body text | 18.3:1 |
+| slate | #4A5560 | Secondary text, meta | 7.6:1 on white, 7.0:1 on mist |
+| mist | #F4F6F5 | Alternating sections | — |
 
-Motif: left-to-right gradient #276C4B → #0F3639, and a zigzag band that closes sections.
+## Type roles (classes in global.css)
 
-## Type
+- `.t-hero`: Khand 700 caps, clamp(2.75rem, 6vw, 5.25rem), line-height 0.95.
+- `.t-section`: Khand 700 caps, 2.5rem, teal-700, followed by the 2px green rule (`SectionTitle`).
+- `.t-label`: Poppins 600 caps, 0.8125rem, tracking 0.14em.
+- `.t-stat`: Khand 700, 4rem, green-600.
+- `.t-card`: Poppins 700 caps, 1.0625rem, tracking 0.06em, green-600.
+- Body: Poppins 400, 16px, line-height 1.8. Amharic: Noto Sans Ethiopic, line-height 1.7, with case and tracking switched off under `:lang(am)`.
 
-- Display: Khand 600/700. Condensed, so headings run large and tight (line-height 1.0–1.1).
-- Body and UI: Poppins 300–700, base 17px, line-height 1.65, measure ≤ 68ch.
-- Amharic: Noto Sans Ethiopic, line-height 1.7, applied through `:lang(am)`.
-- Scale (1.25 ratio): 14 · 17 · 21 · 27 · 33 · 42 · 52 · 72 px.
-- Sentence case everywhere. No all-caps eyebrows.
+## Components (`src/components/ui/`)
 
-## Layout
+`Img` (AVIF/WebP srcsets, build-time 1.25× upscale guard, gradient fallback), `MapFrame`,
+`Duotone`, `ThreeStrokes`, `GradientPanel`, `SectionTitle`, `ArrowButton`, `ArrowLink`,
+`StatBand`, `ImageTile`, `PortraitCard`, `NewsCard`, `HBarChart`, `Credit`.
+Behaviour lives in `src/scripts/app.ts`: `tabs`, `slider` (single and scroll modes),
+`latest`, `modal`, `siteHeader`, `announcement`, `siteSearch`, `cookieConsent`, `newsletterForm`.
 
-- 12-column grid, max width 1240px, 20px gutters on mobile and 32px on desktop.
-- Left-aligned text. Centre alignment only for single short lines.
-- Section rhythm: 64px mobile / 112px desktop.
-- Radius: 2px on inputs and buttons, 0 on bands. Hierarchy comes from rules and space, not from cards and shadows.
+## Rules worth repeating
 
-## Principles
-
-1. **Evidence first.** Each claim carries its source; illustrative numbers are labelled.
-2. **One bold moment per page.** On the homepage it is the hero waffle chart. Everything else is quiet.
-3. **Women as leaders.** Board-ready leaders are shown in leadership sections, not only as beneficiaries in gap statistics.
-4. **Light for slow phones.** No hero photos or carousels; system-light JavaScript; fonts self-hosted, subset, `font-display: swap`.
-5. **Privacy visible.** Purpose, consent and retention appear at the point of collection.
-
-## Anti-patterns to avoid
-
-From the skill: low hierarchy, no publication filtering, cluttered visuals, emoji icons.
-Added for this brand: yellow on white, numbered markers on non-sequences, arrow glyphs
-appended to every button, identical card grids with drop shadows, carousels, autoplay.
+- One accent on light (green-600); yellow only on dark.
+- At most two map frames visible per page.
+- No grey placeholders: a missing photo shows `GradientPanel`.
+- Nothing moves on its own; every animation is off under reduced motion.

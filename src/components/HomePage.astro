@@ -23,16 +23,16 @@ interface Props {
 
 const { lang } = Astro.props;
 
-const heroId = 'event-stakeholder-summit-2026';
-const hero = getImage(heroId);
-const preload = hasImage(heroId)
-  ? {
-      href: hero.variants.avif.at(-1)!.src,
-      type: 'image/avif',
-      imagesrcset: srcset(hero.variants.avif),
-      imagesizes: '(min-width: 1024px) 560px, (min-width: 640px) 80vw, 90vw',
-    }
-  : undefined;
+// LCP candidates: the hero's first-tab photo everywhere, and the duotone skyline from
+// 768px (it is not shown, or downloaded, on phones).
+const preloadFor = (id: string, imagesizes: string, media?: string) => {
+  const img = getImage(id);
+  return hasImage(id) ? [{ href: img.variants.avif.at(-1)!.src, type: 'image/avif', imagesrcset: srcset(img.variants.avif), imagesizes, media }] : [];
+};
+const preload = [
+  ...preloadFor('event-stakeholder-summit-2026', '(min-width: 1024px) 460px, (min-width: 640px) 80vw, 90vw'),
+  ...preloadFor('skyline-panorama', '100vw', '(min-width: 768px)'),
+];
 
 const schema = {
   '@context': 'https://schema.org',

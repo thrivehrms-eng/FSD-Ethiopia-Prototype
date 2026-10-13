@@ -60,26 +60,6 @@ document.addEventListener('click', (event) => {
   }
 });
 
-Alpine.data('siteNav', () => ({
-  open: false,
-  labels: { menu: 'Menu', close: 'Close menu' },
-  init() {
-    const el = document.getElementById('mobile-menu');
-    if (el?.dataset.labels) this.labels = JSON.parse(el.dataset.labels);
-  },
-  toggle() {
-    this.open = !this.open;
-    if (this.open) {
-      this.$nextTick(() => document.querySelector<HTMLElement>('#mobile-menu a')?.focus());
-    }
-  },
-  close(returnFocus = false) {
-    if (!this.open) return;
-    this.open = false;
-    if (returnFocus) (this.$refs.toggle as HTMLElement).focus();
-  },
-}));
-
 Alpine.data('cookieConsent', () => ({
   showBanner: false,
   analyticsLoaded: false,
@@ -212,11 +192,27 @@ document.addEventListener('click', (event) => {
 });
 
 // Announcement bar: dismissal is remembered per opportunity.
-Alpine.data('announcement', (id: string) => ({
+// Opportunities are re-checked in the browser, so a call that closes after the build
+// is never shown as open. Each item carries its closing time (end of day, Addis Ababa).
+type Listing = { id: string; text: string; closesAt: string };
+const stillOpen = (l: Listing) => new Date(l.closesAt).getTime() >= Date.now();
+
+// Announcement bar (4.0): the next open opportunity, else the general pointer.
+// Dismissal is remembered per opportunity.
+Alpine.data('announcement', () => ({
   visible: true,
+  key: 'general',
+  text: '',
+  textLang: 'en',
   init() {
+    const el = this.$el as HTMLElement;
+    const listings: Listing[] = JSON.parse(el.dataset.listings ?? '[]');
+    const next = listings.filter(stillOpen).sort((a, b) => a.closesAt.localeCompare(b.closesAt))[0];
+    this.key = next?.id ?? 'general';
+    this.text = next ? next.text : (el.dataset.fallback ?? '');
+    this.textLang = next ? 'en' : (el.dataset.fallbackLang ?? 'en');
     try {
-      this.visible = localStorage.getItem(`fsd-announce:${id}`) !== 'dismissed';
+      this.visible = localStorage.getItem(`fsd-announce:${this.key}`) !== 'dismissed';
     } catch {
       /* show it */
     }
@@ -224,13 +220,31 @@ Alpine.data('announcement', (id: string) => ({
   dismiss() {
     this.visible = false;
     try {
-      localStorage.setItem(`fsd-announce:${id}`, 'dismissed');
+      localStorage.setItem(`fsd-announce:${this.key}`, 'dismissed');
     } catch {
       /* ignore */
     }
     document.getElementById('main')?.focus();
   },
 }));
+
+// Opportunity cards (4.13): open count and next deadline, recomputed in the browser.
+Alpine.data('openListings', () => ({
+  count: 0,
+  status: '',
+  next: '',
+  init() {
+    const el = this.$el as HTMLElement;
+    const labels = JSON.parse(el.dataset.labels ?? '{}');
+    const open = (JSON.parse(el.dataset.listings ?? '[]') as (Listing & { date: string })[])
+      .filter(stillOpen)
+      .sort((a, b) => a.closesAt.localeCompare(b.closesAt));
+    this.count = open.length;
+    this.status = open.length === 0 ? labels.none : open.length === 1 ? labels.one : labels.many.replace('{n}', String(open.length));
+    this.next = open[0] ? labels.next.replace('{date}', open[0].date) : '';
+  },
+}));
+
 
 // Manual slider (CLAUDE.md 4.6 and 4.11). Nothing moves on its own.
 // mode "single": one slide shows at a time. mode "scroll": cards scroll and peek.
@@ -271,8 +285,17 @@ const sliderFactory = (mode: 'single' | 'scroll' = 'single') => ({
       track.scrollBy({ left: i * this.step(), behavior: reduceMotion ? 'auto' : 'smooth' });
       return;
     }
+    const before = this.index;
     this.index = Math.max(0, Math.min(this.count - 1, i));
     this.sync();
+    // If focus was inside the slide that just hid, keep it in the slider region.
+    if (before !== this.index) {
+      const root = this.$el as HTMLElement;
+      const outgoing = root.querySelectorAll<HTMLElement>('[data-slide]')[before];
+      if (outgoing?.contains(document.activeElement)) {
+        this.$nextTick(() => root.querySelector<HTMLElement>('[data-slides]')?.focus());
+      }
+    }
   },
   prev() {
     mode === 'scroll' ? this.go(-1) : this.go(this.index - 1);
@@ -348,7 +371,7 @@ Alpine.data('siteSearch', () => ({
     if (this.fuse) return;
     const [{ default: Fuse }, index] = await Promise.all([
       import('fuse.js'),
-      fetch(document.documentElement.dataset.searchIndex ?? '/search-index.json').then((r) => r.json()),
+      fetch((this.$el as HTMLElement).dataset.index ?? '/search-index.json').then((r) => r.json()),
     ]);
     this.fuse = new Fuse(index, { keys: ['title', 'summary', 'type'], threshold: 0.35, ignoreLocation: true });
     this.ready = true;

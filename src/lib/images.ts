@@ -36,10 +36,19 @@ export function pick(entry: ImageEntry, format: 'avif' | 'webp', slotWidth: numb
 
 /**
  * CLAUDE.md 3.6: never show an image wider than 1.25× its original width.
+ * With object-fit: cover a slot taller than the image's own ratio scales it up
+ * vertically too, so the check uses the slot's aspect ratio when given.
  * Throws at build time so an oversized slot cannot ship.
  */
-export function assertNoUpscale(id: string, entry: ImageEntry, maxSlotWidth: number) {
-  if (maxSlotWidth > entry.width * 1.25) {
-    throw new Error(`Image "${id}" is ${entry.width}px wide but its slot can reach ${maxSlotWidth}px (limit ${Math.floor(entry.width * 1.25)}px).`);
+export function assertNoUpscale(id: string, entry: ImageEntry, maxSlotWidth: number, slotAspect?: number) {
+  const byWidth = maxSlotWidth / entry.width;
+  const byHeight = slotAspect ? maxSlotWidth / slotAspect / entry.height : 0;
+  const scale = Math.max(byWidth, byHeight);
+  if (scale > 1.25) {
+    throw new Error(
+      `Image "${id}" (${entry.width}×${entry.height}) would be scaled ${scale.toFixed(2)}× in a slot up to ${maxSlotWidth}px wide` +
+        (slotAspect ? ` at aspect ${slotAspect.toFixed(3)}` : '') +
+        ' (limit 1.25×).',
+    );
   }
 }

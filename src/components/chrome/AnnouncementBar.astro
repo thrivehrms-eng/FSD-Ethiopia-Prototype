@@ -1,8 +1,9 @@
 ---
 // 4.0 Announcement bar: the next open opportunity, or a general pointer when none
-// is open. Visitors can dismiss it; the choice is remembered per opportunity.
+// is open. Open or closed is re-checked in the browser, so a call that closes after
+// the build is never advertised. Visitors can dismiss it (remembered per opportunity).
 import { X } from '@lucide/astro';
-import { nextOpen, formatDate } from '../../lib/opportunities';
+import { nextOpen, formatDate, closesAtIso, opportunities, type Opportunity } from '../../lib/opportunities';
 import { t, langOf, localePath, type Lang } from '../../i18n';
 
 interface Props {
@@ -10,16 +11,36 @@ interface Props {
 }
 
 const { lang } = Astro.props;
-const id = nextOpen?.id ?? 'general';
-const text = nextOpen
-  ? t(lang, 'announce.nowOpen', { title: nextOpen.shortTitle, date: formatDate(nextOpen.deadline) })
-  : t(lang, 'announce.fallback');
-const textLang = nextOpen ? 'en' : langOf(lang, 'announce.fallback');
+const all = [...opportunities.procurement, ...opportunities.careers] as Opportunity[];
+const listings = all.map((o) => ({
+  id: o.id,
+  text: t(lang, 'announce.nowOpen', { title: o.shortTitle, date: formatDate(o.deadline) }),
+  closesAt: closesAtIso(o),
+}));
+const fallback = t(lang, 'announce.fallback');
+const fallbackLang = langOf(lang, 'announce.fallback');
+// No-JS default: the state at build time.
+const text = nextOpen ? t(lang, 'announce.nowOpen', { title: nextOpen.shortTitle, date: formatDate(nextOpen.deadline) }) : fallback;
+const textLang = nextOpen ? 'en' : fallbackLang;
 ---
 
-<aside x-data={`announcement('${id}')`} x-show="visible" aria-label={t(lang, 'announce.label')} class="on-dark relative z-50 bg-green-600 text-white">
-  <div class="container-site flex min-h-10 items-center justify-center gap-3 py-1.5 pr-12 text-center text-[0.875rem] leading-snug sm:pr-14">
-    <a href={localePath(lang, '/opportunities/')} class="text-white underline-offset-4 hover:text-yellow-400" lang={textLang}>{text}</a>
+<aside
+  x-data="announcement"
+  x-show="visible"
+  aria-label={t(lang, 'announce.label')}
+  data-listings={JSON.stringify(listings)}
+  data-fallback={fallback}
+  data-fallback-lang={fallbackLang}
+  class="on-dark relative z-50 bg-green-600 text-white"
+>
+  <div class="container-site flex min-h-10 items-center justify-center py-2 pr-12 text-center text-[0.875rem] leading-snug sm:pr-14">
+    <a
+      href={localePath(lang, '/opportunities/')}
+      class="block min-w-0 truncate text-white underline-offset-4 hover:text-yellow-400 sm:whitespace-normal"
+      lang={textLang}
+      x-bind:lang="textLang"
+      x-text="text">{text}</a
+    >
   </div>
   <button
     type="button"

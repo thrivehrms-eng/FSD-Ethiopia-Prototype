@@ -16,4 +16,10 @@ export const nextOpen = [...openProcurement, ...openCareers].sort(byDeadline)[0]
 export const formatDate = (iso: string) =>
   new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Africa/Addis_Ababa' }).format(new Date(`${iso}T12:00:00+03:00`));
 
+/** Machine-readable closing time, for re-checking in the browser. */
+export const closesAtIso = (o: Opportunity) => closesAt(o).toISOString();
+
+export const formatMonth = (iso: string) =>
+  new Intl.DateTimeFormat('en-GB', { month: 'long', year: 'numeric', timeZone: 'Africa/Addis_Ababa' }).format(new Date(`${iso}T12:00:00+03:00`));
+
 export { opportunities };

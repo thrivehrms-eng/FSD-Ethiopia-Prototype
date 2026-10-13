@@ -1,7 +1,7 @@
 # FSD-Ethiopia-Prototype
 A high-fidelity, clickable prototype of a redesigned website for FSD Ethiopia, built by Digital Tailor Agency for a competitive bid.
 
-Project rules are in `CLAUDE.md`, the design system in `design-system/fsd-ethiopia/MASTER.md`, and progress in `CHANGELOG.md`.
+Project rules are in `CLAUDE.md` (v2), the design system in `design-system/fsd-ethiopia/MASTER.md` and `/styleguide/`, open content questions in `docs/content-audit.md`, and progress in `CHANGELOG.md`.
 
 ## Run it
 
@@ -11,6 +11,19 @@ npm run dev          # http://localhost:4321
 npm run build        # static site in dist/ (staging: noindex on)
 PUBLIC_STAGING=false npm run build   # production build without noindex
 npm run screenshots  # after a build; writes screenshots/ and checks for horizontal scroll
+npm run audit:images # after a build; upscale, alt text and page-weight checks
+```
+
+## Photos
+
+FSD Ethiopia's photos, portraits and covers are listed in `assets/manifest.json`
+(CLAUDE.md section 6). Until they are fetched, every image slot shows the brand
+gradient with the three-stroke mark. On a machine that can reach fsdethiopia.org:
+
+```bash
+npm run assets       # download into assets-src/, then build AVIF/WebP into public/images/
+npm run build && npm run audit:images
+git add public/images src/data/images.json assets-src && git commit -m "Add FSD photos"
 ```
 
 `npm run screenshots` needs Playwright. Install it with `npm i -D playwright`, or point

@@ -21,13 +21,18 @@ interface Props {
   imgClass?: string;
   /** Override the manifest's object-position. */
   position?: string;
+  /** Slot width ÷ height when the slot crops (object-cover), for the upscale check. */
+  aspect?: number;
+  /** "natural": full width at the image's own ratio (a skyline along the bottom); "logo": fixed height, own ratio. */
+  fit?: 'cover' | 'natural' | 'logo';
   /** Where to show "Photo: FSD Ethiopia". */
   credit?: 'overlay' | 'overlay-top' | 'below' | false;
 }
 
-const { id, sizes, maxWidth, priority = false, decorative = false, alt, class: className, imgClass, position, credit = false } = Astro.props;
+const { id, sizes, maxWidth, aspect, fit = 'cover', priority = false, decorative = false, alt, class: className, imgClass, position, credit = false } = Astro.props;
 const image = getImage(id);
-assertNoUpscale(id, image, maxWidth);
+// Title graphics are shown whole (never cropped or overlaid), so no crop-based upscale.
+assertNoUpscale(id, image, maxWidth, image.graphicWithText ? undefined : aspect);
 
 const altText = decorative || image.decorative ? '' : (alt ?? image.alt);
 const objectPosition = position ?? image.objectPosition;
@@ -39,7 +44,7 @@ const position_ = /(^|\s)(absolute|fixed)(\s|$)/.test(className ?? '') ? '' : 'r
 
 {
   image.status === 'ok' ? (
-    <span class:list={[position_, 'block', className]} data-image={id} data-original-width={image.width}>
+    <span class:list={[position_, 'block', image.graphicWithText && 'bg-teal-900', className]} data-image={id} data-original-width={image.width} data-original-height={image.height} data-fit={fit !== 'cover' || image.graphicWithText ? 'contain' : 'cover'}>
       <picture>
         <source type="image/avif" srcset={srcset(image.variants.avif)} sizes={sizes} />
         <source type="image/webp" srcset={srcset(image.variants.webp)} sizes={sizes} />
@@ -51,7 +56,11 @@ const position_ = /(^|\s)(absolute|fixed)(\s|$)/.test(className ?? '') ? '' : 'r
           loading={priority ? 'eager' : 'lazy'}
           decoding={priority ? 'sync' : 'async'}
           fetchpriority={priority ? 'high' : undefined}
-          class:list={['block h-full w-full object-cover', imgClass]}
+          class:list={[
+            'block',
+            fit === 'natural' ? 'h-auto w-full' : fit === 'logo' ? 'h-full w-auto' : ['h-full w-full', image.graphicWithText ? 'object-contain' : 'object-cover'],
+            imgClass,
+          ]}
           style={`object-position:${objectPosition}`}
         />
       </picture>
@@ -75,6 +84,8 @@ const position_ = /(^|\s)(absolute|fixed)(\s|$)/.test(className ?? '') ? '' : 'r
       data-image={id}
       data-image-missing
       data-original-width={image.width}
+      data-original-height={image.height}
+      data-fit={fit !== 'cover' || image.graphicWithText ? 'contain' : 'cover'}
       aria-hidden="true"
     >
       <ThreeStrokes class="h-auto w-[38%] max-w-40 opacity-90" />

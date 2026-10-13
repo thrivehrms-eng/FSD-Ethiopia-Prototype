@@ -73,7 +73,11 @@
     "sourceUrl": "https://fsdethiopia.org/2026/03/26/designing-digital-finance-markets-that-work-for-women/",
     "primarySourceUrl": "https://nbe.gov.et/wp-content/uploads/2025/12/NATIONAL_DIGITAL_PAYMENT_STRATEGY_2026-2030_Draft_Document.pdf",
     "verified": false,
-    "note": "Confirmed by two independent search results; the NBE document is a draft, and NBE has since cited a higher total (157 million). Check before submission."
+    "note": "Confirmed by two independent search results; the NBE document is a draft, and NBE has since cited a higher total (157 million). Check before submission.",
+    "usedIn": [
+      "home data snapshot",
+      "news.json women-digital-markets"
+    ]
   },
   "accountOwnershipWomen2024": {
     "value": 42,
@@ -104,5 +108,82 @@
     "sourceUrl": "https://fsdethiopia.org/2026/07/20/ethiopias-open-finance-future-is-closer-than-it-looks/",
     "verified": false,
     "note": "Confirmed by FSD's blog and Shega's Findex 2025 analysis."
+  },
+  "climateSummit2026Participants": {
+    "value": 200,
+    "display": "nearly 200",
+    "label": "Participants at the Second Climate Finance Summit, 5 March 2026",
+    "sourceTitle": "FSD Ethiopia hosts Second Climate Finance Summit ahead of COP32",
+    "sourceUrl": "https://fsdethiopia.org/2026/03/05/fsd-ethiopia-hosts-second-climate-finance-summit-ahead-of-cop32/",
+    "verified": false,
+    "note": "Also in the CLAUDE.md v2 brief (4.6). Read from search results for the cited page; check against the live page.",
+    "usedIn": [
+      "featured.json climate-summit-2026",
+      "news.json second-climate-summit"
+    ]
+  },
+  "bimalabCohort2024": {
+    "value": "10 startups and 4 corporates",
+    "label": "BimaLab Ethiopia first cohort at Demo Day, 7 March 2024",
+    "sourceTitle": "BimaLab Ethiopia comes to a successful finish with Demo Day showcase",
+    "sourceUrl": "https://fsdethiopia.org/2024/03/07/bimalab-ethiopia-comes-to-successful-finish-with-demo-day-showcase/",
+    "verified": false,
+    "note": "FSD's figure, also in the brief (4.6). Shega reports 11 startups. Read from search results for the cited page; check against the live page.",
+    "usedIn": [
+      "featured.json bimalab-2024",
+      "news.json bimalab-demo-day"
+    ]
+  },
+  "insuranceWorkshop2025Participants": {
+    "value": 150,
+    "display": "more than 150",
+    "label": "Participants at the Insurance Industry Workshop, November 2025",
+    "sourceTitle": "FSD Ethiopia and partners host Insurance Industry Workshop",
+    "sourceUrl": "https://fsdethiopia.org/2025/11/21/fsd-ethiopia-and-partners-host-insurance-industry-workshop-to-advance-market-reform-and-inclusion/",
+    "verified": false,
+    "note": "Read from search results for the cited page; check against the live page.",
+    "usedIn": [
+      "featured.json insurance-workshop-2025",
+      "news.json insurance-workshop"
+    ]
+  },
+  "insurancePremiumGrowth2024_25": {
+    "value": 50,
+    "unit": "%",
+    "display": "about half",
+    "label": "Growth in gross written insurance premiums, 2024/25",
+    "sourceTitle": "Growing Ethiopia’s Insurance Market: From Reform to Real Impact, FSD Ethiopia",
+    "sourceUrl": "https://fsdethiopia.org/2026/03/26/growing-ethiopias-insurance-market-from-reform-to-real-impact/",
+    "verified": false,
+    "note": "Read from search results for the cited page; check against the live page.",
+    "usedIn": [
+      "featured.json insurance-workshop-2025",
+      "news.json insurance-market"
+    ]
+  },
+  "insurancePenetration": {
+    "value": 1,
+    "unit": "% of GDP",
+    "display": "below 1% of GDP",
+    "label": "Insurance penetration in Ethiopia",
+    "sourceTitle": "FSD Ethiopia Insurance Industry Workshop report",
+    "sourceUrl": "https://fsdethiopia.org/wp-content/pdf/2025-06-11-%20FSDE-Designed-%20FSD%20INSURANCE%20INDUSTRY%20WORKSHOP%20%20REPORT%20%282%29_com.pdf",
+    "verified": false,
+    "note": "Also in the brief (4.6). Read from search results for the cited page; check against the live page.",
+    "usedIn": [
+      "featured.json insurance-workshop-2025",
+      "news.json insurance-workshop"
+    ]
+  },
+  "boardReadyRounds": {
+    "value": 3,
+    "label": "Rounds of corporate governance training run with IFC for the Board Ready Program",
+    "sourceTitle": "About our Board Ready Program, FSD Ethiopia",
+    "sourceUrl": "https://fsdethiopia.org/about-our-board-ready-program/",
+    "verified": false,
+    "note": "Also in the brief (4.9). Read from search results for the cited page; check against the live page.",
+    "usedIn": [
+      "en.json home.boards.body"
+    ]
   }
 }

@@ -311,6 +311,7 @@
   .duotone img {
     filter: grayscale(1) contrast(1.1);
     mix-blend-mode: multiply;
+    opacity: var(--duo, 1);
   }
 
   /* Zoom inside a frame on hover. */

@@ -29,8 +29,8 @@ const social = Object.fromEntries(site.social.map((s) => [s.name, s.url]));
   <div class="container-site">
     <SectionTitle lang={lang} k="home.latest.title" id="latest-title">
       <span class="flex gap-3" x-show="active === 0">
-        <ArrowButton dir="prev" label={t(lang, 'slider.prev')} aria-controls="latest-track" x-on:click="prev()" x-bind:disabled="atStart" disabled />
-        <ArrowButton dir="next" label={t(lang, 'slider.next')} aria-controls="latest-track" x-on:click="next()" x-bind:disabled="atEnd" />
+        <ArrowButton dir="prev" label={t(lang, 'slider.prev')} aria-controls="latest-track" x-on:click="prev()" x-bind:aria-disabled="atStart.toString()" aria-disabled="true" />
+        <ArrowButton dir="next" label={t(lang, 'slider.next')} aria-controls="latest-track" x-on:click="next()" x-bind:aria-disabled="atEnd.toString()" aria-disabled="false" />
       </span>
     </SectionTitle>
 

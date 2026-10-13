@@ -25,9 +25,9 @@ const { id, sizes, maxWidth = 640, priority = false, alt, class: className, cred
 <figure class:list={['map-frame relative mx-auto w-full', className]} style={`max-width:${maxWidth}px`}>
   <div class="relative">
     <div class="map-frame__clip zoom-host aspect-[1.414] overflow-hidden">
-      <Img id={id} sizes={sizes} maxWidth={maxWidth} priority={priority} alt={alt} position={position} class="h-full w-full" />
+      <Img id={id} sizes={sizes} maxWidth={maxWidth} aspect={1.414} priority={priority} alt={alt} position={position} class="h-full w-full" />
     </div>
-    <ThreeStrokes class="pointer-events-none absolute" style="left:-5%;top:-5%;width:109%;height:111%" weight={3} preserveAspectRatio="none" />
+    <ThreeStrokes class="pointer-events-none absolute" style="left:-5%;top:-5%;width:109%;height:111%" variant="line" lineWidth={4} preserveAspectRatio="none" />
   </div>
   {
     credit === 'below' && hasImage(id) && (

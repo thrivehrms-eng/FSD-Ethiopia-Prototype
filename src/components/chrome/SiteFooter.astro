@@ -59,9 +59,12 @@ const columns = [
   },
 ];
 const partners = [
-  { group: 'footer.fundedBy', items: [{ name: 'UK International Development', image: 'logo-uk-intl-dev' }, { name: 'Gates Foundation', image: 'logo-gates' }] },
-  { group: 'footer.incubatedBy', items: [{ name: 'FSD Africa', image: 'logo-fsd-africa' }] },
-  { group: 'footer.partOf', items: [{ name: 'FSD Network', image: 'logo-fsd-network' }] },
+  // mono: shown white via a CSS filter. The two 303×205 "color2022" files are logo tiles
+  // (the FSD Africa one is a JPEG with no transparency), so they keep their colours on a
+  // white chip rather than turning into a white box (CLAUDE.md 4.15).
+  { group: 'footer.fundedBy', items: [{ name: 'UK International Development', image: 'logo-uk-intl-dev', mono: true }, { name: 'Gates Foundation', image: 'logo-gates', mono: false }] },
+  { group: 'footer.incubatedBy', items: [{ name: 'FSD Africa', image: 'logo-fsd-africa', mono: false }] },
+  { group: 'footer.partOf', items: [{ name: 'FSD Network', image: 'logo-fsd-network', mono: true }] },
 ];
 const heading = 't-label text-[0.8125rem] text-yellow-400';
 const link = 'text-[0.9375rem] text-white no-underline hover:text-yellow-400 hover:underline';
@@ -130,8 +133,8 @@ const link = 'text-[0.9375rem] text-white no-underline hover:text-yellow-400 hov
                 <span class="flex flex-wrap items-center gap-6">
                   {g.items.map((item) =>
                     hasImage(item.image) ? (
-                      <span class="partner-logo block h-12 w-auto max-w-[150px]">
-                        <Img id={item.image} sizes="150px" maxWidth={150} alt={item.name} class="h-12 w-auto" imgClass="object-contain" />
+                      <span class:list={['block h-12 w-auto max-w-[150px]', item.mono ? 'partner-logo' : 'rounded-sm bg-white p-1']}>
+                        <Img id={item.image} sizes="150px" maxWidth={150} alt={item.name} fit="logo" class="h-full w-auto" />
                       </span>
                     ) : (
                       <span class="t-wide text-[0.8125rem] text-white" lang="en">{item.name}</span>

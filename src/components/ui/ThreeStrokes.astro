@@ -8,9 +8,18 @@ interface Props {
   weight?: number;
   preserveAspectRatio?: string;
   style?: string;
+  /** "line": centre lines traced from the logo paths, at a constant stroke width (map frame). */
+  variant?: 'shape' | 'line';
+  lineWidth?: number;
 }
 
-const { tone = 'brand', class: className, weight = 0, preserveAspectRatio = 'xMidYMid meet', style } = Astro.props;
+const { tone = 'brand', class: className, weight = 0, preserveAspectRatio = 'xMidYMid meet', style, variant = 'shape', lineWidth = 4 } = Astro.props;
+// Centre lines of the three logo strokes, in the same coordinates as the shapes below.
+const lines = [
+  'M279.94 408.79 L269.47 422.79 L282.9 434.73',
+  'M287.07 400.64 L301.3 406.6 L300.45 413.9 L304.63 412.89',
+  'M307.45 419.66 L324.2 422.4 L313.3 431.5 L297.43 438.61',
+];
 const colours =
   tone === 'brand' ? ['#F7DE4D', '#3E8740', '#C93129'] : tone === 'yellow' ? ['#F7DE4D', '#F7DE4D', '#F7DE4D'] : ['#fff', '#fff', '#fff'];
 const outline = weight ? { stroke: 'currentColor', 'stroke-width': weight, 'vector-effect': 'non-scaling-stroke', 'stroke-linejoin': 'round' } : {};
@@ -25,6 +34,13 @@ const outline = weight ? { stroke: 'currentColor', 'stroke-width': weight, 'vect
   focusable="false"
   xmlns="http://www.w3.org/2000/svg"
 >
+  {
+    variant === 'line'
+      ? lines.map((d, i) => (
+          <path d={d} fill="none" stroke={colours[i]} stroke-width={lineWidth} vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="miter" />
+        ))
+      : (
+          <Fragment>
   <path
     fill={colours[0]}
     style={`color:${colours[0]}`}
@@ -43,4 +59,7 @@ const outline = weight ? { stroke: 'currentColor', 'stroke-width': weight, 'vect
     {...outline}
     d="M 297.429688 438.609375 C 299.746094 437.492188 302.070312 436.386719 304.410156 435.3125 L 311.410156 432.089844 C 311.980469 431.824219 312.601562 431.542969 313.105469 431.277344 C 313.570312 430.949219 314.066406 430.457031 314.542969 430.058594 L 317.4375 427.523438 L 323.289062 422.527344 L 323.597656 423.242188 L 320.003906 423.570312 L 319.925781 423.578125 L 319.863281 423.558594 C 315.714844 422.296875 311.5625 421.039062 307.449219 419.65625 C 311.675781 420.636719 315.871094 421.738281 320.066406 422.832031 L 319.929688 422.820312 L 323.515625 422.429688 L 324.800781 422.289062 L 323.824219 423.144531 L 317.996094 428.234375 L 315.054688 430.738281 C 314.542969 431.152344 314.121094 431.585938 313.53125 431.984375 C 312.894531 432.3125 312.339844 432.546875 311.738281 432.816406 C 309.386719 433.871094 306.992188 434.8125 304.617188 435.796875 C 302.234375 436.769531 299.839844 437.703125 297.429688 438.609375"
   ></path>
+          </Fragment>
+        )
+  }
 </svg>

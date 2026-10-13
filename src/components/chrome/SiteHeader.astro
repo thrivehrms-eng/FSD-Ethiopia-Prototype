@@ -27,7 +27,7 @@ const right = [
 const links = [...left, ...right].map((l) => ({ ...l, href: localePath(lang, l.href) }));
 const current = localePath(lang, path);
 const navLink =
-  't-wide block rounded-sm px-2.5 py-2 text-[0.8125rem] text-white no-underline hover:text-yellow-400 aria-[current=page]:text-yellow-400 xl:px-3';
+  't-wide block rounded-sm px-2 py-2 text-[0.75rem] tracking-[0.08em] text-white no-underline hover:text-yellow-400 aria-[current=page]:text-yellow-400 xl:px-3 xl:text-[0.8125rem] xl:tracking-[0.12em]';
 const langLink =
   'flex min-h-11 min-w-11 items-center justify-center px-1.5 text-[0.8125rem] font-semibold text-white no-underline hover:text-yellow-400 aria-[current=true]:text-yellow-400 aria-[current=true]:underline aria-[current=true]:decoration-2 aria-[current=true]:underline-offset-4';
 ---
@@ -37,7 +37,7 @@ const langLink =
   class:list={['site-header on-dark sticky top-0 z-40 text-white', overlay ? 'is-overlay' : 'is-solid']}
   x-bind:class="scrolled && 'is-scrolled'"
 >
-  <nav aria-label={t(lang, 'a11y.mainNav')} class="container-site site-header__bar flex items-center justify-between gap-4 lg:grid lg:grid-cols-[1fr_auto_1fr]">
+  <nav aria-label={t(lang, 'a11y.mainNav')} class="container-site site-header__bar flex items-center justify-between gap-4 lg:grid lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]">
     <ul class="hidden items-center lg:flex">
       {
         links.slice(0, 3).map((l) => (

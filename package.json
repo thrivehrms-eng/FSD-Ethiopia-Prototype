@@ -10,7 +10,8 @@
     "screenshots": "node scripts/screenshots.mjs",
     "assets:fetch": "node scripts/fetch-assets.mjs",
     "assets:optimise": "node scripts/optimise-images.mjs",
-    "assets": "node scripts/fetch-assets.mjs; node scripts/optimise-images.mjs"
+    "assets": "node scripts/fetch-assets.mjs; node scripts/optimise-images.mjs",
+    "audit:images": "node scripts/audit-images.mjs"
   },
   "dependencies": {
     "@lucide/astro": "1.54.0",

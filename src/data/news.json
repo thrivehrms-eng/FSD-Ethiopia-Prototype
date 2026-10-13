@@ -76,7 +76,10 @@
     "authorImage": "staff-abel-tadelle",
     "image": "news-insurance-market",
     "excerpt": "Premiums rose by about half in 2024/25, yet retail cover stays thin. What the November 2025 workshop says it will take to grow an inclusive market.",
-    "url": "https://fsdethiopia.org/2026/03/26/growing-ethiopias-insurance-market-from-reform-to-real-impact/"
+    "url": "https://fsdethiopia.org/2026/03/26/growing-ethiopias-insurance-market-from-reform-to-real-impact/",
+    "figures": [
+      "insurancePremiumGrowth2024_25"
+    ]
   },
   {
     "id": "women-digital-markets",
@@ -88,7 +91,10 @@
     "image": "news-women-digital",
     "area": "fi",
     "excerpt": "Mobile money accounts reached 139.5 million by 2025, but women still save, borrow and insure far less. Why markets must be designed with women in mind.",
-    "url": "https://fsdethiopia.org/2026/03/26/designing-digital-finance-markets-that-work-for-women/"
+    "url": "https://fsdethiopia.org/2026/03/26/designing-digital-finance-markets-that-work-for-women/",
+    "figures": [
+      "mobileMoneyAccounts2025"
+    ]
   },
   {
     "id": "access-to-influence",
@@ -109,7 +115,10 @@
     "image": "event-climate-summit-2026-group",
     "area": "cf",
     "excerpt": "Nearly 200 participants met in Addis Ababa to discuss climate finance governance and private capital as Ethiopia prepares to host COP32.",
-    "url": "https://fsdethiopia.org/2026/03/05/fsd-ethiopia-hosts-second-climate-finance-summit-ahead-of-cop32/"
+    "url": "https://fsdethiopia.org/2026/03/05/fsd-ethiopia-hosts-second-climate-finance-summit-ahead-of-cop32/",
+    "figures": [
+      "climateSummit2026Participants"
+    ]
   },
   {
     "id": "insurance-workshop",
@@ -118,7 +127,11 @@
     "type": "event",
     "image": "event-insurance-workshop-2025",
     "excerpt": "More than 150 regulators, insurers and partners met to discuss reforms in a market where insurance penetration is still below 1% of GDP.",
-    "url": "https://fsdethiopia.org/2025/11/21/fsd-ethiopia-and-partners-host-insurance-industry-workshop-to-advance-market-reform-and-inclusion/"
+    "url": "https://fsdethiopia.org/2025/11/21/fsd-ethiopia-and-partners-host-insurance-industry-workshop-to-advance-market-reform-and-inclusion/",
+    "figures": [
+      "insuranceWorkshop2025Participants",
+      "insurancePenetration"
+    ]
   },
   {
     "id": "bimalab-demo-day",
@@ -127,6 +140,9 @@
     "type": "event",
     "image": "event-bimalab-2024-main",
     "excerpt": "The first cohort of our insurtech accelerator, 10 startups and 4 corporates, pitched to investors and industry experts in Addis Ababa.",
-    "url": "https://fsdethiopia.org/2024/03/07/bimalab-ethiopia-comes-to-successful-finish-with-demo-day-showcase/"
+    "url": "https://fsdethiopia.org/2024/03/07/bimalab-ethiopia-comes-to-successful-finish-with-demo-day-showcase/",
+    "figures": [
+      "bimalabCohort2024"
+    ]
   }
 ]

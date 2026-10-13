@@ -19,16 +19,16 @@ const choiceBtn = 'btn btn-primary min-w-36';
   >
     <div class="container-site flex flex-col gap-4 py-5 lg:flex-row lg:items-center lg:justify-between lg:gap-10">
       <div class="max-w-3xl">
-        <h2 id="cookie-title" class="font-display text-[1.5rem] font-semibold text-teal-700">{t(lang, 'cookies.title')}</h2>
+        <h2 id="cookie-title" class="font-display text-[1.5rem] font-semibold text-teal-700" lang={langOf(lang, 'cookies.title')}>{t(lang, 'cookies.title')}</h2>
         <p class="mt-1 text-[0.9375rem]" lang={langOf(lang, 'cookies.body')}>
           {t(lang, 'cookies.body')}{' '}
-          <a href={localePath(lang, '/privacy/')}>{t(lang, 'footer.privacy')}</a>.
+          <a href={localePath(lang, '/privacy/')} lang={langOf(lang, 'footer.privacy')}>{t(lang, 'footer.privacy')}</a>.
         </p>
       </div>
       <div class="flex flex-wrap gap-3">
-        <button type="button" class={choiceBtn} @click="acceptAll()">{t(lang, 'cookies.accept')}</button>
-        <button type="button" class={choiceBtn} @click="rejectAll()">{t(lang, 'cookies.reject')}</button>
-        <button type="button" class="btn btn-outline" @click="openPrefs($event.currentTarget)">{t(lang, 'cookies.prefs')}</button>
+        <button type="button" class={choiceBtn} @click="acceptAll()" lang={langOf(lang, 'cookies.accept')}>{t(lang, 'cookies.accept')}</button>
+        <button type="button" class={choiceBtn} @click="rejectAll()" lang={langOf(lang, 'cookies.reject')}>{t(lang, 'cookies.reject')}</button>
+        <button type="button" class="btn btn-outline" @click="openPrefs($event.currentTarget)" lang={langOf(lang, 'cookies.prefs')}>{t(lang, 'cookies.prefs')}</button>
       </div>
     </div>
   </section>
@@ -40,13 +40,13 @@ const choiceBtn = 'btn btn-primary min-w-36';
     @close="onDialogClose()"
   >
     <form method="dialog" class="p-6 sm:p-8" @submit.prevent="savePrefs()">
-      <h2 id="cookie-prefs-title" class="font-display text-[1.875rem] font-semibold text-teal-700">{t(lang, 'cookies.prefsTitle')}</h2>
+      <h2 id="cookie-prefs-title" class="font-display text-[1.875rem] font-semibold text-teal-700" lang={langOf(lang, 'cookies.prefsTitle')}>{t(lang, 'cookies.prefsTitle')}</h2>
 
       <fieldset class="mt-6 border-t border-line pt-5">
-        <legend class="sr-only">{t(lang, 'cookies.necessary')}</legend>
+        <legend class="sr-only" lang={langOf(lang, 'cookies.necessary')}>{t(lang, 'cookies.necessary')}</legend>
         <div class="flex items-start justify-between gap-6">
           <div>
-            <p class="font-semibold">{t(lang, 'cookies.necessary')}</p>
+            <p class="font-semibold" lang={langOf(lang, 'cookies.necessary')}>{t(lang, 'cookies.necessary')}</p>
             <p class="text-[0.9375rem]" lang={langOf(lang, 'cookies.necessaryBody')}>{t(lang, 'cookies.necessaryBody')}</p>
           </div>
           <p class="shrink-0 text-sm font-medium text-teal-700" lang={langOf(lang, 'cookies.alwaysOn')}>{t(lang, 'cookies.alwaysOn')}</p>
@@ -54,10 +54,10 @@ const choiceBtn = 'btn btn-primary min-w-36';
       </fieldset>
 
       <fieldset class="mt-5 border-t border-line pt-5">
-        <legend class="sr-only">{t(lang, 'cookies.analytics')}</legend>
+        <legend class="sr-only" lang={langOf(lang, 'cookies.analytics')}>{t(lang, 'cookies.analytics')}</legend>
         <div class="flex items-start justify-between gap-6">
           <div>
-            <label for="consent-analytics" class="font-semibold">{t(lang, 'cookies.analytics')}</label>
+            <label for="consent-analytics" class="font-semibold" lang={langOf(lang, 'cookies.analytics')}>{t(lang, 'cookies.analytics')}</label>
             <p id="consent-analytics-desc" class="text-[0.9375rem]" lang={langOf(lang, 'cookies.analyticsBody')}>
               {t(lang, 'cookies.analyticsBody')}
             </p>
@@ -78,8 +78,8 @@ const choiceBtn = 'btn btn-primary min-w-36';
       </p>
 
       <div class="mt-6 flex flex-wrap gap-3">
-        <button type="submit" class="btn btn-primary">{t(lang, 'cookies.save')}</button>
-        <button type="button" class="btn btn-outline" @click="closePrefs()">{t(lang, 'cookies.close')}</button>
+        <button type="submit" class="btn btn-primary" lang={langOf(lang, 'cookies.save')}>{t(lang, 'cookies.save')}</button>
+        <button type="button" class="btn btn-outline" @click="closePrefs()" lang={langOf(lang, 'cookies.close')}>{t(lang, 'cookies.close')}</button>
       </div>
     </form>
   </dialog>
