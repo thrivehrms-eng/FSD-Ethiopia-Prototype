@@ -1,0 +1,36 @@
+{
+  "_note": "Sourced figures only. Each was read from a search-index summary of the source because fsdethiopia.org was unreachable from the build environment. Check every value against its source before the proposal is submitted, then set verified to true.",
+  "digitalPaymentsWomen": {
+    "value": 13,
+    "unit": "%",
+    "label": "Women who made or received a digital payment",
+    "sourceTitle": "Advancing Women’s Digital Financial Service Usage, FSD Ethiopia",
+    "sourceUrl": "https://fsdethiopia.org/wp-content/pdf/Advancing%20Women%E2%80%99s%20Digital%20Financial%20Service%20Usage.pdf",
+    "verified": false
+  },
+  "digitalPaymentsMen": {
+    "value": 26,
+    "unit": "%",
+    "label": "Men who made or received a digital payment",
+    "sourceTitle": "Advancing Women’s Digital Financial Service Usage, FSD Ethiopia",
+    "sourceUrl": "https://fsdethiopia.org/wp-content/pdf/Advancing%20Women%E2%80%99s%20Digital%20Financial%20Service%20Usage.pdf",
+    "verified": false
+  },
+  "womenBankBoardSeats": {
+    "value": 15,
+    "unit": "%",
+    "year": 2024,
+    "label": "Share of board positions held by women across 30 commercial banks",
+    "sourceTitle": "World Bank study (2024), cited on FSD Ethiopia’s Board Ready Program page",
+    "sourceUrl": "https://fsdethiopia.org/about-our-board-ready-program/",
+    "verified": false
+  },
+  "ecmaIssuerBoardMinimum": {
+    "value": 30,
+    "unit": "%",
+    "label": "Minimum share of women on securities issuers’ boards under ECMA corporate governance rules",
+    "sourceTitle": "Unlock capital markets to advance women’s economic participation and leadership, FSD Ethiopia",
+    "sourceUrl": "https://fsdethiopia.org/wp-content/pdf/FSD_call_to_action.pdf",
+    "verified": false
+  }
+}

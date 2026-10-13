@@ -1,0 +1,72 @@
+{
+  "name": "FSD Ethiopia",
+  "legalName": "Financial Sector Deepening Ethiopia",
+  "email": "comms@fsdethiopia.org",
+  "phone": "+251 9 93969696",
+  "phoneHref": "+251993969696",
+  "foundingYear": 2022,
+  "launchSource": "https://fsdethiopia.org/2022/06/12/international-finance/",
+  "address": {
+    "streetAddress": "6th Floor, Giant Eagle Building, Mexico Square, Roosevelt Street",
+    "addressLocality": "Addis Ababa",
+    "addressCountry": "ET"
+  },
+  "social": [
+    {
+      "name": "LinkedIn",
+      "url": null
+    },
+    {
+      "name": "X",
+      "url": null
+    },
+    {
+      "name": "Facebook",
+      "url": null
+    }
+  ],
+  "funders": [
+    "UK aid",
+    "Gates Foundation"
+  ],
+  "networkNote": "FSD Network URLs were added from general knowledge, not fetched. Confirm each before submission.",
+  "socialNote": "Social profile URLs could not be found; FSD Ethiopia to supply.",
+  "network": [
+    {
+      "name": "FSD Africa",
+      "url": "https://fsdafrica.org/"
+    },
+    {
+      "name": "FSD Kenya",
+      "url": "https://www.fsdkenya.org/"
+    },
+    {
+      "name": "FSD Uganda",
+      "url": "https://fsduganda.or.ug/"
+    },
+    {
+      "name": "FSD Tanzania",
+      "url": "https://www.fsdt.or.tz/"
+    },
+    {
+      "name": "FSD Zambia",
+      "url": "https://www.fsdzambia.org/"
+    },
+    {
+      "name": "FSD Mozambique",
+      "url": "https://fsdmoc.com/"
+    },
+    {
+      "name": "EFInA (Nigeria)",
+      "url": "https://efina.org.ng/"
+    },
+    {
+      "name": "Access to Finance Rwanda",
+      "url": "https://afr.rw/"
+    },
+    {
+      "name": "FinMark Trust",
+      "url": "https://finmark.org.za/"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+---
+import { t, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  url: string;
+  dark?: boolean;
+}
+
+const { lang, title, url, dark = false } = Astro.props;
+---
+
+<p class:list={['source-link', dark ? 'text-on-dark-muted' : 'text-ink/80']} lang="en">
+  {t(lang, 'common.source')}:{' '}
+  <a href={url} class:list={[dark && 'text-white hover:text-yellow-400']}>{title}</a>
+</p>

@@ -1,0 +1,224 @@
+@import 'tailwindcss';
+
+/* Self-hosted brand fonts: no request to a third party before consent. */
+@font-face {
+  font-family: 'Khand';
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/khand-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Khand';
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/khand-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/poppins-300.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/poppins-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/poppins-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/poppins-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/poppins-700.woff2') format('woff2');
+}
+/* Only downloaded when Ethiopic characters are on the page. */
+@font-face {
+  font-family: 'Noto Sans Ethiopic';
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/fonts/noto-sans-ethiopic.woff2') format('woff2');
+  unicode-range: U+1200-1399, U+2D80-2DDF, U+AB01-AB2F, U+1E7E0-1E7FF;
+}
+
+@theme {
+  --color-teal-900: #0f3639;
+  --color-teal-700: #165054;
+  --color-green-600: #276c4b;
+  --color-green-500: #267a40;
+  --color-yellow-400: #f7de4d;
+  --color-red-600: #c93129;
+  --color-ink: #1c2b2d;
+  --color-mist: #eef3f1;
+  --color-line: #c9d6d2;
+  --color-on-dark-muted: #c9d6d2;
+
+  --font-display: 'Khand', 'Noto Sans Ethiopic', 'Arial Narrow', sans-serif;
+  --font-sans: 'Poppins', 'Noto Sans Ethiopic', system-ui, sans-serif;
+
+  --breakpoint-xl: 80rem;
+}
+
+@layer base {
+  html {
+    color: var(--color-ink);
+    background: #fff;
+    font-family: var(--font-sans);
+    font-size: 106.25%; /* 17px body */
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 6rem;
+  }
+  body {
+    line-height: 1.65;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 1.05;
+    text-wrap: balance;
+  }
+  :lang(am) {
+    line-height: 1.7;
+  }
+  :lang(am) :is(h1, h2, h3) {
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+  a {
+    color: var(--color-green-600);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+  a:hover {
+    color: var(--color-green-500);
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-green-600);
+    outline-offset: 3px;
+  }
+  .on-dark :focus-visible,
+  .on-dark:focus-visible {
+    outline-color: var(--color-yellow-400);
+  }
+  [x-cloak] {
+    display: none !important;
+  }
+}
+
+@layer components {
+  .container-site {
+    width: 100%;
+    max-width: 77.5rem;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 64rem) {
+    .container-site {
+      padding-inline: 2rem;
+    }
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 2.75rem;
+    padding: 0.625rem 1.25rem;
+    border-radius: 2px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
+  }
+  .btn-primary {
+    background: var(--color-green-600);
+    color: #fff;
+  }
+  .btn-primary:hover {
+    background: var(--color-green-500);
+    color: #fff;
+  }
+  .btn-outline {
+    border: 2px solid var(--color-teal-700);
+    color: var(--color-teal-700);
+  }
+  .btn-outline:hover {
+    background: var(--color-teal-700);
+    color: #fff;
+  }
+  .btn-on-dark {
+    background: var(--color-yellow-400);
+    color: var(--color-teal-900);
+  }
+  .btn-on-dark:hover {
+    background: #fff;
+    color: var(--color-teal-900);
+  }
+  .btn-outline-on-dark {
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  .btn-outline-on-dark:hover {
+    background: #fff;
+    color: var(--color-teal-900);
+  }
+
+  .brand-gradient {
+    background-image: linear-gradient(90deg, var(--color-green-600), var(--color-teal-900));
+  }
+
+  /* Zigzag band that closes a section; the colour comes from currentColor. */
+  .zigzag {
+    height: 14px;
+    background-image:
+      linear-gradient(135deg, currentColor 25%, transparent 25%),
+      linear-gradient(225deg, currentColor 25%, transparent 25%);
+    background-size: 28px 28px;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+  }
+
+  .source-link {
+    font-size: 0.8125rem;
+    line-height: 1.5;
+  }
+
+  .field-input {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.5rem 0.75rem;
+    border: 2px solid var(--color-teal-700);
+    border-radius: 2px;
+    background: #fff;
+    color: var(--color-ink);
+  }
+  .field-input[aria-invalid='true'] {
+    border-color: var(--color-red-600);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

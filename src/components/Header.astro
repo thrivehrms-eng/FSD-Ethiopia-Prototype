@@ -1,0 +1,122 @@
+---
+import { Menu, X } from '@lucide/astro';
+import Logo from './Logo.astro';
+import { t, localePath, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  path: string;
+}
+
+const { lang, path } = Astro.props;
+const links = [
+  { key: 'nav.about', href: '/about/' },
+  { key: 'nav.work', href: '/our-work/' },
+  { key: 'nav.boardReady', href: '/board-ready/' },
+  { key: 'nav.insights', href: '/insights/' },
+  { key: 'nav.opportunities', href: '/work-with-us/' },
+  { key: 'nav.contact', href: '/contact/' },
+].map((l) => ({ ...l, href: localePath(lang, l.href) }));
+const current = localePath(lang, path);
+---
+
+<header class="on-dark sticky top-0 z-40 bg-teal-900 text-white" x-data="siteNav">
+  <div class="container-site flex min-h-16 items-center justify-between gap-4 py-2 lg:min-h-20">
+    <a href={localePath(lang, '/')} class="shrink-0 text-white no-underline hover:text-white">
+      <Logo />
+      <span class="sr-only">{t(lang, 'a11y.homeSuffix')}</span>
+    </a>
+
+    <nav aria-label={t(lang, 'a11y.mainNav')} class="hidden lg:block">
+      <ul class="flex items-center gap-1 xl:gap-2">
+        {
+          links.map((l) => (
+            <li>
+              <a
+                href={l.href}
+                aria-current={l.href === current ? 'page' : undefined}
+                class="block rounded-sm px-3 py-2 text-[0.9375rem] font-medium text-white no-underline hover:bg-white/10 hover:text-white aria-[current=page]:underline aria-[current=page]:decoration-yellow-400 aria-[current=page]:decoration-2"
+              >
+                {t(lang, l.key)}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <div class="flex items-center text-sm" role="group" aria-label={t(lang, 'lang.label')}>
+        <a
+          href={localePath('en', path)}
+          hreflang="en"
+          lang="en"
+          data-set-lang="en"
+          aria-current={lang === 'en' ? 'true' : undefined}
+          class="flex min-h-11 min-w-11 items-center justify-center px-2 font-semibold text-white no-underline hover:text-yellow-400 aria-[current=true]:text-yellow-400 aria-[current=true]:underline aria-[current=true]:decoration-2"
+          >{t('en', 'lang.en')}<span class="sr-only">{` ${t('en', 'lang.enName')}`}</span></a
+        >
+        <span aria-hidden="true" class="text-on-dark-muted">|</span>
+        <a
+          href={localePath('am', path)}
+          hreflang="am"
+          lang="am"
+          data-set-lang="am"
+          aria-current={lang === 'am' ? 'true' : undefined}
+          class="flex min-h-11 min-w-11 items-center justify-center px-2 font-semibold text-white no-underline hover:text-yellow-400 aria-[current=true]:text-yellow-400 aria-[current=true]:underline aria-[current=true]:decoration-2"
+          >{t('en', 'lang.am')}</a
+        >
+      </div>
+
+      <button
+        type="button"
+        class="flex min-h-11 items-center gap-2 rounded-sm px-3 font-medium text-white hover:bg-white/10 lg:hidden"
+        aria-controls="mobile-menu"
+        :aria-expanded="open.toString()"
+        aria-expanded="false"
+        @click="toggle()"
+        x-ref="toggle"
+      >
+        <span x-show="!open"><Menu size={22} aria-hidden="true" /></span>
+        <span x-show="open" x-cloak><X size={22} aria-hidden="true" /></span>
+        <span x-text="open ? labels.close : labels.menu">{t(lang, 'nav.menu')}</span>
+      </button>
+    </div>
+  </div>
+
+  <nav
+    id="mobile-menu"
+    aria-label={t(lang, 'a11y.mainNav')}
+    class="border-t border-white/15 lg:hidden"
+    x-show="open"
+    x-cloak
+    @keydown.escape.window="close(true)"
+    data-labels={JSON.stringify({ menu: t(lang, 'nav.menu'), close: t(lang, 'nav.close') })}
+  >
+    <ul class="container-site py-3">
+      {
+        links.map((l) => (
+          <li>
+            <a
+              href={l.href}
+              aria-current={l.href === current ? 'page' : undefined}
+              class="block border-b border-white/10 py-3 text-lg font-medium text-white no-underline hover:text-yellow-400"
+            >
+              {t(lang, l.key)}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+
+  {
+    lang === 'am' && (
+      <p class="bg-yellow-400 py-2 text-center text-sm font-medium text-teal-900">
+        <span lang="am">{t('am', 'lang.amNote')}</span>
+        <span class="mx-2" aria-hidden="true">/</span>
+        <span lang="en">{t('en', 'lang.amNote')}</span>
+      </p>
+    )
+  }
+</header>

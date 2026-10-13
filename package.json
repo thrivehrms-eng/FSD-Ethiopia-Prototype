@@ -1,0 +1,20 @@
+{
+  "name": "fsd-ethiopia-prototype",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "screenshots": "node scripts/screenshots.mjs"
+  },
+  "dependencies": {
+    "@lucide/astro": "1.54.0",
+    "@tailwindcss/vite": "4.3.3",
+    "alpinejs": "3.17.4",
+    "astro": "7.3.5",
+    "chart.js": "4.5.1",
+    "tailwindcss": "4.3.3"
+  }
+}

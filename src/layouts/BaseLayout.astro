@@ -1,0 +1,88 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CookieConsent from '../components/CookieConsent.astro';
+import { t, localePath, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+  /** Language-neutral path of this page, e.g. "/" or "/about/". */
+  path: string;
+  schema?: Record<string, unknown>;
+  ogType?: 'website' | 'article';
+}
+
+const { lang, title, description, path, schema, ogType = 'website' } = Astro.props;
+const site = Astro.site!;
+const canonical = new URL(localePath(lang, path), site).href;
+const alternates = (['en', 'am'] as Lang[]).map((l) => ({ lang: l, href: new URL(localePath(l, path), site).href }));
+const ogImage = new URL('/og-default.png', site).href;
+// Staging builds stay out of search engines; set PUBLIC_STAGING=false for production.
+const staging = import.meta.env.PUBLIC_STAGING !== 'false';
+---
+
+<!doctype html>
+<html lang={lang} dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {staging && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={canonical} />
+    {alternates.map((a) => <link rel="alternate" hreflang={a.lang} href={a.href} />)}
+    <link rel="alternate" hreflang="x-default" href={alternates[0].href} />
+
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content={t(lang, 'meta.siteName')} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content={lang === 'am' ? 'am_ET' : 'en_GB'} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="theme-color" content="#0F3639" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <!-- Preload the fonts behind the first heading and body text in this language. -->
+    <link rel="preload" href={lang === 'am' ? '/fonts/noto-sans-ethiopic.woff2' : '/fonts/khand-700.woff2'} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin />
+
+    <!-- Return visitors to the language they chose last time. -->
+    <script is:inline>
+      (function () {
+        try {
+          var saved = localStorage.getItem('fsd-lang');
+          var current = document.documentElement.lang;
+          if (saved && saved !== current) {
+            var alt = document.querySelector('link[rel="alternate"][hreflang="' + saved + '"]');
+            // Use the path only, so the redirect stays on whichever host serves the page.
+            if (alt) location.replace(new URL(alt.getAttribute('href')).pathname);
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <noscript><style>[data-tabpanel][hidden]{display:block!important}[data-tablist]{display:none!important}</style></noscript>
+    {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
+  </head>
+  <body class="min-h-screen bg-white antialiased">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-yellow-400 focus:px-4 focus:py-3 focus:font-medium focus:text-teal-900"
+    >
+      {t(lang, 'a11y.skip')}
+    </a>
+    <Header lang={lang} path={path} />
+    <main id="main" tabindex="-1" class="outline-none">
+      <slot />
+    </main>
+    <Footer lang={lang} />
+    <CookieConsent lang={lang} />
+    <script>
+      import '../scripts/app.ts';
+    </script>
+  </body>
+</html>

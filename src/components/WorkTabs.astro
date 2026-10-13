@@ -1,0 +1,79 @@
+---
+import { Check } from '@lucide/astro';
+import { t, langOf, localePath, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const areas = [
+  { id: 'fi', href: '/our-work/financial-inclusion/' },
+  { id: 'ac', href: '/our-work/access-to-capital/' },
+  { id: 'cf', href: '/our-work/climate-finance/' },
+];
+const k = (area: string, key: string) => `home.work.${area}.${key}`;
+---
+
+<div x-data="tabs">
+  <div
+    role="tablist"
+    data-tablist
+    aria-label={t(lang, 'home.work.tablistLabel')}
+    class="flex flex-col border-b-2 border-line sm:flex-row"
+    @keydown="onKey($event)"
+  >
+    {
+      areas.map((a, i) => (
+        <button
+          type="button"
+          role="tab"
+          id={`tab-${a.id}`}
+          aria-controls={`panel-${a.id}`}
+          aria-selected={i === 0 ? 'true' : 'false'}
+          tabindex={i === 0 ? 0 : -1}
+          :aria-selected={`(active === ${i}).toString()`}
+          :tabindex={`active === ${i} ? 0 : -1`}
+          @click={`select(${i})`}
+          class="-mb-0.5 min-h-12 cursor-pointer border-b-4 border-transparent px-1 py-3 text-left font-display text-[1.5rem] font-semibold text-teal-700 transition-colors hover:text-green-600 aria-selected:border-green-600 aria-selected:text-green-600 sm:mr-10"
+        >
+          {t(lang, k(a.id, 'tab'))}
+        </button>
+      ))
+    }
+  </div>
+
+  {
+    areas.map((a, i) => (
+      <section
+        role="tabpanel"
+        data-tabpanel
+        id={`panel-${a.id}`}
+        aria-labelledby={`tab-${a.id}`}
+        tabindex="0"
+        hidden={i !== 0}
+        x-bind:hidden={`active !== ${i}`}
+        class="grid gap-8 pt-8 lg:grid-cols-12 lg:gap-12 lg:pt-10"
+      >
+        <h3 class="sr-only">{t(lang, k(a.id, 'tab'))}</h3>
+        <p class="text-[1.25rem] leading-relaxed text-ink lg:col-span-6" lang={langOf(lang, k(a.id, 'summary'))}>
+          {t(lang, k(a.id, 'summary'))}
+        </p>
+        <div class="lg:col-span-6">
+          <p class="font-semibold text-teal-700">{t(lang, 'home.work.focusTitle')}</p>
+          <ul class="mt-3 space-y-3">
+            {['f1', 'f2', 'f3'].map((f) => (
+              <li class="flex gap-3" lang={langOf(lang, k(a.id, f))}>
+                <Check size={20} class="mt-1 shrink-0 text-green-500" aria-hidden="true" />
+                <span>{t(lang, k(a.id, f))}</span>
+              </li>
+            ))}
+          </ul>
+          <a href={localePath(lang, a.href)} class="btn btn-outline mt-6">
+            {t(lang, k(a.id, 'cta'))}
+          </a>
+        </div>
+      </section>
+    ))
+  }
+</div>

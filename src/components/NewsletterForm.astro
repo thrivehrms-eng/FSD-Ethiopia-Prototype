@@ -1,0 +1,81 @@
+---
+import { ShieldCheck } from '@lucide/astro';
+import { t, langOf, localePath, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const id = 'newsletter';
+---
+
+<form
+  class="text-white"
+  novalidate
+  aria-labelledby={`${id}-title`}
+  x-data="newsletterForm"
+  @submit.prevent="submit"
+  data-errors={JSON.stringify({ email: t(lang, 'newsletter.errorEmail'), consent: t(lang, 'newsletter.errorConsent') })}
+>
+  <h2 id={`${id}-title`} class="font-display text-[1.75rem] font-semibold">{t(lang, 'newsletter.title')}</h2>
+  <p class="mt-2 text-[0.9375rem] text-on-dark-muted" lang={langOf(lang, 'newsletter.purpose')}>{t(lang, 'newsletter.purpose')}</p>
+
+  <div x-show="!done">
+    <div class="mt-5">
+      <label for={`${id}-email`} class="block font-medium" lang={langOf(lang, 'newsletter.email')}>{t(lang, 'newsletter.email')}</label>
+      <p id={`${id}-email-hint`} class="text-sm text-on-dark-muted" lang={langOf(lang, 'newsletter.emailHint')}>{t(lang, 'newsletter.emailHint')}</p>
+      <p id={`${id}-email-error`} class="mt-1 text-sm font-medium text-yellow-400" x-show="errors.email" x-text="errors.email" x-cloak></p>
+      <input
+        id={`${id}-email`}
+        name="email"
+        type="email"
+        autocomplete="email"
+        inputmode="email"
+        required
+        class="field-input mt-2 border-white"
+        x-model="email"
+        x-ref="email"
+        :aria-invalid="errors.email ? 'true' : 'false'"
+        aria-describedby={`${id}-email-hint ${id}-email-error`}
+      />
+    </div>
+
+    <div class="mt-4 flex gap-3">
+      <input
+        id={`${id}-consent`}
+        name="consent"
+        type="checkbox"
+        class="mt-1 size-5 shrink-0 accent-yellow-400"
+        x-model="consent"
+        x-ref="consent"
+        :aria-invalid="errors.consent ? 'true' : 'false'"
+        aria-describedby={`${id}-consent-error`}
+      />
+      <div>
+        <label for={`${id}-consent`} class="text-[0.9375rem]" lang={langOf(lang, 'newsletter.consent')}>
+          {t(lang, 'newsletter.consent')}{' '}
+          <a href={localePath(lang, '/privacy/')} class="text-yellow-400 hover:text-white">{t(lang, 'newsletter.consentLink')}</a>.
+        </label>
+        <p id={`${id}-consent-error`} class="mt-1 text-sm font-medium text-yellow-400" x-show="errors.consent" x-text="errors.consent" x-cloak></p>
+      </div>
+    </div>
+
+    <p class="mt-4 text-sm text-on-dark-muted" lang={langOf(lang, 'newsletter.retention')}>
+      {t(lang, 'newsletter.retention', { period: t(lang, 'common.retention') })}
+    </p>
+
+    <div class="mt-4 flex items-center gap-3 border border-dashed border-white/40 p-3 text-sm text-on-dark-muted" lang={langOf(lang, 'common.captcha')}>
+      <ShieldCheck size={20} class="shrink-0 text-yellow-400" aria-hidden="true" />
+      <span>{t(lang, 'common.captcha')}</span>
+    </div>
+
+    <button type="submit" class="btn btn-on-dark mt-5">{t(lang, 'newsletter.submit')}</button>
+  </div>
+
+  <div role="status" aria-live="polite">
+    <p class="mt-5 border-l-4 border-yellow-400 pl-4" x-show="done" x-cloak lang={langOf(lang, 'newsletter.success')}>
+      {t(lang, 'newsletter.success')}
+    </p>
+  </div>
+</form>

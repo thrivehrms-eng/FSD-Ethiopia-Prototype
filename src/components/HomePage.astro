@@ -1,0 +1,278 @@
+---
+import { Quote } from '@lucide/astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Waffle from './Waffle.astro';
+import SourceLink from './SourceLink.astro';
+import Zigzag from './Zigzag.astro';
+import WorkTabs from './WorkTabs.astro';
+import BoardSeatsChart from './BoardSeatsChart.astro';
+import figures from '../data/figures.json';
+import insights from '../data/insights.json';
+import opportunities from '../data/opportunities.json';
+import site from '../data/site.json';
+import { t, langOf, localePath, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const women = figures.digitalPaymentsWomen;
+const men = figures.digitalPaymentsMen;
+const today = new Date();
+const fmtDate = (iso: string) =>
+  new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(iso));
+const areaKey: Record<string, string> = { fi: 'home.work.fi.tab', ac: 'home.work.ac.tab', cf: 'home.work.cf.tab' };
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: site.name,
+  legalName: site.legalName,
+  url: Astro.site!.href,
+  logo: new URL('/favicon.svg', Astro.site).href,
+  email: site.email,
+  telephone: site.phone,
+  foundingDate: String(site.foundingYear),
+  address: { '@type': 'PostalAddress', ...site.address },
+  parentOrganization: { '@type': 'Organization', name: 'FSD Network' },
+  funder: site.funders.map((name) => ({ '@type': 'Organization', name })),
+};
+
+const h2 = 'font-display text-[2.25rem] font-semibold text-teal-700 sm:text-[2.75rem]';
+---
+
+<BaseLayout lang={lang} title={t(lang, 'meta.home.title')} description={t(lang, 'meta.home.description')} path="/" schema={schema}>
+  <!-- Hero: the mission, beside the gap the work exists to close. -->
+  <section class="on-dark relative overflow-hidden bg-teal-900 text-white" aria-labelledby="hero-title">
+    <div class="brand-gradient absolute inset-y-0 left-0 w-full opacity-60 lg:w-2/3" aria-hidden="true"></div>
+    <div class="container-site relative grid gap-12 py-14 lg:grid-cols-12 lg:gap-10 lg:py-24">
+      <div class="lg:col-span-7 lg:pr-6">
+        <h1 id="hero-title" class="text-[2.75rem] font-bold sm:text-[3.75rem] lg:text-[4.5rem]" lang={langOf(lang, 'home.hero.title')}>
+          {t(lang, 'home.hero.title')}
+        </h1>
+        <p class="mt-6 max-w-[38rem] text-[1.1875rem] leading-relaxed text-white/90" lang={langOf(lang, 'home.hero.lead')}>
+          {t(lang, 'home.hero.lead')}
+        </p>
+        <div class="mt-9 flex flex-wrap gap-3">
+          <a href="#our-work" class="btn btn-on-dark">{t(lang, 'home.hero.ctaWork')}</a>
+          <a href="#insights" class="btn btn-outline-on-dark">{t(lang, 'home.hero.ctaInsights')}</a>
+        </div>
+      </div>
+
+      <figure class="self-end border-t-4 border-yellow-400 bg-teal-900/80 p-5 sm:p-7 lg:col-span-5" aria-labelledby="gap-title">
+        <h2 id="gap-title" class="font-display text-[1.75rem] font-semibold" lang={langOf(lang, 'home.gap.title')}>
+          {t(lang, 'home.gap.title')}
+        </h2>
+        <p class="mt-2 text-white/90" lang="en">{t(lang, 'home.gap.summary', { women: women.value, men: men.value })}</p>
+        <div class="mt-6 grid grid-cols-2 gap-5 sm:gap-8">
+          <div>
+            <p class="mb-3 flex items-baseline justify-between gap-2" lang="en">
+              <span class="font-semibold">{t(lang, 'home.gap.women')}</span>
+              <span class="font-display text-[2rem] font-bold leading-none text-yellow-400">{women.value}%</span>
+            </p>
+            <Waffle value={women.value} tone="yellow" />
+            <p class="mt-2 text-sm text-on-dark-muted" lang="en">{t(lang, 'home.gap.of100', { value: women.value })}</p>
+          </div>
+          <div>
+            <p class="mb-3 flex items-baseline justify-between gap-2" lang="en">
+              <span class="font-semibold">{t(lang, 'home.gap.men')}</span>
+              <span class="font-display text-[2rem] font-bold leading-none">{men.value}%</span>
+            </p>
+            <Waffle value={men.value} tone="white" />
+            <p class="mt-2 text-sm text-on-dark-muted" lang="en">{t(lang, 'home.gap.of100', { value: men.value })}</p>
+          </div>
+        </div>
+        <details class="mt-5" lang="en">
+          <summary class="cursor-pointer font-medium text-white underline underline-offset-[0.2em] hover:text-yellow-400">
+            {t(lang, 'common.viewTable')}
+          </summary>
+          <table class="mt-3 w-full text-left text-[0.9375rem]">
+            <caption class="sr-only">{t(lang, 'home.gap.tableCaption')}</caption>
+            <thead>
+              <tr class="border-b border-white/40">
+                <th scope="col" class="py-2">{t(lang, 'home.gap.colGroup')}</th>
+                <th scope="col" class="py-2 text-right">{t(lang, 'home.gap.colShare')}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-white/15">
+                <th scope="row" class="py-2 font-normal">{t(lang, 'home.gap.women')}</th>
+                <td class="py-2 text-right tabular-nums">{women.value}</td>
+              </tr>
+              <tr>
+                <th scope="row" class="py-2 font-normal">{t(lang, 'home.gap.men')}</th>
+                <td class="py-2 text-right tabular-nums">{men.value}</td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+        <div class="mt-4">
+          <SourceLink lang={lang} title={women.sourceTitle} url={women.sourceUrl} dark />
+        </div>
+      </figure>
+    </div>
+    <Zigzag class="text-white" />
+  </section>
+
+  <!-- Who we are -->
+  <section class="container-site grid gap-6 py-16 lg:grid-cols-12 lg:gap-10 lg:py-24" aria-labelledby="about-title">
+    <h2 id="about-title" class={`${h2} lg:col-span-4`} lang={langOf(lang, 'home.about.title')}>{t(lang, 'home.about.title')}</h2>
+    <div class="max-w-[40rem] lg:col-span-8">
+      <p class="text-[1.25rem] leading-relaxed" lang="en">{t(lang, 'home.about.body')}</p>
+      <p class="mt-5 border-l-4 border-green-600 pl-5 text-[1.125rem] text-teal-700" lang="en">{t(lang, 'home.about.vision')}</p>
+      <div class="mt-4">
+        <SourceLink lang={lang} title="Ethiopia’s financial sector set for transformation with launch of FSD Ethiopia" url={site.launchSource} />
+      </div>
+      <a href={localePath(lang, '/about/')} class="btn btn-outline mt-7">{t(lang, 'home.about.cta')}</a>
+    </div>
+  </section>
+
+  <!-- Our work -->
+  <section id="our-work" class="bg-mist" aria-labelledby="work-title">
+    <div class="container-site py-16 lg:py-24">
+      <div class="max-w-[42rem]">
+        <h2 id="work-title" class={h2} lang={langOf(lang, 'home.work.title')}>{t(lang, 'home.work.title')}</h2>
+        <p class="mt-4 text-[1.125rem]" lang="en">{t(lang, 'home.work.intro')}</p>
+      </div>
+      <div class="mt-10">
+        <WorkTabs lang={lang} />
+      </div>
+    </div>
+    <Zigzag class="text-white" />
+  </section>
+
+  <!-- Women as leaders -->
+  <section class="container-site grid grid-cols-1 gap-12 py-16 lg:grid-cols-12 lg:gap-10 lg:py-24" aria-labelledby="boards-title">
+    <div class="lg:col-span-5">
+      <h2 id="boards-title" class={h2} lang={langOf(lang, 'home.boards.title')}>{t(lang, 'home.boards.title')}</h2>
+      <p class="mt-5 text-[1.125rem]" lang="en">
+        {t(lang, 'home.boards.body', { banks: figures.womenBankBoardSeats.value, ecma: figures.ecmaIssuerBoardMinimum.value })}
+      </p>
+      <h3 class="mt-10 font-display text-[1.75rem] font-semibold text-teal-700" lang={langOf(lang, 'home.boards.programmeTitle')}>
+        {t(lang, 'home.boards.programmeTitle')}
+      </h3>
+      <p class="mt-3" lang="en">{t(lang, 'home.boards.programmeBody')}</p>
+      <blockquote class="mt-6 bg-mist p-5">
+        <Quote size={24} class="text-green-500" aria-hidden="true" />
+        <p class="mt-2 text-[1.125rem] italic text-teal-700" lang="en">{t(lang, 'common.quotePending')}</p>
+        <footer class="mt-2 text-sm" lang="en">{t(lang, 'home.boards.quoteBy')}</footer>
+      </blockquote>
+      <a href={localePath(lang, '/board-ready/')} class="btn btn-primary mt-7">{t(lang, 'home.boards.cta')}</a>
+    </div>
+    <div class="min-w-0 lg:col-span-6 lg:col-start-7 lg:pt-3">
+      <BoardSeatsChart lang={lang} />
+    </div>
+  </section>
+
+  <!-- Latest insights -->
+  <section id="insights" class="border-t border-line" aria-labelledby="insights-title">
+    <div class="container-site py-16 lg:py-24">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <h2 id="insights-title" class={h2} lang={langOf(lang, 'home.insights.title')}>{t(lang, 'home.insights.title')}</h2>
+          <p class="mt-3 text-[1.125rem]" lang="en">{t(lang, 'home.insights.intro')}</p>
+        </div>
+        <a href={localePath(lang, '/insights/')} class="font-medium">{t(lang, 'home.insights.all')}</a>
+      </div>
+      <ol class="mt-10 divide-y divide-line border-y border-line" lang="en">
+        {
+          insights.map((post) => (
+            <li class="grid gap-2 py-6 sm:grid-cols-12 sm:gap-6">
+              <p class="text-sm text-ink/80 sm:col-span-3">
+                <span class="font-semibold text-teal-700">{t(lang, `home.insights.types.${post.type}`)}</span>
+                <br class="hidden sm:block" />
+                <span class="sm:hidden">, </span>
+                <time datetime={post.date}>{fmtDate(post.date)}</time>
+              </p>
+              <div class="sm:col-span-9">
+                <h3 class="font-sans text-[1.1875rem] font-semibold leading-snug">
+                  <a href={post.url} class="text-ink no-underline hover:text-green-600 hover:underline">
+                    {post.title}
+                  </a>
+                </h3>
+                {post.area && <p class="mt-1 text-sm text-green-600">{t(lang, areaKey[post.area])}</p>}
+              </div>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <!-- Work with us -->
+  <section class="on-dark bg-teal-900 text-white" aria-labelledby="opps-title">
+    <Zigzag class="text-white" />
+    <div class="container-site py-16 lg:py-24">
+      <div class="max-w-[42rem]">
+        <h2 id="opps-title" class="font-display text-[2.25rem] font-semibold sm:text-[2.75rem]" lang={langOf(lang, 'home.opps.title')}>
+          {t(lang, 'home.opps.title')}
+        </h2>
+        <p class="mt-3 text-[1.125rem] text-white/90" lang="en">{t(lang, 'home.opps.intro')}</p>
+      </div>
+
+      <div class="mt-10 grid gap-10 lg:grid-cols-12">
+        <div class="lg:col-span-6">
+          <h3 class="font-display text-[1.75rem] font-semibold text-yellow-400" lang={langOf(lang, 'home.opps.procurement')}>
+            {t(lang, 'home.opps.procurement')}
+          </h3>
+          <ul class="mt-4 space-y-4" lang="en">
+            {
+              opportunities.procurement.map((o) => {
+                const open = new Date(`${o.deadline}T23:59:59+03:00`) >= today;
+                return (
+                  <li class="border-l-4 border-yellow-400 pl-5">
+                    <p class="text-sm text-on-dark-muted">{o.kind}</p>
+                    <p class="mt-1 text-[1.125rem] font-semibold">
+                      <a href={o.url} class="text-white hover:text-yellow-400">{o.title}</a>
+                    </p>
+                    <p class="mt-2 text-sm">
+                      <span class="font-semibold">{open ? t(lang, 'common.open') : t(lang, 'common.closed')}</span>
+                      {', '}
+                      {t(lang, 'common.deadline')} <time datetime={o.deadline}>{fmtDate(o.deadline)}</time>
+                    </p>
+                  </li>
+                );
+              })
+            }
+          </ul>
+          <a href={opportunities.procurementUrl} class="btn btn-outline-on-dark mt-6">{t(lang, 'home.opps.procurementCta')}</a>
+        </div>
+
+        <div class="grid gap-10 sm:grid-cols-2 lg:col-span-6">
+          <div>
+            <h3 class="font-display text-[1.75rem] font-semibold text-yellow-400" lang={langOf(lang, 'home.opps.careers')}>
+              {t(lang, 'home.opps.careers')}
+            </h3>
+            <p class="mt-3 text-white/90" lang="en">{t(lang, 'home.opps.careersBody')}</p>
+            <a href={opportunities.careersUrl} class="mt-4 inline-block font-medium text-white hover:text-yellow-400">
+              {t(lang, 'home.opps.careersCta')}
+            </a>
+          </div>
+          <div>
+            <h3 class="font-display text-[1.75rem] font-semibold text-yellow-400" lang={langOf(lang, 'home.opps.partner')}>
+              {t(lang, 'home.opps.partner')}
+            </h3>
+            <p class="mt-3 text-white/90" lang="en">{t(lang, 'home.opps.partnerBody')}</p>
+            <a href={localePath(lang, '/contact/')} class="mt-4 inline-block font-medium text-white hover:text-yellow-400">
+              {t(lang, 'home.opps.partnerCta')}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Funders -->
+  <section class="container-site flex flex-col gap-6 py-12 sm:flex-row sm:items-center sm:gap-12" aria-labelledby="funders-title">
+    <h2 id="funders-title" class="font-display text-[1.5rem] font-semibold text-teal-700" lang={langOf(lang, 'home.funders.title')}>
+      {t(lang, 'home.funders.title')}
+    </h2>
+    <ul class="flex flex-wrap gap-x-10 gap-y-2 text-[1.125rem] font-semibold" lang="en">
+      {site.funders.map((f) => <li>{f}</li>)}
+    </ul>
+    <p class="text-[0.9375rem] sm:ml-auto" lang={langOf(lang, 'home.funders.network')}>
+      <a href="#footer-network">{t(lang, 'home.funders.network')}</a>
+    </p>
+  </section>
+</BaseLayout>
