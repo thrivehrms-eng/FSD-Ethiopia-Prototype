@@ -1,0 +1,25 @@
+---
+// Section title in condensed caps followed by a 2px green rule that fills the
+// rest of the row (CLAUDE.md 3.3). On mobile the rule sits under the title.
+// Anything in the default slot (arrow buttons, a link) sits at the end of the row.
+import { langOf, t, type Lang } from '../../i18n';
+
+interface Props {
+  lang: Lang;
+  /** i18n key for the title text. */
+  k: string;
+  id: string;
+  level?: 2 | 3;
+  tone?: 'light' | 'dark';
+  class?: string;
+}
+
+const { lang, k, id, level = 2, tone = 'light', class: className } = Astro.props;
+const Tag = `h${level}` as 'h2' | 'h3';
+---
+
+<div class:list={['flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6', className]}>
+  <Tag id={id} class:list={['t-section shrink-0', tone === 'dark' && 'text-white']} lang={langOf(lang, k)}>{t(lang, k)}</Tag>
+  <span class:list={['h-0.5 w-16 shrink-0 sm:w-auto sm:flex-1', tone === 'dark' ? 'bg-yellow-400' : 'bg-green-600']} aria-hidden="true"></span>
+  {Astro.slots.has('default') && <div class="flex shrink-0 items-center gap-3"><slot /></div>}
+</div>

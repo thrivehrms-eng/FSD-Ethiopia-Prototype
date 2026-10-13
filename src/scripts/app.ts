@@ -176,4 +176,162 @@ Alpine.data('tabs', () => ({
   },
 }));
 
+
+// Reveal on scroll (CLAUDE.md 3.5): once per element; skipped under reduced motion.
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const revealTargets = document.querySelectorAll<HTMLElement>('[data-reveal]');
+if (reduceMotion || !('IntersectionObserver' in window)) {
+  revealTargets.forEach((el) => el.classList.add('is-visible'));
+} else {
+  const io = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      }
+    },
+    { rootMargin: '0px 0px -8% 0px' },
+  );
+  revealTargets.forEach((el) => io.observe(el));
+}
+
+// Header: transparent over the hero, teal with a shadow after 80px of scrolling.
+Alpine.data('siteHeader', () => ({
+  scrolled: false,
+  init() {
+    const update = () => (this.scrolled = window.scrollY > 80);
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+  },
+}));
+
+// Native <dialog> modals: focus is trapped and Escape closes them. Focus returns to the opener.
+Alpine.data('modal', () => ({
+  opener: null as HTMLElement | null,
+  open(opener?: EventTarget | null) {
+    this.opener = (opener as HTMLElement) ?? (document.activeElement as HTMLElement);
+    (this.$refs.dialog as HTMLDialogElement).showModal();
+  },
+  close() {
+    (this.$refs.dialog as HTMLDialogElement).close();
+  },
+  restoreFocus() {
+    this.opener?.focus();
+  },
+}));
+
+document.addEventListener('click', (event) => {
+  const trigger = (event.target as HTMLElement).closest<HTMLElement>('[data-open-dialog]');
+  if (!trigger) return;
+  const dialog = document.getElementById(trigger.dataset.openDialog!) as HTMLDialogElement | null;
+  if (!dialog) return;
+  event.preventDefault();
+  dialog.dispatchEvent(new CustomEvent('open-request', { detail: trigger }));
+});
+
+// Announcement bar: dismissal is remembered per opportunity.
+Alpine.data('announcement', (id: string) => ({
+  visible: true,
+  init() {
+    try {
+      this.visible = localStorage.getItem(`fsd-announce:${id}`) !== 'dismissed';
+    } catch {
+      /* show it */
+    }
+  },
+  dismiss() {
+    this.visible = false;
+    try {
+      localStorage.setItem(`fsd-announce:${id}`, 'dismissed');
+    } catch {
+      /* ignore */
+    }
+    document.getElementById('main')?.focus();
+  },
+}));
+
+// Manual slider (CLAUDE.md 4.6 and 4.11). Nothing moves on its own.
+// mode "single": one slide shows at a time. mode "scroll": cards scroll and peek.
+Alpine.data('slider', (mode: 'single' | 'scroll' = 'single') => ({
+  index: 0,
+  count: 0,
+  atStart: true,
+  atEnd: false,
+  init() {
+    const root = this.$el as HTMLElement;
+    this.count = root.querySelectorAll('[data-slide]').length;
+    if (mode === 'scroll') {
+      const track = this.$refs.track as HTMLElement;
+      const update = () => {
+        this.atStart = track.scrollLeft <= 4;
+        this.atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+      };
+      update();
+      track.addEventListener('scroll', update, { passive: true });
+      window.addEventListener('resize', update, { passive: true });
+    } else {
+      this.sync();
+    }
+  },
+  sync() {
+    this.atStart = this.index === 0;
+    this.atEnd = this.index === this.count - 1;
+  },
+  step() {
+    const track = this.$refs.track as HTMLElement;
+    const first = track.querySelector<HTMLElement>('[data-slide]');
+    const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+    return (first?.offsetWidth ?? track.clientWidth) + gap;
+  },
+  go(i: number) {
+    if (mode === 'scroll') {
+      const track = this.$refs.track as HTMLElement;
+      track.scrollBy({ left: i * this.step(), behavior: reduceMotion ? 'auto' : 'smooth' });
+      return;
+    }
+    this.index = Math.max(0, Math.min(this.count - 1, i));
+    this.sync();
+  },
+  prev() {
+    mode === 'scroll' ? this.go(-1) : this.go(this.index - 1);
+  },
+  next() {
+    mode === 'scroll' ? this.go(1) : this.go(this.index + 1);
+  },
+  onKey(e: KeyboardEvent) {
+    if ((e.target as HTMLElement).closest('input, textarea, select, [role="tablist"]')) return;
+    if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      this.prev();
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      this.next();
+    }
+  },
+}));
+
+// Site search with Fuse.js, loaded only when the search dialog opens.
+Alpine.data('siteSearch', () => ({
+  query: '',
+  results: [] as { title: string; url: string; type: string; summary: string }[],
+  ready: false,
+  fuse: null as null | { search: (q: string, o?: object) => { item: { title: string; url: string; type: string; summary: string } }[] },
+  async load() {
+    if (this.fuse) return;
+    const [{ default: Fuse }, index] = await Promise.all([
+      import('fuse.js'),
+      fetch(document.documentElement.dataset.searchIndex ?? '/search-index.json').then((r) => r.json()),
+    ]);
+    this.fuse = new Fuse(index, { keys: ['title', 'summary', 'type'], threshold: 0.35, ignoreLocation: true });
+    this.ready = true;
+    this.search();
+  },
+  search() {
+    const q = this.query.trim();
+    this.results = q && this.fuse ? this.fuse.search(q, { limit: 8 }).map((r) => r.item) : [];
+  },
+}));
+
 Alpine.start();

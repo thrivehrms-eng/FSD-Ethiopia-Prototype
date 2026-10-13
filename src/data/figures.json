@@ -32,5 +32,77 @@
     "sourceTitle": "Unlock capital markets to advance women’s economic participation and leadership, FSD Ethiopia",
     "sourceUrl": "https://fsdethiopia.org/wp-content/pdf/FSD_call_to_action.pdf",
     "verified": false
+  },
+  "established": {
+    "value": 2022,
+    "label": "Year FSD Ethiopia was established",
+    "sourceTitle": "About us, FSD Ethiopia",
+    "sourceUrl": "https://fsdethiopia.org/about-us-2/",
+    "verified": false,
+    "note": "Most FSD pages say 2022 (launch 19 May 2022); a few older pages say 2021."
+  },
+  "programmeAreas": {
+    "value": 3,
+    "label": "Programme areas: Financial Inclusion, Access to Capital, Climate Finance",
+    "sourceTitle": "Our work, FSD Ethiopia",
+    "sourceUrl": "https://fsdethiopia.org/our-work-2/",
+    "verified": false
+  },
+  "regionsWithCoordinators": {
+    "value": 7,
+    "label": "Regions with FSD regional coordinators",
+    "sourceTitle": "Our team, FSD Ethiopia",
+    "sourceUrl": "https://fsdethiopia.org/our-team/",
+    "verified": false
+  },
+  "cohortWomen": {
+    "value": 40,
+    "label": "Women in the Board Ready cohorts",
+    "sourceTitle": "Board Ready cohort, FSD Ethiopia",
+    "sourceUrl": "https://fsdethiopia.org/cohort/",
+    "verified": false,
+    "note": "Figure from the CLAUDE.md v2 brief (cohort page inspected 13 Oct 2026). A search found 35 named members; confirm the total."
+  },
+  "mobileMoneyAccounts2025": {
+    "value": 139.5,
+    "unit": "million",
+    "display": "139.5 million",
+    "period": "June 2025",
+    "label": "Registered mobile money accounts in Ethiopia (accounts, not unique users; 12.2 million in 2020)",
+    "sourceTitle": "National Bank of Ethiopia, draft National Digital Payments Strategy 2026–2030, cited by FSD Ethiopia",
+    "sourceUrl": "https://fsdethiopia.org/2026/03/26/designing-digital-finance-markets-that-work-for-women/",
+    "primarySourceUrl": "https://nbe.gov.et/wp-content/uploads/2025/12/NATIONAL_DIGITAL_PAYMENT_STRATEGY_2026-2030_Draft_Document.pdf",
+    "verified": false,
+    "note": "Confirmed by two independent search results; the NBE document is a draft, and NBE has since cited a higher total (157 million). Check before submission."
+  },
+  "accountOwnershipWomen2024": {
+    "value": 42,
+    "unit": "%",
+    "year": 2024,
+    "label": "Women aged 15+ with an account at a financial institution or mobile money provider",
+    "sourceTitle": "Gender Integration as a Market Systems Strategy, FSD Ethiopia (citing World Bank Global Findex 2025)",
+    "sourceUrl": "https://fsdethiopia.org/2026/07/21/gender-integration-as-a-market-systems-strategy-advancing-womens-financial-inclusion/",
+    "verified": false,
+    "note": "Unrounded 41.6% per UNCDF citing Findex 2024 data; one fact-checker could not reproduce it. Check the Findex 2025 Ethiopia data."
+  },
+  "accountOwnershipMen2024": {
+    "value": 57,
+    "unit": "%",
+    "year": 2024,
+    "label": "Men aged 15+ with an account at a financial institution or mobile money provider",
+    "sourceTitle": "Gender Integration as a Market Systems Strategy, FSD Ethiopia (citing World Bank Global Findex 2025)",
+    "sourceUrl": "https://fsdethiopia.org/2026/07/21/gender-integration-as-a-market-systems-strategy-advancing-womens-financial-inclusion/",
+    "verified": false,
+    "note": "Unrounded 56.5% per UNCDF citing Findex 2024 data."
+  },
+  "accountOwnershipAll2024": {
+    "value": 49,
+    "unit": "%",
+    "year": 2024,
+    "label": "Adults aged 15+ with an account (46% in 2021, 35% in 2017)",
+    "sourceTitle": "Ethiopia’s Open Finance Future Is Closer Than It Looks, FSD Ethiopia (citing World Bank Global Findex 2025)",
+    "sourceUrl": "https://fsdethiopia.org/2026/07/20/ethiopias-open-finance-future-is-closer-than-it-looks/",
+    "verified": false,
+    "note": "Confirmed by FSD's blog and Shega's Findex 2025 analysis."
   }
 }

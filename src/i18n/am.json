@@ -1,99 +1,287 @@
 {
   "_note": "Amharic sample for the prototype. Every entry is flagged review: native-speaker and must be checked before use. Body copy is not translated; it falls back to English.",
   "a11y": {
-    "skip": { "text": "ወደ ዋናው ይዘት ይለፉ", "review": "native-speaker" },
-    "homeSuffix": { "text": "መነሻ ገጽ", "review": "native-speaker" }
+    "skip": {
+      "text": "ወደ ዋናው ይዘት ይለፉ",
+      "review": "native-speaker"
+    },
+    "homeSuffix": {
+      "text": "መነሻ ገጽ",
+      "review": "native-speaker"
+    }
   },
   "nav": {
-    "about": { "text": "ስለ እኛ", "review": "native-speaker" },
-    "work": { "text": "ሥራዎቻችን", "review": "native-speaker" },
-    "boardReady": { "text": "የቦርድ ዝግጁነት", "review": "native-speaker" },
-    "insights": { "text": "ጥናቶችና ዜናዎች", "review": "native-speaker" },
-    "opportunities": { "text": "ዕድሎች", "review": "native-speaker" },
-    "contact": { "text": "ያግኙን", "review": "native-speaker" },
-    "menu": { "text": "ምናሌ", "review": "native-speaker" },
-    "close": { "text": "ምናሌውን ዝጋ", "review": "native-speaker" }
+    "about": {
+      "text": "ስለ እኛ",
+      "review": "native-speaker"
+    },
+    "work": {
+      "text": "ሥራዎቻችን",
+      "review": "native-speaker"
+    },
+    "boardReady": {
+      "text": "የቦርድ ዝግጁነት",
+      "review": "native-speaker"
+    },
+    "insights": {
+      "text": "ጥናቶችና ዜናዎች",
+      "review": "native-speaker"
+    },
+    "opportunities": {
+      "text": "ዕድሎች",
+      "review": "native-speaker"
+    },
+    "contact": {
+      "text": "ያግኙን",
+      "review": "native-speaker"
+    },
+    "menu": {
+      "text": "ምናሌ",
+      "review": "native-speaker"
+    },
+    "close": {
+      "text": "ምናሌውን ዝጋ",
+      "review": "native-speaker"
+    }
   },
   "lang": {
-    "label": { "text": "ቋንቋ", "review": "native-speaker" },
-    "amNote": { "text": "የአማርኛ ናሙና – የመጨረሻው ጽሑፍ በFSD ኢትዮጵያ ይቀርባል", "review": "native-speaker" }
+    "label": {
+      "text": "ቋንቋ",
+      "review": "native-speaker"
+    },
+    "amNote": {
+      "text": "የአማርኛ ናሙና – የመጨረሻው ጽሑፍ በFSD ኢትዮጵያ ይቀርባል",
+      "review": "native-speaker"
+    }
   },
   "common": {
-    "readMore": { "text": "ተጨማሪ ያንብቡ", "review": "native-speaker" }
+    "readMore": {
+      "text": "ተጨማሪ ያንብቡ",
+      "review": "native-speaker"
+    },
+    "downloadPdf": {
+      "text": "PDF ያውርዱ",
+      "review": "native-speaker"
+    }
   },
   "home": {
     "hero": {
-      "title": { "text": "ለኢትዮጵያ ሕዝብና ኢኮኖሚ የሚሠራ የፋይናንስ ሥርዓት", "review": "native-speaker" },
-      "lead": { "text": "FSD ኢትዮጵያ የሀገሪቱን የፋይናንስ ገበያዎች ወደኋላ የሚያስቀሩ ችግሮችን ይለያል፤ ከዚያም ከተቆጣጣሪዎች፣ ከፖሊሲ አውጪዎችና ከገበያ ተዋናዮች ጋር በቴክኒክ ድጋፍ፣ በእርዳታና በጥናት ይፈታቸዋል።", "review": "native-speaker" },
-      "ctaWork": { "text": "ሥራችንን ይመልከቱ", "review": "native-speaker" },
-      "ctaInsights": { "text": "የቅርብ ጊዜ ጥናቶቻችንን ያንብቡ", "review": "native-speaker" }
+      "title": {
+        "text": "ለኢትዮጵያ ሕዝብና ኢኮኖሚ የሚሠራ የፋይናንስ ሥርዓት",
+        "review": "native-speaker"
+      },
+      "lead": {
+        "text": "FSD ኢትዮጵያ የሀገሪቱን የፋይናንስ ገበያዎች ወደኋላ የሚያስቀሩ ችግሮችን ይለያል፤ ከዚያም ከተቆጣጣሪዎች፣ ከፖሊሲ አውጪዎችና ከገበያ ተዋናዮች ጋር በቴክኒክ ድጋፍ፣ በእርዳታና በጥናት ይፈታቸዋል።",
+        "review": "native-speaker"
+      },
+      "ctaWork": {
+        "text": "ሥራችንን ይመልከቱ",
+        "review": "native-speaker"
+      },
+      "ctaInsights": {
+        "text": "የቅርብ ጊዜ ጥናቶቻችንን ያንብቡ",
+        "review": "native-speaker"
+      }
     },
     "gap": {
-      "title": { "text": "የዲጂታል ክፍያ ልዩነት", "review": "native-speaker" }
+      "title": {
+        "text": "የዲጂታል ክፍያ ልዩነት",
+        "review": "native-speaker"
+      }
     },
     "about": {
-      "title": { "text": "እኛ ማን ነን", "review": "native-speaker" },
-      "cta": { "text": "ስለ FSD ኢትዮጵያ", "review": "native-speaker" }
+      "title": {
+        "text": "እኛ ማን ነን",
+        "review": "native-speaker"
+      },
+      "cta": {
+        "text": "ስለ FSD ኢትዮጵያ",
+        "review": "native-speaker"
+      }
     },
     "work": {
-      "title": { "text": "ሥራዎቻችን", "review": "native-speaker" },
-      "focusTitle": { "text": "የአሁኑ ትኩረት", "review": "native-speaker" },
+      "title": {
+        "text": "ሥራዎቻችን",
+        "review": "native-speaker"
+      },
+      "focusTitle": {
+        "text": "የአሁኑ ትኩረት",
+        "review": "native-speaker"
+      },
       "fi": {
-        "tab": { "text": "የፋይናንስ አካታችነት", "review": "native-speaker" },
-        "cta": { "text": "የፋይናንስ አካታችነትን ይመልከቱ", "review": "native-speaker" }
+        "tab": {
+          "text": "የፋይናንስ አካታችነት",
+          "review": "native-speaker"
+        },
+        "cta": {
+          "text": "የፋይናንስ አካታችነትን ይመልከቱ",
+          "review": "native-speaker"
+        }
       },
       "ac": {
-        "tab": { "text": "የካፒታል ተደራሽነት", "review": "native-speaker" },
-        "cta": { "text": "የካፒታል ተደራሽነትን ይመልከቱ", "review": "native-speaker" }
+        "tab": {
+          "text": "የካፒታል ተደራሽነት",
+          "review": "native-speaker"
+        },
+        "cta": {
+          "text": "የካፒታል ተደራሽነትን ይመልከቱ",
+          "review": "native-speaker"
+        }
       },
       "cf": {
-        "tab": { "text": "የአየር ንብረት ፋይናንስ", "review": "native-speaker" },
-        "cta": { "text": "የአየር ንብረት ፋይናንስን ይመልከቱ", "review": "native-speaker" }
+        "tab": {
+          "text": "የአየር ንብረት ፋይናንስ",
+          "review": "native-speaker"
+        },
+        "cta": {
+          "text": "የአየር ንብረት ፋይናንስን ይመልከቱ",
+          "review": "native-speaker"
+        }
       }
     },
     "boards": {
-      "title": { "text": "የኢትዮጵያን የፋይናንስ ቦርዶች የሚመሩ ሴቶች", "review": "native-speaker" },
-      "programmeTitle": { "text": "የቦርድ ዝግጁነት ፕሮግራም", "review": "native-speaker" },
-      "cta": { "text": "ተሳታፊዎቹን ይተዋወቁ", "review": "native-speaker" }
+      "title": {
+        "text": "የኢትዮጵያን የፋይናንስ ቦርዶች የሚመሩ ሴቶች",
+        "review": "native-speaker"
+      },
+      "programmeTitle": {
+        "text": "የቦርድ ዝግጁነት ፕሮግራም",
+        "review": "native-speaker"
+      },
+      "cta": {
+        "text": "ተሳታፊዎቹን ይተዋወቁ",
+        "review": "native-speaker"
+      }
     },
     "insights": {
-      "title": { "text": "የቅርብ ጊዜ ጥናቶችና ዜናዎች", "review": "native-speaker" },
-      "all": { "text": "ሁሉንም ይመልከቱ", "review": "native-speaker" }
+      "title": {
+        "text": "የቅርብ ጊዜ ጥናቶችና ዜናዎች",
+        "review": "native-speaker"
+      },
+      "all": {
+        "text": "ሁሉንም ይመልከቱ",
+        "review": "native-speaker"
+      }
     },
     "opps": {
-      "title": { "text": "ከእኛ ጋር ይሥሩ", "review": "native-speaker" },
-      "procurement": { "text": "ግዥ", "review": "native-speaker" },
-      "procurementCta": { "text": "ሁሉንም የግዥ ዕድሎች ይመልከቱ", "review": "native-speaker" },
-      "careers": { "text": "የሥራ ዕድሎች", "review": "native-speaker" },
-      "careersCta": { "text": "ክፍት የሥራ መደቦችን ይመልከቱ", "review": "native-speaker" },
-      "partner": { "text": "አጋርነት", "review": "native-speaker" },
-      "partnerCta": { "text": "ቡድናችንን ያግኙ", "review": "native-speaker" }
+      "title": {
+        "text": "ከእኛ ጋር ይሥሩ",
+        "review": "native-speaker"
+      },
+      "procurement": {
+        "text": "ግዥ",
+        "review": "native-speaker"
+      },
+      "procurementCta": {
+        "text": "ሁሉንም የግዥ ዕድሎች ይመልከቱ",
+        "review": "native-speaker"
+      },
+      "careers": {
+        "text": "የሥራ ዕድሎች",
+        "review": "native-speaker"
+      },
+      "careersCta": {
+        "text": "ክፍት የሥራ መደቦችን ይመልከቱ",
+        "review": "native-speaker"
+      },
+      "partner": {
+        "text": "አጋርነት",
+        "review": "native-speaker"
+      },
+      "partnerCta": {
+        "text": "ቡድናችንን ያግኙ",
+        "review": "native-speaker"
+      }
     },
     "funders": {
-      "title": { "text": "የገንዘብ ድጋፍ ሰጪዎች", "review": "native-speaker" },
-      "network": { "text": "የFSD ኔትወርክ አባል", "review": "native-speaker" }
+      "title": {
+        "text": "የገንዘብ ድጋፍ ሰጪዎች",
+        "review": "native-speaker"
+      },
+      "network": {
+        "text": "የFSD ኔትወርክ አባል",
+        "review": "native-speaker"
+      }
     }
   },
   "footer": {
-    "contactTitle": { "text": "ያግኙን", "review": "native-speaker" },
-    "followTitle": { "text": "ይከተሉን", "review": "native-speaker" },
-    "networkTitle": { "text": "የFSD ኔትወርክ", "review": "native-speaker" },
-    "legalTitle": { "text": "የእርስዎ መረጃ እና ይህ ድረ-ገጽ", "review": "native-speaker" },
-    "privacy": { "text": "የግላዊነት ማስታወቂያ", "review": "native-speaker" },
-    "accessibility": { "text": "የተደራሽነት መግለጫ", "review": "native-speaker" },
-    "cookies": { "text": "የኩኪ ቅንብሮች", "review": "native-speaker" }
+    "contactTitle": {
+      "text": "ያግኙን",
+      "review": "native-speaker"
+    },
+    "followTitle": {
+      "text": "ይከተሉን",
+      "review": "native-speaker"
+    },
+    "networkTitle": {
+      "text": "የFSD ኔትወርክ",
+      "review": "native-speaker"
+    },
+    "legalTitle": {
+      "text": "የእርስዎ መረጃ እና ይህ ድረ-ገጽ",
+      "review": "native-speaker"
+    },
+    "privacy": {
+      "text": "የግላዊነት ማስታወቂያ",
+      "review": "native-speaker"
+    },
+    "accessibility": {
+      "text": "የተደራሽነት መግለጫ",
+      "review": "native-speaker"
+    },
+    "cookies": {
+      "text": "የኩኪ ቅንብሮች",
+      "review": "native-speaker"
+    }
   },
   "newsletter": {
-    "title": { "text": "ጋዜጣችንን ያግኙ", "review": "native-speaker" },
-    "submit": { "text": "ይመዝገቡ", "review": "native-speaker" }
+    "title": {
+      "text": "ጋዜጣችንን ያግኙ",
+      "review": "native-speaker"
+    },
+    "submit": {
+      "text": "ይመዝገቡ",
+      "review": "native-speaker"
+    }
   },
   "cookies": {
-    "title": { "text": "በዚህ ድረ-ገጽ ላይ ያሉ ኩኪዎች", "review": "native-speaker" },
-    "accept": { "text": "ሁሉንም ተቀበል", "review": "native-speaker" },
-    "reject": { "text": "ሁሉንም አትቀበል", "review": "native-speaker" },
-    "prefs": { "text": "ምርጫዎች", "review": "native-speaker" },
-    "prefsTitle": { "text": "የኩኪ ምርጫዎች", "review": "native-speaker" },
-    "save": { "text": "ምርጫዬን አስቀምጥ", "review": "native-speaker" },
-    "close": { "text": "ምርጫዎችን ዝጋ", "review": "native-speaker" }
+    "title": {
+      "text": "በዚህ ድረ-ገጽ ላይ ያሉ ኩኪዎች",
+      "review": "native-speaker"
+    },
+    "accept": {
+      "text": "ሁሉንም ተቀበል",
+      "review": "native-speaker"
+    },
+    "reject": {
+      "text": "ሁሉንም አትቀበል",
+      "review": "native-speaker"
+    },
+    "prefs": {
+      "text": "ምርጫዎች",
+      "review": "native-speaker"
+    },
+    "prefsTitle": {
+      "text": "የኩኪ ምርጫዎች",
+      "review": "native-speaker"
+    },
+    "save": {
+      "text": "ምርጫዬን አስቀምጥ",
+      "review": "native-speaker"
+    },
+    "close": {
+      "text": "ምርጫዎችን ዝጋ",
+      "review": "native-speaker"
+    }
+  },
+  "slider": {
+    "prev": {
+      "text": "ቀዳሚ",
+      "review": "native-speaker"
+    },
+    "next": {
+      "text": "ቀጣይ",
+      "review": "native-speaker"
+    }
   }
 }

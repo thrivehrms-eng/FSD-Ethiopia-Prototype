@@ -1,0 +1,35 @@
+---
+// 2:3 staff portrait that goes from duotone to full colour on hover and focus
+// (CLAUDE.md 4.10). Staff photos are only ever used for staff.
+import Img from './Img.astro';
+
+interface Props {
+  id: string;
+  name: string;
+  role: string;
+  href: string;
+  sizes: string;
+  maxWidth: number;
+}
+
+const { id, name, role, href, sizes, maxWidth } = Astro.props;
+---
+
+<a href={href} class="portrait-card group block text-ink no-underline">
+  <span class="duotone block aspect-[2/3] overflow-hidden">
+    <Img id={id} sizes={sizes} maxWidth={maxWidth} alt="" class="h-full w-full" />
+  </span>
+  <span class="mt-3 block font-display text-[1.5rem] font-bold uppercase leading-none tracking-[0.02em] text-teal-700" lang="en">{name}</span>
+  <span class="mt-1 block text-[0.875rem] font-medium leading-snug text-slate" lang="en">{role}</span>
+</a>
+
+<style>
+  .portrait-card :global(img) {
+    transition: filter 300ms ease;
+  }
+  .portrait-card:hover :global(img),
+  .portrait-card:focus-visible :global(img) {
+    filter: none;
+    mix-blend-mode: normal;
+  }
+</style>

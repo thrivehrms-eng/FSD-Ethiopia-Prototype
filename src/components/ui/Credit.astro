@@ -1,0 +1,15 @@
+---
+// "Photo: FSD Ethiopia" for an editorial image, shown only once the photo is present.
+import { getImage } from '../../lib/images';
+
+interface Props {
+  id: string;
+  class?: string;
+}
+
+const { id, class: className } = Astro.props;
+const image = getImage(id);
+const show = image.status === 'ok' && image.credit.startsWith('Photo');
+---
+
+{show && <span class:list={['text-[0.75rem]', className]} lang="en">{image.credit}</span>}

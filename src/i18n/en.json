@@ -44,7 +44,10 @@
     "required": "required",
     "deadline": "Deadline",
     "closed": "Closed",
-    "open": "Open"
+    "open": "Open",
+    "sources": "Sources",
+    "downloadPdf": "Download PDF",
+    "photoCredit": "Photo: FSD Ethiopia"
   },
   "home": {
     "hero": {
@@ -185,5 +188,54 @@
     "statusOn": "Analytics scripts: loaded, because you consented.",
     "statusOff": "Analytics scripts: not loaded.",
     "alwaysOn": "Always on"
+  },
+  "stats": {
+    "established": "Year FSD Ethiopia was established",
+    "programmeAreas": "Programme areas",
+    "regionsWithCoordinators": "Regions with FSD regional coordinators",
+    "cohortWomen": "Women in the Board Ready cohorts"
+  },
+  "news": {
+    "types": {
+      "blog": "Blog",
+      "press": "Press release",
+      "event": "Event",
+      "news": "News"
+    }
+  },
+  "slider": {
+    "prev": "Previous",
+    "next": "Next",
+    "slideOf": "{n} of {total}",
+    "carousel": "carousel",
+    "slide": "slide"
+  },
+  "styleguide": {
+    "metaTitle": "Design system v2 | FSD Ethiopia prototype",
+    "metaDescription": "Colour tokens, type roles and components of the FSD Ethiopia website prototype, version 2.",
+    "title": "Design system v2",
+    "intro": "Tokens, type roles and components used across the FSD Ethiopia prototype. Images that have not been fetched yet show the gradient panel with the three-stroke mark.",
+    "colours": "Colour tokens",
+    "type": "Type roles",
+    "components": "Components",
+    "mapFrame": "Map frame",
+    "duotone": "Duotone",
+    "sectionTitle": "Section title and rule",
+    "sectionTitleSample": "Our work",
+    "buttons": "Buttons and links",
+    "stats": "Stats band",
+    "tiles": "Image tiles",
+    "portraits": "Portrait cards",
+    "newsCards": "News cards",
+    "slider": "Manual slider",
+    "sampleHero": "Financial markets that work for every Ethiopian",
+    "sampleLabel": "Financial Sector Deepening Ethiopia",
+    "sampleCard": "Card title in uppercase",
+    "sampleBody": "Body text in Poppins 400 at 16px on a 1.8 line height, for long reading on any screen.",
+    "primary": "Primary",
+    "outline": "Outline",
+    "onDark": "On dark",
+    "slideSample": "Slide {n}",
+    "slideSampleBody": "A slide in the manual slider. Use the arrow buttons or the left and right arrow keys."
   }
 }

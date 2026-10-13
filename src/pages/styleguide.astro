@@ -1,0 +1,173 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import MapFrame from '../components/ui/MapFrame.astro';
+import Duotone from '../components/ui/Duotone.astro';
+import SectionTitle from '../components/ui/SectionTitle.astro';
+import ArrowButton from '../components/ui/ArrowButton.astro';
+import ArrowLink from '../components/ui/ArrowLink.astro';
+import StatBand from '../components/ui/StatBand.astro';
+import ImageTile from '../components/ui/ImageTile.astro';
+import PortraitCard from '../components/ui/PortraitCard.astro';
+import NewsCard from '../components/ui/NewsCard.astro';
+import ThreeStrokes from '../components/ui/ThreeStrokes.astro';
+import { t, type Lang } from '../i18n';
+
+const lang: Lang = 'en';
+const k = (key: string) => t(lang, `styleguide.${key}`);
+const swatches = [
+  ['teal-950', '#0B2A2C', 'text-white'],
+  ['teal-900', '#0F3639', 'text-white'],
+  ['teal-700', '#165054', 'text-white'],
+  ['green-600', '#276C4B', 'text-white'],
+  ['green-logo', '#3E8740', 'text-white'],
+  ['yellow-400', '#F7DE4D', 'text-teal-900'],
+  ['red-600', '#C93129', 'text-white'],
+  ['ink', '#141516', 'text-white'],
+  ['slate', '#4A5560', 'text-white'],
+  ['mist', '#F4F6F5', 'text-ink'],
+];
+const samplePost = {
+  title: 'Ethiopia’s Open Finance Future Is Closer Than It Looks',
+  date: '2026-07-20',
+  type: 'blog' as const,
+  excerpt: 'Why letting customers share their own transaction records could open credit to women and rural households.',
+  url: 'https://fsdethiopia.org/2026/07/20/ethiopias-open-finance-future-is-closer-than-it-looks/',
+  image: 'news-open-finance',
+  byline: 'Abel Taddele',
+  authorImage: 'staff-abel-tadelle',
+};
+---
+
+<BaseLayout lang={lang} title={k('metaTitle')} description={k('metaDescription')} path="/styleguide/">
+  <div class="container-site section">
+    <h1 class="t-hero text-teal-900">{k('title')}</h1>
+    <p class="t-lead mt-4 max-w-2xl">{k('intro')}</p>
+
+    <section class="mt-16" aria-labelledby="sg-colours">
+      <SectionTitle lang={lang} k="styleguide.colours" id="sg-colours" />
+      <ul class="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-5">
+        {
+          swatches.map(([name, hex, text]) => (
+            <li class={`flex aspect-[4/3] flex-col justify-end rounded-sm p-3 ${text} ${name === 'mist' ? 'ring-1 ring-line' : ''}`} style={`background:${hex}`}>
+              <span class="t-label text-[0.75rem]">{name}</span>
+              <span class="font-mono text-[0.8125rem]">{hex}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="mt-16" aria-labelledby="sg-type">
+      <SectionTitle lang={lang} k="styleguide.type" id="sg-type" />
+      <div class="mt-8 space-y-6">
+        <p class="t-hero text-teal-900">{k('sampleHero')}</p>
+        <p class="t-section">{k('sectionTitleSample')}</p>
+        <p class="t-label text-green-600">{k('sampleLabel')}</p>
+        <p class="flex items-center gap-4"><span class="t-stat">2022</span><span class="t-label max-w-40 font-medium text-slate">{t(lang, 'stats.established')}</span></p>
+        <p class="t-card">{k('sampleCard')}</p>
+        <p class="max-w-2xl">{k('sampleBody')}</p>
+      </div>
+    </section>
+
+    <section class="mt-16" aria-labelledby="sg-components">
+      <SectionTitle lang={lang} k="styleguide.components" id="sg-components" />
+
+      <div class="mt-10 grid gap-12 lg:grid-cols-2">
+        <div>
+          <h2 class="t-label text-green-600">{k('mapFrame')}</h2>
+          <div class="mt-6 px-6">
+            <MapFrame id="tools-technical-assistance" sizes="(min-width: 1024px) 560px, 90vw" maxWidth={560} />
+          </div>
+        </div>
+        <div>
+          <h2 class="t-label text-green-600">{k('duotone')}</h2>
+          <div class="relative mt-6 aspect-[1901/595] overflow-hidden">
+            <Duotone id="skyline-panorama" sizes="(min-width: 1024px) 600px, 100vw" maxWidth={1200} strength={0.5} />
+            <ThreeStrokes tone="yellow" class="absolute -right-6 -top-6 w-1/2 opacity-[0.08]" />
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-14">
+        <h2 class="t-label text-green-600">{k('sectionTitle')}</h2>
+        <div class="mt-6">
+          <SectionTitle lang={lang} k="styleguide.sectionTitleSample" id="sg-sample-title" level={3}>
+            <ArrowButton dir="prev" label={t(lang, 'slider.prev')} disabled />
+            <ArrowButton dir="next" label={t(lang, 'slider.next')} />
+          </SectionTitle>
+        </div>
+      </div>
+
+      <div class="mt-14">
+        <h2 class="t-label text-green-600">{k('buttons')}</h2>
+        <div class="mt-6 flex flex-wrap items-center gap-4">
+          <a href="#sg-buttons" class="btn btn-primary">{k('primary')}</a>
+          <a href="#sg-buttons" class="btn btn-outline">{k('outline')}</a>
+          <ArrowLink href="#sg-buttons">{t(lang, 'common.readMore')}</ArrowLink>
+          <span id="sg-buttons" class="on-dark flex gap-3 bg-teal-900 p-4">
+            <a href="#sg-buttons" class="btn btn-on-dark">{k('onDark')}</a>
+            <a href="#sg-buttons" class="btn btn-outline-on-dark">{k('outline')}</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="mt-14">
+        <h2 class="t-label text-green-600">{k('stats')}</h2>
+        <StatBand lang={lang} keys={['established', 'programmeAreas', 'regionsWithCoordinators', 'cohortWomen']} class="mt-6" />
+      </div>
+
+      <div class="mt-14">
+        <h2 class="t-label text-green-600">{k('tiles')}</h2>
+        <div class="mt-6 grid gap-0.5 sm:grid-cols-3">
+          <ImageTile id="programme-fin01" href="#" title="Financial inclusion" lines={['Digital payments', 'Agent networks', 'Open finance']} sizes="(min-width: 640px) 33vw, 100vw" maxWidth={640} />
+          <ImageTile id="programme-acctocap01" href="#" title="Access to capital" lines={['Capital markets', 'Investor relations', 'ESX Academy']} sizes="(min-width: 640px) 33vw, 100vw" maxWidth={640} />
+          <ImageTile id="programme-climate-fina01" href="#" title="Climate finance" lines={['Green finance instruments', 'Climate Finance Summit']} sizes="(min-width: 640px) 33vw, 100vw" maxWidth={640} />
+        </div>
+      </div>
+
+      <div class="mt-14">
+        <h2 class="t-label text-green-600">{k('portraits')}</h2>
+        <div class="mt-6 grid max-w-3xl grid-cols-2 gap-6 sm:grid-cols-3">
+          <PortraitCard id="staff-hikmet-abdella" name="Hikmet Abdella" role="Chief Executive Officer" href="#" sizes="(min-width: 640px) 240px, 45vw" maxWidth={260} />
+          <PortraitCard id="staff-abel-tadelle" name="Abel Tadelle" role="Dir. of Financial Inclusion" href="#" sizes="(min-width: 640px) 240px, 45vw" maxWidth={260} />
+          <PortraitCard id="staff-bezawit-eshetu" name="Bezawit Eshetu" role="Climate Finance Lead" href="#" sizes="(min-width: 640px) 240px, 45vw" maxWidth={260} />
+        </div>
+      </div>
+
+      <div class="mt-14">
+        <h2 class="t-label text-green-600">{k('newsCards')}</h2>
+        <div class="mt-6 max-w-xl bg-mist p-6">
+          <NewsCard lang={lang} post={samplePost} />
+        </div>
+      </div>
+
+      <div class="mt-14" x-data="slider('single')" role="region" aria-roledescription={t(lang, 'slider.carousel')} aria-labelledby="sg-slider" @keydown="onKey($event)">
+        <div class="flex items-center justify-between gap-4">
+          <h2 id="sg-slider" class="t-label text-green-600">{k('slider')}</h2>
+          <div class="flex gap-3">
+            <ArrowButton dir="prev" label={t(lang, 'slider.prev')} x-on:click="prev()" x-bind:disabled="atStart" />
+            <ArrowButton dir="next" label={t(lang, 'slider.next')} x-on:click="next()" x-bind:disabled="atEnd" />
+          </div>
+        </div>
+        <div class="mt-6" aria-live="polite">
+          {
+            [1, 2, 3].map((n, i) => (
+              <div
+                data-slide
+                role="group"
+                aria-roledescription={t(lang, 'slider.slide')}
+                aria-label={t(lang, 'slider.slideOf', { n, total: 3 })}
+                hidden={i !== 0}
+                x-bind:hidden={`index !== ${i}`}
+                class="bg-mist p-8"
+              >
+                <p class="t-card">{k('slideSample').replace('{n}', String(n))}</p>
+                <p class="mt-2">{k('slideSampleBody')}</p>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

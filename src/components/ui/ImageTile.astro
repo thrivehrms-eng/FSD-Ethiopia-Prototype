@@ -1,0 +1,58 @@
+---
+// Edge-to-edge 4:3 photo tile with a teal gradient rising from the bottom, an
+// uppercase title and short sub-lines (CLAUDE.md 4.7). On hover and focus the
+// gradient lightens and the three strokes draw in at the top-left corner.
+import Img from './Img.astro';
+import ThreeStrokes from './ThreeStrokes.astro';
+
+interface Props {
+  id: string;
+  href: string;
+  title: string;
+  lines: string[];
+  titleLang?: string;
+  linesLang?: string;
+  sizes: string;
+  maxWidth: number;
+  headingLevel?: 3 | 4;
+}
+
+const { id, href, title, lines, titleLang, linesLang, sizes, maxWidth, headingLevel = 3 } = Astro.props;
+const Tag = `h${headingLevel}` as 'h3' | 'h4';
+---
+
+<a href={href} class="image-tile group zoom-host relative block aspect-[4/3] overflow-hidden text-white no-underline">
+  <Img id={id} sizes={sizes} maxWidth={maxWidth} class="absolute inset-0 h-full w-full" credit="overlay-top" />
+  <span class="image-tile__scrim absolute inset-0" aria-hidden="true"></span>
+  <ThreeStrokes class="image-tile__strokes absolute left-4 top-4 w-20" weight={1.5} />
+  <span class="absolute inset-x-0 bottom-0 p-5 lg:p-6">
+    <Tag class="t-label text-[0.9375rem] text-white" lang={titleLang}>{title}</Tag>
+    <span class="mt-2 block text-[0.875rem] leading-snug text-white/90" lang={linesLang}>{lines.join(' · ')}</span>
+  </span>
+</a>
+
+<style>
+  .image-tile__scrim {
+    background: linear-gradient(to top, rgb(11 42 44 / 0.94) 0%, rgb(15 54 57 / 0.62) 45%, rgb(15 54 57 / 0.08) 75%);
+    transition: opacity 300ms ease;
+  }
+  .image-tile:hover .image-tile__scrim,
+  .image-tile:focus-visible .image-tile__scrim {
+    opacity: 0.82;
+  }
+  .image-tile :global(.image-tile__strokes) {
+    opacity: 0;
+    transform: translate(-6px, -6px) scale(0.9);
+    transform-origin: top left;
+    transition: opacity 300ms ease, transform 300ms var(--ease-out-soft);
+  }
+  .image-tile:hover :global(.image-tile__strokes),
+  .image-tile:focus-visible :global(.image-tile__strokes) {
+    opacity: 1;
+    transform: none;
+  }
+  .image-tile:focus-visible {
+    outline: 3px solid var(--color-yellow-400);
+    outline-offset: -3px;
+  }
+</style>

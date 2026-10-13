@@ -1,0 +1,31 @@
+---
+// Duotone (CLAUDE.md 3.4): a greyscale photo multiplied over the teal-to-green
+// gradient. Decorative backgrounds only, so alt is always empty. Without the
+// original, the gradient alone shows.
+import Img from './Img.astro';
+import { hasImage } from '../../lib/images';
+
+interface Props {
+  id: string;
+  sizes: string;
+  maxWidth: number;
+  /** Photo opacity over the gradient (0–1). */
+  strength?: number;
+  priority?: boolean;
+  /** Hide the photo below this breakpoint to save weight; the gradient stays. */
+  desktopOnly?: boolean;
+  class?: string;
+}
+
+const { id, sizes, maxWidth, strength = 0.4, priority = false, desktopOnly = false, class: className } = Astro.props;
+---
+
+<div class:list={['duotone absolute inset-0 overflow-hidden', className]} aria-hidden="true">
+  {
+    hasImage(id) && (
+      <div class:list={['absolute inset-0', desktopOnly && 'hidden md:block']} style={`opacity:${strength}`}>
+        <Img id={id} sizes={sizes} maxWidth={maxWidth} priority={priority} decorative class="h-full w-full" />
+      </div>
+    )
+  }
+</div>

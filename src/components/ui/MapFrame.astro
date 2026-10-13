@@ -1,0 +1,45 @@
+---
+// Signature map frame (CLAUDE.md 3.4): the image is cut by an angular clip and
+// ringed by the three strokes from FSD's logo, which trace Ethiopia's outline in
+// the flag colours. Use at most two per page.
+import Img from './Img.astro';
+import ThreeStrokes from './ThreeStrokes.astro';
+import Credit from './Credit.astro';
+import { hasImage } from '../../lib/images';
+
+interface Props {
+  id: string;
+  sizes: string;
+  /** Largest CSS width of the frame; 640px at most on the homepage. */
+  maxWidth?: number;
+  priority?: boolean;
+  alt?: string;
+  class?: string;
+  credit?: 'overlay' | 'below' | false;
+  position?: string;
+}
+
+const { id, sizes, maxWidth = 640, priority = false, alt, class: className, credit = 'below', position } = Astro.props;
+---
+
+<figure class:list={['map-frame relative mx-auto w-full', className]} style={`max-width:${maxWidth}px`}>
+  <div class="relative">
+    <div class="map-frame__clip zoom-host aspect-[1.414] overflow-hidden">
+      <Img id={id} sizes={sizes} maxWidth={maxWidth} priority={priority} alt={alt} position={position} class="h-full w-full" />
+    </div>
+    <ThreeStrokes class="pointer-events-none absolute" style="left:-5%;top:-5%;width:109%;height:111%" weight={3} preserveAspectRatio="none" />
+  </div>
+  {
+    credit === 'below' && hasImage(id) && (
+      <figcaption class="map-frame__credit mt-3 text-right text-[0.75rem]" lang="en">
+        <Credit id={id} />
+      </figcaption>
+    )
+  }
+</figure>
+
+<style>
+  .map-frame__clip {
+    clip-path: polygon(3% 8%, 55% 0, 100% 6%, 97% 92%, 45% 100%, 0 94%);
+  }
+</style>

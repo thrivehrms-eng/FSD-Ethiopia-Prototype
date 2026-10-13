@@ -1,0 +1,59 @@
+---
+// Horizontal news card (CLAUDE.md 4.11): image left (40%); date, uppercase
+// title, two-line excerpt, the author's avatar when they are on staff, and
+// "Read more →" on the right. Title graphics are never overlaid with text.
+import Img from './Img.astro';
+import ArrowLink from './ArrowLink.astro';
+import { hasImage } from '../../lib/images';
+import { t, type Lang } from '../../i18n';
+
+export interface Post {
+  title: string;
+  date: string;
+  type: 'blog' | 'press' | 'event' | 'news';
+  excerpt: string;
+  url: string;
+  image: string;
+  byline?: string;
+  authorImage?: string;
+}
+
+interface Props {
+  lang: Lang;
+  post: Post;
+  headingLevel?: 3 | 4;
+}
+
+const { lang, post, headingLevel = 3 } = Astro.props;
+const Tag = `h${headingLevel}` as 'h3' | 'h4';
+const date = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(post.date));
+---
+
+<article class="news-card zoom-host flex h-full bg-white" lang="en">
+  <div class="w-2/5 shrink-0 overflow-hidden">
+    <Img id={post.image} sizes="(min-width: 1024px) 220px, 40vw" maxWidth={240} class="h-full min-h-44 w-full" />
+  </div>
+  <div class="flex min-w-0 flex-1 flex-col gap-2 p-4 sm:p-5">
+    <p class="t-label text-[0.75rem] font-medium text-slate">
+      <time datetime={post.date}>{date}</time>
+      <span class="sr-only">, {t(lang, `news.types.${post.type}`)}</span>
+    </p>
+    <Tag class="t-card line-clamp-3 text-[0.9375rem]">{post.title}</Tag>
+    <p class="line-clamp-2 text-[0.875rem] leading-relaxed text-ink">{post.excerpt}</p>
+    <div class="mt-auto flex flex-wrap items-center justify-between gap-3 pt-2">
+      {
+        post.byline && (
+          <p class="flex items-center gap-2 text-[0.8125rem] text-slate">
+            {post.authorImage && hasImage(post.authorImage) && (
+              <span class="block size-8 shrink-0 overflow-hidden rounded-full">
+                <Img id={post.authorImage} sizes="32px" maxWidth={32} alt="" position="50% 18%" class="h-full w-full" />
+              </span>
+            )}
+            <span>{post.byline}</span>
+          </p>
+        )
+      }
+      <ArrowLink href={post.url} context={post.title}>{t(lang, 'common.readMore')}</ArrowLink>
+    </div>
+  </div>
+</article>

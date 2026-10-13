@@ -1,13 +1,45 @@
 {
-  "_note": "Taken from the procurement page via search index; confirm title and deadline before submission.",
+  "_note": "From the procurement and work-with-us pages via search results on 13 Oct 2026. Open or closed is worked out at build time from the deadline (Addis Ababa time). Confirm titles and dates before submission.",
+  "procurementUrl": "https://fsdethiopia.org/procurement-opportunities/",
+  "careersUrl": "https://fsdethiopia.org/work-with-us-2/",
   "procurement": [
     {
+      "id": "investor-relations-2026",
       "title": "Strengthening investor relations capacity among listed, OTC-traded and prospective public companies",
       "kind": "Call for proposals",
       "deadline": "2026-10-14",
-      "url": "https://fsdethiopia.org/procurement-opportunities/"
+      "url": "https://fsdethiopia.org/procurement-opportunities/",
+      "note": "Exact formal title not retrieved; paraphrased."
+    },
+    {
+      "id": "nsmabl-2026",
+      "title": "Formulation of a National Strategy for Movable Asset Based Lending",
+      "kind": "Request for proposals",
+      "deadline": "2026-02-20",
+      "url": "https://fsdethiopia.org/wp-content/pdf/Request%20for%20Proposal%20-%20NSMABF%20Formulation.pdf"
+    },
+    {
+      "id": "climate-finance-strategy-2026",
+      "title": "Ethiopia’s National Climate Finance Strategy",
+      "kind": "Request for proposals",
+      "deadline": "2026-01-16",
+      "url": "https://fsdethiopia.org/wp-content/pdf/Request%20for%20Proposals%20-%20Ethiopia%E2%80%99s%20National%20Climate%20Finance%20Strategy%20(3).pdf"
     }
   ],
-  "procurementUrl": "https://fsdethiopia.org/procurement-opportunities/",
-  "careersUrl": "https://fsdethiopia.org/work-with-us-2/"
+  "careers": [
+    {
+      "id": "internship-programme-support-2026",
+      "title": "Internship – Program Support (3 months, Addis Ababa)",
+      "kind": "Internship",
+      "deadline": "2026-10-02",
+      "url": "https://fsdethiopia.org/work-with-us-2/"
+    },
+    {
+      "id": "director-of-programmes-2026",
+      "title": "Director of Programmes",
+      "kind": "Vacancy",
+      "deadline": "2026-06-27",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/06/Director-of-Programmes-Vacancy-1.pdf"
+    }
+  ]
 }

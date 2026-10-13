@@ -1,0 +1,19 @@
+---
+// "Read more →" link; the arrow slides 4px on hover (CLAUDE.md 3.3).
+import { ArrowRight } from '@lucide/astro';
+
+interface Props {
+  href: string;
+  /** Extra context for screen readers, e.g. the article title. */
+  context?: string;
+  class?: string;
+  [attr: string]: unknown;
+}
+
+const { href, context, class: className, ...attrs } = Astro.props;
+---
+
+<a href={href} class:list={['arrow-link', className]} {...attrs}>
+  <slot />{context && <span class="sr-only">: {context}</span>}
+  <ArrowRight size={16} class="arrow" aria-hidden="true" />
+</a>

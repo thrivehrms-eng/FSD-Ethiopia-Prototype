@@ -1,0 +1,23 @@
+---
+// Round 44px previous/next button: green-600 with a white chevron, 40% opacity
+// when disabled (CLAUDE.md 3.3). Extra attributes (x-on:click, x-bind:disabled)
+// pass straight through to the button.
+import { ChevronLeft, ChevronRight } from '@lucide/astro';
+
+interface Props {
+  dir: 'prev' | 'next';
+  label: string;
+  [attr: string]: unknown;
+}
+
+const { dir, label, ...attrs } = Astro.props;
+---
+
+<button
+  type="button"
+  aria-label={label}
+  class="flex size-11 shrink-0 cursor-pointer items-center justify-center rounded-full bg-green-600 text-white transition-colors hover:bg-teal-700 disabled:cursor-default disabled:opacity-40 disabled:hover:bg-green-600"
+  {...attrs}
+>
+  {dir === 'prev' ? <ChevronLeft size={22} aria-hidden="true" /> : <ChevronRight size={22} aria-hidden="true" />}
+</button>
