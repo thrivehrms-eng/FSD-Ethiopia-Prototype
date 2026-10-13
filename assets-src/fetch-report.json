@@ -1,502 +1,399 @@
 {
-  "ranAt": "2026-10-13T15:15:28.262Z",
-  "ok": [],
-  "skipped": [],
-  "failed": [
-    {
-      "id": "logo-official-png",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2022/06/logo2022_1.png",
-      "reason": "ENOTFOUND"
-    },
-    {
-      "id": "logo-on-teal",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2022/06/FSD-Ethiopia.jpg",
-      "reason": "ENOTFOUND"
-    },
-    {
-      "id": "app-icon",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2022/06/cropped-android-chrome-512x512-1.png",
-      "reason": "ENOTFOUND"
-    },
+  "ranAt": "2026-10-13T21:47:07.739Z",
+  "ok": [
     {
       "id": "logo-fsd-network",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2022/06/fsd-network-logo.png",
-      "reason": "ENOTFOUND"
+      "bytes": 38722
+    },
+    {
+      "id": "logo-official-png",
+      "bytes": 25205
     },
     {
       "id": "logo-gates",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2022/06/bill_color2022.png",
-      "reason": "ENOTFOUND"
+      "bytes": 45262
     },
     {
       "id": "logo-uk-intl-dev",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2024/04/UK_International_Development_logo.png",
-      "reason": "ENOTFOUND"
+      "bytes": 27231
     },
     {
       "id": "logo-fsd-africa",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2022/06/fsd_color2022fsd.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 6496
+    },
+    {
+      "id": "logo-on-teal",
+      "bytes": 16490
+    },
+    {
+      "id": "app-icon",
+      "bytes": 39229
     },
     {
       "id": "staff-hikmet-abdella",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Hikmet_Abdella-min.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 125682
     },
     {
       "id": "staff-abel-tadelle",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Abel_Taddele.jpg",
-      "reason": "ENOTFOUND"
-    },
-    {
-      "id": "staff-selamsew-tesfaye",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Selamsew_Tesfaye.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 120896
     },
     {
       "id": "staff-gosaye-warsa",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Gosaye_Warsa-min.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 95168
     },
     {
       "id": "staff-barnabas-getu",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Barnabas_Getu2.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 146888
     },
     {
       "id": "staff-melaku-kebede",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Melaku_Kebede-min.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 183071
     },
     {
       "id": "staff-sinidu-fikadu",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Sinidu_Fikadu.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 132892
     },
     {
       "id": "staff-bezawit-eshetu",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/10/Bezawit.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 183301
     },
     {
-      "id": "staff-berhanu-alene",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/07/berhanu.png",
-      "reason": "ENOTFOUND"
+      "id": "staff-selamsew-tesfaye",
+      "bytes": 169732
     },
     {
       "id": "staff-nurhassen-mensur",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Nurhassen_Mensur2.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 191689
     },
     {
       "id": "staff-hanna-leykun",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Hanna_Leykun2.jpg",
-      "reason": "ENOTFOUND"
-    },
-    {
-      "id": "staff-hanna-hailu",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Hanna_Hailu-min.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 134588
     },
     {
       "id": "staff-dawit-alem",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Dawit_Alem2.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 161650
     },
     {
       "id": "staff-afomia-kassa",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Afomia_Kassa-min.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 138252
+    },
+    {
+      "id": "staff-hanna-hailu",
+      "bytes": 270673
+    },
+    {
+      "id": "staff-berhanu-alene",
+      "bytes": 2385922
     },
     {
       "id": "staff-samson-berhane",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Samson_Berhane-min.jpg",
-      "reason": "ENOTFOUND"
-    },
-    {
-      "id": "staff-yosef-kefyalew",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/07/yosef-03.png",
-      "reason": "ENOTFOUND"
-    },
-    {
-      "id": "staff-eden-afework",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Eden_Afework-min.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 136947
     },
     {
       "id": "staff-hmariam-misganaw",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Hailemariam_Misganaw-min.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 187640
     },
     {
-      "id": "staff-tazezew-abrha",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/07/tazezew.png",
-      "reason": "ENOTFOUND"
+      "id": "staff-eden-afework",
+      "bytes": 242185
     },
     {
       "id": "staff-meron-dereje",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/07/meron.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 123248
     },
     {
       "id": "staff-rahel-taddese",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Rahel_Taddese-min.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 301351
     },
     {
       "id": "staff-ruth-zemene",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Ruth_Zemene-min.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 240202
     },
     {
-      "id": "staff-agare-kassahun",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Agare_Kassahun-min.jpg",
-      "reason": "ENOTFOUND"
+      "id": "staff-yosef-kefyalew",
+      "bytes": 2872837
     },
     {
       "id": "staff-shalom-alemayehu",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Shalom_Alemayehu-min.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 86027
     },
     {
-      "id": "staff-abebayehu-milkias",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Abebayehu_Milkias-min.jpg",
-      "reason": "ENOTFOUND"
+      "id": "staff-tazezew-abrha",
+      "bytes": 4036697
+    },
+    {
+      "id": "staff-agare-kassahun",
+      "bytes": 141044
     },
     {
       "id": "regional-tadesse-hailu",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Tadesse_Hailu.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 120942
+    },
+    {
+      "id": "staff-abebayehu-milkias",
+      "bytes": 400036
     },
     {
       "id": "regional-okello-oluch",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Okello_Oluch.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 390022
     },
     {
       "id": "regional-mubarak-ahmed",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Mubarak_Ahmed.jpg",
-      "reason": "ENOTFOUND"
-    },
-    {
-      "id": "regional-aklilu-tukela",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Aklilu_Tukela.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 133137
     },
     {
       "id": "regional-ahmed-mohammed",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Ahmed_Mohammed.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 114444
+    },
+    {
+      "id": "regional-aklilu-tukela",
+      "bytes": 183954
     },
     {
       "id": "regional-abinet-belay",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Abinet_Belay.jpg",
-      "reason": "ENOTFOUND"
-    },
-    {
-      "id": "board-admassu-tadesse",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2020/02/members-11.png",
-      "reason": "ENOTFOUND"
+      "bytes": 370840
     },
     {
       "id": "regional-fekadu-mekonnen",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/08/DR.Fekadu-Mekonnen.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 318769
+    },
+    {
+      "id": "board-admassu-tadesse",
+      "bytes": 135953
     },
     {
       "id": "board-maleda-bisrat",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2020/02/members-13.png",
-      "reason": "ENOTFOUND"
-    },
-    {
-      "id": "board-berhane-demissie",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2020/02/members-12.png",
-      "reason": "ENOTFOUND"
-    },
-    {
-      "id": "cohort-hiwot-yohannes",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/08/Hiwot-Yohannes.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 142833
     },
     {
       "id": "cohort-mehret",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/08/Mehret-photo.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 175815
+    },
+    {
+      "id": "cohort-hiwot-yohannes",
+      "bytes": 130805
     },
     {
       "id": "cohort-selamawit-bekele",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/08/Selamawit-Bekele-pic.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 164451
     },
     {
-      "id": "cohort-kokeb",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/11/Kokeb.jpg",
-      "reason": "ENOTFOUND"
+      "id": "board-berhane-demissie",
+      "bytes": 927393
     },
     {
       "id": "event-stakeholder-summit-2026",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/07/1783776109015.jpeg",
-      "reason": "ENOTFOUND"
+      "bytes": 108554
+    },
+    {
+      "id": "cohort-kokeb",
+      "bytes": 89884
     },
     {
       "id": "event-gicfa-baku-2026",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-26-at-2.41.54-PM-1.jpeg",
-      "reason": "ENOTFOUND"
+      "bytes": 398518
     },
     {
       "id": "event-climate-summit-2026-group",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/03/FSD-Ethiopia352026.jpg",
-      "reason": "ENOTFOUND"
-    },
-    {
-      "id": "event-climate-summit-2026-plenary",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/03/FSD-Ethiopia352026_2.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 116182
     },
     {
       "id": "event-access-influence-2026-1",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/03/FSD-31126-1.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 80138
     },
     {
       "id": "event-access-influence-2026-2",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/03/FSD-31126-2.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 88430
     },
     {
       "id": "event-access-influence-2026-3",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/03/FSD-31126-3.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 90156
     },
     {
       "id": "event-insurance-workshop-2025",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/11/FSD-Ethiopia11242025.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 107863
+    },
+    {
+      "id": "event-climate-summit-2026-plenary",
+      "bytes": 111335
     },
     {
       "id": "event-insurance-workshop-2025-01",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/11/FSD-Ethiopia11242025-01.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 74113
     },
     {
       "id": "event-insurance-workshop-2025-02",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/11/FSD-Ethiopia11242025-02.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 81269
     },
     {
       "id": "event-greening-2025",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/08/FSD_Ethiopia_A2025_Greening.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 134646
     },
     {
       "id": "event-womens-day-2025",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/03/FSD_Ethiopia_A2025.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 78513
     },
     {
       "id": "event-climate-summit-2025",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/02/fsd_ethiopia_992025.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 93569
     },
     {
       "id": "event-esx-academy-2025",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2025/02/fina_sec_26.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 80122
     },
     {
       "id": "event-finequity-2024",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2024/03/3_14_06_main.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 57728
     },
     {
       "id": "event-bimalab-2024-main",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2024/03/3_7_06_main.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 100132
     },
     {
       "id": "event-bimalab-2024-01",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2024/03/3_7_01.jpg",
-      "reason": "ENOTFOUND"
-    },
-    {
-      "id": "event-bimalab-2024-02",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2024/03/3_7_02.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 32319
     },
     {
       "id": "event-bimalab-2024-03",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2024/03/3_7_03.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 118481
     },
     {
       "id": "event-bimalab-2024-04",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2024/03/3_7_04.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 93679
+    },
+    {
+      "id": "event-bimalab-2024-02",
+      "bytes": 49136
     },
     {
       "id": "event-bimalab-2024-05",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2024/03/3_7_05.jpg",
-      "reason": "ENOTFOUND"
-    },
-    {
-      "id": "event-esx-rulebook-2023",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2023/10/fsdnews004.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 99581
     },
     {
       "id": "programme-fin01",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/fin01.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 78221
     },
     {
-      "id": "programme-acctocap01",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/acctocap01.jpg",
-      "reason": "ENOTFOUND"
+      "id": "event-esx-rulebook-2023",
+      "bytes": 73730
     },
     {
       "id": "programme-climate-fina01",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/climate_fina01.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 86517
+    },
+    {
+      "id": "programme-acctocap01",
+      "bytes": 78239
     },
     {
       "id": "programme-climate-finance2",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2023/02/climate_finance2.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 74185
     },
     {
       "id": "programme-f-inc-01",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/f_inc_01.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 97254
     },
     {
       "id": "tools-technical-assistance",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/Our-Tools_-Technical-Assistance01.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 92590
     },
     {
       "id": "tools-resources-data",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/Our-Tools_-Resources-_-Data01.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 94428
     },
     {
       "id": "tools-convening",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/Our-Tools_-Convening01.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 55438
     },
     {
       "id": "skyline-panorama",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2022/06/landing-page-17-1.png",
-      "reason": "ENOTFOUND"
+      "bytes": 583414
     },
     {
       "id": "skyline-about",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2022/06/about_us2022.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 102728
     },
     {
       "id": "news-gender-integration",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/07/tumbnaile-11-scaled.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 254750
     },
     {
       "id": "news-open-finance",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/07/blog.jpg",
-      "reason": "ENOTFOUND"
-    },
-    {
-      "id": "news-india-dpi",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/05/article-5.png",
-      "reason": "ENOTFOUND"
+      "bytes": 240282
     },
     {
       "id": "news-digital-east",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/05/article-4_1_600x337.png",
-      "reason": "ENOTFOUND"
+      "bytes": 300257
     },
     {
-      "id": "news-insurance-market",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/03/FSD-Ethiopia_blog7.jpg",
-      "reason": "ENOTFOUND"
+      "id": "news-india-dpi",
+      "bytes": 964673
     },
     {
       "id": "news-women-digital",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/03/FSD-Ethiopia_blog8.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 79786
+    },
+    {
+      "id": "news-insurance-market",
+      "bytes": 108592
     },
     {
       "id": "cover-landscape-climate-finance",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/08/FSDE-Landscape-of-Climate-Finance-in-Ethiopia.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 473217
     },
     {
       "id": "cover-green-instruments",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/08/FSDE-Scoping-Study-Report-Feasibility-of-Green-and-Sustainable-Finance-Instruments-in-Ethiopia.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 485956
     },
     {
       "id": "cover-nafir",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/08/FSDE-National-Agriculture-Finance-Implementation-RoadmapNAFIR.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 658098
     },
     {
       "id": "cover-unlock-capital-markets",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/08/FSDE-Unlock-Capital-Markets-to-Advance-Womens-Economic-Participation-Leadership-Ethiopia-Finance-in-Ethiopia.jpg",
-      "reason": "ENOTFOUND"
-    },
-    {
-      "id": "cover-unlocking-potentials",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/08/FSDE-Unlocking-Potentials-financial-inclusion-and-capital-market-for-women-economic-empowerment.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 410104
     },
     {
       "id": "cover-cico-agents",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/08/FSDE-Enabling-Sustainable-Digital-Payment-Agent-Network-Expansion-by-Leveraging-and-Supporting-Viable-Business-Cases.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 510831
     },
     {
-      "id": "cover-nfis",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/08/FSDE-National-Financial-Inclusion-Strategy.jpg",
-      "reason": "ENOTFOUND"
+      "id": "cover-unlocking-potentials",
+      "bytes": 846901
     },
     {
       "id": "cover-mobile-money",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/08/FSDE-Mobile-money-in-ethiopia_2.jpg",
-      "reason": "ENOTFOUND"
-    },
-    {
-      "id": "cover-climate-summit-report",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2026/08/FSDE-Climate-Finance-Summit-2024.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 414051
     },
     {
       "id": "cover-ndps",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2023/02/rc02.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 17033
+    },
+    {
+      "id": "cover-nfis",
+      "bytes": 685970
+    },
+    {
+      "id": "cover-climate-summit-report",
+      "bytes": 610095
     },
     {
       "id": "cover-job-creation",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/rc006.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 23345
     },
     {
       "id": "cover-homegrown-reform",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/rc001.jpg",
-      "reason": "ENOTFOUND"
-    },
-    {
-      "id": "cover-ten-year-plan",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/rc003.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 41711
     },
     {
       "id": "cover-ease-of-business",
-      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/rc0006.jpg",
-      "reason": "ENOTFOUND"
+      "bytes": 21923
     },
     {
-      "id": "collection:cohort",
-      "url": "https://fsdethiopia.org/cohort/",
-      "reason": "ENOTFOUND"
+      "id": "cover-ten-year-plan",
+      "bytes": 26818
     }
-  ]
+  ],
+  "skipped": [],
+  "failed": []
 }

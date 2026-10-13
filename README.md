@@ -17,14 +17,20 @@ npm run audit:images # after a build; upscale, alt text and page-weight checks
 ## Photos
 
 FSD Ethiopia's photos, portraits and covers are listed in `assets/manifest.json`
-(CLAUDE.md section 6). Until they are fetched, every image slot shows the brand
-gradient with the three-stroke mark. On a machine that can reach fsdethiopia.org:
+(CLAUDE.md section 6), plus the Board Ready cohort portraits collected from
+https://fsdethiopia.org/cohort/. The optimised AVIF/WebP files in `public/images/`
+and `src/data/images.json` are committed, so a fresh clone builds with every photo.
+The downloaded originals in `assets-src/` are not committed. To refresh them on a
+machine that can reach fsdethiopia.org:
 
 ```bash
 npm run assets       # download into assets-src/, then build AVIF/WebP into public/images/
 npm run build && npm run audit:images
-git add public/images src/data/images.json assets-src && git commit -m "Add FSD photos"
 ```
+
+Any slot whose image is missing shows the brand gradient with the three-stroke mark.
+The images belong to FSD Ethiopia: use them only in this pitch prototype, and keep
+the staging site `noindex`.
 
 `npm run screenshots` needs Playwright. Install it with `npm i -D playwright`, or point
 `PLAYWRIGHT_MODULE` at an existing install.

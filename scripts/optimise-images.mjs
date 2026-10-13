@@ -6,7 +6,7 @@
 // Variants are 400, 800, 1200 and 1600px wide but never wider than the original
 // (CLAUDE.md 3.6). Images that have not been downloaded yet are written to
 // images.json with status "missing", so pages render the gradient fallback.
-import { readFile, writeFile, mkdir, access, stat } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, access, stat, rename } from 'node:fs/promises';
 import { basename, dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
@@ -21,6 +21,9 @@ const FORMATS = {
 };
 
 const exists = (p) => access(p).then(() => true, () => false);
+// Encode several images at once, one libvips thread each.
+const CONCURRENCY = 4;
+sharp.concurrency(1);
 const manifest = JSON.parse(await readFile(join(ROOT, 'assets/manifest.json'), 'utf8'));
 await mkdir(OUT, { recursive: true });
 
@@ -56,7 +59,7 @@ const images = {};
 const counts = { optimised: 0, upToDate: 0, missing: 0 };
 const warnings = [];
 
-for (const item of items) {
+async function processItem(item) {
   const source = join(SRC, item.group, basename(new URL(item.url).pathname));
   const entry = {
     group: item.group,
@@ -72,7 +75,7 @@ for (const item of items) {
   if (!(await exists(source))) {
     images[item.id] = { status: 'missing', width: item.width, height: item.height, ...entry, variants: { avif: [], webp: [] } };
     counts.missing++;
-    continue;
+    return;
   }
 
   const meta = await sharp(source).metadata();
@@ -94,7 +97,9 @@ for (const item of items) {
       const dest = join(OUT, name);
       const fresh = (await exists(dest)) && (await stat(dest)).mtimeMs >= srcTime;
       if (!fresh) {
-        await encode(sharp(source).rotate().resize({ width: w, withoutEnlargement: true })).toFile(dest);
+        // Write then rename, so an interrupted run never leaves a truncated file that looks fresh.
+        await encode(sharp(source).rotate().resize({ width: w, withoutEnlargement: true })).toFile(`${dest}.tmp`);
+        await rename(`${dest}.tmp`, dest);
         wrote = true;
       }
       const { size } = await stat(dest);
@@ -105,9 +110,16 @@ for (const item of items) {
   images[item.id] = { status: 'ok', width, height, ...entry, variants };
 }
 
-await writeFile(join(ROOT, 'src/data/images.json'), JSON.stringify(images, null, 2) + '\n');
+const queue = [...items];
+await Promise.all(Array.from({ length: CONCURRENCY }, async () => {
+  while (queue.length) await processItem(queue.shift());
+}));
+// Keep images.json in manifest order whatever order the workers finished in.
+const ordered = Object.fromEntries(items.filter((i) => images[i.id]).map((i) => [i.id, images[i.id]]));
+
+await writeFile(join(ROOT, 'src/data/images.json'), JSON.stringify(ordered, null, 2) + '\n');
 console.log(
-  `images.json: ${Object.keys(images).length} images (${counts.optimised} optimised, ${counts.upToDate} up to date, ${counts.missing} missing originals).`,
+  `images.json: ${Object.keys(ordered).length} images (${counts.optimised} optimised, ${counts.upToDate} up to date, ${counts.missing} missing originals).`,
 );
 if (counts.missing) console.log('Missing originals render as the gradient panel with the three-stroke mark. Run npm run assets:fetch first.');
 for (const w of warnings) console.warn(`warning: ${w}`);
