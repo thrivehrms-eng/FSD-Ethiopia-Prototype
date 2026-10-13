@@ -1,16 +1,23 @@
 {
-  "_note": "From the procurement and work-with-us pages via search results on 13 Oct 2026. Open or closed is worked out at build time from the deadline (Addis Ababa time). Confirm titles and dates before submission.",
+  "_note": "Checked against the procurement and work-with-us pages on 13 October 2026. Open or closed is re-checked in the visitor’s browser from the deadline (end of day, Addis Ababa time).",
   "procurementUrl": "https://fsdethiopia.org/procurement-opportunities/",
   "careersUrl": "https://fsdethiopia.org/work-with-us-2/",
   "procurement": [
     {
       "id": "investor-relations-2026",
-      "title": "Strengthening investor relations capacity among listed, OTC-traded and prospective public companies",
-      "kind": "Call for proposals",
+      "title": "Strengthening Investor Relations Capacity Among Listed, OTC-Traded, and Prospective Public Companies in Ethiopia’s Capital Market",
+      "kind": "Request for proposals",
       "deadline": "2026-10-14",
-      "url": "https://fsdethiopia.org/procurement-opportunities/",
-      "note": "Exact formal title not retrieved; paraphrased.",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/09/2026-9-30-FSDE-COMMUNICATION-TOR-04.pdf",
       "shortTitle": "Investor relations capacity consultancy"
+    },
+    {
+      "id": "website-redesign-2026",
+      "title": "Website Redesign for FSD Ethiopia",
+      "kind": "Terms of reference",
+      "deadline": "2026-10-16",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/10/2026-10-05-FSDE-COMMUNICATION-TOR-Website-Redesign-for-FSD-Ethiopia.pdf",
+      "shortTitle": "Website redesign"
     },
     {
       "id": "nsmabl-2026",
@@ -35,7 +42,7 @@
       "title": "Internship – Program Support (3 months, Addis Ababa)",
       "kind": "Internship",
       "deadline": "2026-10-02",
-      "url": "https://fsdethiopia.org/work-with-us-2/",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/09/2026-9-22-FSDE-COMMUNICATION-FSDE-Internship-Program-Support-2.pdf",
       "shortTitle": "Programme support internship"
     },
     {

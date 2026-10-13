@@ -34,9 +34,9 @@ const cohortSize = figures.cohortWomen;
     >
       {
         slots.map((id, i) => (
-          <li class:list={['mosaic__item aspect-[2/3] overflow-hidden', i % 2 === 1 && 'translate-y-4 sm:translate-y-6']} aria-hidden={id ? undefined : 'true'}>
+          <li class:list={['mosaic__item duotone-host aspect-[2/3] overflow-hidden', i % 2 === 1 && 'translate-y-4 sm:translate-y-6']} aria-hidden={id ? undefined : 'true'}>
             {id ? (
-              <span class="duotone block h-full">
+              <span class="duotone duotone--portrait block h-full">
                 <Img id={id} sizes="(min-width: 1024px) 170px, 23vw" maxWidth={200} aspect={2 / 3} class="h-full w-full" />
               </span>
             ) : (
@@ -65,12 +65,3 @@ const cohortSize = figures.cohortWomen;
   </div>
 </section>
 
-<style>
-  .mosaic :global(img) {
-    transition: filter 300ms ease;
-  }
-  .mosaic__item:hover :global(img) {
-    filter: none;
-    mix-blend-mode: normal;
-  }
-</style>

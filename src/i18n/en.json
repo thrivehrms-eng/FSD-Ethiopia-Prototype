@@ -92,7 +92,7 @@
     "role": {
       "eyebrow": "Who we are",
       "title": "Fixing what holds Ethiopia’s financial markets back",
-      "body": "Launched in 2022 with funding from UK aid and the Gates Foundation, and incubated by FSD Africa, we look for the underlying causes of financial system failures and help market actors address them. Policymakers, regulators and market actors draw on our technical assistance, grants and research so that the financial sector serves a wide cross-section of Ethiopian people and businesses.",
+      "body": "Established in 2022 with funding from the UK’s Foreign, Commonwealth & Development Office and the Gates Foundation, and incubated by FSD Africa, we look for the underlying causes of financial system failures and help market actors address them. Policymakers, regulators and market actors draw on our technical assistance, grants and research so that the financial sector serves a wide cross-section of Ethiopian people and businesses.",
       "link": "More about FSD Ethiopia"
     },
     "how": {
@@ -175,17 +175,17 @@
     "data": {
       "title": "Data snapshot",
       "mobileMoney": "Registered mobile money accounts, June 2025",
-      "mobileMoneyNote": "This counts accounts, not people, and many accounts are inactive.",
-      "ownership": "Adults with an account, 2024",
+      "mobileMoneyNote": "This counts accounts, not people: one person can hold several.",
+      "ownership": "Adults with an account, Global Findex 2025",
       "ownershipWomen": "Women",
       "ownershipMen": "Men",
       "ownershipNote": "A 15-point gap between women and men.",
-      "chartTitle": "Account ownership by gender, 2024",
+      "chartTitle": "Account ownership by gender, Global Findex 2025",
       "chartAxis": "Adults aged 15+ with an account (%)",
       "chartWomen": "Women",
       "chartMen": "Men",
       "chartAll": "All adults",
-      "tableCaption": "Share of adults aged 15 and over with an account at a financial institution or mobile money provider, 2024",
+      "tableCaption": "Share of adults aged 15 and over with an account at a financial institution or mobile money provider (World Bank Global Findex 2025, as cited by FSD Ethiopia)",
       "colGroup": "Group",
       "colShare": "Share (%)",
       "link": "Explore the data hub"

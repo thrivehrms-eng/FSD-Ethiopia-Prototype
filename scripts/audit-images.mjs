@@ -22,7 +22,7 @@ const server = http.createServer(async (req, res) => {
   if (path.endsWith('/')) path += 'index.html';
   try {
     const body = await readFile(join(DIST, path));
-    res.writeHead(200, { 'content-type': TYPES[extname(path)] ?? 'application/octet-stream' });
+    res.writeHead(200, { 'content-type': TYPES[extname(path)] ?? 'application/octet-stream', 'content-length': body.length });
     res.end(body);
   } catch {
     res.writeHead(404).end();
@@ -37,13 +37,22 @@ for (const page of pages) {
     const ctx = await browser.newContext({ viewport: { width, height: 900 }, reducedMotion: 'reduce' });
     await ctx.addInitScript(() => localStorage.setItem('fsd-consent', JSON.stringify({ version: 1, analytics: false, decidedAt: '2026-01-01' })));
     const p = await ctx.newPage();
-    let bytes = 0;
-    p.on('response', async (r) => {
+    // Count every response body fetched up to network idle (lazy images below the fold excluded).
+    const sizes = [];
+    p.on('response', (r) => {
       const len = Number(r.headers()['content-length'] ?? 0);
-      bytes += len || (await r.body().catch(() => Buffer.alloc(0))).length;
+      sizes.push(len ? Promise.resolve(len) : r.body().then((b) => b.length, () => 0));
     });
     await p.goto(`http://localhost:4331${page}`, { waitUntil: 'networkidle' });
-    const firstLoad = bytes;
+    const firstLoad = (await Promise.all([...sizes])).reduce((a, b) => a + b, 0);
+    const lcp = await p.evaluate(() => new Promise((resolve) => {
+      new PerformanceObserver((list) => {
+        const e = list.getEntries().at(-1);
+        resolve(e ? { url: e.url, size: e.size } : null);
+      }).observe({ type: 'largest-contentful-paint', buffered: true });
+      setTimeout(() => resolve(null), 2000);
+    }));
+    const lcpBytes = lcp?.url ? await p.evaluate((u) => performance.getEntriesByName(u)[0]?.encodedBodySize ?? 0, lcp.url) : 0;
     const report = await p.evaluate(() => {
       const upscaled = [];
       for (const el of document.querySelectorAll('[data-image]')) {
@@ -62,6 +71,7 @@ for (const page of pages) {
     });
     const line = [`${page} @${width}px`, `upscaled: ${report.upscaled.length}`, `no alt: ${report.noAlt.length}`, `fallback panels: ${report.missing.length}`];
     if (width === 1440) line.push(`first load ${(firstLoad / 1024).toFixed(0)} KB of ${(BUDGET / 1024).toFixed(0)} KB budget`);
+    if (lcp?.url) line.push(`LCP ${lcp.url.split('/').pop()} ${(lcpBytes / 1024).toFixed(0)} KB`);
     console.log(line.join(' | '));
     for (const u of report.upscaled) console.log(`  upscaled: ${u}`);
     for (const n of report.noAlt) console.log(`  no alt: ${n}`);

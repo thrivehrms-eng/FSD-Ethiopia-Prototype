@@ -11,9 +11,11 @@ interface Props {
   /** "line": centre lines traced from the logo paths, at a constant stroke width (map frame). */
   variant?: 'shape' | 'line';
   lineWidth?: number;
+  /** "line" only: move each stroke [dx, dy] in logo units, keeping its shape (yellow, green, red). */
+  offsets?: [number, number][];
 }
 
-const { tone = 'brand', class: className, weight = 0, preserveAspectRatio = 'xMidYMid meet', style, variant = 'shape', lineWidth = 4 } = Astro.props;
+const { tone = 'brand', class: className, weight = 0, preserveAspectRatio = 'xMidYMid meet', style, variant = 'shape', lineWidth = 4, offsets } = Astro.props;
 // Centre lines of the three logo strokes, in the same coordinates as the shapes below.
 const lines = [
   'M279.94 408.79 L269.47 422.79 L282.9 434.73',
@@ -37,7 +39,7 @@ const outline = weight ? { stroke: 'currentColor', 'stroke-width': weight, 'vect
   {
     variant === 'line'
       ? lines.map((d, i) => (
-          <path d={d} fill="none" stroke={colours[i]} stroke-width={lineWidth} vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="miter" />
+          <path d={d} transform={offsets?.[i] ? `translate(${offsets[i][0]} ${offsets[i][1]})` : undefined} fill="none" stroke={colours[i]} stroke-width={lineWidth} vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="miter" />
         ))
       : (
           <Fragment>

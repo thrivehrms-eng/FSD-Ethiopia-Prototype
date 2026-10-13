@@ -1,49 +1,78 @@
 # Content audit: v2 homepage
 
-Status on 13 October 2026. fsdethiopia.org could not be reached from the build environment (DNS blocked), so every fact below came from search-engine results for FSD Ethiopia's own pages, checked where possible by a second, independent search. Each item needs a check against the live site before the proposal is submitted. Figures stay `verified: false` in `src/data/figures.json` until then.
+Status on 13 October 2026. Every fact below was checked against the live fsdethiopia.org page that is its source. `src/data/figures.json` records the wording found (`quote`) and the date checked (`verifiedOn`) for each figure.
 
 ## Photos and assets
 
-- **No photos are in the build yet.** All 98 manifest images and the cohort page failed to download (`ENOTFOUND`); see `assets-src/fetch-report.json`. Every slot shows the brief's fallback (gradient panel with the three-stroke mark).
-- To fix: on a machine that can reach fsdethiopia.org, run `npm run assets` (fetch, then optimise), check `npm run audit:images`, commit `public/images/` and `src/data/images.json`.
-- The skyline panorama (`landing-page-17-1.png`) is described as "likely Addis Ababa; confirm".
+- All 98 manifest images and the 40 Board Ready cohort portraits were downloaded from fsdethiopia.org. Every original matches the size listed in CLAUDE.md section 6 (`assets-src/fetch-report.json`).
+- Alt text was written after looking at each photo. Four news images the brief treated as title graphics are photos: India's DPI Flywheel, The Digital East, Growing Ethiopia's Insurance Market, and Designing Digital Finance Markets That Work for Women.
+- The originals are not committed (`npm run assets:fetch` restores them); the AVIF/WebP copies in `public/images/` are.
+- Still to confirm: the skyline panorama (`landing-page-17-1.png`) is probably Addis Ababa.
+
+## Figures
+
+| Figure | What we show | Status and source wording |
+| --- | --- | --- |
+| Year established | 2022 | Verified. About us: "Established in 2022, FSD Ethiopia is an agency that aims to support…". The ToR uses the same sentence. |
+| Programme areas | 3 | Verified. The Our Work menu lists Financial Inclusion, Access to Capital and Climate Finance. |
+| Regions with coordinators | 7 | Verified on Our team: Afar, Amhara, Benishangul Gumuz, Gambella, Oromia, Sidama, Somali. |
+| Board Ready cohort | 40 women | Verified by count: the cohort page has 40 member cards but states no total. |
+| Board Ready training | Three rounds with IFC, ESG focus | Verified on About our Board Ready Program. |
+| Mobile money accounts | 139.5 million, June 2025 | Verified. "Designing Digital Finance Markets That Work for Women" cites NBE's Digital Payments Strategy 2026–2030; the month is from the open finance blog ("over 139.50 million by June 2025"). The NBE strategy is a draft and counts accounts, not people. |
+| Account ownership | Women 42%, men 57%, all adults 49% (Global Findex 2025) | Verified. The gender blog says "In 2024, 42 percent of women owned an account, compared with 57 percent of men"; another post cites the same split to "Global Findex 2025". The open finance blog gives 35% (2017) to 49% (2025). We now label all three "Global Findex 2025". The 46% (2021) we had shown is not on the site and was removed. |
+| Second Climate Finance Summit | 5 March 2026, nearly 200 participants, "Landscape to Legacy" theme | Verified on the press release. |
+| BimaLab | 10 startups and 4 corporates, Demo Day 7 March 2024 | Verified on FSD's post. Shega reports 11 startups. |
+| Insurance workshop | 11 November 2025; more than 150 participants; premiums up about half; penetration below 1% of GDP | Verified. The workshop post gives the date and the penetration figure; the participant count and premium growth are in "Growing Ethiopia's Insurance Market". The homepage now shows the exact date. |
+| ECMA board guideline | Minimum 30% women on issuers' boards | Verified in `FSD_call_to_action.pdf`, which calls it a draft guideline. Not shown on the homepage. |
+
+Removed from `figures.json` because the cited source does not contain them, and nothing displayed them:
+- women's and men's digital payment use (13% / 26%);
+- women holding 15% of bank board seats (World Bank 2024, said to be quoted on the Board Ready page).
 
 ## Names and spelling
 
-| Item | Team page | Elsewhere | Used on the homepage |
+| Item | Team page | Elsewhere | We use |
 | --- | --- | --- | --- |
-| Director of Financial Inclusion | Abel Tadelle | Blog bylines: Abel Taddele | Portrait card: Abel Tadelle; bylines: Abel Taddele |
-| Gender Lead | Sinidu Fikadu | Blog bylines: Sinidu Fekadu | Portrait card: Sinidu Fikadu; bylines: Sinidu Fekadu |
-| Gender Expert | Hanna Hailu | Blog bylines: Hana Hailu | Byline: Hana Hailu |
-| BimaLab winner | "Ekub" (FSD) | "Equb" (Shega) | Not named on the homepage |
+| Director of Financial Inclusion | Abel Tadelle | Bylines: Abel Taddele | Portrait: Abel Tadelle; bylines as published |
+| Gender Lead | Sinidu Fikadu | Bylines: Sinidu Fekadu | Portrait: Sinidu Fikadu; bylines as published |
+| Gender Expert | Hanna Hailu | Byline: Hana Hailu | Byline as published |
+| Oromia coordinator | DR.Fekadu Mekonnen | — | Dr. Fekadu Mekonnen |
+| Board titles | Only the Chairman has a title; the section heading is "Our Non-Executive Board of Directors" | — | "Non-Executive Director", as in the brief |
+| Board chair | "Board Chairman" | Inception post: "Board Chairperson" | Board Chairman |
 
-## Facts to confirm
+Board affiliations match the team page exactly, and Maleda Bisrat is on the current board.
 
-| Fact | What we show | Issue |
-| --- | --- | --- |
-| Year established | 2022 | About page and launch (19 May 2022, Hyatt Regency) say 2022; the "Main Home" page and some 2024–25 documents say 2021. |
-| Board Ready cohort size | 40 women | From the brief. Search results named 35 members; the count was not found in any snippet. |
-| Mobile money accounts | 139.5 million, June 2025 | From the NBE draft NDPS 2026–2030 as cited by FSD. The draft may change; an NBE director later cited 157 million. Counts accounts, not people. |
-| Account ownership by gender, 2024 | Women 42%, men 57%; all adults 49% | Cited in FSD's Gender Integration blog; unrounded 41.6% and 56.5% per UNCDF. One fact-checker could not reproduce the gender split. The 2024 survey excluded Amhara, Tigray, Harari and Somali (about 30% of the population). |
-| BimaLab cohort | 10 startups and 4 corporates | FSD's figure. Shega reports 11 startups; the launch post said 15 were selected (11 + 4 = 15). The launch month and cohort length were left out because sources disagree. |
-| Second Climate Finance Summit theme | "Landscape to Legacy: Ethiopia's Climate Finance Path to COP32" | Medium confidence. COP32 is in 2027; copy does not imply 2026. |
-| Insurance workshop | November 2025 (month only, as in the brief); more than 150 participants; premiums up about half; penetration below 1% of GDP | Search results gave 11 November 2025; the report file name carries a June 2025 date and one snippet called it two days. |
-| Open finance blog date | 20 July 2026 | Listing pages show 17 July. |
-| Access to Influence press release | Links to the press release category | The release's own URL was not found. |
-| India's DPI Flywheel | Links to the May 2026 archive | The post's own URL was not found. |
-| Board member Maleda Bisrat | Not shown on the homepage | 2022 wording only; not seen on the current team page in search results. |
-| Social profiles | linkedin.com/company/fsd-ethiopia, x.com/FSDEthiopia, facebook.com/FSDEthiopia | Found in search results; confirm with FSD. |
-| Funder name | UK International Development | The 2022 launch says UK aid / FCDO; the 2024 logo file says UK International Development. |
+## Funder naming
 
-## Opportunities
+- The live site shows the UK funder only as the `UK_International_Development_logo.png` logo.
+- The July 2026 Stakeholder Summit post says "UK FCDO"; the 2022 launch said "UK aid".
+- Our copy says "the UK's Foreign, Commonwealth & Development Office", with the UK International Development logo in the footer. Confirm the preferred wording with FSD.
+- The Gates funder is "Gates Foundation" in 2026 posts and "Bill and Melinda Gates Foundation" in 2024.
 
-- The only open listing on 13 October 2026 is the investor relations call, closing 14 October 2026. Its exact formal title and submission address were not retrieved. Open or closed is re-checked in the visitor's browser, so after that date the announcement bar reads "See current job and procurement opportunities" and both cards show no open listings, without a rebuild. Add new calls to `src/data/opportunities.json`.
-- No staff vacancy was open. The Program Support internship closed on 2 October 2026.
+## Issues on the live site (input for the migration content audit)
 
-## Numbers in the copy
+- `/contact-us/` still contains template placeholder text ("Lorem ipsum…"). The menu's Contact Us uses `/contact-us-2/`.
+- The footer reads "© FSD Ethiopia 2024".
+- The funder logos on the homepage and Our funders page have empty alt text, so screen readers skip the funders.
+- The Access to Influence release lives at a slug copied from the climate summit post (`…/2026/03/11/fsd-ethiopia-hosts-second-climate-finance-summit-ahead-of-cop32-2/`). Its title is missing a space ("FinancialInclusion").
+- The insurance workshop post calls the event both "two-day" and "half-day".
+- Work with us has three entry points: `/work-with-us/` hub, `/work-with-us-2/` jobs, `/call-for-applications/` (no active calls).
+- Several pages use numbered duplicate slugs (`about-us-2`, `our-work-2/3/4`, `contact-us-2`), which the redirect map will need to cover.
 
-Every number in hero, featured-work and news copy has an entry in `src/data/figures.json` with its source URL and `usedIn`, so the pre-submission check covers them all.
+## Opportunities on 13 October 2026
+
+- Procurement, open:
+  - "Strengthening Investor Relations Capacity Among Listed, OTC-Traded, and Prospective Public Companies in Ethiopia's Capital Market", closes 14 October 2026;
+  - "Website Redesign for FSD Ethiopia", closes 16 October 2026.
+- Jobs: none open. The Program Support internship closed on 2 October 2026.
+- Open or closed is re-checked in the visitor's browser. Checked with the clock set to 14, 16 and 17 October: after the 16th the bar reads "See current job and procurement opportunities" and both cards show no open listings.
+
+## Links
+
+- India's DPI Flywheel and Access to Influence now link to their own posts. The previous links went to the archive and category pages.
 
 ## Copy written for the prototype
 
-The hero headlines, How we work promises and descriptions, featured-work summaries and news excerpts are our own wording, paraphrased from FSD sources. The tagline "We help build innovative, inclusive, and sustainable financial markets for all." is FSD's own (homepage slider). All Amharic strings are samples flagged for native-speaker review.
+- Our own wording, paraphrased from FSD sources: hero headlines, How we work promises, featured-work summaries and news excerpts.
+- The tagline "We help build innovative, inclusive, and sustainable financial markets for all." is FSD's own, checked on the homepage slider.
+- All Amharic strings are samples flagged for native-speaker review.

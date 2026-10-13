@@ -54,6 +54,7 @@ Behaviour lives in `src/scripts/app.ts`: `tabs`, `slider` (single and scroll mod
 ## Rules worth repeating
 
 - One accent on light (green-600); yellow only on dark.
-- At most two map frames visible per page.
+- At most two map frames visible per page. Each frame's strokes keep their logo shapes but sit nudged outwards (yellow left, green up, red right), so they ring the photo instead of crossing faces near its edges.
+- Portraits use the light duotone (`.duotone--portrait`): pale green highlights, teal-900 shadows, full colour on hover and focus.
 - No grey placeholders: a missing photo shows `GradientPanel`.
 - Nothing moves on its own; every animation is off under reduced motion.

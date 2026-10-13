@@ -1,67 +1,51 @@
 {
-  "_note": "Sourced figures only. Each was read from a search-index summary of the source because fsdethiopia.org was unreachable from the build environment. Check every value against its source before the proposal is submitted, then set verified to true.",
-  "digitalPaymentsWomen": {
-    "value": 13,
-    "unit": "%",
-    "label": "Women who made or received a digital payment",
-    "sourceTitle": "Advancing Women’s Digital Financial Service Usage, FSD Ethiopia",
-    "sourceUrl": "https://fsdethiopia.org/wp-content/pdf/Advancing%20Women%E2%80%99s%20Digital%20Financial%20Service%20Usage.pdf",
-    "verified": false
-  },
-  "digitalPaymentsMen": {
-    "value": 26,
-    "unit": "%",
-    "label": "Men who made or received a digital payment",
-    "sourceTitle": "Advancing Women’s Digital Financial Service Usage, FSD Ethiopia",
-    "sourceUrl": "https://fsdethiopia.org/wp-content/pdf/Advancing%20Women%E2%80%99s%20Digital%20Financial%20Service%20Usage.pdf",
-    "verified": false
-  },
-  "womenBankBoardSeats": {
-    "value": 15,
-    "unit": "%",
-    "year": 2024,
-    "label": "Share of board positions held by women across 30 commercial banks",
-    "sourceTitle": "World Bank study (2024), cited on FSD Ethiopia’s Board Ready Program page",
-    "sourceUrl": "https://fsdethiopia.org/about-our-board-ready-program/",
-    "verified": false
-  },
+  "_note": "Sourced figures only. Each value was checked against the live source page on 13 October 2026; quote holds the wording found there. Anything not found on a source has been removed. Re-check before the proposal is submitted if a source page changes.",
   "ecmaIssuerBoardMinimum": {
     "value": 30,
     "unit": "%",
-    "label": "Minimum share of women on securities issuers’ boards under ECMA corporate governance rules",
+    "label": "Minimum share of women on securities issuers’ boards proposed in ECMA’s draft corporate governance guideline",
     "sourceTitle": "Unlock capital markets to advance women’s economic participation and leadership, FSD Ethiopia",
     "sourceUrl": "https://fsdethiopia.org/wp-content/pdf/FSD_call_to_action.pdf",
-    "verified": false
+    "verified": true,
+    "verifiedOn": "2026-10-13",
+    "quote": "the draft guideline on corporate governance for issuers of securities to the public states that a minimum of 30% of board members should be female"
   },
   "established": {
     "value": 2022,
     "label": "Year FSD Ethiopia was established",
     "sourceTitle": "About us, FSD Ethiopia",
     "sourceUrl": "https://fsdethiopia.org/about-us-2/",
-    "verified": false,
-    "note": "Most FSD pages say 2022 (launch 19 May 2022); a few older pages say 2021."
+    "verified": true,
+    "verifiedOn": "2026-10-13",
+    "quote": "Established in 2022, FSD Ethiopia is an agency that aims to support the development of accessible, inclusive, and sustainable financial markets"
   },
   "programmeAreas": {
     "value": 3,
     "label": "Programme areas: Financial Inclusion, Access to Capital, Climate Finance",
-    "sourceTitle": "Our work, FSD Ethiopia",
-    "sourceUrl": "https://fsdethiopia.org/our-work-2/",
-    "verified": false
+    "sourceTitle": "Our Work menu, FSD Ethiopia homepage",
+    "sourceUrl": "https://fsdethiopia.org/",
+    "verified": true,
+    "verifiedOn": "2026-10-13",
+    "quote": "Our Work menu: Financial Inclusion, Access to Capital, Climate Finance"
   },
   "regionsWithCoordinators": {
     "value": 7,
     "label": "Regions with FSD regional coordinators",
     "sourceTitle": "Our team, FSD Ethiopia",
     "sourceUrl": "https://fsdethiopia.org/our-team/",
-    "verified": false
+    "verified": true,
+    "verifiedOn": "2026-10-13",
+    "quote": "Seven regional coordinators: Afar, Amhara, Benishangul Gumuz, Gambella, Oromia, Sidama and Somali regional states"
   },
   "cohortWomen": {
     "value": 40,
     "label": "Women in the Board Ready cohorts",
     "sourceTitle": "Board Ready cohort, FSD Ethiopia",
     "sourceUrl": "https://fsdethiopia.org/cohort/",
-    "verified": false,
-    "note": "Figure from the CLAUDE.md v2 brief (cohort page inspected 13 Oct 2026). A search found 35 named members; confirm the total."
+    "verified": true,
+    "note": "Counted on the cohort page; the page itself states no total.",
+    "verifiedOn": "2026-10-13",
+    "quote": "40 member cards, each with a name and portrait"
   },
   "mobileMoneyAccounts2025": {
     "value": 139.5,
@@ -72,12 +56,15 @@
     "sourceTitle": "National Bank of Ethiopia, draft National Digital Payments Strategy 2026–2030, cited by FSD Ethiopia",
     "sourceUrl": "https://fsdethiopia.org/2026/03/26/designing-digital-finance-markets-that-work-for-women/",
     "primarySourceUrl": "https://nbe.gov.et/wp-content/uploads/2025/12/NATIONAL_DIGITAL_PAYMENT_STRATEGY_2026-2030_Draft_Document.pdf",
-    "verified": false,
-    "note": "Confirmed by two independent search results; the NBE document is a draft, and NBE has since cited a higher total (157 million). Check before submission.",
+    "verified": true,
+    "note": "“June 2025” is from FSD’s open finance blog: “over 139.50 million by June 2025”. The NBE strategy is a draft; NBE has since cited a higher total. Counts accounts, not people.",
     "usedIn": [
       "home data snapshot",
       "news.json women-digital-markets"
-    ]
+    ],
+    "verifiedOn": "2026-10-13",
+    "quote": "Mobile money accounts increased from 12.2 million in 2020 to 139.5 million in 2025… (National Bank of Ethiopia, Digital Payments Strategy 2026–2030)",
+    "periodSourceUrl": "https://fsdethiopia.org/2026/07/20/ethiopias-open-finance-future-is-closer-than-it-looks/"
   },
   "accountOwnershipWomen2024": {
     "value": 42,
@@ -86,8 +73,11 @@
     "label": "Women aged 15+ with an account at a financial institution or mobile money provider",
     "sourceTitle": "Gender Integration as a Market Systems Strategy, FSD Ethiopia (citing World Bank Global Findex 2025)",
     "sourceUrl": "https://fsdethiopia.org/2026/07/21/gender-integration-as-a-market-systems-strategy-advancing-womens-financial-inclusion/",
-    "verified": false,
-    "note": "Unrounded 41.6% per UNCDF citing Findex 2024 data; one fact-checker could not reproduce it. Check the Findex 2025 Ethiopia data."
+    "verified": true,
+    "note": "FSD’s “Designing Digital Finance Markets That Work for Women” gives the same figures, citing Global Findex 2025, whose survey data are for 2024.",
+    "verifiedOn": "2026-10-13",
+    "quote": "In 2024, 42 percent of women owned an account, compared with 57 percent of men, a 15-percentage-point gender gap.",
+    "period": "2024 (Global Findex 2025)"
   },
   "accountOwnershipMen2024": {
     "value": 57,
@@ -96,18 +86,24 @@
     "label": "Men aged 15+ with an account at a financial institution or mobile money provider",
     "sourceTitle": "Gender Integration as a Market Systems Strategy, FSD Ethiopia (citing World Bank Global Findex 2025)",
     "sourceUrl": "https://fsdethiopia.org/2026/07/21/gender-integration-as-a-market-systems-strategy-advancing-womens-financial-inclusion/",
-    "verified": false,
-    "note": "Unrounded 56.5% per UNCDF citing Findex 2024 data."
+    "verified": true,
+    "note": "FSD’s “Designing Digital Finance Markets That Work for Women” gives the same figures, citing Global Findex 2025, whose survey data are for 2024.",
+    "verifiedOn": "2026-10-13",
+    "quote": "In 2024, 42 percent of women owned an account, compared with 57 percent of men, a 15-percentage-point gender gap.",
+    "period": "2024 (Global Findex 2025)"
   },
   "accountOwnershipAll2024": {
     "value": 49,
     "unit": "%",
-    "year": 2024,
-    "label": "Adults aged 15+ with an account (46% in 2021, 35% in 2017)",
+    "year": 2025,
+    "label": "Adults aged 15+ with an account (35% in 2017)",
     "sourceTitle": "Ethiopia’s Open Finance Future Is Closer Than It Looks, FSD Ethiopia (citing World Bank Global Findex 2025)",
     "sourceUrl": "https://fsdethiopia.org/2026/07/20/ethiopias-open-finance-future-is-closer-than-it-looks/",
-    "verified": false,
-    "note": "Confirmed by FSD's blog and Shega's Findex 2025 analysis."
+    "verified": true,
+    "note": "FSD dates this figure 2025, the Findex edition; the gender split is dated 2024, its survey year. Both come from Global Findex 2025.",
+    "period": "Global Findex 2025",
+    "verifiedOn": "2026-10-13",
+    "quote": "adult account ownership rose from 35pc to 49pc between 2017 and 2025"
   },
   "climateSummit2026Participants": {
     "value": 200,
@@ -115,37 +111,41 @@
     "label": "Participants at the Second Climate Finance Summit, 5 March 2026",
     "sourceTitle": "FSD Ethiopia hosts Second Climate Finance Summit ahead of COP32",
     "sourceUrl": "https://fsdethiopia.org/2026/03/05/fsd-ethiopia-hosts-second-climate-finance-summit-ahead-of-cop32/",
-    "verified": false,
-    "note": "Also in the CLAUDE.md v2 brief (4.6). Read from search results for the cited page; check against the live page.",
+    "verified": true,
     "usedIn": [
       "featured.json climate-summit-2026",
       "news.json second-climate-summit"
-    ]
+    ],
+    "verifiedOn": "2026-10-13",
+    "quote": "FSD Ethiopia successfully hosted its Second Climate Finance Summit in Addis Ababa, bringing together nearly 200 participants"
   },
   "bimalabCohort2024": {
     "value": "10 startups and 4 corporates",
     "label": "BimaLab Ethiopia first cohort at Demo Day, 7 March 2024",
     "sourceTitle": "BimaLab Ethiopia comes to a successful finish with Demo Day showcase",
     "sourceUrl": "https://fsdethiopia.org/2024/03/07/bimalab-ethiopia-comes-to-successful-finish-with-demo-day-showcase/",
-    "verified": false,
-    "note": "FSD's figure, also in the brief (4.6). Shega reports 11 startups. Read from search results for the cited page; check against the live page.",
+    "verified": true,
+    "note": "Shega reports 11 startups; FSD’s own figure is used.",
     "usedIn": [
       "featured.json bimalab-2024",
       "news.json bimalab-demo-day"
-    ]
+    ],
+    "verifiedOn": "2026-10-13",
+    "quote": "a transformative four-month journey for the cohort of 10 startups and 4 corporates"
   },
   "insuranceWorkshop2025Participants": {
     "value": 150,
     "display": "more than 150",
-    "label": "Participants at the Insurance Industry Workshop, November 2025",
-    "sourceTitle": "FSD Ethiopia and partners host Insurance Industry Workshop",
-    "sourceUrl": "https://fsdethiopia.org/2025/11/21/fsd-ethiopia-and-partners-host-insurance-industry-workshop-to-advance-market-reform-and-inclusion/",
-    "verified": false,
-    "note": "Read from search results for the cited page; check against the live page.",
+    "label": "Participants at the Insurance Industry Workshop, 11 November 2025",
+    "sourceTitle": "Growing Ethiopia’s Insurance Market: From Reform to Real Impact, FSD Ethiopia",
+    "sourceUrl": "https://fsdethiopia.org/2026/03/26/growing-ethiopias-insurance-market-from-reform-to-real-impact/",
+    "verified": true,
     "usedIn": [
       "featured.json insurance-workshop-2025",
       "news.json insurance-workshop"
-    ]
+    ],
+    "verifiedOn": "2026-10-13",
+    "quote": "brought together more than 150 regulators, insurers, development partners, and technical experts under the theme “Growing the Market, Embracing Change.”"
   },
   "insurancePremiumGrowth2024_25": {
     "value": 50,
@@ -154,36 +154,39 @@
     "label": "Growth in gross written insurance premiums, 2024/25",
     "sourceTitle": "Growing Ethiopia’s Insurance Market: From Reform to Real Impact, FSD Ethiopia",
     "sourceUrl": "https://fsdethiopia.org/2026/03/26/growing-ethiopias-insurance-market-from-reform-to-real-impact/",
-    "verified": false,
-    "note": "Read from search results for the cited page; check against the live page.",
+    "verified": true,
     "usedIn": [
       "featured.json insurance-workshop-2025",
       "news.json insurance-market"
-    ]
+    ],
+    "verifiedOn": "2026-10-13",
+    "quote": "Gross written premiums increased by around fifty percent in 2024–2025"
   },
   "insurancePenetration": {
     "value": 1,
     "unit": "% of GDP",
     "display": "below 1% of GDP",
     "label": "Insurance penetration in Ethiopia",
-    "sourceTitle": "FSD Ethiopia Insurance Industry Workshop report",
-    "sourceUrl": "https://fsdethiopia.org/wp-content/pdf/2025-06-11-%20FSDE-Designed-%20FSD%20INSURANCE%20INDUSTRY%20WORKSHOP%20%20REPORT%20%282%29_com.pdf",
-    "verified": false,
-    "note": "Also in the brief (4.6). Read from search results for the cited page; check against the live page.",
+    "sourceTitle": "FSD Ethiopia and partners host Insurance Industry Workshop",
+    "sourceUrl": "https://fsdethiopia.org/2025/11/21/fsd-ethiopia-and-partners-host-insurance-industry-workshop-to-advance-market-reform-and-inclusion/",
+    "verified": true,
     "usedIn": [
       "featured.json insurance-workshop-2025",
       "news.json insurance-workshop"
-    ]
+    ],
+    "verifiedOn": "2026-10-13",
+    "quote": "insurance penetration remains below one percent of GDP"
   },
   "boardReadyRounds": {
     "value": 3,
     "label": "Rounds of corporate governance training run with IFC for the Board Ready Program",
     "sourceTitle": "About our Board Ready Program, FSD Ethiopia",
     "sourceUrl": "https://fsdethiopia.org/about-our-board-ready-program/",
-    "verified": false,
-    "note": "Also in the brief (4.9). Read from search results for the cited page; check against the live page.",
+    "verified": true,
     "usedIn": [
       "en.json home.boards.body"
-    ]
+    ],
+    "verifiedOn": "2026-10-13",
+    "quote": "FSD Ethiopia, in collaboration with IFC, successfully conducted three rounds of a comprehensive Corporate Governance Training"
   }
 }

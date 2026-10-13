@@ -2,6 +2,9 @@
 // Signature map frame (CLAUDE.md 3.4): the image is cut by an angular clip and
 // ringed by the three strokes from FSD's logo, which trace Ethiopia's outline in
 // the flag colours. Use at most two per page.
+// Each stroke keeps its logo shape but is nudged outwards (yellow left, green up,
+// red right) so the strokes sit around the photo rather than across faces near its
+// edges. The side padding keeps the moved strokes inside the column at every width.
 import Img from './Img.astro';
 import ThreeStrokes from './ThreeStrokes.astro';
 import Credit from './Credit.astro';
@@ -22,12 +25,19 @@ interface Props {
 const { id, sizes, maxWidth = 640, priority = false, alt, class: className, credit = 'below', position } = Astro.props;
 ---
 
-<figure class:list={['map-frame relative mx-auto w-full', className]} style={`max-width:${maxWidth}px`}>
+<figure class:list={['map-frame relative mx-auto w-full pl-[9%] pr-[3%]', className]} style={`max-width:${maxWidth}px`}>
   <div class="relative">
     <div class="map-frame__clip zoom-host aspect-[1.414] overflow-hidden">
       <Img id={id} sizes={sizes} maxWidth={maxWidth} aspect={1.414} priority={priority} alt={alt} position={position} class="h-full w-full" />
     </div>
-    <ThreeStrokes class="pointer-events-none absolute" style="left:-5%;top:-5%;width:109%;height:111%" variant="line" lineWidth={4} preserveAspectRatio="none" />
+    <ThreeStrokes
+      class="pointer-events-none absolute"
+      style="left:-5%;top:-5%;width:109%;height:111%;overflow:visible"
+      variant="line"
+      lineWidth={4}
+      preserveAspectRatio="none"
+      offsets={[[-3.6, 0], [0, -1.4], [1, 0]]}
+    />
   </div>
   {
     credit === 'below' && hasImage(id) && (

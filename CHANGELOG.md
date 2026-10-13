@@ -1,5 +1,68 @@
 # Changelog
 
+## 0.3.0 — 2026-10-13: FSD Ethiopia's own photos, verified content
+
+### Added
+- **Real photography throughout the homepage.**
+  - All 98 images from CLAUDE.md section 6 and the 40 Board Ready cohort portraits, downloaded from fsdethiopia.org. Every original matches the size in the brief.
+  - 134 images optimised into 896 AVIF/WebP files in `public/images/`, 39 MB. The 32 MB of originals stay out of git; `npm run assets:fetch` restores them.
+- `docs/ToR-website-redesign.pdf`: the re-advertised ToR (5 October 2026) from FSD's procurement page, so the homepage can be mapped to its clauses (below).
+- Second open procurement call: "Website Redesign for FSD Ethiopia", closing 16 October 2026.
+
+### Changed
+- **Alt text.** Rewritten for 28 images after looking at each photo. Four news images are photos rather than title graphics, so they now fill their card.
+- **Map frame.** The strokes now ring the photo instead of crossing it. Each keeps its logo shape but moves outwards: yellow left, green up, red right. With real photos, the yellow chevron had crossed faces near the left edge. The frame gains side padding so the strokes stay inside the column.
+- **Portraits.** The duotone now uses a light green for highlights and teal for shadows, so faces stay legible at rest. Hover and focus still bring back full colour.
+- **Partner logos.** The UK International Development logo keeps its colours on a white chip, because the white filter turned it into a blank box. The Gates Foundation and FSD Africa tiles are cropped to their wordmarks so they read at footer size.
+- **Content checked against the live site** (`docs/content-audit.md`).
+  - All 15 figures are now `verified: true`, each with the source wording found and the date checked.
+  - Account ownership is labelled "Global Findex 2025", and the unsourced 46% (2021) was dropped.
+  - The insurance workshop shows its exact date, 11 November 2025.
+  - The Access to Influence and India's DPI Flywheel cards link to their own posts.
+  - The investor relations call carries its exact title and ToR link.
+  - The funder is named "the UK's Foreign, Commonwealth & Development Office", matching FSD's July 2026 wording.
+  - Maleda Bisrat is confirmed on the current board.
+- Removed two unused figures that their cited sources do not contain: the digital-payment gender split and the 15% bank-board share. Also removed the unsourced claim that many mobile money accounts are inactive.
+- `npm run assets:optimise` encodes four images at a time and writes atomically.
+- `npm run audit:images` now counts every response body (it under-counted before) and reports the LCP image and its size.
+
+### Checked
+- Build passes; no horizontal scroll at 390, 768, 1280 or 1440px on `/`, `/am/` and `/styleguide/`.
+- **Image audit:** nothing scaled past 1.25× at 390, 768, 1024, 1280 or 1440px; every image has alt text; no fallback panels.
+  - First load at 1440px is 655 KB of the 1.5 MB budget.
+  - The LCP image is a preloaded AVIF of 9–68 KB depending on width, against a 200 KB limit.
+- **axe-core:** no violations on `/`, `/am/` and `/styleguide/` at 1440 and 390px, with and without the cookie banner.
+- **Lighthouse with photos:**
+  - Performance 99 on mobile and 100 on desktop; Accessibility 100; Best Practices 100.
+  - LCP 1.9–2.0s on mobile and 0.5s on desktop; CLS at most 0.002. The ToR asks for pages under 3 seconds.
+  - SEO 66 only because staging is `noindex`.
+- 40 scripted browser checks pass.
+- With the clock set to 14, 16 and 17 October 2026, the announcement bar and opportunity cards switch from two open calls, to one, to none.
+
+### Homepage against the ToR
+Clause numbers refer to `docs/ToR-website-redesign.pdf`.
+
+| ToR clause | Where the homepage shows it |
+| --- | --- |
+| 2 Overall objective (primary and secondary audiences) | Hero tabs for who we are, our work and working with us; data, publications and opportunities each one click from the homepage |
+| 3.1 Design and UX: brand imagery, gender responsive, mobile | FSD's own event photos, staff and cohort portraits; women leaders in the Board Ready band and the people row; layouts checked at 390–1440px |
+| 3.1 WCAG 2.1 AA | axe 0 violations, Lighthouse Accessibility 100, keyboard-operable tabs, sliders and dialogs, reduced-motion support |
+| 3.2 Bilingual toggle | EN \| አማርኛ in the header; `/am/` homepage with Amharic navigation, buttons and headings |
+| 3.3 APIs (Mailchimp, X, LinkedIn) | Newsletter sign-up in the closing band; LinkedIn and X tabs in Latest |
+| 3.3 Analytics under Proclamation 1321/2024 | Analytics load only after consent; Reject is as prominent as Accept |
+| 3.3 SEO and schema markup | Unique title, description and Open Graph tags; Organization schema; `noindex` on staging |
+| 3.3 Performance: under 3 seconds, lazy loading, compressed images | AVIF/WebP at four widths, lazy below the fold, LCP 1.9s on mobile |
+| 3.4 Data visualisation and resource library | Data snapshot with sourced KPIs and a Chart.js chart with a table; latest publications with real covers and PDF links |
+| 3.5 CAPTCHA on forms | CAPTCHA slot on the newsletter form |
+| 3.6 Content audit | `docs/content-audit.md`, including issues found on the live site |
+| 3.7 Job and procurement portals reachable from the homepage | Announcement bar, Opportunities cards with live counts and deadlines, header navigation |
+| 4 Brand alignment and communications | FSD palette, type and logo strokes; storytelling in Featured work; programme visibility in Where we focus; social feeds; searchable site; newsletter and contact |
+| 5.2 Sample homepage mockup | This homepage |
+
+### Known gaps
+- Inner pages linked from the homepage are not built yet (build order steps 5–8).
+- Map frame strokes still pass over the outer edges of a photo, so check each new photo used in a frame.
+
 ## 0.2.0 — 2026-10-13: v2 homepage (CLAUDE.md v2, build order steps 1–4)
 
 ### Added
@@ -33,7 +96,7 @@ A six-dimension review (spec, accessibility, content, images, interaction) raise
 - Image audit: nothing scaled past 1.25× at 390, 768, 1024, 1280 or 1440px, every image has alt text. A test build with synthetic stand-ins for all 98 photos also passed, with the hero images preloaded and about 170 KB of images on first load at 1440px (real photos will be heavier but well inside the 1.5 MB budget).
 
 ### Evaluation criteria shown on the homepage
-ToR clause numbers will be added when `docs/ToR-website-redesign.pdf` is in the repo.
+ToR clause numbers were added in 0.3.0.
 
 | Criterion (weight) | Where the homepage shows it |
 | --- | --- |
@@ -43,7 +106,7 @@ ToR clause numbers will be added when `docs/ToR-website-redesign.pdf` is in the 
 | Brand-aligned communication (15%) | FSD palette and typography, logo strokes as the signature, FSD's own tagline, real programmes, publications and staff, women shown as board leaders, Amharic navigation and headings |
 
 ### Known gaps
-- **No photos yet.** fsdethiopia.org is blocked from the build environment, so all images show the gradient fallback. Run `npm run assets` where the site is reachable, then commit `public/images/` and `src/data/images.json`.
+- **No photos yet** (resolved in 0.3.0). fsdethiopia.org was blocked from the build environment, so all images showed the gradient fallback.
 - Inner pages linked from the homepage are not built yet (build order steps 5–8).
 
 ## 0.1.0 — 2026-10-13

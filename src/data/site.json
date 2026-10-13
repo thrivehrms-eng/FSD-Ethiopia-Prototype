@@ -76,7 +76,7 @@
     "place": "Hyatt Regency, Addis Ababa",
     "source": "https://www.fsdafrica.org/wp-content/uploads/2022/05/22-05-19-Press-Release-FSD-Ethiopia-Launch.pdf"
   },
-  "funderNote": "Funded by UK aid (FCDO) and the Bill & Melinda Gates Foundation; incubated by FSD Africa (launch release, 12 June 2022).",
+  "funderNote": "Funded by the UK FCDO (logo: UK International Development) and the Gates Foundation; incubated by FSD Africa. The 2022 launch release says UK aid (FCDO); the July 2026 Stakeholder Summit post says UK FCDO.",
   "incubator": "FSD Africa",
   "regions": [
     "Afar",
@@ -103,9 +103,9 @@
     {
       "name": "Maleda Bisrat",
       "role": "Non-Executive Director",
-      "affiliation": "Country Director Ethiopia, Tony Blair Institute for Global Change (2022 wording)",
-      "image": "board-maleda-bisrat",
-      "note": "Current board status unconfirmed: not seen on the live team page in search results."
+      "affiliation": "Country Director Ethiopia, Tony Blair Institute for Global Change",
+      "image": "board-maleda-bisrat"
     }
-  ]
+  ],
+  "boardNote": "Names and affiliations checked on https://fsdethiopia.org/our-team/ on 13 October 2026. The team page gives no per-person title except Board Chairman; \"Non-Executive Director\" follows the CLAUDE.md brief and the page heading \"Our Non-Executive Board of Directors\"."
 }

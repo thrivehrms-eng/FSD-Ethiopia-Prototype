@@ -59,11 +59,12 @@ const columns = [
   },
 ];
 const partners = [
-  // mono: shown white via a CSS filter. The two 303×205 "color2022" files are logo tiles
-  // (the FSD Africa one is a JPEG with no transparency), so they keep their colours on a
-  // white chip rather than turning into a white box (CLAUDE.md 4.15).
-  { group: 'footer.fundedBy', items: [{ name: 'UK International Development', image: 'logo-uk-intl-dev', mono: true }, { name: 'Gates Foundation', image: 'logo-gates', mono: false }] },
-  { group: 'footer.incubatedBy', items: [{ name: 'FSD Africa', image: 'logo-fsd-africa', mono: false }] },
+  // mono: shown white via a CSS filter. The UK International Development PNG has no
+  // transparency and the two 303×205 "color2022" files are logo tiles, so those keep their
+  // colours on a white chip rather than turning into a white box (CLAUDE.md 4.15).
+  // tile: the logo sits in a band across a mostly empty tile, so the chip crops to that band.
+  { group: 'footer.fundedBy', items: [{ name: 'UK International Development', image: 'logo-uk-intl-dev', mono: false }, { name: 'Gates Foundation', image: 'logo-gates', mono: false, tile: true }] },
+  { group: 'footer.incubatedBy', items: [{ name: 'FSD Africa', image: 'logo-fsd-africa', mono: false, tile: true }] },
   { group: 'footer.partOf', items: [{ name: 'FSD Network', image: 'logo-fsd-network', mono: true }] },
 ];
 const heading = 't-label text-[0.8125rem] text-yellow-400';
@@ -132,7 +133,11 @@ const link = 'text-[0.9375rem] text-white no-underline hover:text-yellow-400 hov
                 <span class="text-[0.75rem] text-on-dark-muted" lang={langOf(lang, g.group)}>{t(lang, g.group)}</span>
                 <span class="flex flex-wrap items-center gap-6">
                   {g.items.map((item) =>
-                    hasImage(item.image) ? (
+                    hasImage(item.image) && item.tile ? (
+                      <span class="block h-12 w-[150px] overflow-hidden rounded-sm bg-white">
+                        <Img id={item.image} sizes="150px" maxWidth={150} aspect={150 / 48} alt={item.name} class="h-full w-full" />
+                      </span>
+                    ) : hasImage(item.image) ? (
                       <span class:list={['block h-12 w-auto max-w-[150px]', item.mono ? 'partner-logo' : 'rounded-sm bg-white p-1']}>
                         <Img id={item.image} sizes="150px" maxWidth={150} alt={item.name} fit="logo" class="h-full w-auto" />
                       </span>
