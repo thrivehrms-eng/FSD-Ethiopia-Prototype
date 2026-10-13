@@ -1,0 +1,1730 @@
+{
+  "logo-official-png": {
+    "status": "missing",
+    "width": 721,
+    "height": 503,
+    "group": "brand",
+    "alt": "FSD Ethiopia logo",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "logo-on-teal": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "brand",
+    "alt": "FSD Ethiopia logo on a teal background",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "app-icon": {
+    "status": "missing",
+    "width": 512,
+    "height": 512,
+    "group": "brand",
+    "alt": "",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "logo-fsd-network": {
+    "status": "missing",
+    "width": 417,
+    "height": 200,
+    "group": "brand",
+    "alt": "FSD Network",
+    "credit": "FSD Network",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "logo-gates": {
+    "status": "missing",
+    "width": 303,
+    "height": 205,
+    "group": "brand",
+    "alt": "Gates Foundation",
+    "credit": "Gates Foundation",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "logo-uk-intl-dev": {
+    "status": "missing",
+    "width": 793,
+    "height": 235,
+    "group": "brand",
+    "alt": "UK International Development",
+    "credit": "UK Government",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "logo-fsd-africa": {
+    "status": "missing",
+    "width": 303,
+    "height": 205,
+    "group": "brand",
+    "alt": "FSD Africa",
+    "credit": "FSD Africa",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-hikmet-abdella": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Hikmet Abdella, Chief Executive Officer, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Hikmet Abdella",
+      "role": "Chief Executive Officer",
+      "team": "Leadership"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-abel-tadelle": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Abel Tadelle, Dir. of Financial Inclusion, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Abel Tadelle",
+      "role": "Dir. of Financial Inclusion",
+      "team": "Leadership"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-selamsew-tesfaye": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Selamsew Tesfaye, Dir. of Operations & Finance, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Selamsew Tesfaye",
+      "role": "Dir. of Operations & Finance",
+      "team": "Leadership"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-gosaye-warsa": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Gosaye Warsa, Dir. of Financial Markets, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Gosaye Warsa",
+      "role": "Dir. of Financial Markets",
+      "team": "Leadership"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-barnabas-getu": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Barnabas Getu, Head of Audit, Risk & Compliance, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Barnabas Getu",
+      "role": "Head of Audit, Risk & Compliance",
+      "team": "Leadership"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-melaku-kebede": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Melaku Kebede, Program Manager – Financial Inclusion – Project Management Office, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Melaku Kebede",
+      "role": "Program Manager – Financial Inclusion – Project Management Office",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-sinidu-fikadu": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Sinidu Fikadu, Gender Lead, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Sinidu Fikadu",
+      "role": "Gender Lead",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-bezawit-eshetu": {
+    "status": "missing",
+    "width": 625,
+    "height": 938,
+    "group": "staff",
+    "alt": "Portrait of Bezawit Eshetu, Climate Finance Lead, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Bezawit Eshetu",
+      "role": "Climate Finance Lead",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-berhanu-alene": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Berhanu Alene, Development Impact Manager, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Berhanu Alene",
+      "role": "Development Impact Manager",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-nurhassen-mensur": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Nurhassen Mensur, Technical Lead – Financial Services Deepening, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Nurhassen Mensur",
+      "role": "Technical Lead – Financial Services Deepening",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-hanna-leykun": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Hanna Leykun, Technical Lead – Financial Service Scaling, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Hanna Leykun",
+      "role": "Technical Lead – Financial Service Scaling",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-hanna-hailu": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Hanna Hailu, Gender Expert, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Hanna Hailu",
+      "role": "Gender Expert",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-dawit-alem": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Dawit Alem, Financial Market Coordinator, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Dawit Alem",
+      "role": "Financial Market Coordinator",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-afomia-kassa": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Afomia Kassa, Financial Inclusion Coordinator, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Afomia Kassa",
+      "role": "Financial Inclusion Coordinator",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-samson-berhane": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Samson Berhane, Comm. & Advocacy Specialist, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Samson Berhane",
+      "role": "Comm. & Advocacy Specialist",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-yosef-kefyalew": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Yosef Kefyalew, Communications Officer, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Yosef Kefyalew",
+      "role": "Communications Officer",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-eden-afework": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Eden Afework, Programme Assistant, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Eden Afework",
+      "role": "Programme Assistant",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-hmariam-misganaw": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of H/Mariam Misganaw, Finance Manager, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "H/Mariam Misganaw",
+      "role": "Finance Manager",
+      "team": "Operations"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-tazezew-abrha": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Tazezew Abrha, Senior Finance Officer, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Tazezew Abrha",
+      "role": "Senior Finance Officer",
+      "team": "Operations"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-meron-dereje": {
+    "status": "missing",
+    "width": 625,
+    "height": 938,
+    "group": "staff",
+    "alt": "Portrait of Meron Dereje, Finance Assistant, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Meron Dereje",
+      "role": "Finance Assistant",
+      "team": "Operations"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-rahel-taddese": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Rahel Taddese, Senior Procurement Officer, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Rahel Taddese",
+      "role": "Senior Procurement Officer",
+      "team": "Operations"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-ruth-zemene": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Ruth Zemene, Senior HR & Admin Officer, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Ruth Zemene",
+      "role": "Senior HR & Admin Officer",
+      "team": "Operations"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-agare-kassahun": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Agare Kassahun, Senior Executive Assistant, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Agare Kassahun",
+      "role": "Senior Executive Assistant",
+      "team": "Operations"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-shalom-alemayehu": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Shalom Alemayehu, Admin Assistant, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Shalom Alemayehu",
+      "role": "Admin Assistant",
+      "team": "Operations"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "staff-abebayehu-milkias": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Abebayehu Milkias, Logistics Assistant, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Abebayehu Milkias",
+      "role": "Logistics Assistant",
+      "team": "Operations"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "regional-tadesse-hailu": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "regional",
+    "alt": "Portrait of Tadesse Hailu, Regional Coordinator, Benishangul Gumuz, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Tadesse Hailu",
+      "role": "Regional Coordinator, Benishangul Gumuz",
+      "team": "Regional coordinators",
+      "region": "Benishangul Gumuz"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "regional-okello-oluch": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "regional",
+    "alt": "Portrait of Okello Oluch, Regional Coordinator, Gambella, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Okello Oluch",
+      "role": "Regional Coordinator, Gambella",
+      "team": "Regional coordinators",
+      "region": "Gambella"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "regional-aklilu-tukela": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "regional",
+    "alt": "Portrait of Aklilu Tukela, Regional Coordinator, Sidama, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Aklilu Tukela",
+      "role": "Regional Coordinator, Sidama",
+      "team": "Regional coordinators",
+      "region": "Sidama"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "regional-mubarak-ahmed": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "regional",
+    "alt": "Portrait of Mubarak Ahmed, Regional Coordinator, Somali, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Mubarak Ahmed",
+      "role": "Regional Coordinator, Somali",
+      "team": "Regional coordinators",
+      "region": "Somali"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "regional-ahmed-mohammed": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "regional",
+    "alt": "Portrait of Ahmed Mohammed, Regional Coordinator, Afar, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Ahmed Mohammed",
+      "role": "Regional Coordinator, Afar",
+      "team": "Regional coordinators",
+      "region": "Afar"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "regional-abinet-belay": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "regional",
+    "alt": "Portrait of Abinet Belay, Regional Coordinator, Amhara, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Abinet Belay",
+      "role": "Regional Coordinator, Amhara",
+      "team": "Regional coordinators",
+      "region": "Amhara"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "regional-fekadu-mekonnen": {
+    "status": "missing",
+    "width": 1000,
+    "height": 1448,
+    "group": "regional",
+    "alt": "Portrait of Dr. Fekadu Mekonnen, Regional Coordinator, Oromia, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Dr. Fekadu Mekonnen",
+      "role": "Regional Coordinator, Oromia",
+      "team": "Regional coordinators",
+      "region": "Oromia"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "board-admassu-tadesse": {
+    "status": "missing",
+    "width": 860,
+    "height": 1062,
+    "group": "board",
+    "alt": "Portrait of Admassu Tadesse, Board Chairman, FSD Ethiopia board",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 25%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Admassu Tadesse",
+      "role": "Board Chairman",
+      "team": "Board"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "board-berhane-demissie": {
+    "status": "missing",
+    "width": 859,
+    "height": 1062,
+    "group": "board",
+    "alt": "Portrait of Berhane Demissie, Non-Executive Director, FSD Ethiopia board",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 25%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Berhane Demissie",
+      "role": "Non-Executive Director",
+      "team": "Board"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "board-maleda-bisrat": {
+    "status": "missing",
+    "width": 860,
+    "height": 1062,
+    "group": "board",
+    "alt": "Portrait of Maleda Bisrat, Non-Executive Director, FSD Ethiopia board",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 25%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Maleda Bisrat",
+      "role": "Non-Executive Director",
+      "team": "Board"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "cohort-mehret": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of a Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": null,
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "cohort-hiwot-yohannes": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of a Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": null,
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "cohort-selamawit-bekele": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of a Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": null,
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "cohort-kokeb": {
+    "status": "missing",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of a Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": null,
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-stakeholder-summit-2026": {
+    "status": "missing",
+    "width": 1080,
+    "height": 564,
+    "group": "events",
+    "alt": "Speakers and guests together on stage at FSD Ethiopia's Stakeholder Summit, July 2026",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 40%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-gicfa-baku-2026": {
+    "status": "missing",
+    "width": 960,
+    "height": 647,
+    "group": "events",
+    "alt": "Participants at the Global Islamic Climate Finance Alliance roundtable in Baku, June 2026",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-climate-summit-2026-group": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Group photo of participants at the Second Climate Finance Summit in Addis Ababa, March 2026",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 40%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-climate-summit-2026-plenary": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Plenary session at the Second Climate Finance Summit, March 2026",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-access-influence-2026-1": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Women leaders on a panel at the Access to Influence dialogue, March 2026",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 40%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-access-influence-2026-2": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Participants at the Access to Influence dialogue on women's digital financial inclusion, March 2026",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-access-influence-2026-3": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Discussion at the Access to Influence dialogue, March 2026",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-insurance-workshop-2025": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Participants at FSD Ethiopia's Insurance Industry Workshop, November 2025",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-insurance-workshop-2025-01": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Session at the Insurance Industry Workshop, November 2025",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-insurance-workshop-2025-02": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Participants at the Insurance Industry Workshop, November 2025",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-greening-2025": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Green hills, illustrating FSD Ethiopia's work on greening capital markets",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-womens-day-2025": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Group photo at the Unlocking Potentials Women's Day event, March 2025",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 40%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-climate-summit-2025": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Group photo at the First Annual Climate Finance Summit, February 2025",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 40%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-esx-academy-2025": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Group photo at the launch of the ESX Academy, February 2025",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 40%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-finequity-2024": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "A speaker addresses the FSD Ethiopia and Finequity Africa convening, March 2024",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 35%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-bimalab-2024-main": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "BimaLab Ethiopia cohort group photo at Demo Day, March 2024",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 40%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-bimalab-2024-01": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "BimaLab Ethiopia insurtech accelerator Demo Day, March 2024",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-bimalab-2024-02": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "BimaLab Ethiopia insurtech accelerator Demo Day, March 2024",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-bimalab-2024-03": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "BimaLab Ethiopia insurtech accelerator Demo Day, March 2024",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-bimalab-2024-04": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "BimaLab Ethiopia insurtech accelerator Demo Day, March 2024",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-bimalab-2024-05": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "BimaLab Ethiopia insurtech accelerator Demo Day, March 2024",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "event-esx-rulebook-2023": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Meeting on the Ethiopian Securities Exchange rulebook, October 2023",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "programme-fin01": {
+    "status": "missing",
+    "width": 850,
+    "height": 602,
+    "group": "programme",
+    "alt": "A woman using a mobile phone",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 40%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "programme-acctocap01": {
+    "status": "missing",
+    "width": 850,
+    "height": 602,
+    "group": "programme",
+    "alt": "A card payment at a point-of-sale terminal",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "programme-climate-fina01": {
+    "status": "missing",
+    "width": 850,
+    "height": 602,
+    "group": "programme",
+    "alt": "Cattle grazing on open land",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 55%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "programme-climate-finance2": {
+    "status": "missing",
+    "width": 857,
+    "height": 400,
+    "group": "programme",
+    "alt": "Climate Finance page banner landscape",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "programme-f-inc-01": {
+    "status": "missing",
+    "width": 737,
+    "height": 513,
+    "group": "programme",
+    "alt": "Women at work in a garment workshop",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 40%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "tools-technical-assistance": {
+    "status": "missing",
+    "width": 850,
+    "height": 602,
+    "group": "programme",
+    "alt": "Representatives signing an agreement at an FSD Ethiopia event",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 40%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "tools-resources-data": {
+    "status": "missing",
+    "width": 850,
+    "height": 602,
+    "group": "programme",
+    "alt": "Research and data work at FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "tools-convening": {
+    "status": "missing",
+    "width": 850,
+    "height": 602,
+    "group": "programme",
+    "alt": "A speaker addresses participants at an FSD Ethiopia event",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 35%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "skyline-panorama": {
+    "status": "missing",
+    "width": 1901,
+    "height": 595,
+    "group": "skyline",
+    "alt": "",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 60%",
+    "decorative": true,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "skyline-about": {
+    "status": "missing",
+    "width": 732,
+    "height": 454,
+    "group": "skyline",
+    "alt": "City skyline",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "news-gender-integration": {
+    "status": "missing",
+    "width": 2560,
+    "height": 1280,
+    "group": "news",
+    "alt": "Title graphic: Gender Integration as a Market Systems Strategy",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": true,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "news-open-finance": {
+    "status": "missing",
+    "width": 1680,
+    "height": 848,
+    "group": "news",
+    "alt": "Title graphic: Ethiopia's Open Finance Future Is Closer Than It Looks",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": true,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "news-india-dpi": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "news",
+    "alt": "Title graphic: India's DPI Flywheel, From Payment Rails to the Last Mile",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": true,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "news-digital-east": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "news",
+    "alt": "Title graphic: The Digital East",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": true,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "news-insurance-market": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "news",
+    "alt": "Title graphic: Growing Ethiopia's Insurance Market",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": true,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "news-women-digital": {
+    "status": "missing",
+    "width": 600,
+    "height": 337,
+    "group": "news",
+    "alt": "Title graphic: Designing Digital Finance Markets That Work for Women",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": true,
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "cover-landscape-climate-finance": {
+    "status": "missing",
+    "width": 1920,
+    "height": 1920,
+    "group": "covers",
+    "alt": "Cover of Landscape of Climate Finance in Ethiopia (2026)",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "Landscape of Climate Finance in Ethiopia (2026)",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/Landscape-of-Climate-Finance-in-Ethiopia%20%281%29.pdf"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "cover-green-instruments": {
+    "status": "missing",
+    "width": 1920,
+    "height": 1920,
+    "group": "covers",
+    "alt": "Cover of Feasibility of Green and Sustainable Finance Instruments in Ethiopia",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "Feasibility of Green and Sustainable Finance Instruments in Ethiopia",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/Scoping%20Study%20Report%20-%20Green%20Financial%20Instruments%20in%20Ethiopia-%20ECMA-FSD%20Ethiopia%20%281%29.pdf"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "cover-nafir": {
+    "status": "missing",
+    "width": 1920,
+    "height": 1920,
+    "group": "covers",
+    "alt": "Cover of National Agricultural Finance Implementation Roadmap 2025–2030",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "National Agricultural Finance Implementation Roadmap 2025–2030",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/National%20Agricultural%20Finance%20Implementation%20Roadmap%20%282025%3D2030%29_C.pdf"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "cover-unlock-capital-markets": {
+    "status": "missing",
+    "width": 1920,
+    "height": 1920,
+    "group": "covers",
+    "alt": "Cover of Unlock Capital Markets to Advance Women's Economic Participation and Leadership",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "Unlock Capital Markets to Advance Women's Economic Participation and Leadership",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/FSDE_Booklet_952025.pdf"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "cover-unlocking-potentials": {
+    "status": "missing",
+    "width": 1920,
+    "height": 1920,
+    "group": "covers",
+    "alt": "Cover of Unlocking Potentials: financial inclusion and capital markets for women's economic empowerment",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "Unlocking Potentials: financial inclusion and capital markets for women's economic empowerment",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/Unlocking%20potential%20Report_Final_Com.pdf"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "cover-cico-agents": {
+    "status": "missing",
+    "width": 1920,
+    "height": 1920,
+    "group": "covers",
+    "alt": "Cover of Cash-In Cash-Out Agent Mapping Strategy",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "Cash-In Cash-Out Agent Mapping Strategy",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/CICO-Agent-Mapping-Strategy_NBE%20%281%29_C.pdf"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "cover-mobile-money": {
+    "status": "missing",
+    "width": 1920,
+    "height": 1920,
+    "group": "covers",
+    "alt": "Cover of Mobile Money in Ethiopia",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "Mobile Money in Ethiopia",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/Financial%20Sector%20Deepening%20Ethiopia%20Blog%20_%20Mobile%20Money%20in%20Ethiopia.pdf"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "cover-nfis": {
+    "status": "missing",
+    "width": 1920,
+    "height": 1920,
+    "group": "covers",
+    "alt": "Cover of National Financial Inclusion Strategy (NBE)",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "National Financial Inclusion Strategy (NBE)",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/ethiopian-national-financial-Inclusion-strategy.pdf"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "cover-climate-summit-report": {
+    "status": "missing",
+    "width": 1920,
+    "height": 1920,
+    "group": "covers",
+    "alt": "Cover of Climate Finance Summit workshop report",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "Climate Finance Summit workshop report",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/Communications%20and%20Advocacy%20-%20Financial%20Market-%202.pdf"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "cover-ndps": {
+    "status": "missing",
+    "width": 328,
+    "height": 322,
+    "group": "covers",
+    "alt": "Cover of National Digital Payments Strategy 2021–2024 (NBE)",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "National Digital Payments Strategy 2021–2024 (NBE)",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/Ethiopia_National_Digital_Payment_Strategy_2021-2024.pdf"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "cover-job-creation": {
+    "status": "missing",
+    "width": 328,
+    "height": 322,
+    "group": "covers",
+    "alt": "Cover of Plan of Action for Job Creation",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "Plan of Action for Job Creation",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/National-Plan-for-Job-Creation-Brief.pdf"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "cover-homegrown-reform": {
+    "status": "missing",
+    "width": 328,
+    "height": 322,
+    "group": "covers",
+    "alt": "Cover of A Homegrown Economic Reform Agenda",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "A Homegrown Economic Reform Agenda",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/a_homegrown_economic_reform_agenda-_a_pathway_to_prosperity_-_public_version_-_march_2020-%20%281%29.pdf"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "cover-ten-year-plan": {
+    "status": "missing",
+    "width": 328,
+    "height": 322,
+    "group": "covers",
+    "alt": "Cover of Ten Years Development Plan",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "Ten Years Development Plan",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/ten_year_plan_popular_version.pdf"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  },
+  "cover-ease-of-business": {
+    "status": "missing",
+    "width": 328,
+    "height": 322,
+    "group": "covers",
+    "alt": "Cover of Ethiopia: Improving Ease of Doing Business",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "Ethiopia: Improving Ease of Doing Business",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/Improving_Ease_of_Doing_Business_jull23.pdf"
+    },
+    "variants": {
+      "avif": [],
+      "webp": []
+    }
+  }
+}

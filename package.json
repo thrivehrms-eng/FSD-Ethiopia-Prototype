@@ -7,7 +7,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "screenshots": "node scripts/screenshots.mjs"
+    "screenshots": "node scripts/screenshots.mjs",
+    "assets:fetch": "node scripts/fetch-assets.mjs",
+    "assets:optimise": "node scripts/optimise-images.mjs",
+    "assets": "node scripts/fetch-assets.mjs; node scripts/optimise-images.mjs"
   },
   "dependencies": {
     "@lucide/astro": "1.54.0",
@@ -16,5 +19,8 @@
     "astro": "7.3.5",
     "chart.js": "4.5.1",
     "tailwindcss": "4.3.3"
+  },
+  "devDependencies": {
+    "sharp": "0.35.4"
   }
 }

@@ -1,0 +1,1657 @@
+{
+  "_note": "Asset manifest built from CLAUDE.md section 6 (verified by the brief on 13 October 2026). All images belong to FSD Ethiopia and are used only in this pitch prototype. Run `npm run assets:fetch` then `npm run assets:optimise`.",
+  "base": "https://fsdethiopia.org/wp-content/uploads/",
+  "collections": [
+    {
+      "id": "cohort",
+      "group": "cohort",
+      "page": "https://fsdethiopia.org/cohort/",
+      "expected": 40,
+      "suffix": "-683x1024",
+      "rule": "Take each member's name and photo URL; strip the -683x1024 suffix for the 1400x2100 original; fall back to the suffixed file on 404. Use names and photos only, never emails or bios."
+    }
+  ],
+  "items": [
+    {
+      "id": "logo-official-png",
+      "group": "brand",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2022/06/logo2022_1.png",
+      "width": 721,
+      "height": 503,
+      "uses": [
+        "reference only"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "FSD Ethiopia logo",
+      "objectPosition": "50% 50%"
+    },
+    {
+      "id": "logo-on-teal",
+      "group": "brand",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2022/06/FSD-Ethiopia.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "social card fallback"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "FSD Ethiopia logo on a teal background",
+      "objectPosition": "50% 50%"
+    },
+    {
+      "id": "app-icon",
+      "group": "brand",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2022/06/cropped-android-chrome-512x512-1.png",
+      "width": 512,
+      "height": 512,
+      "uses": [
+        "favicon",
+        "apple-touch-icon"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "",
+      "objectPosition": "50% 50%"
+    },
+    {
+      "id": "logo-fsd-network",
+      "group": "brand",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2022/06/fsd-network-logo.png",
+      "width": 417,
+      "height": 200,
+      "uses": [
+        "footer partner row"
+      ],
+      "credit": "FSD Network",
+      "alt": "FSD Network",
+      "objectPosition": "50% 50%"
+    },
+    {
+      "id": "logo-gates",
+      "group": "brand",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2022/06/bill_color2022.png",
+      "width": 303,
+      "height": 205,
+      "uses": [
+        "funders strip, max 150px"
+      ],
+      "credit": "Gates Foundation",
+      "alt": "Gates Foundation",
+      "objectPosition": "50% 50%"
+    },
+    {
+      "id": "logo-uk-intl-dev",
+      "group": "brand",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2024/04/UK_International_Development_logo.png",
+      "width": 793,
+      "height": 235,
+      "uses": [
+        "funders strip"
+      ],
+      "credit": "UK Government",
+      "alt": "UK International Development",
+      "objectPosition": "50% 50%"
+    },
+    {
+      "id": "logo-fsd-africa",
+      "group": "brand",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2022/06/fsd_color2022fsd.jpg",
+      "width": 303,
+      "height": 205,
+      "uses": [
+        "funders strip, max 150px"
+      ],
+      "credit": "FSD Africa",
+      "alt": "FSD Africa",
+      "objectPosition": "50% 50%"
+    },
+    {
+      "id": "staff-hikmet-abdella",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Hikmet_Abdella-min.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Hikmet Abdella, Chief Executive Officer, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Hikmet Abdella",
+        "role": "Chief Executive Officer",
+        "team": "Leadership"
+      }
+    },
+    {
+      "id": "staff-abel-tadelle",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Abel_Taddele.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Abel Tadelle, Dir. of Financial Inclusion, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Abel Tadelle",
+        "role": "Dir. of Financial Inclusion",
+        "team": "Leadership"
+      }
+    },
+    {
+      "id": "staff-selamsew-tesfaye",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Selamsew_Tesfaye.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Selamsew Tesfaye, Dir. of Operations & Finance, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Selamsew Tesfaye",
+        "role": "Dir. of Operations & Finance",
+        "team": "Leadership"
+      }
+    },
+    {
+      "id": "staff-gosaye-warsa",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Gosaye_Warsa-min.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Gosaye Warsa, Dir. of Financial Markets, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Gosaye Warsa",
+        "role": "Dir. of Financial Markets",
+        "team": "Leadership"
+      }
+    },
+    {
+      "id": "staff-barnabas-getu",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Barnabas_Getu2.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Barnabas Getu, Head of Audit, Risk & Compliance, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Barnabas Getu",
+        "role": "Head of Audit, Risk & Compliance",
+        "team": "Leadership"
+      }
+    },
+    {
+      "id": "staff-melaku-kebede",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Melaku_Kebede-min.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Melaku Kebede, Program Manager – Financial Inclusion – Project Management Office, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Melaku Kebede",
+        "role": "Program Manager – Financial Inclusion – Project Management Office",
+        "team": "Programmes"
+      }
+    },
+    {
+      "id": "staff-sinidu-fikadu",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Sinidu_Fikadu.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Sinidu Fikadu, Gender Lead, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Sinidu Fikadu",
+        "role": "Gender Lead",
+        "team": "Programmes"
+      }
+    },
+    {
+      "id": "staff-bezawit-eshetu",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/10/Bezawit.jpg",
+      "width": 625,
+      "height": 938,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Bezawit Eshetu, Climate Finance Lead, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Bezawit Eshetu",
+        "role": "Climate Finance Lead",
+        "team": "Programmes"
+      }
+    },
+    {
+      "id": "staff-berhanu-alene",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/07/berhanu.png",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Berhanu Alene, Development Impact Manager, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Berhanu Alene",
+        "role": "Development Impact Manager",
+        "team": "Programmes"
+      }
+    },
+    {
+      "id": "staff-nurhassen-mensur",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Nurhassen_Mensur2.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Nurhassen Mensur, Technical Lead – Financial Services Deepening, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Nurhassen Mensur",
+        "role": "Technical Lead – Financial Services Deepening",
+        "team": "Programmes"
+      }
+    },
+    {
+      "id": "staff-hanna-leykun",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Hanna_Leykun2.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Hanna Leykun, Technical Lead – Financial Service Scaling, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Hanna Leykun",
+        "role": "Technical Lead – Financial Service Scaling",
+        "team": "Programmes"
+      }
+    },
+    {
+      "id": "staff-hanna-hailu",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Hanna_Hailu-min.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Hanna Hailu, Gender Expert, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Hanna Hailu",
+        "role": "Gender Expert",
+        "team": "Programmes"
+      }
+    },
+    {
+      "id": "staff-dawit-alem",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Dawit_Alem2.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Dawit Alem, Financial Market Coordinator, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Dawit Alem",
+        "role": "Financial Market Coordinator",
+        "team": "Programmes"
+      }
+    },
+    {
+      "id": "staff-afomia-kassa",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Afomia_Kassa-min.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Afomia Kassa, Financial Inclusion Coordinator, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Afomia Kassa",
+        "role": "Financial Inclusion Coordinator",
+        "team": "Programmes"
+      }
+    },
+    {
+      "id": "staff-samson-berhane",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Samson_Berhane-min.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Samson Berhane, Comm. & Advocacy Specialist, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Samson Berhane",
+        "role": "Comm. & Advocacy Specialist",
+        "team": "Programmes"
+      }
+    },
+    {
+      "id": "staff-yosef-kefyalew",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/07/yosef-03.png",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Yosef Kefyalew, Communications Officer, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Yosef Kefyalew",
+        "role": "Communications Officer",
+        "team": "Programmes"
+      }
+    },
+    {
+      "id": "staff-eden-afework",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Eden_Afework-min.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Eden Afework, Programme Assistant, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Eden Afework",
+        "role": "Programme Assistant",
+        "team": "Programmes"
+      }
+    },
+    {
+      "id": "staff-hmariam-misganaw",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Hailemariam_Misganaw-min.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of H/Mariam Misganaw, Finance Manager, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "H/Mariam Misganaw",
+        "role": "Finance Manager",
+        "team": "Operations"
+      }
+    },
+    {
+      "id": "staff-tazezew-abrha",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/07/tazezew.png",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Tazezew Abrha, Senior Finance Officer, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Tazezew Abrha",
+        "role": "Senior Finance Officer",
+        "team": "Operations"
+      }
+    },
+    {
+      "id": "staff-meron-dereje",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/07/meron.jpg",
+      "width": 625,
+      "height": 938,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Meron Dereje, Finance Assistant, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Meron Dereje",
+        "role": "Finance Assistant",
+        "team": "Operations"
+      }
+    },
+    {
+      "id": "staff-rahel-taddese",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Rahel_Taddese-min.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Rahel Taddese, Senior Procurement Officer, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Rahel Taddese",
+        "role": "Senior Procurement Officer",
+        "team": "Operations"
+      }
+    },
+    {
+      "id": "staff-ruth-zemene",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Ruth_Zemene-min.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Ruth Zemene, Senior HR & Admin Officer, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Ruth Zemene",
+        "role": "Senior HR & Admin Officer",
+        "team": "Operations"
+      }
+    },
+    {
+      "id": "staff-agare-kassahun",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Agare_Kassahun-min.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Agare Kassahun, Senior Executive Assistant, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Agare Kassahun",
+        "role": "Senior Executive Assistant",
+        "team": "Operations"
+      }
+    },
+    {
+      "id": "staff-shalom-alemayehu",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Shalom_Alemayehu-min.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Shalom Alemayehu, Admin Assistant, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Shalom Alemayehu",
+        "role": "Admin Assistant",
+        "team": "Operations"
+      }
+    },
+    {
+      "id": "staff-abebayehu-milkias",
+      "group": "staff",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Abebayehu_Milkias-min.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "portrait card",
+        "byline avatar"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Abebayehu Milkias, Logistics Assistant, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Abebayehu Milkias",
+        "role": "Logistics Assistant",
+        "team": "Operations"
+      }
+    },
+    {
+      "id": "regional-tadesse-hailu",
+      "group": "regional",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Tadesse_Hailu.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "regional map"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Tadesse Hailu, Regional Coordinator, Benishangul Gumuz, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Tadesse Hailu",
+        "role": "Regional Coordinator, Benishangul Gumuz",
+        "team": "Regional coordinators",
+        "region": "Benishangul Gumuz"
+      }
+    },
+    {
+      "id": "regional-okello-oluch",
+      "group": "regional",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Okello_Oluch.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "regional map"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Okello Oluch, Regional Coordinator, Gambella, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Okello Oluch",
+        "role": "Regional Coordinator, Gambella",
+        "team": "Regional coordinators",
+        "region": "Gambella"
+      }
+    },
+    {
+      "id": "regional-aklilu-tukela",
+      "group": "regional",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Aklilu_Tukela.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "regional map"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Aklilu Tukela, Regional Coordinator, Sidama, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Aklilu Tukela",
+        "role": "Regional Coordinator, Sidama",
+        "team": "Regional coordinators",
+        "region": "Sidama"
+      }
+    },
+    {
+      "id": "regional-mubarak-ahmed",
+      "group": "regional",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Mubarak_Ahmed.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "regional map"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Mubarak Ahmed, Regional Coordinator, Somali, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Mubarak Ahmed",
+        "role": "Regional Coordinator, Somali",
+        "team": "Regional coordinators",
+        "region": "Somali"
+      }
+    },
+    {
+      "id": "regional-ahmed-mohammed",
+      "group": "regional",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Ahmed_Mohammed.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "regional map"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Ahmed Mohammed, Regional Coordinator, Afar, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Ahmed Mohammed",
+        "role": "Regional Coordinator, Afar",
+        "team": "Regional coordinators",
+        "region": "Afar"
+      }
+    },
+    {
+      "id": "regional-abinet-belay",
+      "group": "regional",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/10/Abinet_Belay.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "team page",
+        "regional map"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Abinet Belay, Regional Coordinator, Amhara, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Abinet Belay",
+        "role": "Regional Coordinator, Amhara",
+        "team": "Regional coordinators",
+        "region": "Amhara"
+      }
+    },
+    {
+      "id": "regional-fekadu-mekonnen",
+      "group": "regional",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/08/DR.Fekadu-Mekonnen.jpg",
+      "width": 1000,
+      "height": 1448,
+      "uses": [
+        "team page",
+        "regional map"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Dr. Fekadu Mekonnen, Regional Coordinator, Oromia, FSD Ethiopia",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": "Dr. Fekadu Mekonnen",
+        "role": "Regional Coordinator, Oromia",
+        "team": "Regional coordinators",
+        "region": "Oromia"
+      }
+    },
+    {
+      "id": "board-admassu-tadesse",
+      "group": "board",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2020/02/members-11.png",
+      "width": 860,
+      "height": 1062,
+      "uses": [
+        "about page",
+        "team page"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Admassu Tadesse, Board Chairman, FSD Ethiopia board",
+      "objectPosition": "50% 25%",
+      "person": {
+        "name": "Admassu Tadesse",
+        "role": "Board Chairman",
+        "team": "Board"
+      }
+    },
+    {
+      "id": "board-berhane-demissie",
+      "group": "board",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2020/02/members-12.png",
+      "width": 859,
+      "height": 1062,
+      "uses": [
+        "about page",
+        "team page"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Berhane Demissie, Non-Executive Director, FSD Ethiopia board",
+      "objectPosition": "50% 25%",
+      "person": {
+        "name": "Berhane Demissie",
+        "role": "Non-Executive Director",
+        "team": "Board"
+      }
+    },
+    {
+      "id": "board-maleda-bisrat",
+      "group": "board",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2020/02/members-13.png",
+      "width": 860,
+      "height": 1062,
+      "uses": [
+        "about page",
+        "team page"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of Maleda Bisrat, Non-Executive Director, FSD Ethiopia board",
+      "objectPosition": "50% 25%",
+      "person": {
+        "name": "Maleda Bisrat",
+        "role": "Non-Executive Director",
+        "team": "Board"
+      }
+    },
+    {
+      "id": "cohort-mehret",
+      "group": "cohort",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/08/Mehret-photo.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "Board Ready pages only"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of a Board Ready Program cohort member",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": null,
+        "role": "Board Ready Program cohort member",
+        "team": "Cohort"
+      },
+      "nameFromCohortPage": true
+    },
+    {
+      "id": "cohort-hiwot-yohannes",
+      "group": "cohort",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/08/Hiwot-Yohannes.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "Board Ready pages only"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of a Board Ready Program cohort member",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": null,
+        "role": "Board Ready Program cohort member",
+        "team": "Cohort"
+      },
+      "nameFromCohortPage": true
+    },
+    {
+      "id": "cohort-selamawit-bekele",
+      "group": "cohort",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/08/Selamawit-Bekele-pic.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "Board Ready pages only"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of a Board Ready Program cohort member",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": null,
+        "role": "Board Ready Program cohort member",
+        "team": "Cohort"
+      },
+      "nameFromCohortPage": true
+    },
+    {
+      "id": "cohort-kokeb",
+      "group": "cohort",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/11/Kokeb.jpg",
+      "width": 1400,
+      "height": 2100,
+      "uses": [
+        "Board Ready pages only"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Portrait of a Board Ready Program cohort member",
+      "objectPosition": "50% 22%",
+      "person": {
+        "name": null,
+        "role": "Board Ready Program cohort member",
+        "team": "Cohort"
+      },
+      "nameFromCohortPage": true
+    },
+    {
+      "id": "event-stakeholder-summit-2026",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/07/1783776109015.jpeg",
+      "width": 1080,
+      "height": 564,
+      "uses": [
+        "hero tab 1",
+        "featured work",
+        "About hero",
+        "news"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Speakers and guests together on stage at FSD Ethiopia's Stakeholder Summit, July 2026",
+      "objectPosition": "50% 40%"
+    },
+    {
+      "id": "event-gicfa-baku-2026",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-26-at-2.41.54-PM-1.jpeg",
+      "width": 960,
+      "height": 647,
+      "uses": [
+        "Climate Finance page",
+        "news"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Participants at the Global Islamic Climate Finance Alliance roundtable in Baku, June 2026",
+      "objectPosition": "50% 45%"
+    },
+    {
+      "id": "event-climate-summit-2026-group",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/03/FSD-Ethiopia352026.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "hero tab 2",
+        "featured work",
+        "news"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Group photo of participants at the Second Climate Finance Summit in Addis Ababa, March 2026",
+      "objectPosition": "50% 40%"
+    },
+    {
+      "id": "event-climate-summit-2026-plenary",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/03/FSD-Ethiopia352026_2.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "featured work second image"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Plenary session at the Second Climate Finance Summit, March 2026",
+      "objectPosition": "50% 50%"
+    },
+    {
+      "id": "event-access-influence-2026-1",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/03/FSD-31126-1.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "featured work",
+        "story gallery",
+        "news"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Women leaders on a panel at the Access to Influence dialogue, March 2026",
+      "objectPosition": "50% 40%"
+    },
+    {
+      "id": "event-access-influence-2026-2",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/03/FSD-31126-2.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "featured work second image",
+        "story gallery"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Participants at the Access to Influence dialogue on women's digital financial inclusion, March 2026",
+      "objectPosition": "50% 45%"
+    },
+    {
+      "id": "event-access-influence-2026-3",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/03/FSD-31126-3.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "story gallery"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Discussion at the Access to Influence dialogue, March 2026",
+      "objectPosition": "50% 45%"
+    },
+    {
+      "id": "event-insurance-workshop-2025",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/11/FSD-Ethiopia11242025.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "featured work",
+        "news"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Participants at FSD Ethiopia's Insurance Industry Workshop, November 2025",
+      "objectPosition": "50% 45%"
+    },
+    {
+      "id": "event-insurance-workshop-2025-01",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/11/FSD-Ethiopia11242025-01.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "featured work second image"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Session at the Insurance Industry Workshop, November 2025",
+      "objectPosition": "50% 45%"
+    },
+    {
+      "id": "event-insurance-workshop-2025-02",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/11/FSD-Ethiopia11242025-02.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "gallery"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Participants at the Insurance Industry Workshop, November 2025",
+      "objectPosition": "50% 45%"
+    },
+    {
+      "id": "event-greening-2025",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/08/FSD_Ethiopia_A2025_Greening.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "Climate Finance",
+        "news"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Green hills, illustrating FSD Ethiopia's work on greening capital markets",
+      "objectPosition": "50% 50%"
+    },
+    {
+      "id": "event-womens-day-2025",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/03/FSD_Ethiopia_A2025.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "story gallery",
+        "news"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Group photo at the Unlocking Potentials Women's Day event, March 2025",
+      "objectPosition": "50% 40%"
+    },
+    {
+      "id": "event-climate-summit-2025",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/02/fsd_ethiopia_992025.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "procurement card",
+        "news"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Group photo at the First Annual Climate Finance Summit, February 2025",
+      "objectPosition": "50% 40%"
+    },
+    {
+      "id": "event-esx-academy-2025",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2025/02/fina_sec_26.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "Access to Capital",
+        "news"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Group photo at the launch of the ESX Academy, February 2025",
+      "objectPosition": "50% 40%"
+    },
+    {
+      "id": "event-finequity-2024",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2024/03/3_14_06_main.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "careers card",
+        "opportunities band"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "A speaker addresses the FSD Ethiopia and Finequity Africa convening, March 2024",
+      "objectPosition": "50% 35%"
+    },
+    {
+      "id": "event-bimalab-2024-main",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2024/03/3_7_06_main.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "featured work",
+        "news"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "BimaLab Ethiopia cohort group photo at Demo Day, March 2024",
+      "objectPosition": "50% 40%"
+    },
+    {
+      "id": "event-bimalab-2024-01",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2024/03/3_7_01.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "tiles",
+        "gallery"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "BimaLab Ethiopia insurtech accelerator Demo Day, March 2024",
+      "objectPosition": "50% 45%"
+    },
+    {
+      "id": "event-bimalab-2024-02",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2024/03/3_7_02.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "tiles",
+        "gallery",
+        "insurance tile"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "BimaLab Ethiopia insurtech accelerator Demo Day, March 2024",
+      "objectPosition": "50% 45%"
+    },
+    {
+      "id": "event-bimalab-2024-03",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2024/03/3_7_03.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "tiles",
+        "gallery",
+        "featured work second image"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "BimaLab Ethiopia insurtech accelerator Demo Day, March 2024",
+      "objectPosition": "50% 45%"
+    },
+    {
+      "id": "event-bimalab-2024-04",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2024/03/3_7_04.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "tiles",
+        "gallery"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "BimaLab Ethiopia insurtech accelerator Demo Day, March 2024",
+      "objectPosition": "50% 45%"
+    },
+    {
+      "id": "event-bimalab-2024-05",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2024/03/3_7_05.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "tiles",
+        "gallery"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "BimaLab Ethiopia insurtech accelerator Demo Day, March 2024",
+      "objectPosition": "50% 45%"
+    },
+    {
+      "id": "event-esx-rulebook-2023",
+      "group": "events",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2023/10/fsdnews004.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "news"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Meeting on the Ethiopian Securities Exchange rulebook, October 2023",
+      "objectPosition": "50% 45%"
+    },
+    {
+      "id": "programme-fin01",
+      "group": "programme",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/fin01.jpg",
+      "width": 850,
+      "height": 602,
+      "uses": [
+        "financial inclusion tile",
+        "programme hero"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "A woman using a mobile phone",
+      "objectPosition": "50% 40%"
+    },
+    {
+      "id": "programme-acctocap01",
+      "group": "programme",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/acctocap01.jpg",
+      "width": 850,
+      "height": 602,
+      "uses": [
+        "access to capital tile",
+        "programme hero"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "A card payment at a point-of-sale terminal",
+      "objectPosition": "50% 50%"
+    },
+    {
+      "id": "programme-climate-fina01",
+      "group": "programme",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/climate_fina01.jpg",
+      "width": 850,
+      "height": 602,
+      "uses": [
+        "climate finance tile"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Cattle grazing on open land",
+      "objectPosition": "50% 55%"
+    },
+    {
+      "id": "programme-climate-finance2",
+      "group": "programme",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2023/02/climate_finance2.jpg",
+      "width": 857,
+      "height": 400,
+      "uses": [
+        "Climate Finance programme hero"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Climate Finance page banner landscape",
+      "objectPosition": "50% 50%"
+    },
+    {
+      "id": "programme-f-inc-01",
+      "group": "programme",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/f_inc_01.jpg",
+      "width": 737,
+      "height": 513,
+      "uses": [
+        "women's economic empowerment tile"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Women at work in a garment workshop",
+      "objectPosition": "50% 40%"
+    },
+    {
+      "id": "tools-technical-assistance",
+      "group": "programme",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/Our-Tools_-Technical-Assistance01.jpg",
+      "width": 850,
+      "height": 602,
+      "uses": [
+        "Our role",
+        "About"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Representatives signing an agreement at an FSD Ethiopia event",
+      "objectPosition": "50% 40%"
+    },
+    {
+      "id": "tools-resources-data",
+      "group": "programme",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/Our-Tools_-Resources-_-Data01.jpg",
+      "width": 850,
+      "height": 602,
+      "uses": [
+        "research tile",
+        "About"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "Research and data work at FSD Ethiopia",
+      "objectPosition": "50% 45%"
+    },
+    {
+      "id": "tools-convening",
+      "group": "programme",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/Our-Tools_-Convening01.jpg",
+      "width": 850,
+      "height": 602,
+      "uses": [
+        "hero tab 3",
+        "About"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "A speaker addresses participants at an FSD Ethiopia event",
+      "objectPosition": "50% 35%"
+    },
+    {
+      "id": "skyline-panorama",
+      "group": "skyline",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2022/06/landing-page-17-1.png",
+      "width": 1901,
+      "height": 595,
+      "uses": [
+        "hero background",
+        "closing band",
+        "duotone only"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "",
+      "objectPosition": "50% 60%",
+      "decorative": true,
+      "note": "Likely Addis Ababa; confirm. Always duotoned."
+    },
+    {
+      "id": "skyline-about",
+      "group": "skyline",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2022/06/about_us2022.jpg",
+      "width": 732,
+      "height": 454,
+      "uses": [
+        "About page"
+      ],
+      "credit": "Photo: FSD Ethiopia",
+      "alt": "City skyline",
+      "objectPosition": "50% 50%"
+    },
+    {
+      "id": "news-gender-integration",
+      "group": "news",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/07/tumbnaile-11-scaled.jpg",
+      "width": 2560,
+      "height": 1280,
+      "uses": [
+        "news card"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "Title graphic: Gender Integration as a Market Systems Strategy",
+      "objectPosition": "50% 50%",
+      "graphicWithText": true,
+      "note": "Designed graphic with title text: never place other text over it."
+    },
+    {
+      "id": "news-open-finance",
+      "group": "news",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/07/blog.jpg",
+      "width": 1680,
+      "height": 848,
+      "uses": [
+        "news card"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "Title graphic: Ethiopia's Open Finance Future Is Closer Than It Looks",
+      "objectPosition": "50% 50%",
+      "graphicWithText": true,
+      "note": "Designed graphic with title text: never place other text over it."
+    },
+    {
+      "id": "news-india-dpi",
+      "group": "news",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/05/article-5.png",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "news card"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "Title graphic: India's DPI Flywheel, From Payment Rails to the Last Mile",
+      "objectPosition": "50% 50%",
+      "graphicWithText": true,
+      "note": "Designed graphic with title text: never place other text over it."
+    },
+    {
+      "id": "news-digital-east",
+      "group": "news",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/05/article-4_1_600x337.png",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "news card"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "Title graphic: The Digital East",
+      "objectPosition": "50% 50%",
+      "graphicWithText": true,
+      "note": "Designed graphic with title text: never place other text over it."
+    },
+    {
+      "id": "news-insurance-market",
+      "group": "news",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/03/FSD-Ethiopia_blog7.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "news card"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "Title graphic: Growing Ethiopia's Insurance Market",
+      "objectPosition": "50% 50%",
+      "graphicWithText": true,
+      "note": "Designed graphic with title text: never place other text over it."
+    },
+    {
+      "id": "news-women-digital",
+      "group": "news",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/03/FSD-Ethiopia_blog8.jpg",
+      "width": 600,
+      "height": 337,
+      "uses": [
+        "news card"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "Title graphic: Designing Digital Finance Markets That Work for Women",
+      "objectPosition": "50% 50%",
+      "graphicWithText": true,
+      "note": "Designed graphic with title text: never place other text over it."
+    },
+    {
+      "id": "cover-landscape-climate-finance",
+      "group": "covers",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/08/FSDE-Landscape-of-Climate-Finance-in-Ethiopia.jpg",
+      "width": 1920,
+      "height": 1920,
+      "uses": [
+        "publication card"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "Cover of Landscape of Climate Finance in Ethiopia (2026)",
+      "objectPosition": "50% 50%",
+      "publication": {
+        "title": "Landscape of Climate Finance in Ethiopia (2026)",
+        "pdf": "https://fsdethiopia.org/wp-content/pdf/Landscape-of-Climate-Finance-in-Ethiopia%20%281%29.pdf"
+      }
+    },
+    {
+      "id": "cover-green-instruments",
+      "group": "covers",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/08/FSDE-Scoping-Study-Report-Feasibility-of-Green-and-Sustainable-Finance-Instruments-in-Ethiopia.jpg",
+      "width": 1920,
+      "height": 1920,
+      "uses": [
+        "publication card"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "Cover of Feasibility of Green and Sustainable Finance Instruments in Ethiopia",
+      "objectPosition": "50% 50%",
+      "publication": {
+        "title": "Feasibility of Green and Sustainable Finance Instruments in Ethiopia",
+        "pdf": "https://fsdethiopia.org/wp-content/pdf/Scoping%20Study%20Report%20-%20Green%20Financial%20Instruments%20in%20Ethiopia-%20ECMA-FSD%20Ethiopia%20%281%29.pdf"
+      }
+    },
+    {
+      "id": "cover-nafir",
+      "group": "covers",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/08/FSDE-National-Agriculture-Finance-Implementation-RoadmapNAFIR.jpg",
+      "width": 1920,
+      "height": 1920,
+      "uses": [
+        "publication card"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "Cover of National Agricultural Finance Implementation Roadmap 2025–2030",
+      "objectPosition": "50% 50%",
+      "publication": {
+        "title": "National Agricultural Finance Implementation Roadmap 2025–2030",
+        "pdf": "https://fsdethiopia.org/wp-content/pdf/National%20Agricultural%20Finance%20Implementation%20Roadmap%20%282025%3D2030%29_C.pdf"
+      }
+    },
+    {
+      "id": "cover-unlock-capital-markets",
+      "group": "covers",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/08/FSDE-Unlock-Capital-Markets-to-Advance-Womens-Economic-Participation-Leadership-Ethiopia-Finance-in-Ethiopia.jpg",
+      "width": 1920,
+      "height": 1920,
+      "uses": [
+        "publication card"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "Cover of Unlock Capital Markets to Advance Women's Economic Participation and Leadership",
+      "objectPosition": "50% 50%",
+      "publication": {
+        "title": "Unlock Capital Markets to Advance Women's Economic Participation and Leadership",
+        "pdf": "https://fsdethiopia.org/wp-content/pdf/FSDE_Booklet_952025.pdf"
+      }
+    },
+    {
+      "id": "cover-unlocking-potentials",
+      "group": "covers",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/08/FSDE-Unlocking-Potentials-financial-inclusion-and-capital-market-for-women-economic-empowerment.jpg",
+      "width": 1920,
+      "height": 1920,
+      "uses": [
+        "publication card"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "Cover of Unlocking Potentials: financial inclusion and capital markets for women's economic empowerment",
+      "objectPosition": "50% 50%",
+      "publication": {
+        "title": "Unlocking Potentials: financial inclusion and capital markets for women's economic empowerment",
+        "pdf": "https://fsdethiopia.org/wp-content/pdf/Unlocking%20potential%20Report_Final_Com.pdf"
+      }
+    },
+    {
+      "id": "cover-cico-agents",
+      "group": "covers",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/08/FSDE-Enabling-Sustainable-Digital-Payment-Agent-Network-Expansion-by-Leveraging-and-Supporting-Viable-Business-Cases.jpg",
+      "width": 1920,
+      "height": 1920,
+      "uses": [
+        "publication card"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "Cover of Cash-In Cash-Out Agent Mapping Strategy",
+      "objectPosition": "50% 50%",
+      "publication": {
+        "title": "Cash-In Cash-Out Agent Mapping Strategy",
+        "pdf": "https://fsdethiopia.org/wp-content/pdf/CICO-Agent-Mapping-Strategy_NBE%20%281%29_C.pdf"
+      }
+    },
+    {
+      "id": "cover-mobile-money",
+      "group": "covers",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/08/FSDE-Mobile-money-in-ethiopia_2.jpg",
+      "width": 1920,
+      "height": 1920,
+      "uses": [
+        "publication card"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "Cover of Mobile Money in Ethiopia",
+      "objectPosition": "50% 50%",
+      "publication": {
+        "title": "Mobile Money in Ethiopia",
+        "pdf": "https://fsdethiopia.org/wp-content/pdf/Financial%20Sector%20Deepening%20Ethiopia%20Blog%20_%20Mobile%20Money%20in%20Ethiopia.pdf"
+      }
+    },
+    {
+      "id": "cover-nfis",
+      "group": "covers",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/08/FSDE-National-Financial-Inclusion-Strategy.jpg",
+      "width": 1920,
+      "height": 1920,
+      "uses": [
+        "publication card"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "Cover of National Financial Inclusion Strategy (NBE)",
+      "objectPosition": "50% 50%",
+      "publication": {
+        "title": "National Financial Inclusion Strategy (NBE)",
+        "pdf": "https://fsdethiopia.org/wp-content/pdf/ethiopian-national-financial-Inclusion-strategy.pdf"
+      }
+    },
+    {
+      "id": "cover-climate-summit-report",
+      "group": "covers",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/08/FSDE-Climate-Finance-Summit-2024.jpg",
+      "width": 1920,
+      "height": 1920,
+      "uses": [
+        "publication card"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "Cover of Climate Finance Summit workshop report",
+      "objectPosition": "50% 50%",
+      "publication": {
+        "title": "Climate Finance Summit workshop report",
+        "pdf": "https://fsdethiopia.org/wp-content/pdf/Communications%20and%20Advocacy%20-%20Financial%20Market-%202.pdf"
+      }
+    },
+    {
+      "id": "cover-ndps",
+      "group": "covers",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2023/02/rc02.jpg",
+      "width": 328,
+      "height": 322,
+      "uses": [
+        "publication card"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "Cover of National Digital Payments Strategy 2021–2024 (NBE)",
+      "objectPosition": "50% 50%",
+      "publication": {
+        "title": "National Digital Payments Strategy 2021–2024 (NBE)",
+        "pdf": "https://fsdethiopia.org/wp-content/pdf/Ethiopia_National_Digital_Payment_Strategy_2021-2024.pdf"
+      }
+    },
+    {
+      "id": "cover-job-creation",
+      "group": "covers",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/rc006.jpg",
+      "width": 328,
+      "height": 322,
+      "uses": [
+        "publication card"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "Cover of Plan of Action for Job Creation",
+      "objectPosition": "50% 50%",
+      "publication": {
+        "title": "Plan of Action for Job Creation",
+        "pdf": "https://fsdethiopia.org/wp-content/pdf/National-Plan-for-Job-Creation-Brief.pdf"
+      }
+    },
+    {
+      "id": "cover-homegrown-reform",
+      "group": "covers",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/rc001.jpg",
+      "width": 328,
+      "height": 322,
+      "uses": [
+        "publication card"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "Cover of A Homegrown Economic Reform Agenda",
+      "objectPosition": "50% 50%",
+      "publication": {
+        "title": "A Homegrown Economic Reform Agenda",
+        "pdf": "https://fsdethiopia.org/wp-content/pdf/a_homegrown_economic_reform_agenda-_a_pathway_to_prosperity_-_public_version_-_march_2020-%20%281%29.pdf"
+      }
+    },
+    {
+      "id": "cover-ten-year-plan",
+      "group": "covers",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/rc003.jpg",
+      "width": 328,
+      "height": 322,
+      "uses": [
+        "publication card"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "Cover of Ten Years Development Plan",
+      "objectPosition": "50% 50%",
+      "publication": {
+        "title": "Ten Years Development Plan",
+        "pdf": "https://fsdethiopia.org/wp-content/pdf/ten_year_plan_popular_version.pdf"
+      }
+    },
+    {
+      "id": "cover-ease-of-business",
+      "group": "covers",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2023/03/rc0006.jpg",
+      "width": 328,
+      "height": 322,
+      "uses": [
+        "publication card"
+      ],
+      "credit": "FSD Ethiopia",
+      "alt": "Cover of Ethiopia: Improving Ease of Doing Business",
+      "objectPosition": "50% 50%",
+      "publication": {
+        "title": "Ethiopia: Improving Ease of Doing Business",
+        "pdf": "https://fsdethiopia.org/wp-content/pdf/Improving_Ease_of_Doing_Business_jull23.pdf"
+      }
+    }
+  ]
+}
