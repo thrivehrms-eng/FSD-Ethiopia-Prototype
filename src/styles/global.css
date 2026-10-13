@@ -342,6 +342,8 @@
 
   /* Horizontal scrollers (mobile tiles, people, news). */
   .snap-row {
+    /* Positioned, so absolutely positioned children (sr-only text) stay clipped. */
+    position: relative;
     display: flex;
     gap: 1rem;
     overflow-x: auto;

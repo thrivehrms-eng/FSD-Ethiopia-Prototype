@@ -1,0 +1,14 @@
+---
+// Stand-in where no photo exists: the brand gradient with the three-stroke mark (CLAUDE.md 3.6).
+import ThreeStrokes from './ThreeStrokes.astro';
+
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<span class:list={['brand-gradient flex items-center justify-center overflow-hidden', className]} aria-hidden="true">
+  <ThreeStrokes class="h-auto w-[38%] max-w-40 opacity-90" />
+</span>

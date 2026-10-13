@@ -1,0 +1,18 @@
+---
+// 4.3 Stats band: four sourced numbers directly under the hero.
+import StatBand from '../ui/StatBand.astro';
+import { t, langOf, type Lang } from '../../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+
+<section class="bg-white pb-12 pt-10 lg:pb-16 lg:pt-12" aria-labelledby="stats-title">
+  <div class="container-site">
+    <h2 id="stats-title" class="sr-only" lang={langOf(lang, 'home.stats.title')}>{t(lang, 'home.stats.title')}</h2>
+    <StatBand lang={lang} keys={['established', 'programmeAreas', 'regionsWithCoordinators', 'cohortWomen']} />
+  </div>
+</section>

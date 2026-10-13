@@ -1,0 +1,143 @@
+---
+// 4.2 Hero. A static hero with three tabs the visitor controls (no autoplay).
+// Switching tabs swaps the photo, eyebrow, headline, sentence and buttons.
+// Desktop: duotone skyline over the teal-to-green gradient; mobile: gradient only.
+import MapFrame from '../ui/MapFrame.astro';
+import Duotone from '../ui/Duotone.astro';
+import { t, langOf, localePath, type Lang } from '../../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+// CLAUDE.md 4.2: tab 1 Stakeholder Summit, tab 2 Second Climate Finance Summit, tab 3 speaker at an FSD event.
+const tabs = [
+  { id: 'who', image: 'event-stakeholder-summit-2026', ctas: ['#focus', '#publications'] },
+  { id: 'work', image: 'event-climate-summit-2026-group', ctas: ['#focus', '#featured'] },
+  { id: 'join', image: 'tools-convening', ctas: ['#opportunities', localePath(lang, '/contact/')] },
+];
+const k = (tab: string, key: string) => `home.hero.${tab}.${key}`;
+---
+
+<div class="hero-edge relative">
+  <section class="hero on-dark relative isolate overflow-hidden bg-teal-900 text-white" aria-labelledby="hero-heading" x-data="tabs">
+    <h1 id="hero-heading" class="sr-only" lang={langOf(lang, 'home.h1')}>{t(lang, 'home.h1')}</h1>
+    <div class="absolute inset-0 -z-10 bg-[linear-gradient(90deg,var(--color-teal-900),var(--color-green-600))]" aria-hidden="true"></div>
+    <Duotone id="skyline-panorama" sizes="100vw" maxWidth={1900} strength={0.4} desktopOnly class="-z-10" />
+
+    <div class="container-site flex min-h-[min(88vh,820px)] flex-col pb-24 pt-[calc(var(--header-h)+2.5rem)] lg:pb-32 lg:pt-[calc(var(--header-h)+3rem)]">
+      <div class="flex flex-1 items-center">
+        {
+          tabs.map((tab, i) => (
+            <div
+              id={`hero-panel-${tab.id}`}
+              role="tabpanel"
+              data-tabpanel
+              aria-labelledby={`hero-tab-${tab.id}`}
+              hidden={i !== 0}
+              x-bind:hidden={`active !== ${i}`}
+              class="grid w-full items-center gap-10 lg:grid-cols-12 lg:gap-12"
+            >
+              <div class="lg:col-span-6">
+                <p class="t-label text-yellow-400" lang={langOf(lang, k(tab.id, 'eyebrow'))}>{t(lang, k(tab.id, 'eyebrow'))}</p>
+                <h2 class="t-hero mt-4" lang={langOf(lang, k(tab.id, 'title'))}>{t(lang, k(tab.id, 'title'))}</h2>
+                <p class="t-lead mt-6 max-w-xl text-white/90" lang={langOf(lang, k(tab.id, 'lead'))}>{t(lang, k(tab.id, 'lead'))}</p>
+                <div class="mt-8 flex flex-wrap gap-3">
+                  <a href={tab.ctas[0]} class="btn btn-on-dark" lang={langOf(lang, k(tab.id, 'cta1'))}>{t(lang, k(tab.id, 'cta1'))}</a>
+                  <a href={tab.ctas[1]} class="btn btn-outline-on-dark" lang={langOf(lang, k(tab.id, 'cta2'))}>{t(lang, k(tab.id, 'cta2'))}</a>
+                </div>
+              </div>
+              <div class="px-4 sm:px-8 lg:col-span-6 lg:px-6">
+                <MapFrame
+                  id={tab.image}
+                  sizes="(min-width: 1024px) 560px, (min-width: 640px) 80vw, 90vw"
+                  maxWidth={600}
+                  priority={i === 0}
+                  credit="below"
+                />
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div
+        role="tablist"
+        data-tablist
+        aria-label={t(lang, 'home.hero.tablist')}
+        x-on:keydown="onKey($event)"
+        class="hero-tabs relative mt-12 grid grid-cols-3 rounded-full bg-teal-950/55 p-1 sm:rounded-none sm:bg-transparent sm:p-0 lg:mt-16"
+        x-bind:style="`--tab:${active}`"
+        style="--tab:0"
+      >
+        {
+          tabs.map((tab, i) => (
+            <button
+              type="button"
+              role="tab"
+              id={`hero-tab-${tab.id}`}
+              aria-controls={`hero-panel-${tab.id}`}
+              aria-selected={i === 0 ? 'true' : 'false'}
+              tabindex={i === 0 ? 0 : -1}
+              x-bind:aria-selected={`(active === ${i}).toString()`}
+              x-bind:tabindex={`active === ${i} ? 0 : -1`}
+              x-on:click={`select(${i})`}
+              class="hero-tab relative z-10 flex min-h-11 cursor-pointer flex-col items-center justify-center gap-0.5 rounded-full px-2 py-2 text-center text-white/80 transition-colors hover:text-white aria-selected:text-teal-900 sm:items-start sm:rounded-none sm:border-t sm:border-white/25 sm:px-0 sm:pb-4 sm:pt-4 sm:text-left sm:aria-selected:text-white"
+            >
+              <span class="hidden font-display text-[1.75rem] font-bold leading-none sm:block" aria-hidden="true">{`0${i + 1}`}</span>
+              <span class="t-wide text-[0.6875rem] sm:text-[0.8125rem]" lang={langOf(lang, `home.hero.tabs.${tab.id}`)}>{t(lang, `home.hero.tabs.${tab.id}`)}</span>
+            </button>
+          ))
+        }
+        <span class="hero-glow pointer-events-none absolute" aria-hidden="true"></span>
+      </div>
+    </div>
+  </section>
+</div>
+
+<style>
+  /* Angled bottom edge with a 3px red-to-yellow line along the cut (CLAUDE.md 3.4). */
+  .hero-edge {
+    --cut: 2.5rem;
+    background: linear-gradient(90deg, var(--color-red-600), var(--color-yellow-400));
+    padding-bottom: 3px;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--cut)), 0 100%);
+  }
+  .hero {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--cut)), 0 100%);
+  }
+  @media (min-width: 64rem) {
+    .hero-edge {
+      --cut: 5rem;
+    }
+  }
+
+  /* Glow indicator: slides under the active tab in 300ms; static under reduced motion. */
+  .hero-glow {
+    left: 0.25rem;
+    top: 0.25rem;
+    bottom: 0.25rem;
+    width: calc((100% - 0.5rem) / 3);
+    border-radius: 9999px;
+    background: var(--color-yellow-400);
+    box-shadow: 0 0 18px rgb(247 222 77 / 0.55);
+    transform: translateX(calc(var(--tab) * 100%));
+    transition: transform 300ms var(--ease-out-soft);
+  }
+  @media (min-width: 40rem) {
+    .hero-glow {
+      left: 0;
+      top: -2px;
+      bottom: auto;
+      width: calc(100% / 3);
+      height: 4px;
+      border-radius: 2px;
+      background: linear-gradient(90deg, rgb(247 222 77 / 0.2), var(--color-yellow-400) 35%, var(--color-yellow-400) 65%, rgb(247 222 77 / 0.2));
+      box-shadow: 0 0 16px 2px rgb(247 222 77 / 0.6);
+    }
+  }
+  .hero-tab:focus-visible {
+    outline-color: var(--color-yellow-400);
+  }
+</style>

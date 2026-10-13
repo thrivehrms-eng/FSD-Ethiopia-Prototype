@@ -3,7 +3,7 @@
     "siteName": "FSD Ethiopia",
     "home": {
       "title": "FSD Ethiopia | Financial Sector Deepening Ethiopia",
-      "description": "FSD Ethiopia works with regulators, policymakers and market actors to build an accessible, inclusive and sustainable financial system for Ethiopia."
+      "description": "FSD Ethiopia helps build innovative, inclusive and sustainable financial markets, working with regulators, policymakers and market actors on financial inclusion, access to capital and climate finance."
     }
   },
   "a11y": {
@@ -55,98 +55,184 @@
     "photoCredit": "Photo: FSD Ethiopia"
   },
   "home": {
+    "h1": "FSD Ethiopia: Financial Sector Deepening Ethiopia",
     "hero": {
-      "title": "A financial system that works for Ethiopia’s people and economy",
-      "lead": "FSD Ethiopia finds what holds the country’s financial markets back, then works with regulators, policymakers and market actors to fix it, through technical assistance, grants and research.",
-      "ctaWork": "Explore our work",
-      "ctaInsights": "Read our latest insights"
+      "tablist": "Introduction",
+      "tabs": {
+        "who": "Who we are",
+        "work": "Our work",
+        "join": "Work with us"
+      },
+      "who": {
+        "eyebrow": "Financial Sector Deepening Ethiopia",
+        "title": "Financial markets that work for every Ethiopian",
+        "lead": "We find what holds Ethiopia’s financial system back and help market actors fix it, with technical assistance, grants and research.",
+        "cta1": "Explore our work",
+        "cta2": "Browse resources"
+      },
+      "work": {
+        "eyebrow": "Financial inclusion, capital and climate",
+        "title": "Closing the gaps in Ethiopia’s financial system",
+        "lead": "Our programmes widen access to financial services, open up capital for businesses and mobilise finance for climate action.",
+        "cta1": "See where we focus",
+        "cta2": "View featured work"
+      },
+      "join": {
+        "eyebrow": "Careers, procurement and partnerships",
+        "title": "Build Ethiopia’s financial future with us",
+        "lead": "We hire, procure and partner openly, and publish every opportunity with its deadline.",
+        "cta1": "View opportunities",
+        "cta2": "Contact us"
+      }
     },
-    "gap": {
-      "title": "The digital payments gap",
-      "summary": "{women}% of women made or received a digital payment, compared with {men}% of men.",
-      "women": "Women",
-      "men": "Men",
-      "of100": "{value} in every 100",
-      "tableCaption": "Share of adults who made or received a digital payment, by gender",
-      "colGroup": "Group",
-      "colShare": "Share (%)"
+    "stats": {
+      "title": "FSD Ethiopia at a glance"
     },
-    "about": {
-      "title": "Who we are",
-      "body": "Launched in 2022 with funding from UK aid and the Gates Foundation, FSD Ethiopia builds on the work of FSD Africa. We identify the underlying causes of financial system failures and help market actors address them.",
-      "vision": "Our vision is a thriving financial system that delivers real value to the broader economy and the people of Ethiopia.",
-      "cta": "About FSD Ethiopia"
+    "role": {
+      "eyebrow": "Who we are",
+      "title": "Fixing what holds Ethiopia’s financial markets back",
+      "body": "Launched in 2022 with funding from UK aid and the Gates Foundation, and incubated by FSD Africa, we look for the underlying causes of financial system failures and help market actors address them. Policymakers, regulators and market actors draw on our technical assistance, grants and research so that the financial sector serves a wide cross-section of Ethiopian people and businesses.",
+      "link": "More about FSD Ethiopia"
     },
-    "work": {
-      "title": "Our work",
-      "intro": "Three programme areas, each aimed at a constraint that keeps people and businesses outside the formal financial system.",
-      "tablistLabel": "Programme areas",
-      "focusTitle": "Current focus",
+    "how": {
+      "title": "How we work",
+      "intro": "Four tools, each aimed at a specific constraint in the market.",
+      "ta": {
+        "label": "Technical assistance",
+        "promise": "Expertise where reform needs it.",
+        "body": "We work alongside regulators, policymakers and market actors to design and deliver reforms."
+      },
+      "grants": {
+        "label": "Grants",
+        "promise": "Funding that de-risks new markets.",
+        "body": "Targeted grants help institutions test products and models the market would not yet fund alone."
+      },
+      "research": {
+        "label": "Research and data",
+        "promise": "Evidence before decisions.",
+        "body": "We publish research and data on access, usage and gaps, so policy and investment rest on facts."
+      },
+      "convening": {
+        "label": "Convening and advocacy",
+        "promise": "The right people at one table.",
+        "body": "Summits, dialogues and our knowledge series bring the sector together to agree what to change."
+      }
+    },
+    "featured": {
+      "title": "Featured work",
+      "region": "Featured work",
+      "noSecond": "Second photo to come"
+    },
+    "focus": {
+      "title": "Where we focus",
       "fi": {
-        "tab": "Financial Inclusion",
-        "summary": "We expand access to digital and traditional financial services, support reforms that digitise and open up finance, and deepen services for groups the market underserves, starting with women.",
-        "f1": "Refreshing the National Financial Inclusion Strategy for 2026–2030 with the National Bank of Ethiopia",
-        "f2": "Expanding digital payment agent networks under the national strategy",
-        "f3": "Increasing women’s use of digital financial services",
-        "cta": "Explore Financial Inclusion"
+        "title": "Financial inclusion",
+        "lines": [
+          "Digital payments",
+          "Agent networks",
+          "Open finance"
+        ]
       },
       "ac": {
-        "tab": "Access to Capital",
-        "summary": "We help businesses reach long-term finance and working capital, and help build the capital market institutions that make this possible.",
-        "f1": "Wider finance options for micro, small and medium enterprises: equity, bonds, microloans and working capital",
-        "f2": "Support to the Ethiopian Securities Exchange, including a crowd-investment platform and the ESX Academy",
-        "f3": "Interest-free financial market instruments, with the National Bank of Ethiopia",
-        "cta": "Explore Access to Capital"
+        "title": "Access to capital",
+        "lines": [
+          "Capital markets",
+          "Investor relations",
+          "ESX Academy"
+        ]
       },
       "cf": {
-        "tab": "Climate Finance",
-        "summary": "We help mobilise domestic and international capital for climate adaptation and mitigation, and build the instruments to channel it.",
-        "f1": "An annual Climate Finance Summit; the second was held in Addis Ababa in March 2026",
-        "f2": "A scoping study of green, social and sustainability bonds for the Ethiopian Capital Market Authority",
-        "f3": "Membership of the Global Islamic Climate Finance Alliance",
-        "cta": "Explore Climate Finance"
+        "title": "Climate finance",
+        "lines": [
+          "Green finance instruments",
+          "Climate Finance Summit",
+          "Islamic climate finance"
+        ]
+      },
+      "women": {
+        "title": "Women’s economic empowerment",
+        "lines": [
+          "Board Ready Women",
+          "Women’s digital finance"
+        ]
+      },
+      "insurance": {
+        "title": "Insurance and innovation",
+        "lines": [
+          "BimaLab accelerator",
+          "Insurance market reform"
+        ]
+      },
+      "research": {
+        "title": "Research and data",
+        "lines": [
+          "Publications",
+          "Data hub"
+        ]
       }
+    },
+    "data": {
+      "title": "Data snapshot",
+      "mobileMoney": "Registered mobile money accounts, June 2025",
+      "mobileMoneyNote": "This counts accounts, not people, and many accounts are inactive.",
+      "ownership": "Adults with an account, 2024",
+      "ownershipWomen": "Women",
+      "ownershipMen": "Men",
+      "ownershipNote": "A 15-point gap between women and men.",
+      "chartTitle": "Account ownership by gender, 2024",
+      "chartAxis": "Adults aged 15+ with an account (%)",
+      "chartWomen": "Women",
+      "chartMen": "Men",
+      "chartAll": "All adults",
+      "tableCaption": "Share of adults aged 15 and over with an account at a financial institution or mobile money provider, 2024",
+      "colGroup": "Group",
+      "colShare": "Share (%)",
+      "link": "Explore the data hub"
     },
     "boards": {
-      "title": "Women leading Ethiopia’s financial boards",
-      "body": "Women hold {banks}% of board seats in Ethiopia’s commercial banks. Capital market rules now ask securities issuers to reach at least {ecma}%. Our Board Ready Program, run with IFC, prepares women professionals for those seats.",
-      "chartTitle": "Women’s share of board seats",
-      "chartBanks": "Commercial banks, 2024",
-      "chartEcma": "Minimum for securities issuers (ECMA rule)",
-      "chartAxis": "Share of board seats (%)",
-      "tableCaption": "Women’s share of board seats compared with the regulatory minimum",
-      "colMeasure": "Measure",
-      "colShare": "Share (%)",
-      "programmeTitle": "The Board Ready Program",
-      "programmeBody": "Three cohorts have completed corporate governance training covering board roles and responsibilities, ESG principles and board-level decision-making.",
-      "quoteBy": "Programme graduate, name to be confirmed",
-      "cta": "Meet the cohort"
+      "eyebrow": "Women in leadership",
+      "title": "Preparing women for Ethiopia’s boardrooms",
+      "body": "With IFC, we have run three rounds of corporate governance training for women professionals preparing for board seats, with environmental, social and governance principles built into the curriculum.",
+      "stat": "women in the cohorts",
+      "cta1": "Read the story",
+      "cta2": "Meet the cohort",
+      "mosaicLabel": "Members of the Board Ready Program cohorts"
     },
-    "insights": {
-      "title": "Latest insights",
-      "intro": "Research, analysis and news from our programmes.",
-      "all": "See all insights",
-      "types": {
-        "blog": "Blog",
+    "people": {
+      "title": "The people behind the work",
+      "link": "Meet the full team"
+    },
+    "latest": {
+      "title": "Latest",
+      "tablist": "Latest updates",
+      "tabs": {
         "news": "News",
-        "report": "Report"
-      }
+        "linkedin": "LinkedIn",
+        "x": "X"
+      },
+      "embed": "Live feed embeds here",
+      "embedNote": "The {network} feed loads only after you accept cookies, because {network} sets its own.",
+      "follow": "Follow FSD Ethiopia on {network}",
+      "region": "Latest news"
+    },
+    "pubs": {
+      "title": "Latest publications",
+      "download": "Download PDF",
+      "library": "Browse the resource library",
+      "pdf": "PDF"
     },
     "opps": {
-      "title": "Work with us",
-      "intro": "We hire, procure and partner openly. Every opportunity is published here first.",
-      "procurement": "Procurement",
-      "procurementCta": "View all procurement opportunities",
+      "title": "Opportunities",
       "careers": "Careers",
-      "careersBody": "Join a team working on financial inclusion, capital markets and climate finance.",
-      "careersCta": "See open roles",
-      "partner": "Partnerships",
-      "partnerBody": "Regulators, financial institutions and development partners can propose joint work.",
-      "partnerCta": "Contact our team"
-    },
-    "funders": {
-      "title": "Funded by",
-      "network": "Part of the FSD Network"
+      "procurement": "Procurement",
+      "open": "{n} open",
+      "openOne": "1 open",
+      "none": "No open listings right now",
+      "next": "Next deadline: {date}",
+      "careersCta": "See careers",
+      "procurementCta": "See procurement calls",
+      "careersBody": "Roles and internships in financial inclusion, capital markets and climate finance.",
+      "procurementBody": "Calls for proposals and tenders, with terms of reference and deadlines."
     }
   },
   "footer": {

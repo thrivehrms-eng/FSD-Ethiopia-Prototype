@@ -1,0 +1,70 @@
+---
+// 4.9 Board Ready Women band (teal-900): a mosaic of eight cohort portraits that
+// go from duotone to colour on hover, with the yellow three-stroke watermark.
+// Cohort photos are used only for the Board Ready programme (CLAUDE.md 3.6).
+import Img from '../ui/Img.astro';
+import GradientPanel from '../ui/GradientPanel.astro';
+import ThreeStrokes from '../ui/ThreeStrokes.astro';
+import figures from '../../data/figures.json';
+import images from '../../data/images.json';
+import { t, langOf, localePath, type Lang } from '../../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const cohort = Object.entries(images)
+  .filter(([, img]) => img.group === 'cohort' && img.status === 'ok')
+  .map(([id]) => id)
+  .slice(0, 8);
+const slots = Array.from({ length: 8 }, (_, i) => cohort[i] ?? null);
+const cohortSize = figures.cohortWomen;
+---
+
+<section id="board-ready" class="on-dark section relative isolate overflow-hidden bg-teal-900 text-white" aria-labelledby="boards-title">
+  <ThreeStrokes tone="yellow" class="pointer-events-none absolute -left-24 top-1/2 -z-10 w-[min(900px,120vw)] -translate-y-1/2 opacity-[0.08]" />
+  <div class="container-site grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
+    <ul class="mosaic grid grid-cols-4 gap-1.5 sm:gap-2 lg:col-span-7" aria-hidden="true">
+      {
+        slots.map((id, i) => (
+          <li class:list={['mosaic__item aspect-[2/3] overflow-hidden', i % 2 === 1 && 'translate-y-4 sm:translate-y-6']}>
+            {id ? (
+              <span class="duotone block h-full">
+                <Img id={id} sizes="(min-width: 1024px) 170px, 23vw" maxWidth={200} decorative class="h-full w-full" />
+              </span>
+            ) : (
+              <GradientPanel class="h-full w-full" />
+            )}
+          </li>
+        ))
+      }
+    </ul>
+    <div class="lg:col-span-5" data-reveal>
+      <p class="t-label text-yellow-400" lang={langOf(lang, 'home.boards.eyebrow')}>{t(lang, 'home.boards.eyebrow')}</p>
+      <h2 id="boards-title" class="t-section mt-4 text-white" lang={langOf(lang, 'home.boards.title')}>{t(lang, 'home.boards.title')}</h2>
+      <p class="mt-6 text-white/90" lang="en">{t(lang, 'home.boards.body')}</p>
+      <p class="mt-8 flex items-center gap-4" lang="en">
+        <span class="t-stat text-yellow-400">{cohortSize.value}</span>
+        <span class="t-label max-w-40 text-[0.8125rem] text-white">{t(lang, 'home.boards.stat')}</span>
+      </p>
+      <p class="source-link mt-2 text-on-dark-muted" lang="en">
+        {t(lang, 'common.source')}: <a href={cohortSize.sourceUrl} class="text-white hover:text-yellow-400">{cohortSize.sourceTitle}</a>
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href={localePath(lang, '/stories/board-ready-women/')} class="btn btn-on-dark" lang={langOf(lang, 'home.boards.cta1')}>{t(lang, 'home.boards.cta1')}</a>
+        <a href={localePath(lang, '/stories/board-ready-women/#cohort')} class="btn btn-outline-on-dark" lang={langOf(lang, 'home.boards.cta2')}>{t(lang, 'home.boards.cta2')}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .mosaic :global(img) {
+    transition: filter 300ms ease;
+  }
+  .mosaic__item:hover :global(img) {
+    filter: none;
+    mix-blend-mode: normal;
+  }
+</style>

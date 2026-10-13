@@ -33,11 +33,13 @@ const altText = decorative || image.decorative ? '' : (alt ?? image.alt);
 const objectPosition = position ?? image.objectPosition;
 const largest = image.variants.webp.at(-1);
 const showCredit = credit && image.status === 'ok' && image.credit.startsWith('Photo');
+// Callers that position the image absolutely must not also get `relative`.
+const position_ = /(^|\s)(absolute|fixed)(\s|$)/.test(className ?? '') ? '' : 'relative';
 ---
 
 {
   image.status === 'ok' ? (
-    <span class:list={['relative block', className]} data-image={id} data-original-width={image.width}>
+    <span class:list={[position_, 'block', className]} data-image={id} data-original-width={image.width}>
       <picture>
         <source type="image/avif" srcset={srcset(image.variants.avif)} sizes={sizes} />
         <source type="image/webp" srcset={srcset(image.variants.webp)} sizes={sizes} />
@@ -69,7 +71,7 @@ const showCredit = credit && image.status === 'ok' && image.credit.startsWith('P
     </span>
   ) : (
     <span
-      class:list={['brand-gradient relative flex items-center justify-center overflow-hidden', className]}
+      class:list={['brand-gradient flex items-center justify-center overflow-hidden', position_, className]}
       data-image={id}
       data-image-missing
       data-original-width={image.width}

@@ -154,27 +154,7 @@ Alpine.data('newsletterForm', () => ({
   },
 }));
 
-// Accessible tabs: arrow keys, Home and End move between tabs (WAI-ARIA pattern).
-Alpine.data('tabs', () => ({
-  active: 0,
-  count: 0,
-  init() {
-    this.count = (this.$el as HTMLElement).querySelectorAll('[role="tab"]').length;
-  },
-  select(i: number, focus = false) {
-    this.active = (i + this.count) % this.count;
-    if (focus) {
-      this.$nextTick(() => (this.$el as HTMLElement).querySelectorAll<HTMLElement>('[role="tab"]')[this.active]?.focus());
-    }
-  },
-  onKey(e: KeyboardEvent) {
-    const moves: Record<string, number> = { ArrowRight: this.active + 1, ArrowLeft: this.active - 1, Home: 0, End: this.count - 1 };
-    if (e.key in moves) {
-      e.preventDefault();
-      this.select(moves[e.key], true);
-    }
-  },
-}));
+
 
 
 // Reveal on scroll (CLAUDE.md 3.5): once per element; skipped under reduced motion.
@@ -254,12 +234,12 @@ Alpine.data('announcement', (id: string) => ({
 
 // Manual slider (CLAUDE.md 4.6 and 4.11). Nothing moves on its own.
 // mode "single": one slide shows at a time. mode "scroll": cards scroll and peek.
-Alpine.data('slider', (mode: 'single' | 'scroll' = 'single') => ({
+const sliderFactory = (mode: 'single' | 'scroll' = 'single') => ({
   index: 0,
   count: 0,
   atStart: true,
   atEnd: false,
-  init() {
+  initSlider() {
     const root = this.$el as HTMLElement;
     this.count = root.querySelectorAll('[data-slide]').length;
     if (mode === 'scroll') {
@@ -310,7 +290,42 @@ Alpine.data('slider', (mode: 'single' | 'scroll' = 'single') => ({
       this.next();
     }
   },
+});
+Alpine.data('slider', (mode: 'single' | 'scroll' = 'single') => ({ ...sliderFactory(mode), init() { this.initSlider(); } }));
+// Latest (4.11): News | LinkedIn | X tabs, with a scrolling card slider in the News tab.
+Alpine.data('latest', () => ({
+  ...sliderFactory('scroll'),
+  ...tabsFactory(),
+  init() {
+    this.initSlider();
+    this.initTabs();
+  },
 }));
+
+// Accessible tabs: arrow keys, Home and End move between tabs (WAI-ARIA pattern).
+// A glow indicator follows the active tab through the --tab CSS variable.
+const tabsFactory = () => ({
+  active: 0,
+  count: 0,
+  initTabs() {
+    this.count = (this.$el as HTMLElement).querySelectorAll('[role="tab"]').length;
+  },
+  select(i: number, focus = false) {
+    this.active = (i + this.count) % this.count;
+    if (focus) {
+      this.$nextTick(() => (this.$el as HTMLElement).querySelectorAll<HTMLElement>('[role="tab"]')[this.active]?.focus());
+    }
+  },
+  onTabKey(e: KeyboardEvent) {
+    const moves: Record<string, number> = { ArrowRight: this.active + 1, ArrowLeft: this.active - 1, Home: 0, End: this.count - 1 };
+    if (e.key in moves) {
+      e.preventDefault();
+      e.stopPropagation();
+      this.select(moves[e.key], true);
+    }
+  },
+});
+Alpine.data('tabs', () => ({ ...tabsFactory(), init() { this.initTabs(); }, onKey(e: KeyboardEvent) { this.onTabKey(e); } }));
 
 // Site search with Fuse.js, loaded only when the search dialog opens.
 Alpine.data('siteSearch', () => ({

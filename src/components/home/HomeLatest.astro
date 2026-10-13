@@ -1,0 +1,105 @@
+---
+// 4.11 Latest: News | LinkedIn | X. News cards sit side by side and peek off the
+// right edge; the round arrows scroll them. The social tabs are embed slots that
+// would load only after consent, because those platforms set their own cookies.
+import SectionTitle from '../ui/SectionTitle.astro';
+import ArrowButton from '../ui/ArrowButton.astro';
+import NewsCard from '../ui/NewsCard.astro';
+import ThreeStrokes from '../ui/ThreeStrokes.astro';
+import news from '../../data/news.json';
+import site from '../../data/site.json';
+import { t, langOf, type Lang } from '../../i18n';
+import type { Post } from '../ui/NewsCard.astro';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const posts = [...news].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 6) as Post[];
+const tabs = [
+  { id: 'news', network: null },
+  { id: 'linkedin', network: 'LinkedIn' },
+  { id: 'x', network: 'X' },
+];
+const social = Object.fromEntries(site.social.map((s) => [s.name, s.url]));
+---
+
+<section id="latest" class="section relative overflow-hidden bg-white" aria-labelledby="latest-title" x-data="latest">
+  <div class="container-site">
+    <SectionTitle lang={lang} k="home.latest.title" id="latest-title">
+      <span class="flex gap-3" x-show="active === 0">
+        <ArrowButton dir="prev" label={t(lang, 'slider.prev')} aria-controls="latest-track" x-on:click="prev()" x-bind:disabled="atStart" disabled />
+        <ArrowButton dir="next" label={t(lang, 'slider.next')} aria-controls="latest-track" x-on:click="next()" x-bind:disabled="atEnd" />
+      </span>
+    </SectionTitle>
+
+    <div role="tablist" aria-label={t(lang, 'home.latest.tablist')} x-on:keydown="onTabKey($event)" class="mt-8 flex gap-6 border-b border-line">
+      {
+        tabs.map((tab, i) => (
+          <button
+            type="button"
+            role="tab"
+            id={`latest-tab-${tab.id}`}
+            aria-controls={`latest-panel-${tab.id}`}
+            aria-selected={i === 0 ? 'true' : 'false'}
+            tabindex={i === 0 ? 0 : -1}
+            x-bind:aria-selected={`(active === ${i}).toString()`}
+            x-bind:tabindex={`active === ${i} ? 0 : -1`}
+            x-on:click={`select(${i})`}
+            class="t-wide -mb-px min-h-11 cursor-pointer border-b-[3px] border-transparent pb-2 text-[0.8125rem] text-slate hover:text-green-600 aria-selected:border-green-600 aria-selected:text-green-600"
+            lang={langOf(lang, `home.latest.tabs.${tab.id}`)}
+          >
+            {t(lang, `home.latest.tabs.${tab.id}`)}
+          </button>
+        ))
+      }
+    </div>
+  </div>
+
+  <div id="latest-panel-news" role="tabpanel" aria-labelledby="latest-tab-news" data-tabpanel x-bind:hidden="active !== 0" x-on:keydown="onKey($event)">
+    <ul
+      id="latest-track"
+      x-ref="track"
+      class="latest-track snap-row mt-8 gap-5 pb-4"
+      role="list"
+      aria-label={t(lang, 'home.latest.region')}
+    >
+      {
+        posts.map((post) => (
+          <li data-slide class="w-[85vw] max-w-[34rem] bg-mist p-0 sm:w-[30rem]">
+            <NewsCard lang={lang} post={post} />
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+
+  {
+    tabs.slice(1).map((tab) => (
+      <div id={`latest-panel-${tab.id}`} role="tabpanel" aria-labelledby={`latest-tab-${tab.id}`} data-tabpanel hidden x-bind:hidden={`active !== ${tabs.indexOf(tab)}`} class="container-site">
+        <div class="mt-8 flex min-h-64 flex-col items-center justify-center gap-3 border-2 border-dashed border-line bg-mist p-8 text-center" lang="en">
+          <ThreeStrokes class="w-16" />
+          <p class="t-label text-green-600">{t(lang, 'home.latest.embed')}</p>
+          <p class="max-w-md text-[0.9375rem] text-slate">{t(lang, 'home.latest.embedNote', { network: tab.network! })}</p>
+          <a href={social[tab.network!]} class="arrow-link mt-1">{t(lang, 'home.latest.follow', { network: tab.network! })}</a>
+        </div>
+      </div>
+    ))
+  }
+</section>
+
+<style>
+  /* Cards start in line with the container and run to the viewport edge, so they peek. */
+  .latest-track {
+    padding-left: max(1rem, calc((100vw - 80rem) / 2 + 1.5rem));
+    padding-right: 1rem;
+    scroll-padding-left: max(1rem, calc((100vw - 80rem) / 2 + 1.5rem));
+  }
+  @media (min-width: 40rem) {
+    .latest-track {
+      padding-left: max(1.5rem, calc((100vw - 80rem) / 2 + 1.5rem));
+      scroll-padding-left: max(1.5rem, calc((100vw - 80rem) / 2 + 1.5rem));
+    }
+  }
+</style>

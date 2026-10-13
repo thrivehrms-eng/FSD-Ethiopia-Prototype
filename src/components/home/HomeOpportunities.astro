@@ -1,0 +1,47 @@
+---
+// 4.13 Opportunities: two large photo cards with a teal overlay, showing how many
+// listings are open and the next deadline, both from opportunities.json.
+import SectionTitle from '../ui/SectionTitle.astro';
+import Img from '../ui/Img.astro';
+import { openCareers, openProcurement, formatDate, type Opportunity } from '../../lib/opportunities';
+import { t, langOf, localePath, type Lang } from '../../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const cards = [
+  { id: 'careers', image: 'event-finequity-2024', open: openCareers, href: '/opportunities/#careers' },
+  { id: 'procurement', image: 'event-climate-summit-2025', open: openProcurement, href: '/opportunities/#procurement' },
+];
+const countText = (open: Opportunity[]) =>
+  open.length === 0 ? t(lang, 'home.opps.none') : open.length === 1 ? t(lang, 'home.opps.openOne') : t(lang, 'home.opps.open', { n: open.length });
+---
+
+<section id="opportunities" class="section bg-white" aria-labelledby="opps-title">
+  <div class="container-site">
+    <SectionTitle lang={lang} k="home.opps.title" id="opps-title" />
+    <div class="mt-10 grid gap-6 md:grid-cols-2">
+      {
+        cards.map((card) => (
+          <article class="opp-card on-dark zoom-host relative isolate flex min-h-[22rem] overflow-hidden text-white" data-reveal>
+            <Img id={card.image} sizes="(min-width: 768px) 50vw, 100vw" maxWidth={720} class="absolute inset-0 -z-20 h-full w-full" credit="overlay-top" />
+            <span class="absolute inset-0 -z-10 bg-gradient-to-t from-teal-950/95 via-teal-900/80 to-teal-900/35" aria-hidden="true"></span>
+            <div class="mt-auto flex w-full flex-col gap-3 p-6 sm:p-8">
+              <h3 class="t-section text-[2rem] text-white" lang={langOf(lang, `home.opps.${card.id}`)}>{t(lang, `home.opps.${card.id}`)}</h3>
+              <p class="max-w-md text-white/90" lang="en">{t(lang, `home.opps.${card.id}Body`)}</p>
+              <p class="t-label text-[0.8125rem] text-yellow-400" lang="en">
+                {countText(card.open)}
+                {card.open[0] && <span class="block font-medium normal-case tracking-normal text-white">{t(lang, 'home.opps.next', { date: formatDate(card.open[0].deadline) })}</span>}
+              </p>
+              <a href={localePath(lang, card.href)} class="btn btn-on-dark mt-2 self-start" lang={langOf(lang, `home.opps.${card.id}Cta`)}>
+                {t(lang, `home.opps.${card.id}Cta`)}
+              </a>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
