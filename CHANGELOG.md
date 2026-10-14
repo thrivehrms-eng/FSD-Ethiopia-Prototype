@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.3.1 — 2026-10-14: hero autoplay
+
+### Changed
+- **The hero tabs now advance on their own** every 7 seconds. CLAUDE.md sections 2.2, 3.5, 4.2, 8 and 10 were updated to allow this one exception to "nothing moves on its own", following WCAG 2.2.2 and the WAI-ARIA auto-rotating tabbed carousel pattern:
+  - **Pause/play button** beside the tabs, 44px, with a label that changes between "Pause slideshow" and "Play slideshow" (Amharic labels flagged for review). On phones it sits under the segmented control, so the tab labels keep the full width.
+  - **Countdown line** on the active tab that fills over the 7 seconds: along the top rule on desktop, inside the yellow pill on phones.
+  - **Pauses** while a mouse is over the hero's text, photo or tabs, while the hero is mostly scrolled away, and while the browser tab is hidden. It resumes with the time that was left.
+  - **Stops** once keyboard focus enters the hero or the visitor picks a tab; only the button restarts it. Autoplay never moves focus.
+  - **Screen readers:** panels are announced only while rotation is off, so they are not interrupted every 7 seconds.
+  - **Reduced motion:** autoplay does not start on its own and there is no countdown line, but the visitor can still press play. Without JavaScript the hero is static and the button is not shown.
+  - The other two tabs' photos load about 1.5 seconds after the first, so a switch never shows an empty frame.
+- The "Who we are" hero sentence now reads: "We identify barriers to Ethiopia’s financial system and help fix them through technical assistance, grants, and research."
+
+### Checked
+- 43 scripted autoplay checks pass, using Playwright's fake clock. They cover:
+  - advancing and wrapping;
+  - hover pause that keeps the time left, and a full interval after play;
+  - stopping on a tab click, tap or keyboard focus;
+  - pausing when scrolled away or the page is hidden;
+  - reduced motion, phone layout with one-line labels, Amharic labels, and no JavaScript.
+- The existing 40 browser checks pass; axe finds no violations; the image audit is clean; there is no horizontal scroll at 390, 768, 1280 or 1440px.
+
 ## 0.3.0 — 2026-10-13: FSD Ethiopia's own photos, verified content
 
 ### Added

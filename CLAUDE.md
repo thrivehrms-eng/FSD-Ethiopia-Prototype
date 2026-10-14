@@ -58,7 +58,7 @@ The reference is https://r-o.com/ (Rogers-O'Brien Construction, Texas), inspecte
 | Open Sans airy body text | Poppins 400, 16px, line-height 1.8 |
 | Badge-shaped SVG mask | The **map frame**: an angular clip plus the three strokes from FSD's logo (section 3.4) |
 | Curved hero bottom edge | An angled bottom edge with a thin red-to-yellow line along the cut |
-| Background video and auto-advancing pager | A static hero with three tabs the visitor controls; no autoplay, no video |
+| Background video and auto-advancing pager | Three hero tabs that advance every 7 seconds, with a visible pause button and a countdown line; no video |
 | Regional office strip | Regional coordination strip: the seven regions where FSD has coordinators |
 | "We're hiring" announcement bar | A live "open opportunities" bar fed from `opportunities.json` |
 | Skyline closing band | FSD's own city skyline photo, duotoned teal-green, with the three-stroke mark |
@@ -130,7 +130,14 @@ Under `:lang(am)`, switch off `text-transform` and `letter-spacing`. Ge'ez scrip
 
 - Elements fade and rise 16px when scrolled into view, over 400ms with ease-out, once per element.
 - Images scale to 1.04 inside their frame on hover. Portraits go from duotone to full colour on hover and on focus.
-- No parallax, no autoplay, and nothing that moves on its own.
+- No parallax, no autoplay video, and nothing that moves on its own, with one exception: the hero tabs (4.2).
+- **Hero autoplay (WCAG 2.2.2).**
+  - The tabs advance every 7 seconds.
+  - A visible pause/play button sits beside the tabs.
+  - Rotation pauses while a mouse is over the hero's content or tabs, and while the hero is scrolled away or the page is hidden.
+  - Rotation stops once keyboard focus enters the hero or the visitor picks a tab; only the button restarts it.
+  - It never moves focus. The panels are announced only while rotation is off.
+  - Under reduced motion it does not start on its own, but the visitor can press play.
 - Every animation is off under `prefers-reduced-motion`.
 
 ### 3.6 Image rules
@@ -189,6 +196,7 @@ In every section below, `uploads/` means `https://fsdethiopia.org/wp-content/upl
 | 03 Work with us | `uploads/2023/03/Our-Tools_-Convening01.jpg` (speaker at an FSD event, 850×602) |
 
 - The yellow glow indicator sits under the active tab, and the hero ends in the angled bottom edge.
+- **Autoplay** follows section 3.5. A thin line on the active tab fills over the 7 seconds and pauses with the timer. On phones the pause button sits under the segmented control, so the tab labels keep the full width.
 - **Mobile:** the photo sits below the text, the tabs become a segmented control, and the skyline is dropped in favour of the gradient alone, to save weight.
 
 ### 4.3 Stats band
@@ -583,7 +591,7 @@ Newsletters, three issues from 2023–24 with no cover images: see https://fsdet
 
 **Performance.**
 - A Lighthouse score of 90 or more in all four categories.
-- No carousels that move on their own and no autoplay video.
+- No autoplay video, and no carousel that moves on its own except the hero tabs (3.5).
 - No horizontal scroll at 390, 768, 1280 or 1440px.
 
 **Consent and forms.**
@@ -636,7 +644,7 @@ Copy each line into Claude Code in turn.
 
 - [ ] Every page shows real FSD imagery, with no grey placeholders.
 - [ ] The homepage follows section 4 in order and works at 390, 768, 1280 and 1440px.
-- [ ] Hero tabs, sliders and dialogs work with a keyboard and respect reduced motion.
+- [ ] Hero tabs, sliders and dialogs work with a keyboard and respect reduced motion; hero autoplay can be paused and stops on focus.
 - [ ] Team names and roles match section 6 exactly; no real person appears in fictional content.
 - [ ] Every number is sourced or labelled "Illustrative data"; no invented quotes.
 - [ ] axe reports no serious or critical issues; Lighthouse is 90 or more; the homepage is within the 1.5 MB budget.

@@ -350,6 +350,89 @@ const tabsFactory = () => ({
 });
 Alpine.data('tabs', () => ({ ...tabsFactory(), init() { this.initTabs(); }, onKey(e: KeyboardEvent) { this.onTabKey(e); } }));
 
+// Hero tabs (CLAUDE.md 3.5 and 4.2): the one element that moves on its own. The tabs
+// advance every 7 seconds, with a visible pause/play button (WCAG 2.2.2). Rotation
+// pauses while the pointer is over the hero's content or tabs, while the hero is
+// scrolled away or the page is hidden, and stops for good once keyboard focus enters
+// the hero or the visitor picks a tab; only the button starts it again. It never
+// starts on its own under reduced motion. Panels are announced (aria-live) only
+// while rotation is off, so screen readers are not interrupted every 7 seconds.
+const HERO_INTERVAL = 7000;
+Alpine.data('heroTabs', () => ({
+  ...tabsFactory(),
+  playing: false,
+  hovering: false,
+  offscreen: false,
+  pageHidden: false,
+  labels: { play: '', pause: '' },
+  timer: 0,
+  startedAt: 0,
+  remaining: HERO_INTERVAL,
+  warmed: false,
+  init() {
+    this.initTabs();
+    const el = this.$el as HTMLElement;
+    this.labels = { play: el.dataset.labelPlay ?? '', pause: el.dataset.labelPause ?? '' };
+    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    this.playing = !motion.matches;
+    motion.addEventListener('change', () => motion.matches && this.stop());
+    new IntersectionObserver(([entry]) => (this.offscreen = entry.intersectionRatio < 0.25), { threshold: [0, 0.25] }).observe(el);
+    document.addEventListener('visibilitychange', () => (this.pageHidden = document.hidden));
+    for (const key of ['playing', 'hovering', 'offscreen', 'pageHidden']) this.$watch(key, () => this.run());
+    this.run();
+  },
+  get paused() {
+    return this.hovering || this.offscreen || this.pageHidden;
+  },
+  // Start, pause or resume the countdown to match the current state. A pause keeps
+  // the time left, so the progress line and the timer stay in step.
+  run() {
+    const shouldRun = this.playing && !this.paused;
+    if (shouldRun && !this.timer) {
+      this.startedAt = performance.now();
+      this.timer = window.setTimeout(() => this.advance(), this.remaining);
+      if (!this.warmed) window.setTimeout(() => this.warmImages(), 1500);
+      this.warmed = true;
+    } else if (!shouldRun && this.timer) {
+      window.clearTimeout(this.timer);
+      this.timer = 0;
+      this.remaining = Math.max(0, this.remaining - (performance.now() - this.startedAt));
+    }
+  },
+  advance() {
+    this.timer = 0;
+    this.remaining = HERO_INTERVAL;
+    this.select(this.active + 1);
+    this.run();
+  },
+  // Load the other tabs' photos before they are shown, once the first one is in.
+  warmImages() {
+    (this.$el as HTMLElement).querySelectorAll<HTMLImageElement>('[data-tabpanel] img[loading="lazy"]').forEach((img) => (img.loading = 'eager'));
+  },
+  toggle() {
+    this.playing ? this.stop() : (this.playing = true);
+  },
+  // Clear the countdown here rather than in run(), so a stopped rotation always
+  // restarts with a full interval, in step with the progress line.
+  stop() {
+    window.clearTimeout(this.timer);
+    this.timer = 0;
+    this.remaining = HERO_INTERVAL;
+    this.playing = false;
+  },
+  pick(i: number) {
+    this.stop();
+    this.select(i);
+  },
+  onKey(e: KeyboardEvent) {
+    this.stop();
+    this.onTabKey(e);
+  },
+  onFocusIn(e: FocusEvent) {
+    if (!(e.target as HTMLElement).closest('[data-rotation]')) this.stop();
+  },
+}));
+
 // Site search with Fuse.js, loaded only when the search dialog opens.
 Alpine.data('siteSearch', () => ({
   labels: { loading: '', empty: '', noResults: '', count: '', types: {} as Record<string, string> },
