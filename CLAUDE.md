@@ -174,9 +174,9 @@ In every section below, `uploads/` means `https://fsdethiopia.org/wp-content/upl
 ### 4.1 Header
 - Fixed and transparent over the hero, with white text.
 - Centred `fsd-logo-reversed.svg`, 72px tall on desktop and 48px on mobile.
-- Navigation on the left: Who We Are, Our Work, Insights. On the right: Newsroom, Opportunities, Contact, a search icon and the EN | አማርኛ toggle.
+- Navigation on the left: Who We Are, Our Work, Insights. On the right: Newsroom, Opportunities, Contact, a search icon and the EN | አማርኛ toggle. A small UK flag sits before EN and an Ethiopian flag before አማርኛ; both are decorative, so the link text stays the accessible name.
 - After 80px of scrolling, the background turns teal-900, the logo shrinks to 52px and a soft shadow appears.
-- On mobile: logo on the left and a menu button on the right, opening a full-screen teal menu with large Khand items.
+- On mobile: logo on the left and a menu button on the right, opening a full-screen teal menu with large Khand items. Below 400px the menu button shows only its icon, and below 360px the "|" separator is dropped, so the flags fit.
 
 ### 4.2 Hero
 - Height: min(88vh, 820px).

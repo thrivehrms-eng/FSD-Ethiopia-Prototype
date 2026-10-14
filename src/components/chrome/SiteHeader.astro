@@ -4,6 +4,7 @@
 // 52px and a soft shadow appears. Mobile: logo left, menu button right, opening a
 // full-screen teal menu (a native modal dialog, so focus is trapped and Escape closes it).
 import { Menu, X, Search } from '@lucide/astro';
+import Flag from '../ui/Flag.astro';
 import { t, langOf, localePath, type Lang } from '../../i18n';
 
 interface Props {
@@ -29,7 +30,7 @@ const current = localePath(lang, path);
 const navLink =
   't-wide block rounded-sm px-2 py-2 text-[0.75rem] tracking-[0.08em] text-white no-underline hover:text-yellow-400 aria-[current=page]:text-yellow-400 xl:px-3 xl:text-[0.8125rem] xl:tracking-[0.12em]';
 const langLink =
-  'flex min-h-11 min-w-11 items-center justify-center px-1.5 text-[0.8125rem] font-semibold text-white no-underline hover:text-yellow-400 aria-[current=true]:text-yellow-400 aria-[current=true]:underline aria-[current=true]:decoration-2 aria-[current=true]:underline-offset-4';
+  'flex min-h-11 min-w-11 items-center justify-center gap-1.5 px-1.5 text-[0.8125rem] font-semibold text-white no-underline hover:text-yellow-400 aria-[current=true]:text-yellow-400 aria-[current=true]:underline aria-[current=true]:decoration-2 aria-[current=true]:underline-offset-4';
 ---
 
 <header
@@ -77,11 +78,11 @@ const langLink =
       </button>
       <div class="flex items-center" role="group" aria-label={t(lang, 'lang.label')}>
         <a href={localePath('en', path)} hreflang="en" lang="en" data-set-lang="en" aria-current={lang === 'en' ? 'true' : undefined} class={langLink}>
-          {t('en', 'lang.en')}<span class="sr-only">{` ${t('en', 'lang.enName')}`}</span>
+          <Flag code="gb" class="shadow-[0_0_0_1px_rgb(255_255_255/0.35)]" />{t('en', 'lang.en')}<span class="sr-only">{` ${t('en', 'lang.enName')}`}</span>
         </a>
-        <span aria-hidden="true" class="text-on-dark-muted">|</span>
+        <span aria-hidden="true" class="text-on-dark-muted max-[359px]:hidden">|</span>
         <a href={localePath('am', path)} hreflang="am" lang="am" data-set-lang="am" aria-current={lang === 'am' ? 'true' : undefined} class={langLink}>
-          {t('en', 'lang.am')}
+          <Flag code="et" class="shadow-[0_0_0_1px_rgb(255_255_255/0.35)]" />{t('en', 'lang.am')}
         </a>
       </div>
       <button
@@ -91,7 +92,8 @@ const langLink =
         aria-haspopup="dialog"
       >
         <Menu size={24} aria-hidden="true" />
-        <span class="t-wide text-[0.75rem]" lang={langOf(lang, 'nav.menu')}>{t(lang, 'nav.menu')}</span>
+        <!-- Below 400px the word is screen-reader only, so the language flags fit beside it. -->
+        <span class="t-wide text-[0.75rem] max-[399px]:sr-only" lang={langOf(lang, 'nav.menu')}>{t(lang, 'nav.menu')}</span>
       </button>
     </div>
   </nav>

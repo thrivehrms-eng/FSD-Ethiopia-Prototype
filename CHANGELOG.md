@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.3.2 — 2026-10-14: flags in the language toggle
+
+### Added
+- A small UK flag before "EN" and an Ethiopian flag before "አማርኛ" in the header's language toggle (`src/components/ui/Flag.astro`).
+  - Both are inline SVG, so there are no extra requests.
+  - Both are hidden from screen readers, so the links are still announced as "EN English" and "አማርኛ".
+  - The Union Jack is cropped to the icon's 3:2 shape. The Ethiopian flag keeps its green, yellow and red stripes and the blue emblem with its yellow star.
+
+### Changed
+- To make room on small phones:
+  - below 400px the menu button shows only its icon; screen readers still hear "Menu";
+  - below 360px the "|" separator between the languages is dropped.
+- With these changes the header fits from 320px up.
+
+### Checked
+- No horizontal scroll at 320, 360, 390, 768, 1024 and 1440px (English and Amharic).
+- axe finds no violations; 40 browser checks and 43 autoplay checks pass; the language toggle's accessible names are unchanged.
+
 ## 0.3.1 — 2026-10-14: hero autoplay
 
 ### Changed

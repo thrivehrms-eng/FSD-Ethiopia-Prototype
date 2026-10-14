@@ -1,0 +1,57 @@
+---
+// Small decorative flag for the language toggle (CLAUDE.md 4.1): the UK flag before
+// "EN" and the Ethiopian flag before "አማርኛ". Inline SVG, so no extra requests.
+// Hidden from assistive technology: the link text already names the language.
+// Both flags are 1:2; they are drawn at 3:2 like most flag icons, the Union Jack
+// cropped at the sides and the Ethiopian stripes and emblem redrawn to fit.
+interface Props {
+  code: 'gb' | 'et';
+  class?: string;
+  /** Suffix for the Union Jack's clip-path ids; pass one if a page shows that flag twice. */
+  idSuffix?: string;
+}
+
+const { code, class: className, idSuffix = '' } = Astro.props;
+const uid = `${code}${idSuffix}`;
+// Ethiopian emblem: blue disc (diameter 0.6 of the flag's height) with a yellow
+// pentagram and five rays between its points, centred on (15, 10).
+const DISC = 6;
+const STAR = 4.6;
+const at = (r: number, deg: number) => {
+  const a = (deg * Math.PI) / 180;
+  return `${(15 + r * Math.cos(a)).toFixed(2)} ${(10 + r * Math.sin(a)).toFixed(2)}`;
+};
+const star = Array.from({ length: 5 }, (_, i) => at(STAR, -90 + i * 144)).join(' ');
+const rays = Array.from({ length: 5 }, (_, i) => `M${at(STAR * 0.42, -54 + i * 72)} L${at(DISC - 0.5, -54 + i * 72)}`).join(' ');
+---
+
+<span class:list={['flag inline-block h-3 w-[18px] shrink-0 overflow-hidden rounded-[2px]', className]} aria-hidden="true">
+  {
+    code === 'gb' ? (
+      <svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" width="18" height="12" focusable="false" class="block h-full w-full">
+        <clipPath id={`flag-s-${uid}`}>
+          <path d="M0,0 v30 h60 v-30 z" />
+        </clipPath>
+        <clipPath id={`flag-t-${uid}`}>
+          <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z" />
+        </clipPath>
+        <g clip-path={`url(#flag-s-${uid})`}>
+          <path d="M0,0 v30 h60 v-30 z" fill="#012169" />
+          <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+          <path d="M0,0 L60,30 M60,0 L0,30" clip-path={`url(#flag-t-${uid})`} stroke="#C8102E" stroke-width="4" />
+          <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+          <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+        </g>
+      </svg>
+    ) : (
+      <svg viewBox="0 0 30 20" width="18" height="12" focusable="false" class="block h-full w-full">
+        <rect width="30" height="20" fill="#DA121A" />
+        <rect width="30" height="13.334" fill="#FCDD09" />
+        <rect width="30" height="6.667" fill="#078930" />
+        <circle cx="15" cy="10" r={DISC} fill="#0F47AF" />
+        <polygon points={star} fill="none" stroke="#FCDD09" stroke-width="0.8" stroke-linejoin="round" />
+        <path d={rays} stroke="#FCDD09" stroke-width="0.5" stroke-linecap="round" />
+      </svg>
+    )
+  }
+</span>
