@@ -1,0 +1,517 @@
+{
+  "_note": "Amharic sample for the prototype. Every entry is flagged review: native-speaker and must be checked before use. Body copy is not translated; it falls back to English.",
+  "a11y": {
+    "skip": {
+      "text": "ወደ ዋናው ይዘት ይለፉ",
+      "review": "native-speaker"
+    },
+    "homeSuffix": {
+      "text": "መነሻ ገጽ",
+      "review": "native-speaker"
+    }
+  },
+  "nav": {
+    "about": {
+      "text": "ስለ እኛ",
+      "review": "native-speaker"
+    },
+    "work": {
+      "text": "ሥራዎቻችን",
+      "review": "native-speaker"
+    },
+    "boardReady": {
+      "text": "የቦርድ ዝግጁነት",
+      "review": "native-speaker"
+    },
+    "insights": {
+      "text": "ጥናቶችና መረጃዎች",
+      "review": "native-speaker"
+    },
+    "opportunities": {
+      "text": "ዕድሎች",
+      "review": "native-speaker"
+    },
+    "contact": {
+      "text": "ያግኙን",
+      "review": "native-speaker"
+    },
+    "menu": {
+      "text": "ምናሌ",
+      "review": "native-speaker"
+    },
+    "close": {
+      "text": "ምናሌውን ዝጋ",
+      "review": "native-speaker"
+    },
+    "whoWeAre": {
+      "text": "እኛ ማን ነን",
+      "review": "native-speaker"
+    },
+    "ourWork": {
+      "text": "ሥራዎቻችን",
+      "review": "native-speaker"
+    },
+    "newsroom": {
+      "text": "ዜናዎች",
+      "review": "native-speaker"
+    },
+    "search": {
+      "text": "ፈልግ",
+      "review": "native-speaker"
+    },
+    "menuTitle": {
+      "text": "የድረ-ገጹ ምናሌ",
+      "review": "native-speaker"
+    }
+  },
+  "lang": {
+    "label": {
+      "text": "ቋንቋ",
+      "review": "native-speaker"
+    },
+    "amNote": {
+      "text": "የአማርኛ ናሙና – የመጨረሻው ጽሑፍ በFSD ኢትዮጵያ ይቀርባል",
+      "review": "native-speaker"
+    }
+  },
+  "common": {
+    "readMore": {
+      "text": "ተጨማሪ ያንብቡ",
+      "review": "native-speaker"
+    },
+    "downloadPdf": {
+      "text": "PDF ያውርዱ",
+      "review": "native-speaker"
+    }
+  },
+  "home": {
+    "h1": {
+      "text": "FSD ኢትዮጵያ፦ የኢትዮጵያ የፋይናንስ ዘርፍ ማጎልበቻ",
+      "review": "native-speaker"
+    },
+    "hero": {
+      "tablist": {
+        "text": "መግቢያ",
+        "review": "native-speaker"
+      },
+      "tabs": {
+        "who": {
+          "text": "እኛ ማን ነን",
+          "review": "native-speaker"
+        },
+        "work": {
+          "text": "ሥራዎቻችን",
+          "review": "native-speaker"
+        },
+        "join": {
+          "text": "ከእኛ ጋር ይሥሩ",
+          "review": "native-speaker"
+        }
+      },
+      "who": {
+        "eyebrow": {
+          "text": "የኢትዮጵያ የፋይናንስ ዘርፍ ማጎልበቻ",
+          "review": "native-speaker"
+        },
+        "title": {
+          "text": "ለእያንዳንዱ ኢትዮጵያዊ የሚሠራ ፋይናንስ",
+          "review": "native-speaker"
+        },
+        "lead": {
+          "text": "የኢትዮጵያን የፋይናንስ ሥርዓት ወደኋላ የሚያስቀሩ ችግሮችን እንለያለን፤ የገበያ ተዋናዮች እንዲፈቱአቸውም በቴክኒክ ድጋፍ፣ በእርዳታና በጥናት እናግዛለን።",
+          "review": "native-speaker"
+        },
+        "cta1": {
+          "text": "ሥራችንን ይመልከቱ",
+          "review": "native-speaker"
+        },
+        "cta2": {
+          "text": "ሰነዶችን ያስሱ",
+          "review": "native-speaker"
+        }
+      },
+      "work": {
+        "eyebrow": {
+          "text": "የፋይናንስ አካታችነት፣ ካፒታልና የአየር ንብረት",
+          "review": "native-speaker"
+        },
+        "title": {
+          "text": "የኢትዮጵያን የፋይናንስ ክፍተቶች መዝጋት",
+          "review": "native-speaker"
+        },
+        "lead": {
+          "text": "ፕሮግራሞቻችን የፋይናንስ አገልግሎት ተደራሽነትን ያሰፋሉ፣ ለንግዶች ካፒታል ይከፍታሉ፣ ለአየር ንብረት ርምጃም ፋይናንስ ያሰባስባሉ።",
+          "review": "native-speaker"
+        },
+        "cta1": {
+          "text": "የትኩረት መስኮቻችንን ይመልከቱ",
+          "review": "native-speaker"
+        },
+        "cta2": {
+          "text": "ተለይተው የቀረቡ ሥራዎች",
+          "review": "native-speaker"
+        }
+      },
+      "join": {
+        "eyebrow": {
+          "text": "የሥራ፣ የግዥና የአጋርነት ዕድሎች",
+          "review": "native-speaker"
+        },
+        "title": {
+          "text": "የፋይናንስ የወደፊት ዕጣን ከእኛ ጋር ይገንቡ",
+          "review": "native-speaker"
+        },
+        "lead": {
+          "text": "በግልጽ እንቀጥራለን፣ እንገዛለን፣ እንተባበራለን፤ እያንዳንዱን ዕድል ከማብቂያ ቀኑ ጋር እናሳውቃለን።",
+          "review": "native-speaker"
+        },
+        "cta1": {
+          "text": "ዕድሎችን ይመልከቱ",
+          "review": "native-speaker"
+        },
+        "cta2": {
+          "text": "ያግኙን",
+          "review": "native-speaker"
+        }
+      }
+    },
+    "stats": {
+      "title": {
+        "text": "FSD ኢትዮጵያ በአጭሩ",
+        "review": "native-speaker"
+      }
+    },
+    "role": {
+      "eyebrow": {
+        "text": "እኛ ማን ነን",
+        "review": "native-speaker"
+      },
+      "title": {
+        "text": "የኢትዮጵያን የፋይናንስ ገበያዎች ወደኋላ የሚያስቀሩትን መፍታት",
+        "review": "native-speaker"
+      },
+      "link": {
+        "text": "ስለ FSD ኢትዮጵያ ተጨማሪ",
+        "review": "native-speaker"
+      }
+    },
+    "how": {
+      "title": {
+        "text": "እንዴት እንሠራለን",
+        "review": "native-speaker"
+      },
+      "ta": {
+        "label": {
+          "text": "የቴክኒክ ድጋፍ",
+          "review": "native-speaker"
+        }
+      },
+      "grants": {
+        "label": {
+          "text": "እርዳታ",
+          "review": "native-speaker"
+        }
+      },
+      "research": {
+        "label": {
+          "text": "ጥናትና መረጃ",
+          "review": "native-speaker"
+        }
+      },
+      "convening": {
+        "label": {
+          "text": "ውይይትና ቅስቀሳ",
+          "review": "native-speaker"
+        }
+      }
+    },
+    "featured": {
+      "title": {
+        "text": "ተለይተው የቀረቡ ሥራዎች",
+        "review": "native-speaker"
+      }
+    },
+    "focus": {
+      "title": {
+        "text": "የትኩረት መስኮቻችን",
+        "review": "native-speaker"
+      },
+      "fi": {
+        "title": {
+          "text": "የፋይናንስ አካታችነት",
+          "review": "native-speaker"
+        }
+      },
+      "ac": {
+        "title": {
+          "text": "የካፒታል ተደራሽነት",
+          "review": "native-speaker"
+        }
+      },
+      "cf": {
+        "title": {
+          "text": "የአየር ንብረት ፋይናንስ",
+          "review": "native-speaker"
+        }
+      },
+      "women": {
+        "title": {
+          "text": "የሴቶች ኢኮኖሚያዊ አቅም",
+          "review": "native-speaker"
+        }
+      },
+      "insurance": {
+        "title": {
+          "text": "መድን እና ፈጠራ",
+          "review": "native-speaker"
+        }
+      },
+      "research": {
+        "title": {
+          "text": "ጥናትና መረጃ",
+          "review": "native-speaker"
+        }
+      }
+    },
+    "data": {
+      "title": {
+        "text": "የመረጃ ቅኝት",
+        "review": "native-speaker"
+      },
+      "link": {
+        "text": "የመረጃ ማዕከሉን ያስሱ",
+        "review": "native-speaker"
+      }
+    },
+    "boards": {
+      "eyebrow": {
+        "text": "ሴቶች በአመራር",
+        "review": "native-speaker"
+      },
+      "title": {
+        "text": "ሴቶችን ለኢትዮጵያ የቦርድ አመራር ማዘጋጀት",
+        "review": "native-speaker"
+      },
+      "cta1": {
+        "text": "ታሪኩን ያንብቡ",
+        "review": "native-speaker"
+      },
+      "cta2": {
+        "text": "ተሳታፊዎቹን ይተዋወቁ",
+        "review": "native-speaker"
+      }
+    },
+    "people": {
+      "title": {
+        "text": "ከሥራው ጀርባ ያሉ ሰዎች",
+        "review": "native-speaker"
+      },
+      "link": {
+        "text": "መላውን ቡድን ይተዋወቁ",
+        "review": "native-speaker"
+      }
+    },
+    "latest": {
+      "title": {
+        "text": "የቅርብ ጊዜ",
+        "review": "native-speaker"
+      },
+      "tabs": {
+        "news": {
+          "text": "ዜና",
+          "review": "native-speaker"
+        }
+      }
+    },
+    "pubs": {
+      "title": {
+        "text": "የቅርብ ጊዜ ህትመቶች",
+        "review": "native-speaker"
+      },
+      "download": {
+        "text": "PDF ያውርዱ",
+        "review": "native-speaker"
+      },
+      "library": {
+        "text": "የሰነድ ማዕከሉን ያስሱ",
+        "review": "native-speaker"
+      }
+    },
+    "opps": {
+      "title": {
+        "text": "ዕድሎች",
+        "review": "native-speaker"
+      },
+      "careers": {
+        "text": "የሥራ ዕድሎች",
+        "review": "native-speaker"
+      },
+      "procurement": {
+        "text": "ግዥ",
+        "review": "native-speaker"
+      },
+      "careersCta": {
+        "text": "የሥራ ዕድሎችን ይመልከቱ",
+        "review": "native-speaker"
+      },
+      "procurementCta": {
+        "text": "የግዥ ጥሪዎችን ይመልከቱ",
+        "review": "native-speaker"
+      }
+    }
+  },
+  "footer": {
+    "contactTitle": {
+      "text": "ያግኙን",
+      "review": "native-speaker"
+    },
+    "followTitle": {
+      "text": "ይከተሉን",
+      "review": "native-speaker"
+    },
+    "networkTitle": {
+      "text": "የFSD ኔትወርክ",
+      "review": "native-speaker"
+    },
+    "legalTitle": {
+      "text": "የእርስዎ መረጃ እና ይህ ድረ-ገጽ",
+      "review": "native-speaker"
+    },
+    "privacy": {
+      "text": "የግላዊነት ማስታወቂያ",
+      "review": "native-speaker"
+    },
+    "accessibility": {
+      "text": "የተደራሽነት መግለጫ",
+      "review": "native-speaker"
+    },
+    "cookies": {
+      "text": "የኩኪ ቅንብሮች",
+      "review": "native-speaker"
+    },
+    "contactCta": {
+      "text": "ያግኙን",
+      "review": "native-speaker"
+    },
+    "colWho": {
+      "text": "እኛ ማን ነን",
+      "review": "native-speaker"
+    },
+    "colWork": {
+      "text": "ሥራዎቻችን",
+      "review": "native-speaker"
+    },
+    "colInsights": {
+      "text": "ጥናቶችና መረጃዎች",
+      "review": "native-speaker"
+    },
+    "colNews": {
+      "text": "ዜናዎች",
+      "review": "native-speaker"
+    },
+    "colOpps": {
+      "text": "ዕድሎች",
+      "review": "native-speaker"
+    },
+    "colContact": {
+      "text": "ያግኙን",
+      "review": "native-speaker"
+    },
+    "partnersTitle": {
+      "text": "የገንዘብ ደጋፊዎች፣ አቋቋሚና ኔትወርክ",
+      "review": "native-speaker"
+    },
+    "regionalTitle": {
+      "text": "የክልል ቅንጅት",
+      "review": "native-speaker"
+    }
+  },
+  "newsletter": {
+    "title": {
+      "text": "ጋዜጣችንን ያግኙ",
+      "review": "native-speaker"
+    },
+    "submit": {
+      "text": "ይመዝገቡ",
+      "review": "native-speaker"
+    },
+    "dialogClose": {
+      "text": "የምዝገባ ቅጹን ዝጋ",
+      "review": "native-speaker"
+    }
+  },
+  "cookies": {
+    "title": {
+      "text": "በዚህ ድረ-ገጽ ላይ ያሉ ኩኪዎች",
+      "review": "native-speaker"
+    },
+    "accept": {
+      "text": "ሁሉንም ተቀበል",
+      "review": "native-speaker"
+    },
+    "reject": {
+      "text": "ሁሉንም አትቀበል",
+      "review": "native-speaker"
+    },
+    "prefs": {
+      "text": "ምርጫዎች",
+      "review": "native-speaker"
+    },
+    "prefsTitle": {
+      "text": "የኩኪ ምርጫዎች",
+      "review": "native-speaker"
+    },
+    "save": {
+      "text": "ምርጫዬን አስቀምጥ",
+      "review": "native-speaker"
+    },
+    "close": {
+      "text": "ምርጫዎችን ዝጋ",
+      "review": "native-speaker"
+    }
+  },
+  "slider": {
+    "prev": {
+      "text": "ቀዳሚ",
+      "review": "native-speaker"
+    },
+    "next": {
+      "text": "ቀጣይ",
+      "review": "native-speaker"
+    }
+  },
+  "announce": {
+    "fallback": {
+      "text": "ወቅታዊ የሥራና የግዥ ዕድሎችን ይመልከቱ",
+      "review": "native-speaker"
+    },
+    "dismiss": {
+      "text": "ይህን ማስታወቂያ ዝጋ",
+      "review": "native-speaker"
+    }
+  },
+  "search": {
+    "title": {
+      "text": "ድረ-ገጹን ይፈልጉ",
+      "review": "native-speaker"
+    },
+    "close": {
+      "text": "ፍለጋውን ዝጋ",
+      "review": "native-speaker"
+    }
+  },
+  "closing": {
+    "tagline": {
+      "text": "ለሁሉም ፈጠራ የታከለበት፣ አካታችና ዘላቂ የፋይናንስ ገበያ እንዲገነባ እናግዛለን።",
+      "review": "native-speaker"
+    },
+    "subscribe": {
+      "text": "ለጋዜጣችን ይመዝገቡ",
+      "review": "native-speaker"
+    },
+    "contact": {
+      "text": "ያግኙን",
+      "review": "native-speaker"
+    }
+  }
+}

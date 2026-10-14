@@ -1,0 +1,28 @@
+---
+// 4.4 Our role: the split about block. Image 55%, text 45%.
+import MapFrame from '../ui/MapFrame.astro';
+import ArrowLink from '../ui/ArrowLink.astro';
+import { t, langOf, localePath, type Lang } from '../../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+
+<section class="section bg-mist" aria-labelledby="role-title">
+  <div class="container-site grid items-center gap-12 lg:grid-cols-[55fr_45fr] lg:gap-16">
+    <div class="px-4 sm:px-10 lg:px-6" data-reveal>
+      <MapFrame id="tools-technical-assistance" sizes="(min-width: 1024px) 600px, 85vw" maxWidth={640} />
+    </div>
+    <div data-reveal>
+      <p class="t-label text-green-600" lang={langOf(lang, 'home.role.eyebrow')}>{t(lang, 'home.role.eyebrow')}</p>
+      <h2 id="role-title" class="t-wide mt-4 text-[1.375rem] leading-snug text-slate sm:text-[1.625rem]" lang={langOf(lang, 'home.role.title')}>
+        {t(lang, 'home.role.title')}
+      </h2>
+      <p class="mt-6 max-w-xl" lang="en">{t(lang, 'home.role.body')}</p>
+      <ArrowLink href={localePath(lang, '/about/')} class="mt-7" lang={langOf(lang, 'home.role.link')}>{t(lang, 'home.role.link')}</ArrowLink>
+    </div>
+  </div>
+</section>

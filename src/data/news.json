@@ -1,0 +1,147 @@
+[
+  {
+    "id": "gender-integration",
+    "title": "Gender Integration as a Market Systems Strategy: Advancing Women’s Financial Inclusion",
+    "date": "2026-07-21",
+    "type": "blog",
+    "byline": "Sinidu Fekadu",
+    "authorImage": "staff-sinidu-fikadu",
+    "image": "news-gender-integration",
+    "area": "fi",
+    "excerpt": "Why women’s financial inclusion depends on building gender into how markets are analysed and programmes designed, not on isolated gender activities.",
+    "url": "https://fsdethiopia.org/2026/07/21/gender-integration-as-a-market-systems-strategy-advancing-womens-financial-inclusion/"
+  },
+  {
+    "id": "open-finance",
+    "title": "Ethiopia’s Open Finance Future Is Closer Than It Looks",
+    "date": "2026-07-20",
+    "type": "blog",
+    "byline": "Abel Taddele",
+    "authorImage": "staff-abel-tadelle",
+    "image": "news-open-finance",
+    "area": "fi",
+    "excerpt": "Ethiopia is not ready for full open finance yet, but the foundations are within reach: wider digital payments, data standards and a dedicated framework.",
+    "url": "https://fsdethiopia.org/2026/07/20/ethiopias-open-finance-future-is-closer-than-it-looks/"
+  },
+  {
+    "id": "inception-to-impact",
+    "title": "From Inception to Enduring Impact",
+    "date": "2026-07-17",
+    "type": "event",
+    "image": "event-stakeholder-summit-2026",
+    "excerpt": "Reflections from our 9 July Stakeholder Summit, where leaders and the Minister of Finance called for impact felt by households and businesses.",
+    "url": "https://fsdethiopia.org/2026/07/17/from-inception-to-enduring-impact/"
+  },
+  {
+    "id": "islamic-climate-finance",
+    "title": "FSD Ethiopia Joins Hands Through Global Islamic Climate Finance Alliance",
+    "date": "2026-06-27",
+    "type": "news",
+    "image": "event-gicfa-baku-2026",
+    "area": "cf",
+    "excerpt": "Our CEO joined a roundtable in Baku on how Islamic finance can help fund climate action, alongside the 2026 Islamic Development Bank meetings.",
+    "url": "https://fsdethiopia.org/2026/06/27/fsd-ethiopia-joins-hands-through-global-islamic-climate-finance-alliance/"
+  },
+  {
+    "id": "india-dpi",
+    "title": "India’s DPI Flywheel: From Payment Rails to the Last Mile",
+    "date": "2026-05-08",
+    "type": "blog",
+    "byline": "Abel Taddele",
+    "authorImage": "staff-abel-tadelle",
+    "image": "news-india-dpi",
+    "area": "fi",
+    "excerpt": "Lessons from a benchmarking visit to India on how identity, payments and last-mile channels work together to widen formal financial access.",
+    "url": "https://fsdethiopia.org/2026/05/08/indias-dpi-flywheel-from-payment-rails-to-the-last-mile/"
+  },
+  {
+    "id": "digital-east",
+    "title": "The Digital East: Lessons from India’s Financial Revolution for Ethiopia’s Path to Inclusion",
+    "date": "2026-05-08",
+    "type": "blog",
+    "byline": "Abel Taddele",
+    "authorImage": "staff-abel-tadelle",
+    "image": "news-digital-east",
+    "area": "fi",
+    "excerpt": "India’s inclusion gains came from policy, coordination and market-shaping as well as technology. Ethiopia should adapt the principles, not copy the tools.",
+    "url": "https://fsdethiopia.org/2026/05/08/the-digital-east-lessons-from-indias-financial-revolution-for-ethiopias-path-to-inclusion/"
+  },
+  {
+    "id": "insurance-market",
+    "title": "Growing Ethiopia’s Insurance Market: From Reform to Real Impact",
+    "date": "2026-03-26",
+    "type": "blog",
+    "byline": "Abel Taddele",
+    "authorImage": "staff-abel-tadelle",
+    "image": "news-insurance-market",
+    "excerpt": "Premiums rose by about half in 2024/25, yet retail cover stays thin. What the November 2025 workshop says it will take to grow an inclusive market.",
+    "url": "https://fsdethiopia.org/2026/03/26/growing-ethiopias-insurance-market-from-reform-to-real-impact/",
+    "figures": [
+      "insurancePremiumGrowth2024_25"
+    ]
+  },
+  {
+    "id": "women-digital-markets",
+    "title": "Designing Digital Finance Markets That Work for Women",
+    "date": "2026-03-26",
+    "type": "blog",
+    "byline": "Sinidu Fekadu and Hana Hailu",
+    "authorImage": "staff-sinidu-fikadu",
+    "image": "news-women-digital",
+    "area": "fi",
+    "excerpt": "Mobile money accounts reached 139.5 million by 2025, but women still save, borrow and insure far less. Why markets must be designed with women in mind.",
+    "url": "https://fsdethiopia.org/2026/03/26/designing-digital-finance-markets-that-work-for-women/",
+    "figures": [
+      "mobileMoneyAccounts2025"
+    ]
+  },
+  {
+    "id": "access-to-influence",
+    "title": "Financial Sector Leaders Convene to Advance Women’s Digital Financial Inclusion in Ethiopia",
+    "date": "2026-03-11",
+    "type": "press",
+    "image": "event-access-influence-2026-1",
+    "area": "fi",
+    "excerpt": "For International Women’s Day, policymakers, regulators and financial institutions met under the theme Access to Influence to look beyond access to usage, trust and relevance.",
+    "url": "https://fsdethiopia.org/2026/03/11/fsd-ethiopia-hosts-second-climate-finance-summit-ahead-of-cop32-2/",
+    "urlNote": "The live slug repeats the climate summit post’s; this is the correct release."
+  },
+  {
+    "id": "second-climate-summit",
+    "title": "FSD Ethiopia Hosts Second Climate Finance Summit Ahead of COP32",
+    "date": "2026-03-05",
+    "type": "press",
+    "image": "event-climate-summit-2026-group",
+    "area": "cf",
+    "excerpt": "Nearly 200 participants met in Addis Ababa to discuss climate finance governance and private capital as Ethiopia prepares to host COP32.",
+    "url": "https://fsdethiopia.org/2026/03/05/fsd-ethiopia-hosts-second-climate-finance-summit-ahead-of-cop32/",
+    "figures": [
+      "climateSummit2026Participants"
+    ]
+  },
+  {
+    "id": "insurance-workshop",
+    "title": "FSD Ethiopia and Partners Host Insurance Industry Workshop to Advance Market Reform and Inclusion",
+    "date": "2025-11-21",
+    "type": "event",
+    "image": "event-insurance-workshop-2025",
+    "excerpt": "More than 150 regulators, insurers and partners met to discuss reforms in a market where insurance penetration is still below 1% of GDP.",
+    "url": "https://fsdethiopia.org/2025/11/21/fsd-ethiopia-and-partners-host-insurance-industry-workshop-to-advance-market-reform-and-inclusion/",
+    "figures": [
+      "insuranceWorkshop2025Participants",
+      "insurancePenetration"
+    ]
+  },
+  {
+    "id": "bimalab-demo-day",
+    "title": "BimaLab Ethiopia Comes to a Successful Finish with Demo Day Showcase",
+    "date": "2024-03-07",
+    "type": "event",
+    "image": "event-bimalab-2024-main",
+    "excerpt": "The first cohort of our insurtech accelerator, 10 startups and 4 corporates, pitched to investors and industry experts in Addis Ababa.",
+    "url": "https://fsdethiopia.org/2024/03/07/bimalab-ethiopia-comes-to-successful-finish-with-demo-day-showcase/",
+    "figures": [
+      "bimalabCohort2024"
+    ]
+  }
+]

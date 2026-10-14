@@ -1,0 +1,194 @@
+---
+// 4.1 Header: fixed and transparent over the hero, logo centred, navigation split
+// left and right. After 80px of scrolling it turns teal-900, the logo shrinks to
+// 52px and a soft shadow appears. Mobile: logo left, menu button right, opening a
+// full-screen teal menu (a native modal dialog, so focus is trapped and Escape closes it).
+import { Menu, X, Search } from '@lucide/astro';
+import { t, langOf, localePath, type Lang } from '../../i18n';
+
+interface Props {
+  lang: Lang;
+  path: string;
+  /** Transparent over a dark hero until the visitor scrolls. */
+  overlay?: boolean;
+}
+
+const { lang, path, overlay = false } = Astro.props;
+const left = [
+  { key: 'nav.whoWeAre', href: '/about/' },
+  { key: 'nav.ourWork', href: '/our-work/' },
+  { key: 'nav.insights', href: '/resources/' },
+];
+const right = [
+  { key: 'nav.newsroom', href: '/news/' },
+  { key: 'nav.opportunities', href: '/opportunities/' },
+  { key: 'nav.contact', href: '/contact/' },
+];
+const links = [...left, ...right].map((l) => ({ ...l, href: localePath(lang, l.href) }));
+const current = localePath(lang, path);
+const navLink =
+  't-wide block rounded-sm px-2 py-2 text-[0.75rem] tracking-[0.08em] text-white no-underline hover:text-yellow-400 aria-[current=page]:text-yellow-400 xl:px-3 xl:text-[0.8125rem] xl:tracking-[0.12em]';
+const langLink =
+  'flex min-h-11 min-w-11 items-center justify-center px-1.5 text-[0.8125rem] font-semibold text-white no-underline hover:text-yellow-400 aria-[current=true]:text-yellow-400 aria-[current=true]:underline aria-[current=true]:decoration-2 aria-[current=true]:underline-offset-4';
+---
+
+<header
+  x-data="siteHeader"
+  class:list={['site-header on-dark sticky top-0 z-40 text-white', overlay ? 'is-overlay' : 'is-solid']}
+  x-bind:class="scrolled && 'is-scrolled'"
+>
+  <nav aria-label={t(lang, 'a11y.mainNav')} class="container-site site-header__bar flex items-center justify-between gap-4 lg:grid lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]">
+    <ul class="hidden items-center lg:flex">
+      {
+        links.slice(0, 3).map((l) => (
+          <li>
+            <a href={l.href} class={navLink} aria-current={l.href === current ? 'page' : undefined} lang={langOf(lang, l.key)}>
+              {t(lang, l.key)}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <a href={localePath(lang, '/')} class="site-header__logo block shrink-0 lg:justify-self-center">
+      <img src="/brand/fsd-logo-reversed.svg" alt="" width="102" height="72" class="block h-full w-auto" />
+      <span class="sr-only">{t(lang, 'meta.siteName')}, {t(lang, 'a11y.homeSuffix')}</span>
+    </a>
+
+    <div class="flex items-center justify-end gap-1">
+      <ul class="hidden items-center lg:flex">
+        {
+          links.slice(3).map((l) => (
+            <li>
+              <a href={l.href} class={navLink} aria-current={l.href === current ? 'page' : undefined} lang={langOf(lang, l.key)}>
+                {t(lang, l.key)}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <button
+        type="button"
+        data-open-dialog="site-search"
+        class="flex size-11 cursor-pointer items-center justify-center rounded-full text-white hover:bg-white/10 hover:text-yellow-400"
+        aria-label={t(lang, 'nav.search')}
+      >
+        <Search size={20} aria-hidden="true" />
+      </button>
+      <div class="flex items-center" role="group" aria-label={t(lang, 'lang.label')}>
+        <a href={localePath('en', path)} hreflang="en" lang="en" data-set-lang="en" aria-current={lang === 'en' ? 'true' : undefined} class={langLink}>
+          {t('en', 'lang.en')}<span class="sr-only">{` ${t('en', 'lang.enName')}`}</span>
+        </a>
+        <span aria-hidden="true" class="text-on-dark-muted">|</span>
+        <a href={localePath('am', path)} hreflang="am" lang="am" data-set-lang="am" aria-current={lang === 'am' ? 'true' : undefined} class={langLink}>
+          {t('en', 'lang.am')}
+        </a>
+      </div>
+      <button
+        type="button"
+        data-open-dialog="site-menu"
+        class="ml-1 flex min-h-11 cursor-pointer items-center gap-2 rounded-sm px-2 text-white hover:text-yellow-400 lg:hidden"
+        aria-haspopup="dialog"
+      >
+        <Menu size={24} aria-hidden="true" />
+        <span class="t-wide text-[0.75rem]" lang={langOf(lang, 'nav.menu')}>{t(lang, 'nav.menu')}</span>
+      </button>
+    </div>
+  </nav>
+
+</header>
+
+<!-- Full-screen mobile menu -->
+<div x-data="modal">
+  <dialog
+    id="site-menu"
+    x-ref="dialog"
+    x-on:open-request="open($event.detail)"
+    x-on:close="restoreFocus()"
+    aria-labelledby="site-menu-title"
+    class="on-dark site-menu m-0 h-dvh max-h-none w-screen max-w-none bg-teal-900 p-0 text-white backdrop:bg-teal-950/60"
+  >
+    <div class="container-site flex min-h-full flex-col py-4">
+      <div class="flex items-center justify-between">
+        <h2 id="site-menu-title" class="sr-only">{t(lang, 'nav.menuTitle')}</h2>
+        <img src="/brand/fsd-logo-reversed.svg" alt="" width="68" height="48" class="h-12 w-auto" />
+        <button
+          type="button"
+          x-on:click="close()"
+          class="flex min-h-11 cursor-pointer items-center gap-2 rounded-sm px-2 text-white hover:text-yellow-400"
+        >
+          <X size={24} aria-hidden="true" />
+          <span class="t-wide text-[0.75rem]" lang={langOf(lang, 'nav.close')}>{t(lang, 'nav.close')}</span>
+        </button>
+      </div>
+      <ul class="mt-10 space-y-1">
+        {
+          links.map((l) => (
+            <li>
+              <a
+                href={l.href}
+                aria-current={l.href === current ? 'page' : undefined}
+                class="block border-b border-white/10 py-3 font-display text-[2.25rem] font-bold uppercase leading-none tracking-[0.02em] text-white no-underline hover:text-yellow-400 aria-[current=page]:text-yellow-400"
+                lang={langOf(lang, l.key)}
+              >
+                {t(lang, l.key)}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <button
+        type="button"
+        data-open-dialog="site-search"
+        x-on:click="close()"
+        class="btn btn-outline-on-dark mt-8 self-start"
+      >
+        <Search size={18} aria-hidden="true" />
+        <span lang={langOf(lang, 'nav.search')}>{t(lang, 'nav.search')}</span>
+      </button>
+    </div>
+  </dialog>
+</div>
+
+<style>
+  /* The header never takes space in the flow: its negative margin always equals its
+     height, so shrinking it on scroll cannot shift the page. Pages without an overlay
+     hero add a spacer of --header-h (see BaseLayout). */
+  .site-header {
+    --hh: var(--header-h);
+    margin-bottom: calc(-1 * var(--hh));
+    transition: background-color 250ms ease, box-shadow 250ms ease;
+  }
+  .site-header.is-solid,
+  .site-header.is-scrolled {
+    background-color: var(--color-teal-900);
+  }
+  .site-header.is-scrolled {
+    box-shadow: 0 6px 24px rgb(11 42 44 / 0.28);
+  }
+  .site-header.is-overlay:not(.is-scrolled) {
+    background-image: linear-gradient(to bottom, rgb(11 42 44 / 0.6), rgb(11 42 44 / 0));
+  }
+  .site-header__bar {
+    min-height: var(--hh);
+    transition: min-height 250ms ease;
+  }
+  .site-header__logo {
+    height: 3rem;
+    transition: height 250ms ease;
+  }
+  @media (min-width: 64rem) {
+    .site-header.is-scrolled {
+      --hh: 4.75rem;
+    }
+    .site-header__logo {
+      height: 4.5rem;
+    }
+    .site-header.is-scrolled .site-header__logo {
+      height: 3.25rem;
+    }
+  }
+  .site-menu[open] {
+    display: block;
+  }
+</style>

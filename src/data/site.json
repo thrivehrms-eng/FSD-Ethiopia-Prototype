@@ -1,0 +1,111 @@
+{
+  "name": "FSD Ethiopia",
+  "legalName": "Financial Sector Deepening Ethiopia",
+  "email": "comms@fsdethiopia.org",
+  "phone": "+251 9 93969696",
+  "phoneHref": "+251993969696",
+  "foundingYear": 2022,
+  "launchSource": "https://fsdethiopia.org/2022/06/12/international-finance/",
+  "address": {
+    "streetAddress": "6th Floor, Giant Eagle Building, Mexico Square, Roosevelt Street",
+    "addressLocality": "Addis Ababa",
+    "addressCountry": "ET"
+  },
+  "social": [
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/company/fsd-ethiopia"
+    },
+    {
+      "name": "X",
+      "url": "https://x.com/FSDEthiopia"
+    },
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/FSDEthiopia/"
+    }
+  ],
+  "funders": [
+    "UK International Development",
+    "Gates Foundation"
+  ],
+  "networkNote": "FSD Network URLs were added from general knowledge, not fetched. Confirm each before submission.",
+  "socialNote": "Profile URLs found in search results (X handle @FSDEthiopia). Confirm with FSD Ethiopia.",
+  "network": [
+    {
+      "name": "FSD Africa",
+      "url": "https://fsdafrica.org/"
+    },
+    {
+      "name": "FSD Kenya",
+      "url": "https://www.fsdkenya.org/"
+    },
+    {
+      "name": "FSD Uganda",
+      "url": "https://fsduganda.or.ug/"
+    },
+    {
+      "name": "FSD Tanzania",
+      "url": "https://www.fsdt.or.tz/"
+    },
+    {
+      "name": "FSD Zambia",
+      "url": "https://www.fsdzambia.org/"
+    },
+    {
+      "name": "FSD Mozambique",
+      "url": "https://fsdmoc.com/"
+    },
+    {
+      "name": "EFInA (Nigeria)",
+      "url": "https://efina.org.ng/"
+    },
+    {
+      "name": "Access to Finance Rwanda",
+      "url": "https://afr.rw/"
+    },
+    {
+      "name": "FinMark Trust",
+      "url": "https://finmark.org.za/"
+    }
+  ],
+  "tagline": "We help build innovative, inclusive, and sustainable financial markets for all.",
+  "taglineSource": "https://fsdethiopia.org/ (homepage slider)",
+  "launch": {
+    "date": "2022-05-19",
+    "place": "Hyatt Regency, Addis Ababa",
+    "source": "https://www.fsdafrica.org/wp-content/uploads/2022/05/22-05-19-Press-Release-FSD-Ethiopia-Launch.pdf"
+  },
+  "funderNote": "Funded by the UK FCDO (logo: UK International Development) and the Gates Foundation; incubated by FSD Africa. The 2022 launch release says UK aid (FCDO); the July 2026 Stakeholder Summit post says UK FCDO.",
+  "incubator": "FSD Africa",
+  "regions": [
+    "Afar",
+    "Amhara",
+    "Benishangul Gumuz",
+    "Gambella",
+    "Oromia",
+    "Sidama",
+    "Somali"
+  ],
+  "board": [
+    {
+      "name": "Admassu Tadesse",
+      "role": "Board Chairman",
+      "affiliation": "President Emeritus & MD, TDB Group",
+      "image": "board-admassu-tadesse"
+    },
+    {
+      "name": "Berhane Demissie",
+      "role": "Non-Executive Director",
+      "affiliation": "Co-Founder & Managing Partner, Cepheus Growth Capital Partners",
+      "image": "board-berhane-demissie"
+    },
+    {
+      "name": "Maleda Bisrat",
+      "role": "Non-Executive Director",
+      "affiliation": "Country Director Ethiopia, Tony Blair Institute for Global Change",
+      "image": "board-maleda-bisrat"
+    }
+  ],
+  "boardNote": "Names and affiliations checked on https://fsdethiopia.org/our-team/ on 13 October 2026. The team page gives no per-person title except Board Chairman; \"Non-Executive Director\" follows the CLAUDE.md brief and the page heading \"Our Non-Executive Board of Directors\"."
+}

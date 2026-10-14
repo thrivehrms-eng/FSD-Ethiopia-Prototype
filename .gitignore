@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.astro/
+.DS_Store
+__pycache__/
+
+# Original photos downloaded from fsdethiopia.org (npm run assets:fetch).
+# The optimised copies in public/images/ and src/data/images.json are committed.
+assets-src/*/*.jpg
+assets-src/*/*.jpeg
+assets-src/*/*.png

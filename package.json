@@ -1,0 +1,28 @@
+{
+  "name": "fsd-ethiopia-prototype",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "screenshots": "node scripts/screenshots.mjs",
+    "assets:fetch": "node scripts/fetch-assets.mjs",
+    "assets:optimise": "node scripts/optimise-images.mjs",
+    "assets": "node scripts/fetch-assets.mjs; node scripts/optimise-images.mjs",
+    "audit:images": "node scripts/audit-images.mjs"
+  },
+  "dependencies": {
+    "@lucide/astro": "1.54.0",
+    "@tailwindcss/vite": "4.3.3",
+    "alpinejs": "3.17.4",
+    "astro": "7.3.5",
+    "chart.js": "4.5.1",
+    "fuse.js": "7.5.0",
+    "tailwindcss": "4.3.3"
+  },
+  "devDependencies": {
+    "sharp": "0.35.4"
+  }
+}

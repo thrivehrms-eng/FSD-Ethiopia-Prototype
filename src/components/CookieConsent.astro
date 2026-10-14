@@ -1,0 +1,92 @@
+---
+import { t, langOf, localePath, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+// Accept and Reject share one style so neither is visually favoured.
+const choiceBtn = 'btn btn-primary min-w-36';
+---
+
+<div x-data="cookieConsent" data-open-cookie-prefs-root>
+  <section
+    aria-labelledby="cookie-title"
+    class="fixed inset-x-0 bottom-0 z-50 border-t-4 border-green-600 bg-white shadow-[0_-8px_24px_rgba(15,54,57,0.18)]"
+    x-show="showBanner"
+    x-cloak
+  >
+    <div class="container-site flex flex-col gap-4 py-5 lg:flex-row lg:items-center lg:justify-between lg:gap-10">
+      <div class="max-w-3xl">
+        <h2 id="cookie-title" class="font-display text-[1.5rem] font-semibold text-teal-700" lang={langOf(lang, 'cookies.title')}>{t(lang, 'cookies.title')}</h2>
+        <p class="mt-1 text-[0.9375rem]" lang={langOf(lang, 'cookies.body')}>
+          {t(lang, 'cookies.body')}{' '}
+          <a href={localePath(lang, '/privacy/')} lang={langOf(lang, 'footer.privacy')}>{t(lang, 'footer.privacy')}</a>.
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <button type="button" class={choiceBtn} @click="acceptAll()" lang={langOf(lang, 'cookies.accept')}>{t(lang, 'cookies.accept')}</button>
+        <button type="button" class={choiceBtn} @click="rejectAll()" lang={langOf(lang, 'cookies.reject')}>{t(lang, 'cookies.reject')}</button>
+        <button type="button" class="btn btn-outline" @click="openPrefs($event.currentTarget)" lang={langOf(lang, 'cookies.prefs')}>{t(lang, 'cookies.prefs')}</button>
+      </div>
+    </div>
+  </section>
+
+  <dialog
+    x-ref="dialog"
+    aria-labelledby="cookie-prefs-title"
+    class="m-auto w-[min(36rem,calc(100%-2rem))] rounded-sm p-0 text-ink backdrop:bg-teal-900/70"
+    @close="onDialogClose()"
+  >
+    <form method="dialog" class="p-6 sm:p-8" @submit.prevent="savePrefs()">
+      <h2 id="cookie-prefs-title" class="font-display text-[1.875rem] font-semibold text-teal-700" lang={langOf(lang, 'cookies.prefsTitle')}>{t(lang, 'cookies.prefsTitle')}</h2>
+
+      <fieldset class="mt-6 border-t border-line pt-5">
+        <legend class="sr-only" lang={langOf(lang, 'cookies.necessary')}>{t(lang, 'cookies.necessary')}</legend>
+        <div class="flex items-start justify-between gap-6">
+          <div>
+            <p class="font-semibold" lang={langOf(lang, 'cookies.necessary')}>{t(lang, 'cookies.necessary')}</p>
+            <p class="text-[0.9375rem]" lang={langOf(lang, 'cookies.necessaryBody')}>{t(lang, 'cookies.necessaryBody')}</p>
+          </div>
+          <p class="shrink-0 text-sm font-medium text-teal-700" lang={langOf(lang, 'cookies.alwaysOn')}>{t(lang, 'cookies.alwaysOn')}</p>
+        </div>
+      </fieldset>
+
+      <fieldset class="mt-5 border-t border-line pt-5">
+        <legend class="sr-only" lang={langOf(lang, 'cookies.analytics')}>{t(lang, 'cookies.analytics')}</legend>
+        <div class="flex items-start justify-between gap-6">
+          <div>
+            <label for="consent-analytics" class="font-semibold" lang={langOf(lang, 'cookies.analytics')}>{t(lang, 'cookies.analytics')}</label>
+            <p id="consent-analytics-desc" class="text-[0.9375rem]" lang={langOf(lang, 'cookies.analyticsBody')}>
+              {t(lang, 'cookies.analyticsBody')}
+            </p>
+          </div>
+          <input
+            id="consent-analytics"
+            type="checkbox"
+            role="switch"
+            class="mt-1 size-6 shrink-0 accent-green-600"
+            aria-describedby="consent-analytics-desc"
+            x-model="draftAnalytics"
+          />
+        </div>
+      </fieldset>
+
+      <p class="mt-5 bg-mist px-4 py-3 text-sm" role="status" lang="en">
+        <span x-text="analyticsLoaded ? labels.on : labels.off">{t(lang, 'cookies.statusOff')}</span>
+      </p>
+
+      <div class="mt-6 flex flex-wrap gap-3">
+        <button type="submit" class="btn btn-primary" lang={langOf(lang, 'cookies.save')}>{t(lang, 'cookies.save')}</button>
+        <button type="button" class="btn btn-outline" @click="closePrefs()" lang={langOf(lang, 'cookies.close')}>{t(lang, 'cookies.close')}</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script
+    type="application/json"
+    data-cookie-labels
+    set:html={JSON.stringify({ on: t(lang, 'cookies.statusOn'), off: t(lang, 'cookies.statusOff') })}
+  />
+</div>

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "climate-summit-2026",
+    "title": "Second Climate Finance Summit",
+    "date": "2026-03-05",
+    "place": "Addis Ababa",
+    "image": "event-climate-summit-2026-group",
+    "second": "event-climate-summit-2026-plenary",
+    "area": "cf",
+    "summary": "Nearly 200 people from government, finance, development partners and academia met under the theme “Landscape to Legacy: Ethiopia’s Climate Finance Path to COP32”. A draft of the Climate Policy Initiative’s landscape study for Ethiopia was presented, and the talks turned to drawing private capital into climate action.",
+    "url": "https://fsdethiopia.org/2026/03/05/fsd-ethiopia-hosts-second-climate-finance-summit-ahead-of-cop32/",
+    "figures": [
+      "climateSummit2026Participants"
+    ]
+  },
+  {
+    "id": "stakeholder-summit-2026",
+    "title": "Stakeholder Summit: From Inception to Enduring Impact",
+    "date": "2026-07-09",
+    "place": "Addis Ababa",
+    "image": "event-stakeholder-summit-2026",
+    "second": null,
+    "summary": "Government leaders, regulators, development partners and financial institutions took stock of FSD Ethiopia’s first years. The Minister of Finance set the event in Ethiopia’s reform agenda and asked that impact be felt by households, businesses and communities.",
+    "url": "https://fsdethiopia.org/2026/07/17/from-inception-to-enduring-impact/"
+  },
+  {
+    "id": "bimalab-2024",
+    "title": "BimaLab Ethiopia insurtech accelerator",
+    "date": "2024-03-07",
+    "place": "Addis Ababa",
+    "image": "event-bimalab-2024-main",
+    "second": "event-bimalab-2024-03",
+    "summary": "Our insurtech accelerator for Ethiopia ended its first cohort with a Demo Day in Addis Ababa. Ten startups and four corporates pitched new insurance products to investors and industry experts.",
+    "url": "https://fsdethiopia.org/2024/03/07/bimalab-ethiopia-comes-to-successful-finish-with-demo-day-showcase/",
+    "figures": [
+      "bimalabCohort2024"
+    ]
+  },
+  {
+    "id": "access-to-influence-2026",
+    "title": "Access to Influence: women’s digital financial inclusion",
+    "date": "2026-03-10",
+    "place": "Addis Ababa",
+    "image": "event-access-influence-2026-1",
+    "second": "event-access-influence-2026-2",
+    "area": "fi",
+    "summary": "For International Women’s Day we convened policymakers, regulators, financial institutions and development partners. Speakers argued that digital finance must move beyond access to usage and trust, and that more women are needed in financial-sector leadership.",
+    "url": "https://fsdethiopia.org/2026/03/11/fsd-ethiopia-hosts-second-climate-finance-summit-ahead-of-cop32-2/"
+  },
+  {
+    "id": "insurance-workshop-2025",
+    "title": "Insurance Industry Workshop",
+    "date": "2025-11-11",
+    "place": "Addis Ababa",
+    "image": "event-insurance-workshop-2025",
+    "second": "event-insurance-workshop-2025-01",
+    "summary": "With the Association of Ethiopian Insurers and FSD Africa, we brought more than 150 regulators, insurers and experts together. Premiums grew by about half in 2024/25, but insurance penetration is still below 1% of GDP, so the workshop focused on reform and products people can use.",
+    "url": "https://fsdethiopia.org/2025/11/21/fsd-ethiopia-and-partners-host-insurance-industry-workshop-to-advance-market-reform-and-inclusion/",
+    "figures": [
+      "insuranceWorkshop2025Participants",
+      "insurancePremiumGrowth2024_25",
+      "insurancePenetration"
+    ]
+  }
+]

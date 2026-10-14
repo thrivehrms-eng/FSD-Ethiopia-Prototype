@@ -1,0 +1,7198 @@
+{
+  "logo-official-png": {
+    "status": "ok",
+    "width": 721,
+    "height": 503,
+    "group": "brand",
+    "alt": "FSD Ethiopia logo",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/logo-official-png-400.avif",
+          "bytes": 9864
+        },
+        {
+          "w": 721,
+          "src": "/images/logo-official-png-721.avif",
+          "bytes": 10978
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/logo-official-png-400.webp",
+          "bytes": 16146
+        },
+        {
+          "w": 721,
+          "src": "/images/logo-official-png-721.webp",
+          "bytes": 12080
+        }
+      ]
+    }
+  },
+  "logo-on-teal": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "brand",
+    "alt": "FSD Ethiopia logo on a teal background",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/logo-on-teal-400.avif",
+          "bytes": 2203
+        },
+        {
+          "w": 600,
+          "src": "/images/logo-on-teal-600.avif",
+          "bytes": 2907
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/logo-on-teal-400.webp",
+          "bytes": 2750
+        },
+        {
+          "w": 600,
+          "src": "/images/logo-on-teal-600.webp",
+          "bytes": 4392
+        }
+      ]
+    }
+  },
+  "app-icon": {
+    "status": "ok",
+    "width": 512,
+    "height": 512,
+    "group": "brand",
+    "alt": "",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/app-icon-400.avif",
+          "bytes": 12179
+        },
+        {
+          "w": 512,
+          "src": "/images/app-icon-512.avif",
+          "bytes": 9817
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/app-icon-400.webp",
+          "bytes": 23900
+        },
+        {
+          "w": 512,
+          "src": "/images/app-icon-512.webp",
+          "bytes": 17234
+        }
+      ]
+    }
+  },
+  "logo-fsd-network": {
+    "status": "ok",
+    "width": 417,
+    "height": 200,
+    "group": "brand",
+    "alt": "FSD Network",
+    "credit": "FSD Network",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/logo-fsd-network-400.avif",
+          "bytes": 15332
+        },
+        {
+          "w": 417,
+          "src": "/images/logo-fsd-network-417.avif",
+          "bytes": 9054
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/logo-fsd-network-400.webp",
+          "bytes": 27100
+        },
+        {
+          "w": 417,
+          "src": "/images/logo-fsd-network-417.webp",
+          "bytes": 14400
+        }
+      ]
+    }
+  },
+  "logo-gates": {
+    "status": "ok",
+    "width": 303,
+    "height": 205,
+    "group": "brand",
+    "alt": "Gates Foundation",
+    "credit": "Gates Foundation",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 303,
+          "src": "/images/logo-gates-303.avif",
+          "bytes": 4029
+        }
+      ],
+      "webp": [
+        {
+          "w": 303,
+          "src": "/images/logo-gates-303.webp",
+          "bytes": 5302
+        }
+      ]
+    }
+  },
+  "logo-uk-intl-dev": {
+    "status": "ok",
+    "width": 793,
+    "height": 235,
+    "group": "brand",
+    "alt": "UK International Development",
+    "credit": "UK Government",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/logo-uk-intl-dev-400.avif",
+          "bytes": 5307
+        },
+        {
+          "w": 793,
+          "src": "/images/logo-uk-intl-dev-793.avif",
+          "bytes": 9226
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/logo-uk-intl-dev-400.webp",
+          "bytes": 8528
+        },
+        {
+          "w": 793,
+          "src": "/images/logo-uk-intl-dev-793.webp",
+          "bytes": 16626
+        }
+      ]
+    }
+  },
+  "logo-fsd-africa": {
+    "status": "ok",
+    "width": 303,
+    "height": 205,
+    "group": "brand",
+    "alt": "FSD Africa",
+    "credit": "FSD Africa",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 303,
+          "src": "/images/logo-fsd-africa-303.avif",
+          "bytes": 1517
+        }
+      ],
+      "webp": [
+        {
+          "w": 303,
+          "src": "/images/logo-fsd-africa-303.webp",
+          "bytes": 2112
+        }
+      ]
+    }
+  },
+  "staff-hikmet-abdella": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Hikmet Abdella, Chief Executive Officer, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Hikmet Abdella",
+      "role": "Chief Executive Officer",
+      "team": "Leadership"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-hikmet-abdella-400.avif",
+          "bytes": 9312
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-hikmet-abdella-800.avif",
+          "bytes": 23014
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-hikmet-abdella-1200.avif",
+          "bytes": 41221
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-hikmet-abdella-1400.avif",
+          "bytes": 64666
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-hikmet-abdella-400.webp",
+          "bytes": 12408
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-hikmet-abdella-800.webp",
+          "bytes": 30494
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-hikmet-abdella-1200.webp",
+          "bytes": 52572
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-hikmet-abdella-1400.webp",
+          "bytes": 67290
+        }
+      ]
+    }
+  },
+  "staff-abel-tadelle": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Abel Tadelle, Dir. of Financial Inclusion, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Abel Tadelle",
+      "role": "Dir. of Financial Inclusion",
+      "team": "Leadership"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-abel-tadelle-400.avif",
+          "bytes": 9983
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-abel-tadelle-800.avif",
+          "bytes": 23695
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-abel-tadelle-1200.avif",
+          "bytes": 38850
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-abel-tadelle-1400.avif",
+          "bytes": 53467
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-abel-tadelle-400.webp",
+          "bytes": 12820
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-abel-tadelle-800.webp",
+          "bytes": 28618
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-abel-tadelle-1200.webp",
+          "bytes": 47862
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-abel-tadelle-1400.webp",
+          "bytes": 60352
+        }
+      ]
+    }
+  },
+  "staff-selamsew-tesfaye": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Selamsew Tesfaye, Dir. of Operations & Finance, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Selamsew Tesfaye",
+      "role": "Dir. of Operations & Finance",
+      "team": "Leadership"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-selamsew-tesfaye-400.avif",
+          "bytes": 11964
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-selamsew-tesfaye-800.avif",
+          "bytes": 36781
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-selamsew-tesfaye-1200.avif",
+          "bytes": 62409
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-selamsew-tesfaye-1400.avif",
+          "bytes": 87429
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-selamsew-tesfaye-400.webp",
+          "bytes": 16698
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-selamsew-tesfaye-800.webp",
+          "bytes": 46344
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-selamsew-tesfaye-1200.webp",
+          "bytes": 78002
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-selamsew-tesfaye-1400.webp",
+          "bytes": 95458
+        }
+      ]
+    }
+  },
+  "staff-gosaye-warsa": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Gosaye Warsa, Dir. of Financial Markets, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Gosaye Warsa",
+      "role": "Dir. of Financial Markets",
+      "team": "Leadership"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-gosaye-warsa-400.avif",
+          "bytes": 7935
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-gosaye-warsa-800.avif",
+          "bytes": 18837
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-gosaye-warsa-1200.avif",
+          "bytes": 30837
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-gosaye-warsa-1400.avif",
+          "bytes": 40553
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-gosaye-warsa-400.webp",
+          "bytes": 10682
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-gosaye-warsa-800.webp",
+          "bytes": 24500
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-gosaye-warsa-1200.webp",
+          "bytes": 40016
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-gosaye-warsa-1400.webp",
+          "bytes": 50064
+        }
+      ]
+    }
+  },
+  "staff-barnabas-getu": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Barnabas Getu, Head of Audit, Risk & Compliance, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Barnabas Getu",
+      "role": "Head of Audit, Risk & Compliance",
+      "team": "Leadership"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-barnabas-getu-400.avif",
+          "bytes": 10430
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-barnabas-getu-800.avif",
+          "bytes": 27238
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-barnabas-getu-1200.avif",
+          "bytes": 50254
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-barnabas-getu-1400.avif",
+          "bytes": 73658
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-barnabas-getu-400.webp",
+          "bytes": 14182
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-barnabas-getu-800.webp",
+          "bytes": 37570
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-barnabas-getu-1200.webp",
+          "bytes": 65532
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-barnabas-getu-1400.webp",
+          "bytes": 82856
+        }
+      ]
+    }
+  },
+  "staff-melaku-kebede": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Melaku Kebede, Program Manager – Financial Inclusion – Project Management Office, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Melaku Kebede",
+      "role": "Program Manager – Financial Inclusion – Project Management Office",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-melaku-kebede-400.avif",
+          "bytes": 11060
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-melaku-kebede-800.avif",
+          "bytes": 35364
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-melaku-kebede-1200.avif",
+          "bytes": 71794
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-melaku-kebede-1400.avif",
+          "bytes": 114751
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-melaku-kebede-400.webp",
+          "bytes": 14742
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-melaku-kebede-800.webp",
+          "bytes": 50166
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-melaku-kebede-1200.webp",
+          "bytes": 101462
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-melaku-kebede-1400.webp",
+          "bytes": 128566
+        }
+      ]
+    }
+  },
+  "staff-sinidu-fikadu": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Sinidu Fikadu, Gender Lead, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Sinidu Fikadu",
+      "role": "Gender Lead",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-sinidu-fikadu-400.avif",
+          "bytes": 10080
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-sinidu-fikadu-800.avif",
+          "bytes": 26440
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-sinidu-fikadu-1200.avif",
+          "bytes": 46474
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-sinidu-fikadu-1400.avif",
+          "bytes": 68787
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-sinidu-fikadu-400.webp",
+          "bytes": 12682
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-sinidu-fikadu-800.webp",
+          "bytes": 30886
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-sinidu-fikadu-1200.webp",
+          "bytes": 52578
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-sinidu-fikadu-1400.webp",
+          "bytes": 68496
+        }
+      ]
+    }
+  },
+  "staff-bezawit-eshetu": {
+    "status": "ok",
+    "width": 625,
+    "height": 938,
+    "group": "staff",
+    "alt": "Portrait of Bezawit Eshetu, Climate Finance Lead, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Bezawit Eshetu",
+      "role": "Climate Finance Lead",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-bezawit-eshetu-400.avif",
+          "bytes": 14187
+        },
+        {
+          "w": 625,
+          "src": "/images/staff-bezawit-eshetu-625.avif",
+          "bytes": 26401
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-bezawit-eshetu-400.webp",
+          "bytes": 19864
+        },
+        {
+          "w": 625,
+          "src": "/images/staff-bezawit-eshetu-625.webp",
+          "bytes": 36538
+        }
+      ]
+    }
+  },
+  "staff-berhanu-alene": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Berhanu Alene, Development Impact Manager, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Berhanu Alene",
+      "role": "Development Impact Manager",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-berhanu-alene-400.avif",
+          "bytes": 8767
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-berhanu-alene-800.avif",
+          "bytes": 25300
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-berhanu-alene-1200.avif",
+          "bytes": 44386
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-berhanu-alene-1400.avif",
+          "bytes": 53868
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-berhanu-alene-400.webp",
+          "bytes": 12542
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-berhanu-alene-800.webp",
+          "bytes": 32752
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-berhanu-alene-1200.webp",
+          "bytes": 55204
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-berhanu-alene-1400.webp",
+          "bytes": 67762
+        }
+      ]
+    }
+  },
+  "staff-nurhassen-mensur": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Nurhassen Mensur, Technical Lead – Financial Services Deepening, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Nurhassen Mensur",
+      "role": "Technical Lead – Financial Services Deepening",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-nurhassen-mensur-400.avif",
+          "bytes": 9902
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-nurhassen-mensur-800.avif",
+          "bytes": 34573
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-nurhassen-mensur-1200.avif",
+          "bytes": 68269
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-nurhassen-mensur-1400.avif",
+          "bytes": 100660
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-nurhassen-mensur-400.webp",
+          "bytes": 13418
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-nurhassen-mensur-800.webp",
+          "bytes": 53740
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-nurhassen-mensur-1200.webp",
+          "bytes": 100978
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-nurhassen-mensur-1400.webp",
+          "bytes": 128010
+        }
+      ]
+    }
+  },
+  "staff-hanna-leykun": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Hanna Leykun, Technical Lead – Financial Service Scaling, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Hanna Leykun",
+      "role": "Technical Lead – Financial Service Scaling",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-hanna-leykun-400.avif",
+          "bytes": 9273
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-hanna-leykun-800.avif",
+          "bytes": 24856
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-hanna-leykun-1200.avif",
+          "bytes": 45457
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-hanna-leykun-1400.avif",
+          "bytes": 64875
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-hanna-leykun-400.webp",
+          "bytes": 12330
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-hanna-leykun-800.webp",
+          "bytes": 32794
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-hanna-leykun-1200.webp",
+          "bytes": 58998
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-hanna-leykun-1400.webp",
+          "bytes": 75660
+        }
+      ]
+    }
+  },
+  "staff-hanna-hailu": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Hanna Hailu, Gender Expert, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Hanna Hailu",
+      "role": "Gender Expert",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-hanna-hailu-400.avif",
+          "bytes": 24009
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-hanna-hailu-800.avif",
+          "bytes": 53567
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-hanna-hailu-1200.avif",
+          "bytes": 81466
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-hanna-hailu-1400.avif",
+          "bytes": 104837
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-hanna-hailu-400.webp",
+          "bytes": 39044
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-hanna-hailu-800.webp",
+          "bytes": 84560
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-hanna-hailu-1200.webp",
+          "bytes": 132714
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-hanna-hailu-1400.webp",
+          "bytes": 159936
+        }
+      ]
+    }
+  },
+  "staff-dawit-alem": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Dawit Alem, Financial Market Coordinator, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Dawit Alem",
+      "role": "Financial Market Coordinator",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-dawit-alem-400.avif",
+          "bytes": 10682
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-dawit-alem-800.avif",
+          "bytes": 29054
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-dawit-alem-1200.avif",
+          "bytes": 54333
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-dawit-alem-1400.avif",
+          "bytes": 77630
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-dawit-alem-400.webp",
+          "bytes": 15544
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-dawit-alem-800.webp",
+          "bytes": 42530
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-dawit-alem-1200.webp",
+          "bytes": 77140
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-dawit-alem-1400.webp",
+          "bytes": 96922
+        }
+      ]
+    }
+  },
+  "staff-afomia-kassa": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Afomia Kassa, Financial Inclusion Coordinator, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Afomia Kassa",
+      "role": "Financial Inclusion Coordinator",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-afomia-kassa-400.avif",
+          "bytes": 12916
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-afomia-kassa-800.avif",
+          "bytes": 31382
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-afomia-kassa-1200.avif",
+          "bytes": 50928
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-afomia-kassa-1400.avif",
+          "bytes": 68283
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-afomia-kassa-400.webp",
+          "bytes": 18866
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-afomia-kassa-800.webp",
+          "bytes": 42450
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-afomia-kassa-1200.webp",
+          "bytes": 69528
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-afomia-kassa-1400.webp",
+          "bytes": 85634
+        }
+      ]
+    }
+  },
+  "staff-samson-berhane": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Samson Berhane, Comm. & Advocacy Specialist, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Samson Berhane",
+      "role": "Comm. & Advocacy Specialist",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-samson-berhane-400.avif",
+          "bytes": 11634
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-samson-berhane-800.avif",
+          "bytes": 31359
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-samson-berhane-1200.avif",
+          "bytes": 50221
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-samson-berhane-1400.avif",
+          "bytes": 67264
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-samson-berhane-400.webp",
+          "bytes": 15414
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-samson-berhane-800.webp",
+          "bytes": 39432
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-samson-berhane-1200.webp",
+          "bytes": 66594
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-samson-berhane-1400.webp",
+          "bytes": 80930
+        }
+      ]
+    }
+  },
+  "staff-yosef-kefyalew": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Yosef Kefyalew, Communications Officer, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Yosef Kefyalew",
+      "role": "Communications Officer",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-yosef-kefyalew-400.avif",
+          "bytes": 12075
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-yosef-kefyalew-800.avif",
+          "bytes": 29649
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-yosef-kefyalew-1200.avif",
+          "bytes": 47664
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-yosef-kefyalew-1400.avif",
+          "bytes": 57366
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-yosef-kefyalew-400.webp",
+          "bytes": 16630
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-yosef-kefyalew-800.webp",
+          "bytes": 39796
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-yosef-kefyalew-1200.webp",
+          "bytes": 63564
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-yosef-kefyalew-1400.webp",
+          "bytes": 76102
+        }
+      ]
+    }
+  },
+  "staff-eden-afework": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Eden Afework, Programme Assistant, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Eden Afework",
+      "role": "Programme Assistant",
+      "team": "Programmes"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-eden-afework-400.avif",
+          "bytes": 22419
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-eden-afework-800.avif",
+          "bytes": 51301
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-eden-afework-1200.avif",
+          "bytes": 80145
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-eden-afework-1400.avif",
+          "bytes": 101756
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-eden-afework-400.webp",
+          "bytes": 37046
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-eden-afework-800.webp",
+          "bytes": 83194
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-eden-afework-1200.webp",
+          "bytes": 127082
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-eden-afework-1400.webp",
+          "bytes": 154024
+        }
+      ]
+    }
+  },
+  "staff-hmariam-misganaw": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of H/Mariam Misganaw, Finance Manager, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "H/Mariam Misganaw",
+      "role": "Finance Manager",
+      "team": "Operations"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-hmariam-misganaw-400.avif",
+          "bytes": 15843
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-hmariam-misganaw-800.avif",
+          "bytes": 45098
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-hmariam-misganaw-1200.avif",
+          "bytes": 68016
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-hmariam-misganaw-1400.avif",
+          "bytes": 87183
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-hmariam-misganaw-400.webp",
+          "bytes": 24584
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-hmariam-misganaw-800.webp",
+          "bytes": 67418
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-hmariam-misganaw-1200.webp",
+          "bytes": 107088
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-hmariam-misganaw-1400.webp",
+          "bytes": 127746
+        }
+      ]
+    }
+  },
+  "staff-tazezew-abrha": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Tazezew Abrha, Senior Finance Officer, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Tazezew Abrha",
+      "role": "Senior Finance Officer",
+      "team": "Operations"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-tazezew-abrha-400.avif",
+          "bytes": 11879
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-tazezew-abrha-800.avif",
+          "bytes": 30593
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-tazezew-abrha-1200.avif",
+          "bytes": 51336
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-tazezew-abrha-1400.avif",
+          "bytes": 64950
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-tazezew-abrha-400.webp",
+          "bytes": 17130
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-tazezew-abrha-800.webp",
+          "bytes": 40798
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-tazezew-abrha-1200.webp",
+          "bytes": 73840
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-tazezew-abrha-1400.webp",
+          "bytes": 137620
+        }
+      ]
+    }
+  },
+  "staff-meron-dereje": {
+    "status": "ok",
+    "width": 625,
+    "height": 938,
+    "group": "staff",
+    "alt": "Portrait of Meron Dereje, Finance Assistant, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Meron Dereje",
+      "role": "Finance Assistant",
+      "team": "Operations"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-meron-dereje-400.avif",
+          "bytes": 10727
+        },
+        {
+          "w": 625,
+          "src": "/images/staff-meron-dereje-625.avif",
+          "bytes": 17483
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-meron-dereje-400.webp",
+          "bytes": 14780
+        },
+        {
+          "w": 625,
+          "src": "/images/staff-meron-dereje-625.webp",
+          "bytes": 23444
+        }
+      ]
+    }
+  },
+  "staff-rahel-taddese": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Rahel Taddese, Senior Procurement Officer, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Rahel Taddese",
+      "role": "Senior Procurement Officer",
+      "team": "Operations"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-rahel-taddese-400.avif",
+          "bytes": 15576
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-rahel-taddese-800.avif",
+          "bytes": 52707
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-rahel-taddese-1200.avif",
+          "bytes": 113477
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-rahel-taddese-1400.avif",
+          "bytes": 170576
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-rahel-taddese-400.webp",
+          "bytes": 24170
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-rahel-taddese-800.webp",
+          "bytes": 91338
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-rahel-taddese-1200.webp",
+          "bytes": 197490
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-rahel-taddese-1400.webp",
+          "bytes": 267726
+        }
+      ]
+    }
+  },
+  "staff-ruth-zemene": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Ruth Zemene, Senior HR & Admin Officer, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Ruth Zemene",
+      "role": "Senior HR & Admin Officer",
+      "team": "Operations"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-ruth-zemene-400.avif",
+          "bytes": 15437
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-ruth-zemene-800.avif",
+          "bytes": 39189
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-ruth-zemene-1200.avif",
+          "bytes": 66260
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-ruth-zemene-1400.avif",
+          "bytes": 90594
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-ruth-zemene-400.webp",
+          "bytes": 28270
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-ruth-zemene-800.webp",
+          "bytes": 71184
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-ruth-zemene-1200.webp",
+          "bytes": 120812
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-ruth-zemene-1400.webp",
+          "bytes": 149334
+        }
+      ]
+    }
+  },
+  "staff-agare-kassahun": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Agare Kassahun, Senior Executive Assistant, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Agare Kassahun",
+      "role": "Senior Executive Assistant",
+      "team": "Operations"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-agare-kassahun-400.avif",
+          "bytes": 10302
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-agare-kassahun-800.avif",
+          "bytes": 27769
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-agare-kassahun-1200.avif",
+          "bytes": 50424
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-agare-kassahun-1400.avif",
+          "bytes": 70835
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-agare-kassahun-400.webp",
+          "bytes": 14640
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-agare-kassahun-800.webp",
+          "bytes": 38962
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-agare-kassahun-1200.webp",
+          "bytes": 68466
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-agare-kassahun-1400.webp",
+          "bytes": 88180
+        }
+      ]
+    }
+  },
+  "staff-shalom-alemayehu": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Shalom Alemayehu, Admin Assistant, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Shalom Alemayehu",
+      "role": "Admin Assistant",
+      "team": "Operations"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-shalom-alemayehu-400.avif",
+          "bytes": 7513
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-shalom-alemayehu-800.avif",
+          "bytes": 16695
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-shalom-alemayehu-1200.avif",
+          "bytes": 27724
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-shalom-alemayehu-1400.avif",
+          "bytes": 36738
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-shalom-alemayehu-400.webp",
+          "bytes": 9138
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-shalom-alemayehu-800.webp",
+          "bytes": 20362
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-shalom-alemayehu-1200.webp",
+          "bytes": 34002
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-shalom-alemayehu-1400.webp",
+          "bytes": 42588
+        }
+      ]
+    }
+  },
+  "staff-abebayehu-milkias": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "staff",
+    "alt": "Portrait of Abebayehu Milkias, Logistics Assistant, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Abebayehu Milkias",
+      "role": "Logistics Assistant",
+      "team": "Operations"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/staff-abebayehu-milkias-400.avif",
+          "bytes": 12265
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-abebayehu-milkias-800.avif",
+          "bytes": 49067
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-abebayehu-milkias-1200.avif",
+          "bytes": 126606
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-abebayehu-milkias-1400.avif",
+          "bytes": 206496
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/staff-abebayehu-milkias-400.webp",
+          "bytes": 17152
+        },
+        {
+          "w": 800,
+          "src": "/images/staff-abebayehu-milkias-800.webp",
+          "bytes": 77460
+        },
+        {
+          "w": 1200,
+          "src": "/images/staff-abebayehu-milkias-1200.webp",
+          "bytes": 248330
+        },
+        {
+          "w": 1400,
+          "src": "/images/staff-abebayehu-milkias-1400.webp",
+          "bytes": 400154
+        }
+      ]
+    }
+  },
+  "regional-tadesse-hailu": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "regional",
+    "alt": "Portrait of Tadesse Hailu, Regional Coordinator, Benishangul Gumuz, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Tadesse Hailu",
+      "role": "Regional Coordinator, Benishangul Gumuz",
+      "team": "Regional coordinators",
+      "region": "Benishangul Gumuz"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/regional-tadesse-hailu-400.avif",
+          "bytes": 9403
+        },
+        {
+          "w": 800,
+          "src": "/images/regional-tadesse-hailu-800.avif",
+          "bytes": 22283
+        },
+        {
+          "w": 1200,
+          "src": "/images/regional-tadesse-hailu-1200.avif",
+          "bytes": 39135
+        },
+        {
+          "w": 1400,
+          "src": "/images/regional-tadesse-hailu-1400.avif",
+          "bytes": 55892
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/regional-tadesse-hailu-400.webp",
+          "bytes": 11794
+        },
+        {
+          "w": 800,
+          "src": "/images/regional-tadesse-hailu-800.webp",
+          "bytes": 28722
+        },
+        {
+          "w": 1200,
+          "src": "/images/regional-tadesse-hailu-1200.webp",
+          "bytes": 51502
+        },
+        {
+          "w": 1400,
+          "src": "/images/regional-tadesse-hailu-1400.webp",
+          "bytes": 66416
+        }
+      ]
+    }
+  },
+  "regional-okello-oluch": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "regional",
+    "alt": "Portrait of Okello Oluch, Regional Coordinator, Gambella, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Okello Oluch",
+      "role": "Regional Coordinator, Gambella",
+      "team": "Regional coordinators",
+      "region": "Gambella"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/regional-okello-oluch-400.avif",
+          "bytes": 12061
+        },
+        {
+          "w": 800,
+          "src": "/images/regional-okello-oluch-800.avif",
+          "bytes": 51561
+        },
+        {
+          "w": 1200,
+          "src": "/images/regional-okello-oluch-1200.avif",
+          "bytes": 121349
+        },
+        {
+          "w": 1400,
+          "src": "/images/regional-okello-oluch-1400.avif",
+          "bytes": 182686
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/regional-okello-oluch-400.webp",
+          "bytes": 16962
+        },
+        {
+          "w": 800,
+          "src": "/images/regional-okello-oluch-800.webp",
+          "bytes": 107930
+        },
+        {
+          "w": 1200,
+          "src": "/images/regional-okello-oluch-1200.webp",
+          "bytes": 249940
+        },
+        {
+          "w": 1400,
+          "src": "/images/regional-okello-oluch-1400.webp",
+          "bytes": 343180
+        }
+      ]
+    }
+  },
+  "regional-aklilu-tukela": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "regional",
+    "alt": "Portrait of Aklilu Tukela, Regional Coordinator, Sidama, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Aklilu Tukela",
+      "role": "Regional Coordinator, Sidama",
+      "team": "Regional coordinators",
+      "region": "Sidama"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/regional-aklilu-tukela-400.avif",
+          "bytes": 9383
+        },
+        {
+          "w": 800,
+          "src": "/images/regional-aklilu-tukela-800.avif",
+          "bytes": 23303
+        },
+        {
+          "w": 1200,
+          "src": "/images/regional-aklilu-tukela-1200.avif",
+          "bytes": 53000
+        },
+        {
+          "w": 1400,
+          "src": "/images/regional-aklilu-tukela-1400.avif",
+          "bytes": 91107
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/regional-aklilu-tukela-400.webp",
+          "bytes": 11556
+        },
+        {
+          "w": 800,
+          "src": "/images/regional-aklilu-tukela-800.webp",
+          "bytes": 33266
+        },
+        {
+          "w": 1200,
+          "src": "/images/regional-aklilu-tukela-1200.webp",
+          "bytes": 104556
+        },
+        {
+          "w": 1400,
+          "src": "/images/regional-aklilu-tukela-1400.webp",
+          "bytes": 154646
+        }
+      ]
+    }
+  },
+  "regional-mubarak-ahmed": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "regional",
+    "alt": "Portrait of Mubarak Ahmed, Regional Coordinator, Somali, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Mubarak Ahmed",
+      "role": "Regional Coordinator, Somali",
+      "team": "Regional coordinators",
+      "region": "Somali"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/regional-mubarak-ahmed-400.avif",
+          "bytes": 9210
+        },
+        {
+          "w": 800,
+          "src": "/images/regional-mubarak-ahmed-800.avif",
+          "bytes": 24077
+        },
+        {
+          "w": 1200,
+          "src": "/images/regional-mubarak-ahmed-1200.avif",
+          "bytes": 44761
+        },
+        {
+          "w": 1400,
+          "src": "/images/regional-mubarak-ahmed-1400.avif",
+          "bytes": 68295
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/regional-mubarak-ahmed-400.webp",
+          "bytes": 12928
+        },
+        {
+          "w": 800,
+          "src": "/images/regional-mubarak-ahmed-800.webp",
+          "bytes": 31932
+        },
+        {
+          "w": 1200,
+          "src": "/images/regional-mubarak-ahmed-1200.webp",
+          "bytes": 55378
+        },
+        {
+          "w": 1400,
+          "src": "/images/regional-mubarak-ahmed-1400.webp",
+          "bytes": 71080
+        }
+      ]
+    }
+  },
+  "regional-ahmed-mohammed": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "regional",
+    "alt": "Portrait of Ahmed Mohammed, Regional Coordinator, Afar, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Ahmed Mohammed",
+      "role": "Regional Coordinator, Afar",
+      "team": "Regional coordinators",
+      "region": "Afar"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/regional-ahmed-mohammed-400.avif",
+          "bytes": 8780
+        },
+        {
+          "w": 800,
+          "src": "/images/regional-ahmed-mohammed-800.avif",
+          "bytes": 21167
+        },
+        {
+          "w": 1200,
+          "src": "/images/regional-ahmed-mohammed-1200.avif",
+          "bytes": 36828
+        },
+        {
+          "w": 1400,
+          "src": "/images/regional-ahmed-mohammed-1400.avif",
+          "bytes": 51569
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/regional-ahmed-mohammed-400.webp",
+          "bytes": 11464
+        },
+        {
+          "w": 800,
+          "src": "/images/regional-ahmed-mohammed-800.webp",
+          "bytes": 27596
+        },
+        {
+          "w": 1200,
+          "src": "/images/regional-ahmed-mohammed-1200.webp",
+          "bytes": 46758
+        },
+        {
+          "w": 1400,
+          "src": "/images/regional-ahmed-mohammed-1400.webp",
+          "bytes": 59236
+        }
+      ]
+    }
+  },
+  "regional-abinet-belay": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "regional",
+    "alt": "Portrait of Abinet Belay, Regional Coordinator, Amhara, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Abinet Belay",
+      "role": "Regional Coordinator, Amhara",
+      "team": "Regional coordinators",
+      "region": "Amhara"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/regional-abinet-belay-400.avif",
+          "bytes": 11283
+        },
+        {
+          "w": 800,
+          "src": "/images/regional-abinet-belay-800.avif",
+          "bytes": 40778
+        },
+        {
+          "w": 1200,
+          "src": "/images/regional-abinet-belay-1200.avif",
+          "bytes": 103421
+        },
+        {
+          "w": 1400,
+          "src": "/images/regional-abinet-belay-1400.avif",
+          "bytes": 158509
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/regional-abinet-belay-400.webp",
+          "bytes": 16394
+        },
+        {
+          "w": 800,
+          "src": "/images/regional-abinet-belay-800.webp",
+          "bytes": 79018
+        },
+        {
+          "w": 1200,
+          "src": "/images/regional-abinet-belay-1200.webp",
+          "bytes": 246788
+        },
+        {
+          "w": 1400,
+          "src": "/images/regional-abinet-belay-1400.webp",
+          "bytes": 351434
+        }
+      ]
+    }
+  },
+  "regional-fekadu-mekonnen": {
+    "status": "ok",
+    "width": 1000,
+    "height": 1448,
+    "group": "regional",
+    "alt": "Portrait of Dr. Fekadu Mekonnen, Regional Coordinator, Oromia, FSD Ethiopia",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Dr. Fekadu Mekonnen",
+      "role": "Regional Coordinator, Oromia",
+      "team": "Regional coordinators",
+      "region": "Oromia"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/regional-fekadu-mekonnen-400.avif",
+          "bytes": 12661
+        },
+        {
+          "w": 800,
+          "src": "/images/regional-fekadu-mekonnen-800.avif",
+          "bytes": 43056
+        },
+        {
+          "w": 1000,
+          "src": "/images/regional-fekadu-mekonnen-1000.avif",
+          "bytes": 62815
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/regional-fekadu-mekonnen-400.webp",
+          "bytes": 18750
+        },
+        {
+          "w": 800,
+          "src": "/images/regional-fekadu-mekonnen-800.webp",
+          "bytes": 63274
+        },
+        {
+          "w": 1000,
+          "src": "/images/regional-fekadu-mekonnen-1000.webp",
+          "bytes": 91136
+        }
+      ]
+    }
+  },
+  "board-admassu-tadesse": {
+    "status": "ok",
+    "width": 860,
+    "height": 1062,
+    "group": "board",
+    "alt": "Portrait of Admassu Tadesse, Board Chairman, FSD Ethiopia board",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 25%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Admassu Tadesse",
+      "role": "Board Chairman",
+      "team": "Board"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/board-admassu-tadesse-400.avif",
+          "bytes": 9710
+        },
+        {
+          "w": 800,
+          "src": "/images/board-admassu-tadesse-800.avif",
+          "bytes": 30247
+        },
+        {
+          "w": 860,
+          "src": "/images/board-admassu-tadesse-860.avif",
+          "bytes": 35135
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/board-admassu-tadesse-400.webp",
+          "bytes": 12542
+        },
+        {
+          "w": 800,
+          "src": "/images/board-admassu-tadesse-800.webp",
+          "bytes": 36172
+        },
+        {
+          "w": 860,
+          "src": "/images/board-admassu-tadesse-860.webp",
+          "bytes": 41664
+        }
+      ]
+    }
+  },
+  "board-berhane-demissie": {
+    "status": "ok",
+    "width": 859,
+    "height": 1062,
+    "group": "board",
+    "alt": "Portrait of Berhane Demissie, Non-Executive Director, FSD Ethiopia board",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 25%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Berhane Demissie",
+      "role": "Non-Executive Director",
+      "team": "Board"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/board-berhane-demissie-400.avif",
+          "bytes": 16323
+        },
+        {
+          "w": 800,
+          "src": "/images/board-berhane-demissie-800.avif",
+          "bytes": 41452
+        },
+        {
+          "w": 859,
+          "src": "/images/board-berhane-demissie-859.avif",
+          "bytes": 45839
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/board-berhane-demissie-400.webp",
+          "bytes": 23496
+        },
+        {
+          "w": 800,
+          "src": "/images/board-berhane-demissie-800.webp",
+          "bytes": 58164
+        },
+        {
+          "w": 859,
+          "src": "/images/board-berhane-demissie-859.webp",
+          "bytes": 63422
+        }
+      ]
+    }
+  },
+  "board-maleda-bisrat": {
+    "status": "ok",
+    "width": 860,
+    "height": 1062,
+    "group": "board",
+    "alt": "Portrait of Maleda Bisrat, Non-Executive Director, FSD Ethiopia board",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 25%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Maleda Bisrat",
+      "role": "Non-Executive Director",
+      "team": "Board"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/board-maleda-bisrat-400.avif",
+          "bytes": 5586
+        },
+        {
+          "w": 800,
+          "src": "/images/board-maleda-bisrat-800.avif",
+          "bytes": 15475
+        },
+        {
+          "w": 860,
+          "src": "/images/board-maleda-bisrat-860.avif",
+          "bytes": 17755
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/board-maleda-bisrat-400.webp",
+          "bytes": 6026
+        },
+        {
+          "w": 800,
+          "src": "/images/board-maleda-bisrat-800.webp",
+          "bytes": 17424
+        },
+        {
+          "w": 860,
+          "src": "/images/board-maleda-bisrat-860.webp",
+          "bytes": 19684
+        }
+      ]
+    }
+  },
+  "cohort-mehret": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of a Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Miheret Andarge",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-mehret-400.avif",
+          "bytes": 12199
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-mehret-800.avif",
+          "bytes": 35237
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-mehret-1200.avif",
+          "bytes": 64957
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-mehret-1400.avif",
+          "bytes": 90700
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-mehret-400.webp",
+          "bytes": 15076
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-mehret-800.webp",
+          "bytes": 44812
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-mehret-1200.webp",
+          "bytes": 82172
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-mehret-1400.webp",
+          "bytes": 102518
+        }
+      ]
+    }
+  },
+  "cohort-hiwot-yohannes": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of a Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Hiwot Yohannes",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-hiwot-yohannes-400.avif",
+          "bytes": 7337
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-hiwot-yohannes-800.avif",
+          "bytes": 23934
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-hiwot-yohannes-1200.avif",
+          "bytes": 48038
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-hiwot-yohannes-1400.avif",
+          "bytes": 69808
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-hiwot-yohannes-400.webp",
+          "bytes": 9566
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-hiwot-yohannes-800.webp",
+          "bytes": 30714
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-hiwot-yohannes-1200.webp",
+          "bytes": 56726
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-hiwot-yohannes-1400.webp",
+          "bytes": 73012
+        }
+      ]
+    }
+  },
+  "cohort-selamawit-bekele": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of a Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Selamawit Bekele",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-selamawit-bekele-400.avif",
+          "bytes": 10132
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-selamawit-bekele-800.avif",
+          "bytes": 30345
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-selamawit-bekele-1200.avif",
+          "bytes": 56559
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-selamawit-bekele-1400.avif",
+          "bytes": 78053
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-selamawit-bekele-400.webp",
+          "bytes": 13736
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-selamawit-bekele-800.webp",
+          "bytes": 43834
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-selamawit-bekele-1200.webp",
+          "bytes": 79858
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-selamawit-bekele-1400.webp",
+          "bytes": 100780
+        }
+      ]
+    }
+  },
+  "cohort-kokeb": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of a Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Kokeb Ashame",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-kokeb-400.avif",
+          "bytes": 7901
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-kokeb-800.avif",
+          "bytes": 18265
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-kokeb-1200.avif",
+          "bytes": 29479
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-kokeb-1400.avif",
+          "bytes": 37807
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-kokeb-400.webp",
+          "bytes": 8808
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-kokeb-800.webp",
+          "bytes": 21434
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-kokeb-1200.webp",
+          "bytes": 36356
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-kokeb-1400.webp",
+          "bytes": 44678
+        }
+      ]
+    }
+  },
+  "event-stakeholder-summit-2026": {
+    "status": "ok",
+    "width": 1080,
+    "height": 564,
+    "group": "events",
+    "alt": "Speakers and guests stand together on stage in front of the “From Inception to Enduring Impact” backdrop at FSD Ethiopia’s Stakeholder Summit, July 2026",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 40%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-stakeholder-summit-2026-400.avif",
+          "bytes": 9317
+        },
+        {
+          "w": 800,
+          "src": "/images/event-stakeholder-summit-2026-800.avif",
+          "bytes": 26063
+        },
+        {
+          "w": 1080,
+          "src": "/images/event-stakeholder-summit-2026-1080.avif",
+          "bytes": 42839
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-stakeholder-summit-2026-400.webp",
+          "bytes": 14068
+        },
+        {
+          "w": 800,
+          "src": "/images/event-stakeholder-summit-2026-800.webp",
+          "bytes": 44784
+        },
+        {
+          "w": 1080,
+          "src": "/images/event-stakeholder-summit-2026-1080.webp",
+          "bytes": 65320
+        }
+      ]
+    }
+  },
+  "event-gicfa-baku-2026": {
+    "status": "ok",
+    "width": 960,
+    "height": 647,
+    "group": "events",
+    "alt": "Participants around a conference table at the Global Islamic Climate Finance Alliance roundtable in Baku, June 2026",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-gicfa-baku-2026-400.avif",
+          "bytes": 10963
+        },
+        {
+          "w": 800,
+          "src": "/images/event-gicfa-baku-2026-800.avif",
+          "bytes": 31243
+        },
+        {
+          "w": 960,
+          "src": "/images/event-gicfa-baku-2026-960.avif",
+          "bytes": 42707
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-gicfa-baku-2026-400.webp",
+          "bytes": 17082
+        },
+        {
+          "w": 800,
+          "src": "/images/event-gicfa-baku-2026-800.webp",
+          "bytes": 48426
+        },
+        {
+          "w": 960,
+          "src": "/images/event-gicfa-baku-2026-960.webp",
+          "bytes": 65954
+        }
+      ]
+    }
+  },
+  "event-climate-summit-2026-group": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Group photo of participants at the Second Climate Finance Summit in Addis Ababa, March 2026",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 40%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-climate-summit-2026-group-400.avif",
+          "bytes": 13161
+        },
+        {
+          "w": 600,
+          "src": "/images/event-climate-summit-2026-group-600.avif",
+          "bytes": 25658
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-climate-summit-2026-group-400.webp",
+          "bytes": 22136
+        },
+        {
+          "w": 600,
+          "src": "/images/event-climate-summit-2026-group-600.webp",
+          "bytes": 42514
+        }
+      ]
+    }
+  },
+  "event-climate-summit-2026-plenary": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Participants at round tables in a hotel ballroom during the Second Climate Finance Summit, March 2026",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-climate-summit-2026-plenary-400.avif",
+          "bytes": 12210
+        },
+        {
+          "w": 600,
+          "src": "/images/event-climate-summit-2026-plenary-600.avif",
+          "bytes": 23326
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-climate-summit-2026-plenary-400.webp",
+          "bytes": 21574
+        },
+        {
+          "w": 600,
+          "src": "/images/event-climate-summit-2026-plenary-600.webp",
+          "bytes": 40914
+        }
+      ]
+    }
+  },
+  "event-access-influence-2026-1": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Women leaders stand together at the Access to Influence dialogue, March 2026",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 40%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-access-influence-2026-1-400.avif",
+          "bytes": 9259
+        },
+        {
+          "w": 600,
+          "src": "/images/event-access-influence-2026-1-600.avif",
+          "bytes": 16213
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-access-influence-2026-1-400.webp",
+          "bytes": 14518
+        },
+        {
+          "w": 600,
+          "src": "/images/event-access-influence-2026-1-600.webp",
+          "bytes": 24762
+        }
+      ]
+    }
+  },
+  "event-access-influence-2026-2": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Participants seated at round tables at the Access to Influence dialogue on women’s digital financial inclusion, March 2026",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-access-influence-2026-2-400.avif",
+          "bytes": 10215
+        },
+        {
+          "w": 600,
+          "src": "/images/event-access-influence-2026-2-600.avif",
+          "bytes": 17985
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-access-influence-2026-2-400.webp",
+          "bytes": 16248
+        },
+        {
+          "w": 600,
+          "src": "/images/event-access-influence-2026-2-600.webp",
+          "bytes": 29038
+        }
+      ]
+    }
+  },
+  "event-access-influence-2026-3": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "A speaker joins by video on the main screen at the Access to Influence dialogue, March 2026",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-access-influence-2026-3-400.avif",
+          "bytes": 10618
+        },
+        {
+          "w": 600,
+          "src": "/images/event-access-influence-2026-3-600.avif",
+          "bytes": 18828
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-access-influence-2026-3-400.webp",
+          "bytes": 17138
+        },
+        {
+          "w": 600,
+          "src": "/images/event-access-influence-2026-3-600.webp",
+          "bytes": 30656
+        }
+      ]
+    }
+  },
+  "event-insurance-workshop-2025": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Five panellists seated on stage under the “Growing the market, embracing change” banner at the Insurance Industry Workshop, November 2025",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-insurance-workshop-2025-400.avif",
+          "bytes": 12275
+        },
+        {
+          "w": 600,
+          "src": "/images/event-insurance-workshop-2025-600.avif",
+          "bytes": 23418
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-insurance-workshop-2025-400.webp",
+          "bytes": 20018
+        },
+        {
+          "w": 600,
+          "src": "/images/event-insurance-workshop-2025-600.webp",
+          "bytes": 38208
+        }
+      ]
+    }
+  },
+  "event-insurance-workshop-2025-01": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "A speaker at the podium addresses participants at the Insurance Industry Workshop, November 2025",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-insurance-workshop-2025-01-400.avif",
+          "bytes": 8131
+        },
+        {
+          "w": 600,
+          "src": "/images/event-insurance-workshop-2025-01-600.avif",
+          "bytes": 15721
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-insurance-workshop-2025-01-400.webp",
+          "bytes": 12198
+        },
+        {
+          "w": 600,
+          "src": "/images/event-insurance-workshop-2025-01-600.webp",
+          "bytes": 21776
+        }
+      ]
+    }
+  },
+  "event-insurance-workshop-2025-02": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Five participants stand in front of the Insurance Industry Workshop backdrop, November 2025",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-insurance-workshop-2025-02-400.avif",
+          "bytes": 10196
+        },
+        {
+          "w": 600,
+          "src": "/images/event-insurance-workshop-2025-02-600.avif",
+          "bytes": 18306
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-insurance-workshop-2025-02-400.webp",
+          "bytes": 15352
+        },
+        {
+          "w": 600,
+          "src": "/images/event-insurance-workshop-2025-02-600.webp",
+          "bytes": 26808
+        }
+      ]
+    }
+  },
+  "event-greening-2025": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Green hills and farmland seen from a hilltop",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-greening-2025-400.avif",
+          "bytes": 13465
+        },
+        {
+          "w": 600,
+          "src": "/images/event-greening-2025-600.avif",
+          "bytes": 27894
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-greening-2025-400.webp",
+          "bytes": 24314
+        },
+        {
+          "w": 600,
+          "src": "/images/event-greening-2025-600.webp",
+          "bytes": 50710
+        }
+      ]
+    }
+  },
+  "event-womens-day-2025": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Group photo at the Unlocking Potentials Women's Day event, March 2025",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 40%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-womens-day-2025-400.avif",
+          "bytes": 10461
+        },
+        {
+          "w": 600,
+          "src": "/images/event-womens-day-2025-600.avif",
+          "bytes": 18188
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-womens-day-2025-400.webp",
+          "bytes": 15332
+        },
+        {
+          "w": 600,
+          "src": "/images/event-womens-day-2025-600.webp",
+          "bytes": 26088
+        }
+      ]
+    }
+  },
+  "event-climate-summit-2025": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Group photo at the First Annual Climate Finance Summit, February 2025",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 40%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-climate-summit-2025-400.avif",
+          "bytes": 11568
+        },
+        {
+          "w": 600,
+          "src": "/images/event-climate-summit-2025-600.avif",
+          "bytes": 19649
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-climate-summit-2025-400.webp",
+          "bytes": 17866
+        },
+        {
+          "w": 600,
+          "src": "/images/event-climate-summit-2025-600.webp",
+          "bytes": 30892
+        }
+      ]
+    }
+  },
+  "event-esx-academy-2025": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Group photo at the launch of the ESX Academy, February 2025",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 40%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-esx-academy-2025-400.avif",
+          "bytes": 9709
+        },
+        {
+          "w": 600,
+          "src": "/images/event-esx-academy-2025-600.avif",
+          "bytes": 17184
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-esx-academy-2025-400.webp",
+          "bytes": 15222
+        },
+        {
+          "w": 600,
+          "src": "/images/event-esx-academy-2025-600.webp",
+          "bytes": 26272
+        }
+      ]
+    }
+  },
+  "event-finequity-2024": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "A speaker addresses the FSD Ethiopia and Finequity Africa convening, March 2024",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 35%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-finequity-2024-400.avif",
+          "bytes": 6854
+        },
+        {
+          "w": 600,
+          "src": "/images/event-finequity-2024-600.avif",
+          "bytes": 11018
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-finequity-2024-400.webp",
+          "bytes": 9754
+        },
+        {
+          "w": 600,
+          "src": "/images/event-finequity-2024-600.webp",
+          "bytes": 16180
+        }
+      ]
+    }
+  },
+  "event-bimalab-2024-main": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "BimaLab Ethiopia cohort group photo at Demo Day, March 2024",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 40%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-bimalab-2024-main-400.avif",
+          "bytes": 12244
+        },
+        {
+          "w": 600,
+          "src": "/images/event-bimalab-2024-main-600.avif",
+          "bytes": 23131
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-bimalab-2024-main-400.webp",
+          "bytes": 18782
+        },
+        {
+          "w": 600,
+          "src": "/images/event-bimalab-2024-main-600.webp",
+          "bytes": 34554
+        }
+      ]
+    }
+  },
+  "event-bimalab-2024-01": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "A speaker with a microphone addresses the audience at BimaLab Ethiopia Demo Day, March 2024",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-bimalab-2024-01-400.avif",
+          "bytes": 3689
+        },
+        {
+          "w": 600,
+          "src": "/images/event-bimalab-2024-01-600.avif",
+          "bytes": 6054
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-bimalab-2024-01-400.webp",
+          "bytes": 4686
+        },
+        {
+          "w": 600,
+          "src": "/images/event-bimalab-2024-01-600.webp",
+          "bytes": 7684
+        }
+      ]
+    }
+  },
+  "event-bimalab-2024-02": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "A speaker at the BimaLab Ethiopia Demo Day podium, March 2024",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-bimalab-2024-02-400.avif",
+          "bytes": 6131
+        },
+        {
+          "w": 600,
+          "src": "/images/event-bimalab-2024-02-600.avif",
+          "bytes": 9941
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-bimalab-2024-02-400.webp",
+          "bytes": 8290
+        },
+        {
+          "w": 600,
+          "src": "/images/event-bimalab-2024-02-600.webp",
+          "bytes": 13254
+        }
+      ]
+    }
+  },
+  "event-bimalab-2024-03": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Panel discussion on regulatory insights for insurtech ventures at BimaLab Ethiopia Demo Day, March 2024",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-bimalab-2024-03-400.avif",
+          "bytes": 14651
+        },
+        {
+          "w": 600,
+          "src": "/images/event-bimalab-2024-03-600.avif",
+          "bytes": 26526
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-bimalab-2024-03-400.webp",
+          "bytes": 23476
+        },
+        {
+          "w": 600,
+          "src": "/images/event-bimalab-2024-03-600.webp",
+          "bytes": 43112
+        }
+      ]
+    }
+  },
+  "event-bimalab-2024-04": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Three women speak on a panel at BimaLab Ethiopia Demo Day, March 2024",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-bimalab-2024-04-400.avif",
+          "bytes": 11018
+        },
+        {
+          "w": 600,
+          "src": "/images/event-bimalab-2024-04-600.avif",
+          "bytes": 19150
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-bimalab-2024-04-400.webp",
+          "bytes": 17848
+        },
+        {
+          "w": 600,
+          "src": "/images/event-bimalab-2024-04-600.webp",
+          "bytes": 31136
+        }
+      ]
+    }
+  },
+  "event-bimalab-2024-05": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "BimaLab Ethiopia cohort members and organisers at Demo Day, March 2024",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-bimalab-2024-05-400.avif",
+          "bytes": 12178
+        },
+        {
+          "w": 600,
+          "src": "/images/event-bimalab-2024-05-600.avif",
+          "bytes": 22753
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-bimalab-2024-05-400.webp",
+          "bytes": 18646
+        },
+        {
+          "w": 600,
+          "src": "/images/event-bimalab-2024-05-600.webp",
+          "bytes": 33918
+        }
+      ]
+    }
+  },
+  "event-esx-rulebook-2023": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "events",
+    "alt": "Participants at tables during a meeting on the Ethiopian Securities Exchange rulebook, October 2023",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/event-esx-rulebook-2023-400.avif",
+          "bytes": 8545
+        },
+        {
+          "w": 600,
+          "src": "/images/event-esx-rulebook-2023-600.avif",
+          "bytes": 15035
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/event-esx-rulebook-2023-400.webp",
+          "bytes": 13820
+        },
+        {
+          "w": 600,
+          "src": "/images/event-esx-rulebook-2023-600.webp",
+          "bytes": 23768
+        }
+      ]
+    }
+  },
+  "programme-fin01": {
+    "status": "ok",
+    "width": 850,
+    "height": 602,
+    "group": "programme",
+    "alt": "A woman using a mobile phone",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 40%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/programme-fin01-400.avif",
+          "bytes": 6878
+        },
+        {
+          "w": 800,
+          "src": "/images/programme-fin01-800.avif",
+          "bytes": 16008
+        },
+        {
+          "w": 850,
+          "src": "/images/programme-fin01-850.avif",
+          "bytes": 18111
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/programme-fin01-400.webp",
+          "bytes": 10276
+        },
+        {
+          "w": 800,
+          "src": "/images/programme-fin01-800.webp",
+          "bytes": 22496
+        },
+        {
+          "w": 850,
+          "src": "/images/programme-fin01-850.webp",
+          "bytes": 24550
+        }
+      ]
+    }
+  },
+  "programme-acctocap01": {
+    "status": "ok",
+    "width": 850,
+    "height": 602,
+    "group": "programme",
+    "alt": "A bank card held to a point-of-sale terminal",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/programme-acctocap01-400.avif",
+          "bytes": 6252
+        },
+        {
+          "w": 800,
+          "src": "/images/programme-acctocap01-800.avif",
+          "bytes": 14019
+        },
+        {
+          "w": 850,
+          "src": "/images/programme-acctocap01-850.avif",
+          "bytes": 15673
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/programme-acctocap01-400.webp",
+          "bytes": 8958
+        },
+        {
+          "w": 800,
+          "src": "/images/programme-acctocap01-800.webp",
+          "bytes": 20998
+        },
+        {
+          "w": 850,
+          "src": "/images/programme-acctocap01-850.webp",
+          "bytes": 22668
+        }
+      ]
+    }
+  },
+  "programme-climate-fina01": {
+    "status": "ok",
+    "width": 850,
+    "height": 602,
+    "group": "programme",
+    "alt": "Cattle grazing on open grassland",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 55%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/programme-climate-fina01-400.avif",
+          "bytes": 6988
+        },
+        {
+          "w": 800,
+          "src": "/images/programme-climate-fina01-800.avif",
+          "bytes": 17870
+        },
+        {
+          "w": 850,
+          "src": "/images/programme-climate-fina01-850.avif",
+          "bytes": 20142
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/programme-climate-fina01-400.webp",
+          "bytes": 9464
+        },
+        {
+          "w": 800,
+          "src": "/images/programme-climate-fina01-800.webp",
+          "bytes": 23834
+        },
+        {
+          "w": 850,
+          "src": "/images/programme-climate-fina01-850.webp",
+          "bytes": 26114
+        }
+      ]
+    }
+  },
+  "programme-climate-finance2": {
+    "status": "ok",
+    "width": 857,
+    "height": 400,
+    "group": "programme",
+    "alt": "Cattle grazing on grassland under a hazy sky",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/programme-climate-finance2-400.avif",
+          "bytes": 6115
+        },
+        {
+          "w": 800,
+          "src": "/images/programme-climate-finance2-800.avif",
+          "bytes": 15887
+        },
+        {
+          "w": 857,
+          "src": "/images/programme-climate-finance2-857.avif",
+          "bytes": 18060
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/programme-climate-finance2-400.webp",
+          "bytes": 8488
+        },
+        {
+          "w": 800,
+          "src": "/images/programme-climate-finance2-800.webp",
+          "bytes": 22330
+        },
+        {
+          "w": 857,
+          "src": "/images/programme-climate-finance2-857.webp",
+          "bytes": 24086
+        }
+      ]
+    }
+  },
+  "programme-f-inc-01": {
+    "status": "ok",
+    "width": 737,
+    "height": 513,
+    "group": "programme",
+    "alt": "Women working in a garment workshop",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 40%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/programme-f-inc-01-400.avif",
+          "bytes": 11335
+        },
+        {
+          "w": 737,
+          "src": "/images/programme-f-inc-01-737.avif",
+          "bytes": 24488
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/programme-f-inc-01-400.webp",
+          "bytes": 17352
+        },
+        {
+          "w": 737,
+          "src": "/images/programme-f-inc-01-737.webp",
+          "bytes": 34458
+        }
+      ]
+    }
+  },
+  "tools-technical-assistance": {
+    "status": "ok",
+    "width": 850,
+    "height": 602,
+    "group": "programme",
+    "alt": "Three representatives hold up signed agreements at a memorandum of understanding signing",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 40%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/tools-technical-assistance-400.avif",
+          "bytes": 9003
+        },
+        {
+          "w": 800,
+          "src": "/images/tools-technical-assistance-800.avif",
+          "bytes": 20538
+        },
+        {
+          "w": 850,
+          "src": "/images/tools-technical-assistance-850.avif",
+          "bytes": 22600
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/tools-technical-assistance-400.webp",
+          "bytes": 13438
+        },
+        {
+          "w": 800,
+          "src": "/images/tools-technical-assistance-800.webp",
+          "bytes": 28102
+        },
+        {
+          "w": 850,
+          "src": "/images/tools-technical-assistance-850.webp",
+          "bytes": 30262
+        }
+      ]
+    }
+  },
+  "tools-resources-data": {
+    "status": "ok",
+    "width": 850,
+    "height": 602,
+    "group": "programme",
+    "alt": "Hands marking up printed charts and graphs with a pen",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 45%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/tools-resources-data-400.avif",
+          "bytes": 8091
+        },
+        {
+          "w": 800,
+          "src": "/images/tools-resources-data-800.avif",
+          "bytes": 19872
+        },
+        {
+          "w": 850,
+          "src": "/images/tools-resources-data-850.avif",
+          "bytes": 21852
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/tools-resources-data-400.webp",
+          "bytes": 12540
+        },
+        {
+          "w": 800,
+          "src": "/images/tools-resources-data-800.webp",
+          "bytes": 30624
+        },
+        {
+          "w": 850,
+          "src": "/images/tools-resources-data-850.webp",
+          "bytes": 32922
+        }
+      ]
+    }
+  },
+  "tools-convening": {
+    "status": "ok",
+    "width": 850,
+    "height": 602,
+    "group": "programme",
+    "alt": "A speaker with a microphone addresses participants at an FSD Ethiopia event",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 35%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/tools-convening-400.avif",
+          "bytes": 4450
+        },
+        {
+          "w": 800,
+          "src": "/images/tools-convening-800.avif",
+          "bytes": 10447
+        },
+        {
+          "w": 850,
+          "src": "/images/tools-convening-850.avif",
+          "bytes": 11778
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/tools-convening-400.webp",
+          "bytes": 6224
+        },
+        {
+          "w": 800,
+          "src": "/images/tools-convening-800.webp",
+          "bytes": 14122
+        },
+        {
+          "w": 850,
+          "src": "/images/tools-convening-850.webp",
+          "bytes": 15542
+        }
+      ]
+    }
+  },
+  "skyline-panorama": {
+    "status": "ok",
+    "width": 1901,
+    "height": 595,
+    "group": "skyline",
+    "alt": "",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 60%",
+    "decorative": true,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/skyline-panorama-400.avif",
+          "bytes": 5955
+        },
+        {
+          "w": 800,
+          "src": "/images/skyline-panorama-800.avif",
+          "bytes": 20643
+        },
+        {
+          "w": 1200,
+          "src": "/images/skyline-panorama-1200.avif",
+          "bytes": 40369
+        },
+        {
+          "w": 1600,
+          "src": "/images/skyline-panorama-1600.avif",
+          "bytes": 69460
+        },
+        {
+          "w": 1901,
+          "src": "/images/skyline-panorama-1901.avif",
+          "bytes": 104932
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/skyline-panorama-400.webp",
+          "bytes": 9632
+        },
+        {
+          "w": 800,
+          "src": "/images/skyline-panorama-800.webp",
+          "bytes": 36864
+        },
+        {
+          "w": 1200,
+          "src": "/images/skyline-panorama-1200.webp",
+          "bytes": 78772
+        },
+        {
+          "w": 1600,
+          "src": "/images/skyline-panorama-1600.webp",
+          "bytes": 134064
+        },
+        {
+          "w": 1901,
+          "src": "/images/skyline-panorama-1901.webp",
+          "bytes": 193298
+        }
+      ]
+    }
+  },
+  "skyline-about": {
+    "status": "ok",
+    "width": 732,
+    "height": 454,
+    "group": "skyline",
+    "alt": "City skyline with high-rise buildings above the trees",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/skyline-about-400.avif",
+          "bytes": 10374
+        },
+        {
+          "w": 732,
+          "src": "/images/skyline-about-732.avif",
+          "bytes": 29306
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/skyline-about-400.webp",
+          "bytes": 19942
+        },
+        {
+          "w": 732,
+          "src": "/images/skyline-about-732.webp",
+          "bytes": 54936
+        }
+      ]
+    }
+  },
+  "news-gender-integration": {
+    "status": "ok",
+    "width": 2560,
+    "height": 1280,
+    "group": "news",
+    "alt": "Title graphic: Gender Integration as a Market Systems Strategy",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": true,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/news-gender-integration-400.avif",
+          "bytes": 6955
+        },
+        {
+          "w": 800,
+          "src": "/images/news-gender-integration-800.avif",
+          "bytes": 16485
+        },
+        {
+          "w": 1200,
+          "src": "/images/news-gender-integration-1200.avif",
+          "bytes": 25912
+        },
+        {
+          "w": 1600,
+          "src": "/images/news-gender-integration-1600.avif",
+          "bytes": 37219
+        },
+        {
+          "w": 2560,
+          "src": "/images/news-gender-integration-2560.avif",
+          "bytes": 63905
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/news-gender-integration-400.webp",
+          "bytes": 10062
+        },
+        {
+          "w": 800,
+          "src": "/images/news-gender-integration-800.webp",
+          "bytes": 23584
+        },
+        {
+          "w": 1200,
+          "src": "/images/news-gender-integration-1200.webp",
+          "bytes": 38436
+        },
+        {
+          "w": 1600,
+          "src": "/images/news-gender-integration-1600.webp",
+          "bytes": 52542
+        },
+        {
+          "w": 2560,
+          "src": "/images/news-gender-integration-2560.webp",
+          "bytes": 92492
+        }
+      ]
+    }
+  },
+  "news-open-finance": {
+    "status": "ok",
+    "width": 1680,
+    "height": 848,
+    "group": "news",
+    "alt": "Title graphic: Ethiopia's Open Finance Future Is Closer Than It Looks",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": true,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/news-open-finance-400.avif",
+          "bytes": 6670
+        },
+        {
+          "w": 800,
+          "src": "/images/news-open-finance-800.avif",
+          "bytes": 15208
+        },
+        {
+          "w": 1200,
+          "src": "/images/news-open-finance-1200.avif",
+          "bytes": 23620
+        },
+        {
+          "w": 1600,
+          "src": "/images/news-open-finance-1600.avif",
+          "bytes": 32418
+        },
+        {
+          "w": 1680,
+          "src": "/images/news-open-finance-1680.avif",
+          "bytes": 34715
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/news-open-finance-400.webp",
+          "bytes": 9778
+        },
+        {
+          "w": 800,
+          "src": "/images/news-open-finance-800.webp",
+          "bytes": 23156
+        },
+        {
+          "w": 1200,
+          "src": "/images/news-open-finance-1200.webp",
+          "bytes": 37098
+        },
+        {
+          "w": 1600,
+          "src": "/images/news-open-finance-1600.webp",
+          "bytes": 50594
+        },
+        {
+          "w": 1680,
+          "src": "/images/news-open-finance-1680.webp",
+          "bytes": 53824
+        }
+      ]
+    }
+  },
+  "news-india-dpi": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "news",
+    "alt": "Participants at round tables follow a presentation in a meeting room",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/news-india-dpi-400.avif",
+          "bytes": 10855
+        },
+        {
+          "w": 600,
+          "src": "/images/news-india-dpi-600.avif",
+          "bytes": 19942
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/news-india-dpi-400.webp",
+          "bytes": 17440
+        },
+        {
+          "w": 600,
+          "src": "/images/news-india-dpi-600.webp",
+          "bytes": 32508
+        }
+      ]
+    }
+  },
+  "news-digital-east": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "news",
+    "alt": "Visitors and hosts seated together at a banking and digital services centre",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/news-digital-east-400.avif",
+          "bytes": 8574
+        },
+        {
+          "w": 600,
+          "src": "/images/news-digital-east-600.avif",
+          "bytes": 15253
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/news-digital-east-400.webp",
+          "bytes": 12886
+        },
+        {
+          "w": 600,
+          "src": "/images/news-digital-east-600.webp",
+          "bytes": 21602
+        }
+      ]
+    }
+  },
+  "news-insurance-market": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "news",
+    "alt": "Five speakers on stage under the “Growing the market, embracing change” banner at the Insurance Industry Workshop",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/news-insurance-market-400.avif",
+          "bytes": 12729
+        },
+        {
+          "w": 600,
+          "src": "/images/news-insurance-market-600.avif",
+          "bytes": 23946
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/news-insurance-market-400.webp",
+          "bytes": 21238
+        },
+        {
+          "w": 600,
+          "src": "/images/news-insurance-market-600.webp",
+          "bytes": 38722
+        }
+      ]
+    }
+  },
+  "news-women-digital": {
+    "status": "ok",
+    "width": 600,
+    "height": 337,
+    "group": "news",
+    "alt": "Participants at round tables at a session on digital financial solutions for women",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/news-women-digital-400.avif",
+          "bytes": 9313
+        },
+        {
+          "w": 600,
+          "src": "/images/news-women-digital-600.avif",
+          "bytes": 16881
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/news-women-digital-400.webp",
+          "bytes": 14800
+        },
+        {
+          "w": 600,
+          "src": "/images/news-women-digital-600.webp",
+          "bytes": 26266
+        }
+      ]
+    }
+  },
+  "cover-landscape-climate-finance": {
+    "status": "ok",
+    "width": 1920,
+    "height": 1920,
+    "group": "covers",
+    "alt": "Cover of Landscape of Climate Finance in Ethiopia (2026)",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "Landscape of Climate Finance in Ethiopia (2026)",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/Landscape-of-Climate-Finance-in-Ethiopia%20%281%29.pdf"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cover-landscape-climate-finance-400.avif",
+          "bytes": 11654
+        },
+        {
+          "w": 800,
+          "src": "/images/cover-landscape-climate-finance-800.avif",
+          "bytes": 28106
+        },
+        {
+          "w": 1200,
+          "src": "/images/cover-landscape-climate-finance-1200.avif",
+          "bytes": 46287
+        },
+        {
+          "w": 1600,
+          "src": "/images/cover-landscape-climate-finance-1600.avif",
+          "bytes": 65794
+        },
+        {
+          "w": 1920,
+          "src": "/images/cover-landscape-climate-finance-1920.avif",
+          "bytes": 75157
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cover-landscape-climate-finance-400.webp",
+          "bytes": 15872
+        },
+        {
+          "w": 800,
+          "src": "/images/cover-landscape-climate-finance-800.webp",
+          "bytes": 40606
+        },
+        {
+          "w": 1200,
+          "src": "/images/cover-landscape-climate-finance-1200.webp",
+          "bytes": 66872
+        },
+        {
+          "w": 1600,
+          "src": "/images/cover-landscape-climate-finance-1600.webp",
+          "bytes": 92250
+        },
+        {
+          "w": 1920,
+          "src": "/images/cover-landscape-climate-finance-1920.webp",
+          "bytes": 114382
+        }
+      ]
+    }
+  },
+  "cover-green-instruments": {
+    "status": "ok",
+    "width": 1920,
+    "height": 1920,
+    "group": "covers",
+    "alt": "Cover of Feasibility of Green and Sustainable Finance Instruments in Ethiopia",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "Feasibility of Green and Sustainable Finance Instruments in Ethiopia",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/Scoping%20Study%20Report%20-%20Green%20Financial%20Instruments%20in%20Ethiopia-%20ECMA-FSD%20Ethiopia%20%281%29.pdf"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cover-green-instruments-400.avif",
+          "bytes": 10255
+        },
+        {
+          "w": 800,
+          "src": "/images/cover-green-instruments-800.avif",
+          "bytes": 26195
+        },
+        {
+          "w": 1200,
+          "src": "/images/cover-green-instruments-1200.avif",
+          "bytes": 43072
+        },
+        {
+          "w": 1600,
+          "src": "/images/cover-green-instruments-1600.avif",
+          "bytes": 61199
+        },
+        {
+          "w": 1920,
+          "src": "/images/cover-green-instruments-1920.avif",
+          "bytes": 72192
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cover-green-instruments-400.webp",
+          "bytes": 15024
+        },
+        {
+          "w": 800,
+          "src": "/images/cover-green-instruments-800.webp",
+          "bytes": 39120
+        },
+        {
+          "w": 1200,
+          "src": "/images/cover-green-instruments-1200.webp",
+          "bytes": 66704
+        },
+        {
+          "w": 1600,
+          "src": "/images/cover-green-instruments-1600.webp",
+          "bytes": 91604
+        },
+        {
+          "w": 1920,
+          "src": "/images/cover-green-instruments-1920.webp",
+          "bytes": 115950
+        }
+      ]
+    }
+  },
+  "cover-nafir": {
+    "status": "ok",
+    "width": 1920,
+    "height": 1920,
+    "group": "covers",
+    "alt": "Cover of National Agricultural Finance Implementation Roadmap 2025–2030",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "National Agricultural Finance Implementation Roadmap 2025–2030",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/National%20Agricultural%20Finance%20Implementation%20Roadmap%20%282025%3D2030%29_C.pdf"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cover-nafir-400.avif",
+          "bytes": 12819
+        },
+        {
+          "w": 800,
+          "src": "/images/cover-nafir-800.avif",
+          "bytes": 36383
+        },
+        {
+          "w": 1200,
+          "src": "/images/cover-nafir-1200.avif",
+          "bytes": 63876
+        },
+        {
+          "w": 1600,
+          "src": "/images/cover-nafir-1600.avif",
+          "bytes": 89518
+        },
+        {
+          "w": 1920,
+          "src": "/images/cover-nafir-1920.avif",
+          "bytes": 109445
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cover-nafir-400.webp",
+          "bytes": 19480
+        },
+        {
+          "w": 800,
+          "src": "/images/cover-nafir-800.webp",
+          "bytes": 57880
+        },
+        {
+          "w": 1200,
+          "src": "/images/cover-nafir-1200.webp",
+          "bytes": 100550
+        },
+        {
+          "w": 1600,
+          "src": "/images/cover-nafir-1600.webp",
+          "bytes": 142884
+        },
+        {
+          "w": 1920,
+          "src": "/images/cover-nafir-1920.webp",
+          "bytes": 179474
+        }
+      ]
+    }
+  },
+  "cover-unlock-capital-markets": {
+    "status": "ok",
+    "width": 1920,
+    "height": 1920,
+    "group": "covers",
+    "alt": "Cover of Unlock Capital Markets to Advance Women's Economic Participation and Leadership",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "Unlock Capital Markets to Advance Women's Economic Participation and Leadership",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/FSDE_Booklet_952025.pdf"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cover-unlock-capital-markets-400.avif",
+          "bytes": 9082
+        },
+        {
+          "w": 800,
+          "src": "/images/cover-unlock-capital-markets-800.avif",
+          "bytes": 22934
+        },
+        {
+          "w": 1200,
+          "src": "/images/cover-unlock-capital-markets-1200.avif",
+          "bytes": 39849
+        },
+        {
+          "w": 1600,
+          "src": "/images/cover-unlock-capital-markets-1600.avif",
+          "bytes": 52481
+        },
+        {
+          "w": 1920,
+          "src": "/images/cover-unlock-capital-markets-1920.avif",
+          "bytes": 61140
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cover-unlock-capital-markets-400.webp",
+          "bytes": 13410
+        },
+        {
+          "w": 800,
+          "src": "/images/cover-unlock-capital-markets-800.webp",
+          "bytes": 35516
+        },
+        {
+          "w": 1200,
+          "src": "/images/cover-unlock-capital-markets-1200.webp",
+          "bytes": 57056
+        },
+        {
+          "w": 1600,
+          "src": "/images/cover-unlock-capital-markets-1600.webp",
+          "bytes": 79346
+        },
+        {
+          "w": 1920,
+          "src": "/images/cover-unlock-capital-markets-1920.webp",
+          "bytes": 92576
+        }
+      ]
+    }
+  },
+  "cover-unlocking-potentials": {
+    "status": "ok",
+    "width": 1920,
+    "height": 1920,
+    "group": "covers",
+    "alt": "Cover of Unlocking Potentials: financial inclusion and capital markets for women's economic empowerment",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "Unlocking Potentials: financial inclusion and capital markets for women's economic empowerment",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/Unlocking%20potential%20Report_Final_Com.pdf"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cover-unlocking-potentials-400.avif",
+          "bytes": 8539
+        },
+        {
+          "w": 800,
+          "src": "/images/cover-unlocking-potentials-800.avif",
+          "bytes": 22543
+        },
+        {
+          "w": 1200,
+          "src": "/images/cover-unlocking-potentials-1200.avif",
+          "bytes": 37201
+        },
+        {
+          "w": 1600,
+          "src": "/images/cover-unlocking-potentials-1600.avif",
+          "bytes": 51396
+        },
+        {
+          "w": 1920,
+          "src": "/images/cover-unlocking-potentials-1920.avif",
+          "bytes": 60533
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cover-unlocking-potentials-400.webp",
+          "bytes": 12214
+        },
+        {
+          "w": 800,
+          "src": "/images/cover-unlocking-potentials-800.webp",
+          "bytes": 32974
+        },
+        {
+          "w": 1200,
+          "src": "/images/cover-unlocking-potentials-1200.webp",
+          "bytes": 55476
+        },
+        {
+          "w": 1600,
+          "src": "/images/cover-unlocking-potentials-1600.webp",
+          "bytes": 78920
+        },
+        {
+          "w": 1920,
+          "src": "/images/cover-unlocking-potentials-1920.webp",
+          "bytes": 97598
+        }
+      ]
+    }
+  },
+  "cover-cico-agents": {
+    "status": "ok",
+    "width": 1920,
+    "height": 1920,
+    "group": "covers",
+    "alt": "Cover of Cash-In Cash-Out Agent Mapping Strategy",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "Cash-In Cash-Out Agent Mapping Strategy",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/CICO-Agent-Mapping-Strategy_NBE%20%281%29_C.pdf"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cover-cico-agents-400.avif",
+          "bytes": 10166
+        },
+        {
+          "w": 800,
+          "src": "/images/cover-cico-agents-800.avif",
+          "bytes": 25715
+        },
+        {
+          "w": 1200,
+          "src": "/images/cover-cico-agents-1200.avif",
+          "bytes": 42137
+        },
+        {
+          "w": 1600,
+          "src": "/images/cover-cico-agents-1600.avif",
+          "bytes": 60119
+        },
+        {
+          "w": 1920,
+          "src": "/images/cover-cico-agents-1920.avif",
+          "bytes": 72410
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cover-cico-agents-400.webp",
+          "bytes": 15382
+        },
+        {
+          "w": 800,
+          "src": "/images/cover-cico-agents-800.webp",
+          "bytes": 40062
+        },
+        {
+          "w": 1200,
+          "src": "/images/cover-cico-agents-1200.webp",
+          "bytes": 67570
+        },
+        {
+          "w": 1600,
+          "src": "/images/cover-cico-agents-1600.webp",
+          "bytes": 93796
+        },
+        {
+          "w": 1920,
+          "src": "/images/cover-cico-agents-1920.webp",
+          "bytes": 114460
+        }
+      ]
+    }
+  },
+  "cover-mobile-money": {
+    "status": "ok",
+    "width": 1920,
+    "height": 1920,
+    "group": "covers",
+    "alt": "Cover of Mobile Money in Ethiopia",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "Mobile Money in Ethiopia",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/Financial%20Sector%20Deepening%20Ethiopia%20Blog%20_%20Mobile%20Money%20in%20Ethiopia.pdf"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cover-mobile-money-400.avif",
+          "bytes": 8713
+        },
+        {
+          "w": 800,
+          "src": "/images/cover-mobile-money-800.avif",
+          "bytes": 20958
+        },
+        {
+          "w": 1200,
+          "src": "/images/cover-mobile-money-1200.avif",
+          "bytes": 34970
+        },
+        {
+          "w": 1600,
+          "src": "/images/cover-mobile-money-1600.avif",
+          "bytes": 49530
+        },
+        {
+          "w": 1920,
+          "src": "/images/cover-mobile-money-1920.avif",
+          "bytes": 60731
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cover-mobile-money-400.webp",
+          "bytes": 12702
+        },
+        {
+          "w": 800,
+          "src": "/images/cover-mobile-money-800.webp",
+          "bytes": 32448
+        },
+        {
+          "w": 1200,
+          "src": "/images/cover-mobile-money-1200.webp",
+          "bytes": 53720
+        },
+        {
+          "w": 1600,
+          "src": "/images/cover-mobile-money-1600.webp",
+          "bytes": 74322
+        },
+        {
+          "w": 1920,
+          "src": "/images/cover-mobile-money-1920.webp",
+          "bytes": 92022
+        }
+      ]
+    }
+  },
+  "cover-nfis": {
+    "status": "ok",
+    "width": 1920,
+    "height": 1920,
+    "group": "covers",
+    "alt": "Cover of National Financial Inclusion Strategy (NBE)",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "National Financial Inclusion Strategy (NBE)",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/ethiopian-national-financial-Inclusion-strategy.pdf"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cover-nfis-400.avif",
+          "bytes": 14511
+        },
+        {
+          "w": 800,
+          "src": "/images/cover-nfis-800.avif",
+          "bytes": 44635
+        },
+        {
+          "w": 1200,
+          "src": "/images/cover-nfis-1200.avif",
+          "bytes": 77909
+        },
+        {
+          "w": 1600,
+          "src": "/images/cover-nfis-1600.avif",
+          "bytes": 108072
+        },
+        {
+          "w": 1920,
+          "src": "/images/cover-nfis-1920.avif",
+          "bytes": 131504
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cover-nfis-400.webp",
+          "bytes": 22436
+        },
+        {
+          "w": 800,
+          "src": "/images/cover-nfis-800.webp",
+          "bytes": 70444
+        },
+        {
+          "w": 1200,
+          "src": "/images/cover-nfis-1200.webp",
+          "bytes": 119088
+        },
+        {
+          "w": 1600,
+          "src": "/images/cover-nfis-1600.webp",
+          "bytes": 165290
+        },
+        {
+          "w": 1920,
+          "src": "/images/cover-nfis-1920.webp",
+          "bytes": 204110
+        }
+      ]
+    }
+  },
+  "cover-climate-summit-report": {
+    "status": "ok",
+    "width": 1920,
+    "height": 1920,
+    "group": "covers",
+    "alt": "Cover of Climate Finance Summit workshop report",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "Climate Finance Summit workshop report",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/Communications%20and%20Advocacy%20-%20Financial%20Market-%202.pdf"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cover-climate-summit-report-400.avif",
+          "bytes": 11574
+        },
+        {
+          "w": 800,
+          "src": "/images/cover-climate-summit-report-800.avif",
+          "bytes": 33447
+        },
+        {
+          "w": 1200,
+          "src": "/images/cover-climate-summit-report-1200.avif",
+          "bytes": 60547
+        },
+        {
+          "w": 1600,
+          "src": "/images/cover-climate-summit-report-1600.avif",
+          "bytes": 90133
+        },
+        {
+          "w": 1920,
+          "src": "/images/cover-climate-summit-report-1920.avif",
+          "bytes": 110106
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cover-climate-summit-report-400.webp",
+          "bytes": 16722
+        },
+        {
+          "w": 800,
+          "src": "/images/cover-climate-summit-report-800.webp",
+          "bytes": 50260
+        },
+        {
+          "w": 1200,
+          "src": "/images/cover-climate-summit-report-1200.webp",
+          "bytes": 90398
+        },
+        {
+          "w": 1600,
+          "src": "/images/cover-climate-summit-report-1600.webp",
+          "bytes": 130944
+        },
+        {
+          "w": 1920,
+          "src": "/images/cover-climate-summit-report-1920.webp",
+          "bytes": 164342
+        }
+      ]
+    }
+  },
+  "cover-ndps": {
+    "status": "ok",
+    "width": 328,
+    "height": 322,
+    "group": "covers",
+    "alt": "Cover of National Digital Payments Strategy 2021–2024 (NBE)",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "National Digital Payments Strategy 2021–2024 (NBE)",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/Ethiopia_National_Digital_Payment_Strategy_2021-2024.pdf"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 328,
+          "src": "/images/cover-ndps-328.avif",
+          "bytes": 5121
+        }
+      ],
+      "webp": [
+        {
+          "w": 328,
+          "src": "/images/cover-ndps-328.webp",
+          "bytes": 7030
+        }
+      ]
+    }
+  },
+  "cover-job-creation": {
+    "status": "ok",
+    "width": 328,
+    "height": 322,
+    "group": "covers",
+    "alt": "Cover of Plan of Action for Job Creation",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "Plan of Action for Job Creation",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/National-Plan-for-Job-Creation-Brief.pdf"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 328,
+          "src": "/images/cover-job-creation-328.avif",
+          "bytes": 7814
+        }
+      ],
+      "webp": [
+        {
+          "w": 328,
+          "src": "/images/cover-job-creation-328.webp",
+          "bytes": 11328
+        }
+      ]
+    }
+  },
+  "cover-homegrown-reform": {
+    "status": "ok",
+    "width": 328,
+    "height": 322,
+    "group": "covers",
+    "alt": "Cover of A Homegrown Economic Reform Agenda",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "A Homegrown Economic Reform Agenda",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/a_homegrown_economic_reform_agenda-_a_pathway_to_prosperity_-_public_version_-_march_2020-%20%281%29.pdf"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 328,
+          "src": "/images/cover-homegrown-reform-328.avif",
+          "bytes": 14971
+        }
+      ],
+      "webp": [
+        {
+          "w": 328,
+          "src": "/images/cover-homegrown-reform-328.webp",
+          "bytes": 25304
+        }
+      ]
+    }
+  },
+  "cover-ten-year-plan": {
+    "status": "ok",
+    "width": 328,
+    "height": 322,
+    "group": "covers",
+    "alt": "Cover of Ten Years Development Plan",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "Ten Years Development Plan",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/ten_year_plan_popular_version.pdf"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 328,
+          "src": "/images/cover-ten-year-plan-328.avif",
+          "bytes": 8938
+        }
+      ],
+      "webp": [
+        {
+          "w": 328,
+          "src": "/images/cover-ten-year-plan-328.webp",
+          "bytes": 12926
+        }
+      ]
+    }
+  },
+  "cover-ease-of-business": {
+    "status": "ok",
+    "width": 328,
+    "height": 322,
+    "group": "covers",
+    "alt": "Cover of Ethiopia: Improving Ease of Doing Business",
+    "credit": "FSD Ethiopia",
+    "objectPosition": "50% 50%",
+    "decorative": false,
+    "graphicWithText": false,
+    "publication": {
+      "title": "Ethiopia: Improving Ease of Doing Business",
+      "pdf": "https://fsdethiopia.org/wp-content/pdf/Improving_Ease_of_Doing_Business_jull23.pdf"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 328,
+          "src": "/images/cover-ease-of-business-328.avif",
+          "bytes": 7491
+        }
+      ],
+      "webp": [
+        {
+          "w": 328,
+          "src": "/images/cover-ease-of-business-328.webp",
+          "bytes": 10182
+        }
+      ]
+    }
+  },
+  "cohort-zintalem-getahun-pic": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Zintalem Getahun, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Zintalem Getahun",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-zintalem-getahun-pic-400.avif",
+          "bytes": 8633
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-zintalem-getahun-pic-800.avif",
+          "bytes": 25349
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-zintalem-getahun-pic-1200.avif",
+          "bytes": 56358
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-zintalem-getahun-pic-1400.avif",
+          "bytes": 95407
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-zintalem-getahun-pic-400.webp",
+          "bytes": 10122
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-zintalem-getahun-pic-800.webp",
+          "bytes": 31188
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-zintalem-getahun-pic-1200.webp",
+          "bytes": 69546
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-zintalem-getahun-pic-1400.webp",
+          "bytes": 99604
+        }
+      ]
+    }
+  },
+  "cohort-tsige-taddesse-photo": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Tsige Tadesse, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Tsige Tadesse",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-tsige-taddesse-photo-400.avif",
+          "bytes": 6032
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-tsige-taddesse-photo-800.avif",
+          "bytes": 15026
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-tsige-taddesse-photo-1200.avif",
+          "bytes": 25870
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-tsige-taddesse-photo-1400.avif",
+          "bytes": 35417
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-tsige-taddesse-photo-400.webp",
+          "bytes": 7234
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-tsige-taddesse-photo-800.webp",
+          "bytes": 17510
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-tsige-taddesse-photo-1200.webp",
+          "bytes": 29970
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-tsige-taddesse-photo-1400.webp",
+          "bytes": 37862
+        }
+      ]
+    }
+  },
+  "cohort-els-geb": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Elsabet Gebru, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Elsabet Gebru",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-els-geb-400.avif",
+          "bytes": 13320
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-els-geb-800.avif",
+          "bytes": 33738
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-els-geb-1200.avif",
+          "bytes": 54563
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-els-geb-1400.avif",
+          "bytes": 69062
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-els-geb-400.webp",
+          "bytes": 19948
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-els-geb-800.webp",
+          "bytes": 48454
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-els-geb-1200.webp",
+          "bytes": 76118
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-els-geb-1400.webp",
+          "bytes": 90286
+        }
+      ]
+    }
+  },
+  "cohort-lalise-bultuma": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Lalise Bultuma, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Lalise Bultuma",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-lalise-bultuma-400.avif",
+          "bytes": 7254
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-lalise-bultuma-800.avif",
+          "bytes": 16598
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-lalise-bultuma-1200.avif",
+          "bytes": 27186
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-lalise-bultuma-1400.avif",
+          "bytes": 36993
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-lalise-bultuma-400.webp",
+          "bytes": 8568
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-lalise-bultuma-800.webp",
+          "bytes": 19428
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-lalise-bultuma-1200.webp",
+          "bytes": 31990
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-lalise-bultuma-1400.webp",
+          "bytes": 40292
+        }
+      ]
+    }
+  },
+  "cohort-selamawit-hailu-pic": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Selamawit Hailu, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Selamawit Hailu",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-selamawit-hailu-pic-400.avif",
+          "bytes": 10926
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-selamawit-hailu-pic-800.avif",
+          "bytes": 35572
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-selamawit-hailu-pic-1200.avif",
+          "bytes": 74686
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-selamawit-hailu-pic-1400.avif",
+          "bytes": 117851
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-selamawit-hailu-pic-400.webp",
+          "bytes": 14258
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-selamawit-hailu-pic-800.webp",
+          "bytes": 46078
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-selamawit-hailu-pic-1200.webp",
+          "bytes": 90406
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-selamawit-hailu-pic-1400.webp",
+          "bytes": 118012
+        }
+      ]
+    }
+  },
+  "cohort-sewnet-hailemariam-pic": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Sewnet Hailemariam, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Sewnet Hailemariam",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-sewnet-hailemariam-pic-400.avif",
+          "bytes": 7812
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-sewnet-hailemariam-pic-800.avif",
+          "bytes": 20284
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-sewnet-hailemariam-pic-1200.avif",
+          "bytes": 36500
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-sewnet-hailemariam-pic-1400.avif",
+          "bytes": 52087
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-sewnet-hailemariam-pic-400.webp",
+          "bytes": 9168
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-sewnet-hailemariam-pic-800.webp",
+          "bytes": 24230
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-sewnet-hailemariam-pic-1200.webp",
+          "bytes": 42586
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-sewnet-hailemariam-pic-1400.webp",
+          "bytes": 54560
+        }
+      ]
+    }
+  },
+  "cohort-meseret-g-pic": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Meseret G/Selassie, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Meseret G/Selassie",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-meseret-g-pic-400.avif",
+          "bytes": 13397
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-meseret-g-pic-800.avif",
+          "bytes": 43312
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-meseret-g-pic-1200.avif",
+          "bytes": 79367
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-meseret-g-pic-1400.avif",
+          "bytes": 104885
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-meseret-g-pic-400.webp",
+          "bytes": 18758
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-meseret-g-pic-800.webp",
+          "bytes": 63426
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-meseret-g-pic-1200.webp",
+          "bytes": 114380
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-meseret-g-pic-1400.webp",
+          "bytes": 141978
+        }
+      ]
+    }
+  },
+  "cohort-woinshet-photo": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Woinshet Sileshi, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Woinshet Sileshi",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-woinshet-photo-400.avif",
+          "bytes": 11583
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-woinshet-photo-800.avif",
+          "bytes": 31069
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-woinshet-photo-1200.avif",
+          "bytes": 51527
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-woinshet-photo-1400.avif",
+          "bytes": 63797
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-woinshet-photo-400.webp",
+          "bytes": 21726
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-woinshet-photo-800.webp",
+          "bytes": 59890
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-woinshet-photo-1200.webp",
+          "bytes": 93956
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-woinshet-photo-1400.webp",
+          "bytes": 112498
+        }
+      ]
+    }
+  },
+  "cohort-dagmawit-pic": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Dagmawit Abebe, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Dagmawit Abebe",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-dagmawit-pic-400.avif",
+          "bytes": 4419
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-dagmawit-pic-800.avif",
+          "bytes": 9996
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-dagmawit-pic-1200.avif",
+          "bytes": 15684
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-dagmawit-pic-1400.avif",
+          "bytes": 18484
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-dagmawit-pic-400.webp",
+          "bytes": 5050
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-dagmawit-pic-800.webp",
+          "bytes": 12394
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-dagmawit-pic-1200.webp",
+          "bytes": 20418
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-dagmawit-pic-1400.webp",
+          "bytes": 24872
+        }
+      ]
+    }
+  },
+  "cohort-frehiwot-guta-pic": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Frehiwot Guta, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Frehiwot Guta",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-frehiwot-guta-pic-400.avif",
+          "bytes": 10232
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-frehiwot-guta-pic-800.avif",
+          "bytes": 28192
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-frehiwot-guta-pic-1200.avif",
+          "bytes": 49452
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-frehiwot-guta-pic-1400.avif",
+          "bytes": 65451
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-frehiwot-guta-pic-400.webp",
+          "bytes": 13482
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-frehiwot-guta-pic-800.webp",
+          "bytes": 36538
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-frehiwot-guta-pic-1200.webp",
+          "bytes": 60436
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-frehiwot-guta-pic-1400.webp",
+          "bytes": 74236
+        }
+      ]
+    }
+  },
+  "cohort-helina-tilahun-pic": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Helina Tilahun, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Helina Tilahun",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-helina-tilahun-pic-400.avif",
+          "bytes": 8225
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-helina-tilahun-pic-800.avif",
+          "bytes": 20221
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-helina-tilahun-pic-1200.avif",
+          "bytes": 33029
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-helina-tilahun-pic-1400.avif",
+          "bytes": 43331
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-helina-tilahun-pic-400.webp",
+          "bytes": 11410
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-helina-tilahun-pic-800.webp",
+          "bytes": 26228
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-helina-tilahun-pic-1200.webp",
+          "bytes": 42800
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-helina-tilahun-pic-1400.webp",
+          "bytes": 53354
+        }
+      ]
+    }
+  },
+  "cohort-rahel-adefresse": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Rahel Adefris, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Rahel Adefris",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-rahel-adefresse-400.avif",
+          "bytes": 6558
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-rahel-adefresse-800.avif",
+          "bytes": 16497
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-rahel-adefresse-1200.avif",
+          "bytes": 28725
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-rahel-adefresse-1400.avif",
+          "bytes": 41403
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-rahel-adefresse-400.webp",
+          "bytes": 8026
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-rahel-adefresse-800.webp",
+          "bytes": 19326
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-rahel-adefresse-1200.webp",
+          "bytes": 33592
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-rahel-adefresse-1400.webp",
+          "bytes": 43310
+        }
+      ]
+    }
+  },
+  "cohort-hiwot-ayalew": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Hiwot Ayalew, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Hiwot Ayalew",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-hiwot-ayalew-400.avif",
+          "bytes": 9541
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-hiwot-ayalew-800.avif",
+          "bytes": 23424
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-hiwot-ayalew-1200.avif",
+          "bytes": 39244
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-hiwot-ayalew-1400.avif",
+          "bytes": 52643
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-hiwot-ayalew-400.webp",
+          "bytes": 12056
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-hiwot-ayalew-800.webp",
+          "bytes": 30190
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-hiwot-ayalew-1200.webp",
+          "bytes": 49614
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-hiwot-ayalew-1400.webp",
+          "bytes": 61294
+        }
+      ]
+    }
+  },
+  "cohort-tsemere-": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Tsemre Mengesha, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Tsemre Mengesha",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-tsemere--400.avif",
+          "bytes": 12334
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-tsemere--800.avif",
+          "bytes": 31316
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-tsemere--1200.avif",
+          "bytes": 50964
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-tsemere--1400.avif",
+          "bytes": 65577
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-tsemere--400.webp",
+          "bytes": 15724
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-tsemere--800.webp",
+          "bytes": 36744
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-tsemere--1200.webp",
+          "bytes": 60982
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-tsemere--1400.webp",
+          "bytes": 75988
+        }
+      ]
+    }
+  },
+  "cohort-frehiwot-alemayehu2": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Frehiwot Alemayehu, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Frehiwot Alemayehu",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-frehiwot-alemayehu2-400.avif",
+          "bytes": 18969
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-frehiwot-alemayehu2-800.avif",
+          "bytes": 47520
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-frehiwot-alemayehu2-1200.avif",
+          "bytes": 70599
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-frehiwot-alemayehu2-1400.avif",
+          "bytes": 86474
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-frehiwot-alemayehu2-400.webp",
+          "bytes": 33128
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-frehiwot-alemayehu2-800.webp",
+          "bytes": 87956
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-frehiwot-alemayehu2-1200.webp",
+          "bytes": 138906
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-frehiwot-alemayehu2-1400.webp",
+          "bytes": 162356
+        }
+      ]
+    }
+  },
+  "cohort-kalkidan-fikadu": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Kalkidan Fikadu, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Kalkidan Fikadu",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-kalkidan-fikadu-400.avif",
+          "bytes": 8373
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-kalkidan-fikadu-800.avif",
+          "bytes": 24860
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-kalkidan-fikadu-1200.avif",
+          "bytes": 52499
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-kalkidan-fikadu-1400.avif",
+          "bytes": 86709
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-kalkidan-fikadu-400.webp",
+          "bytes": 10474
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-kalkidan-fikadu-800.webp",
+          "bytes": 31794
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-kalkidan-fikadu-1200.webp",
+          "bytes": 70392
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-kalkidan-fikadu-1400.webp",
+          "bytes": 98822
+        }
+      ]
+    }
+  },
+  "cohort-fitsum-yasabu": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Fitsum Yasabu, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Fitsum Yasabu",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-fitsum-yasabu-400.avif",
+          "bytes": 6742
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-fitsum-yasabu-800.avif",
+          "bytes": 14318
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-fitsum-yasabu-1200.avif",
+          "bytes": 22961
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-fitsum-yasabu-1400.avif",
+          "bytes": 32836
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-fitsum-yasabu-400.webp",
+          "bytes": 7480
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-fitsum-yasabu-800.webp",
+          "bytes": 17564
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-fitsum-yasabu-1200.webp",
+          "bytes": 30102
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-fitsum-yasabu-1400.webp",
+          "bytes": 38382
+        }
+      ]
+    }
+  },
+  "cohort-frehiwot-girma": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Ferehiwot Girma, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Ferehiwot Girma",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-frehiwot-girma-400.avif",
+          "bytes": 7801
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-frehiwot-girma-800.avif",
+          "bytes": 19941
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-frehiwot-girma-1200.avif",
+          "bytes": 33435
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-frehiwot-girma-1400.avif",
+          "bytes": 43687
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-frehiwot-girma-400.webp",
+          "bytes": 8858
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-frehiwot-girma-800.webp",
+          "bytes": 22374
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-frehiwot-girma-1200.webp",
+          "bytes": 38346
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-frehiwot-girma-1400.webp",
+          "bytes": 47574
+        }
+      ]
+    }
+  },
+  "cohort-lidya": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Lidia Samuel, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Lidia Samuel",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-lidya-400.avif",
+          "bytes": 11023
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-lidya-800.avif",
+          "bytes": 26558
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-lidya-1200.avif",
+          "bytes": 43066
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-lidya-1400.avif",
+          "bytes": 56136
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-lidya-400.webp",
+          "bytes": 17436
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-lidya-800.webp",
+          "bytes": 39072
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-lidya-1200.webp",
+          "bytes": 64040
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-lidya-1400.webp",
+          "bytes": 78482
+        }
+      ]
+    }
+  },
+  "cohort-meseret": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Meseret Tesfaye, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Meseret Tesfaye",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-meseret-400.avif",
+          "bytes": 7794
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-meseret-800.avif",
+          "bytes": 20478
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-meseret-1200.avif",
+          "bytes": 33286
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-meseret-1400.avif",
+          "bytes": 43201
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-meseret-400.webp",
+          "bytes": 9304
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-meseret-800.webp",
+          "bytes": 23892
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-meseret-1200.webp",
+          "bytes": 40670
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-meseret-1400.webp",
+          "bytes": 50984
+        }
+      ]
+    }
+  },
+  "cohort-rekik-girma": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Rekik Girma, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Rekik Girma",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-rekik-girma-400.avif",
+          "bytes": 13047
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-rekik-girma-800.avif",
+          "bytes": 38896
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-rekik-girma-1200.avif",
+          "bytes": 73031
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-rekik-girma-1400.avif",
+          "bytes": 105648
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-rekik-girma-400.webp",
+          "bytes": 17968
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-rekik-girma-800.webp",
+          "bytes": 56156
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-rekik-girma-1200.webp",
+          "bytes": 101558
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-rekik-girma-1400.webp",
+          "bytes": 125014
+        }
+      ]
+    }
+  },
+  "cohort-meti12": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Meti Busha, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Meti Busha",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-meti12-400.avif",
+          "bytes": 9792
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-meti12-800.avif",
+          "bytes": 29047
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-meti12-1200.avif",
+          "bytes": 47757
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-meti12-1400.avif",
+          "bytes": 60719
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-meti12-400.webp",
+          "bytes": 13650
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-meti12-800.webp",
+          "bytes": 38484
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-meti12-1200.webp",
+          "bytes": 62108
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-meti12-1400.webp",
+          "bytes": 75364
+        }
+      ]
+    }
+  },
+  "cohort-tigest-geremw": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Tigest Geremew, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Tigest Geremew",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-tigest-geremw-400.avif",
+          "bytes": 6161
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-tigest-geremw-800.avif",
+          "bytes": 13392
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-tigest-geremw-1200.avif",
+          "bytes": 21412
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-tigest-geremw-1400.avif",
+          "bytes": 27382
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-tigest-geremw-400.webp",
+          "bytes": 6766
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-tigest-geremw-800.webp",
+          "bytes": 16224
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-tigest-geremw-1200.webp",
+          "bytes": 27164
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-tigest-geremw-1400.webp",
+          "bytes": 34020
+        }
+      ]
+    }
+  },
+  "cohort-selamawit-m-coh3": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Selamawit Menkir, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Selamawit Menkir",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-selamawit-m-coh3-400.avif",
+          "bytes": 6490
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-selamawit-m-coh3-800.avif",
+          "bytes": 14979
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-selamawit-m-coh3-1200.avif",
+          "bytes": 24211
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-selamawit-m-coh3-1400.avif",
+          "bytes": 31978
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-selamawit-m-coh3-400.webp",
+          "bytes": 7176
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-selamawit-m-coh3-800.webp",
+          "bytes": 17094
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-selamawit-m-coh3-1200.webp",
+          "bytes": 28830
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-selamawit-m-coh3-1400.webp",
+          "bytes": 36626
+        }
+      ]
+    }
+  },
+  "cohort-flagot-co3": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Filagot Tesfaye, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Filagot Tesfaye",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-flagot-co3-400.avif",
+          "bytes": 9266
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-flagot-co3-800.avif",
+          "bytes": 21679
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-flagot-co3-1200.avif",
+          "bytes": 34001
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-flagot-co3-1400.avif",
+          "bytes": 43981
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-flagot-co3-400.webp",
+          "bytes": 10616
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-flagot-co3-800.webp",
+          "bytes": 25188
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-flagot-co3-1200.webp",
+          "bytes": 42656
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-flagot-co3-1400.webp",
+          "bytes": 52478
+        }
+      ]
+    }
+  },
+  "cohort-lishan-geb-coh": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Lishan Gebremedhin, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Lishan Gebremedhin",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-lishan-geb-coh-400.avif",
+          "bytes": 6266
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-lishan-geb-coh-800.avif",
+          "bytes": 15327
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-lishan-geb-coh-1200.avif",
+          "bytes": 25564
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-lishan-geb-coh-1400.avif",
+          "bytes": 32726
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-lishan-geb-coh-400.webp",
+          "bytes": 6770
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-lishan-geb-coh-800.webp",
+          "bytes": 16730
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-lishan-geb-coh-1200.webp",
+          "bytes": 28938
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-lishan-geb-coh-1400.webp",
+          "bytes": 36726
+        }
+      ]
+    }
+  },
+  "cohort-merine-derbe": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Meron Derbie, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Meron Derbie",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-merine-derbe-400.avif",
+          "bytes": 14288
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-merine-derbe-800.avif",
+          "bytes": 37265
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-merine-derbe-1200.avif",
+          "bytes": 61936
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-merine-derbe-1400.avif",
+          "bytes": 79389
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-merine-derbe-400.webp",
+          "bytes": 20344
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-merine-derbe-800.webp",
+          "bytes": 48816
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-merine-derbe-1200.webp",
+          "bytes": 77382
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-merine-derbe-1400.webp",
+          "bytes": 93156
+        }
+      ]
+    }
+  },
+  "cohort-tewedaj-coh": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Tewedaj Gezahegn, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Tewedaj Gezahegn",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-tewedaj-coh-400.avif",
+          "bytes": 8584
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-tewedaj-coh-800.avif",
+          "bytes": 22364
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-tewedaj-coh-1200.avif",
+          "bytes": 36957
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-tewedaj-coh-1400.avif",
+          "bytes": 49561
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-tewedaj-coh-400.webp",
+          "bytes": 10274
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-tewedaj-coh-800.webp",
+          "bytes": 26110
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-tewedaj-coh-1200.webp",
+          "bytes": 43820
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-tewedaj-coh-1400.webp",
+          "bytes": 55046
+        }
+      ]
+    }
+  },
+  "cohort-meskerem-coh": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Meskerem Melesse, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Meskerem Melesse",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-meskerem-coh-400.avif",
+          "bytes": 5844
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-meskerem-coh-800.avif",
+          "bytes": 15408
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-meskerem-coh-1200.avif",
+          "bytes": 28037
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-meskerem-coh-1400.avif",
+          "bytes": 40056
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-meskerem-coh-400.webp",
+          "bytes": 7122
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-meskerem-coh-800.webp",
+          "bytes": 20094
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-meskerem-coh-1200.webp",
+          "bytes": 36970
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-meskerem-coh-1400.webp",
+          "bytes": 49638
+        }
+      ]
+    }
+  },
+  "cohort-brukt-coh": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Brukt Kebede, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Brukt Kebede",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-brukt-coh-400.avif",
+          "bytes": 7291
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-brukt-coh-800.avif",
+          "bytes": 18283
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-brukt-coh-1200.avif",
+          "bytes": 31624
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-brukt-coh-1400.avif",
+          "bytes": 41777
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-brukt-coh-400.webp",
+          "bytes": 8984
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-brukt-coh-800.webp",
+          "bytes": 21476
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-brukt-coh-1200.webp",
+          "bytes": 35962
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-brukt-coh-1400.webp",
+          "bytes": 46242
+        }
+      ]
+    }
+  },
+  "cohort-gebreegziyabher": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Tsedale Gebreegziabher, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Tsedale Gebreegziabher",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-gebreegziyabher-400.avif",
+          "bytes": 7095
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-gebreegziyabher-800.avif",
+          "bytes": 18499
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-gebreegziyabher-1200.avif",
+          "bytes": 30693
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-gebreegziyabher-1400.avif",
+          "bytes": 41451
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-gebreegziyabher-400.webp",
+          "bytes": 8664
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-gebreegziyabher-800.webp",
+          "bytes": 21324
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-gebreegziyabher-1200.webp",
+          "bytes": 36070
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-gebreegziyabher-1400.webp",
+          "bytes": 45464
+        }
+      ]
+    }
+  },
+  "cohort-helina12": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Helina Asaminew, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Helina Asaminew",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-helina12-400.avif",
+          "bytes": 7284
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-helina12-800.avif",
+          "bytes": 20951
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-helina12-1200.avif",
+          "bytes": 40255
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-helina12-1400.avif",
+          "bytes": 58737
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-helina12-400.webp",
+          "bytes": 8752
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-helina12-800.webp",
+          "bytes": 26078
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-helina12-1200.webp",
+          "bytes": 48922
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-helina12-1400.webp",
+          "bytes": 62458
+        }
+      ]
+    }
+  },
+  "cohort-hiwot-kifle": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Hewate Kefelegn, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Hewate Kefelegn",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-hiwot-kifle-400.avif",
+          "bytes": 15273
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-hiwot-kifle-800.avif",
+          "bytes": 37960
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-hiwot-kifle-1200.avif",
+          "bytes": 58172
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-hiwot-kifle-1400.avif",
+          "bytes": 73947
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-hiwot-kifle-400.webp",
+          "bytes": 20870
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-hiwot-kifle-800.webp",
+          "bytes": 49472
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-hiwot-kifle-1200.webp",
+          "bytes": 81414
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-hiwot-kifle-1400.webp",
+          "bytes": 96952
+        }
+      ]
+    }
+  },
+  "cohort-rahel-ali": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Rahel Ali, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Rahel Ali",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-rahel-ali-400.avif",
+          "bytes": 17388
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-rahel-ali-800.avif",
+          "bytes": 60840
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-rahel-ali-1200.avif",
+          "bytes": 99925
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-rahel-ali-1400.avif",
+          "bytes": 120823
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-rahel-ali-400.webp",
+          "bytes": 33382
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-rahel-ali-800.webp",
+          "bytes": 112918
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-rahel-ali-1200.webp",
+          "bytes": 188676
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-rahel-ali-1400.webp",
+          "bytes": 217650
+        }
+      ]
+    }
+  },
+  "cohort-selam-goshu": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Selam Goshu, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Selam Goshu",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-selam-goshu-400.avif",
+          "bytes": 6716
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-selam-goshu-800.avif",
+          "bytes": 17734
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-selam-goshu-1200.avif",
+          "bytes": 30414
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-selam-goshu-1400.avif",
+          "bytes": 40515
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-selam-goshu-400.webp",
+          "bytes": 8010
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-selam-goshu-800.webp",
+          "bytes": 20536
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-selam-goshu-1200.webp",
+          "bytes": 34992
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-selam-goshu-1400.webp",
+          "bytes": 45024
+        }
+      ]
+    }
+  },
+  "cohort-fitsumselam": {
+    "status": "ok",
+    "width": 1400,
+    "height": 2100,
+    "group": "cohort",
+    "alt": "Portrait of Fitsumselam Desalegn, Board Ready Program cohort member",
+    "credit": "Photo: FSD Ethiopia",
+    "objectPosition": "50% 22%",
+    "decorative": false,
+    "graphicWithText": false,
+    "person": {
+      "name": "Fitsumselam Desalegn",
+      "role": "Board Ready Program cohort member",
+      "team": "Cohort"
+    },
+    "variants": {
+      "avif": [
+        {
+          "w": 400,
+          "src": "/images/cohort-fitsumselam-400.avif",
+          "bytes": 7954
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-fitsumselam-800.avif",
+          "bytes": 18104
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-fitsumselam-1200.avif",
+          "bytes": 30148
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-fitsumselam-1400.avif",
+          "bytes": 39928
+        }
+      ],
+      "webp": [
+        {
+          "w": 400,
+          "src": "/images/cohort-fitsumselam-400.webp",
+          "bytes": 10324
+        },
+        {
+          "w": 800,
+          "src": "/images/cohort-fitsumselam-800.webp",
+          "bytes": 23838
+        },
+        {
+          "w": 1200,
+          "src": "/images/cohort-fitsumselam-1200.webp",
+          "bytes": 39348
+        },
+        {
+          "w": 1400,
+          "src": "/images/cohort-fitsumselam-1400.webp",
+          "bytes": 48790
+        }
+      ]
+    }
+  }
+}

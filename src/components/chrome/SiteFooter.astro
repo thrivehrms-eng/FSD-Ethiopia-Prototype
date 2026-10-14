@@ -1,0 +1,196 @@
+---
+// 4.15 Footer: teal-900. Top row with the reversed logo, tagline and Contact;
+// link columns; social links; funder, incubator and network logos in white
+// monochrome; the regional coordination strip; the legal row.
+import { MapPin, Mail, Phone, Clock } from '@lucide/astro';
+import Img from '../ui/Img.astro';
+import site from '../../data/site.json';
+import { hasImage } from '../../lib/images';
+import { t, langOf, localePath, type Lang } from '../../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const p = (path: string) => localePath(lang, path);
+const columns = [
+  {
+    key: 'footer.colWho',
+    links: [
+      ['footer.aboutUs', p('/about/')],
+      ['footer.team', p('/about/team/')],
+      ['footer.board', p('/about/team/#board')],
+      ['footer.network', p('/about/#network')],
+    ],
+  },
+  {
+    key: 'footer.colWork',
+    links: [
+      ['footer.fi', p('/our-work/financial-inclusion/')],
+      ['footer.ac', p('/our-work/access-to-capital/')],
+      ['footer.cf', p('/our-work/climate-finance/')],
+      ['footer.boardReadyWomen', p('/stories/board-ready-women/')],
+    ],
+  },
+  {
+    key: 'footer.colInsights',
+    links: [
+      ['footer.resources', p('/resources/')],
+      ['footer.data', p('/data/')],
+      ['footer.newsletters', p('/resources/#newsletters')],
+    ],
+  },
+  {
+    key: 'footer.colNews',
+    links: [
+      ['footer.news', p('/news/')],
+      ['footer.blogs', p('/news/?type=blog')],
+      ['footer.press', p('/news/?type=press')],
+      ['footer.events', p('/news/?type=event')],
+    ],
+  },
+  {
+    key: 'footer.colOpps',
+    links: [
+      ['footer.careers', p('/opportunities/#careers')],
+      ['footer.procurement', p('/opportunities/#procurement')],
+    ],
+  },
+];
+const partners = [
+  // mono: shown white via a CSS filter. The UK International Development PNG has no
+  // transparency and the two 303×205 "color2022" files are logo tiles, so those keep their
+  // colours on a white chip rather than turning into a white box (CLAUDE.md 4.15).
+  // tile: the logo sits in a band across a mostly empty tile, so the chip crops to that band.
+  { group: 'footer.fundedBy', items: [{ name: 'UK International Development', image: 'logo-uk-intl-dev', mono: false }, { name: 'Gates Foundation', image: 'logo-gates', mono: false, tile: true }] },
+  { group: 'footer.incubatedBy', items: [{ name: 'FSD Africa', image: 'logo-fsd-africa', mono: false, tile: true }] },
+  { group: 'footer.partOf', items: [{ name: 'FSD Network', image: 'logo-fsd-network', mono: true }] },
+];
+const heading = 't-label text-[0.8125rem] text-yellow-400';
+const link = 'text-[0.9375rem] text-white no-underline hover:text-yellow-400 hover:underline';
+---
+
+<footer class="on-dark bg-teal-900 text-white">
+  <div class="container-site">
+    <div class="flex flex-col gap-6 border-b border-white/15 py-10 sm:flex-row sm:items-center sm:justify-between">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
+        <img src="/brand/fsd-logo-reversed.svg" alt="FSD Ethiopia" width="85" height="60" loading="lazy" class="h-15 w-auto" />
+        <p class="max-w-md font-display text-[1.375rem] font-bold uppercase leading-tight tracking-[0.02em]" lang={langOf(lang, 'closing.tagline')}>
+          {t(lang, 'closing.tagline')}
+        </p>
+      </div>
+      <a href={p('/contact/')} class="btn btn-on-dark self-start sm:self-auto" lang={langOf(lang, 'footer.contactCta')}>{t(lang, 'footer.contactCta')}</a>
+    </div>
+
+    <nav aria-label={t(lang, 'a11y.footerNav')} class="grid grid-cols-2 gap-x-6 gap-y-10 py-12 sm:grid-cols-3 lg:grid-cols-7">
+      {
+        columns.map((c) => (
+          <div>
+            <h2 class={heading} lang={langOf(lang, c.key)}>{t(lang, c.key)}</h2>
+            <ul class="mt-4 space-y-2.5">
+              {c.links.map(([k, href]) => (
+                <li>
+                  <a href={href} class={link} lang={langOf(lang, k)}>{t(lang, k)}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+      <div class="col-span-2 sm:col-span-3 lg:col-span-2">
+        <h2 class={heading} lang={langOf(lang, 'footer.colContact')}>{t(lang, 'footer.colContact')}</h2>
+        <address class="mt-4 space-y-2.5 text-[0.9375rem] not-italic" lang="en">
+          <p class="flex gap-2.5"><Mail size={16} class="mt-1.5 shrink-0 text-yellow-400" aria-hidden="true" /><a href={`mailto:${site.email}`} class={link}>{site.email}</a></p>
+          <p class="flex gap-2.5"><Phone size={16} class="mt-1.5 shrink-0 text-yellow-400" aria-hidden="true" /><a href={`tel:${site.phoneHref}`} class={link}>{site.phone}</a></p>
+          <p class="flex gap-2.5 text-on-dark-muted"><Clock size={16} class="mt-1.5 shrink-0 text-yellow-400" aria-hidden="true" />{t(lang, 'footer.hours')}</p>
+          <p class="flex gap-2.5 text-on-dark-muted"><MapPin size={16} class="mt-1.5 shrink-0 text-yellow-400" aria-hidden="true" />{t(lang, 'footer.address')}</p>
+        </address>
+      </div>
+    </nav>
+
+    <div class="flex flex-col gap-8 border-t border-white/15 py-10 lg:flex-row lg:items-start lg:justify-between">
+      <div>
+        <h2 class={heading} lang={langOf(lang, 'footer.followTitle')}>{t(lang, 'footer.followTitle')}</h2>
+        <ul class="mt-4 flex flex-wrap gap-2">
+          {
+            site.social.map((s) => (
+              <li>
+                <a href={s.url} class="t-wide inline-flex min-h-11 items-center rounded-full border border-white/40 px-4 text-[0.75rem] text-white no-underline hover:border-yellow-400 hover:text-yellow-400" lang="en">
+                  {s.name}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div>
+        <h2 class={heading} lang={langOf(lang, 'footer.partnersTitle')}>{t(lang, 'footer.partnersTitle')}</h2>
+        <ul class="mt-4 flex flex-wrap items-center gap-x-10 gap-y-6">
+          {
+            partners.map((g) => (
+              <li class="flex flex-col gap-2">
+                <span class="text-[0.75rem] text-on-dark-muted" lang={langOf(lang, g.group)}>{t(lang, g.group)}</span>
+                <span class="flex flex-wrap items-center gap-6">
+                  {g.items.map((item) =>
+                    hasImage(item.image) && item.tile ? (
+                      <span class="block h-12 w-[150px] overflow-hidden rounded-sm bg-white">
+                        <Img id={item.image} sizes="150px" maxWidth={150} aspect={150 / 48} alt={item.name} class="h-full w-full" />
+                      </span>
+                    ) : hasImage(item.image) ? (
+                      <span class:list={['block h-12 w-auto max-w-[150px]', item.mono ? 'partner-logo' : 'rounded-sm bg-white p-1']}>
+                        <Img id={item.image} sizes="150px" maxWidth={150} alt={item.name} fit="logo" class="h-full w-auto" />
+                      </span>
+                    ) : (
+                      <span class="t-wide text-[0.8125rem] text-white" lang="en">{item.name}</span>
+                    ),
+                  )}
+                </span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+
+    <section class="rounded-md bg-teal-950 px-5 py-6 sm:px-8" aria-labelledby="footer-regional">
+      <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-10">
+        <div class="shrink-0">
+          <h2 id="footer-regional" class={heading} lang={langOf(lang, 'footer.regionalTitle')}>{t(lang, 'footer.regionalTitle')}</h2>
+          <p class="mt-1 text-[0.8125rem] text-on-dark-muted" lang="en">{t(lang, 'footer.regionalIntro')}</p>
+        </div>
+        <ul class="grid flex-1 grid-cols-2 gap-x-4 gap-y-3 sm:grid-cols-4 lg:grid-cols-7" lang="en">
+          {
+            site.regions.map((r) => (
+              <li class="flex items-center gap-2 text-[0.875rem] font-medium">
+                <MapPin size={18} class="shrink-0 text-yellow-400" aria-hidden="true" />
+                {r}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </section>
+
+    <div class="flex flex-col gap-3 py-8 text-[0.8125rem] text-on-dark-muted sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
+      <ul class="flex flex-wrap items-center gap-x-5 gap-y-2" aria-label={t(lang, 'footer.legalLabel')}>
+        <li>{t(lang, 'footer.copyright', { year: new Date().getFullYear() })}</li>
+        <li><a href={p('/privacy/')} class="text-white hover:text-yellow-400" lang={langOf(lang, 'footer.privacy')}>{t(lang, 'footer.privacy')}</a></li>
+        <li><a href={p('/accessibility/')} class="text-white hover:text-yellow-400" lang={langOf(lang, 'footer.accessibility')}>{t(lang, 'footer.accessibility')}</a></li>
+        <li>
+          <button type="button" data-open-cookie-prefs class="cursor-pointer text-white underline underline-offset-[0.2em] hover:text-yellow-400" lang={langOf(lang, 'footer.cookies')}>
+            {t(lang, 'footer.cookies')}
+          </button>
+        </li>
+      </ul>
+      <p lang="en">{t(lang, 'footer.prototype')}</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  /* White monochrome partner logos (CLAUDE.md 4.15). */
+  .partner-logo :global(img) {
+    filter: brightness(0) invert(1);
+  }
+</style>

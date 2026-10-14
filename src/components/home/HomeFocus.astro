@@ -1,0 +1,53 @@
+---
+// 4.7 Where we focus: six 4:3 photo tiles, 3×2 with 2px gaps; a scroll-snap row on mobile.
+import SectionTitle from '../ui/SectionTitle.astro';
+import ImageTile from '../ui/ImageTile.astro';
+import { t, langOf, localePath, type Lang } from '../../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const tiles = [
+  { id: 'fi', image: 'programme-fin01', href: '/our-work/financial-inclusion/', lines: 3 },
+  { id: 'ac', image: 'programme-acctocap01', href: '/our-work/access-to-capital/', lines: 3 },
+  { id: 'cf', image: 'programme-climate-fina01', href: '/our-work/climate-finance/', lines: 3 },
+  { id: 'women', image: 'programme-f-inc-01', href: '/stories/board-ready-women/', lines: 2 },
+  { id: 'insurance', image: 'event-bimalab-2024-02', href: '/resources/?theme=insurance', lines: 2 },
+  { id: 'research', image: 'tools-resources-data', href: '/data/', lines: 2 },
+];
+---
+
+<section id="focus" class="section bg-white" aria-labelledby="focus-title">
+  <div class="container-site">
+    <SectionTitle lang={lang} k="home.focus.title" id="focus-title" />
+  </div>
+  <ul class="focus-grid snap-row mt-10 px-4 sm:px-6 md:grid md:grid-cols-2 md:gap-0.5 md:overflow-visible md:px-6 lg:mx-auto lg:max-w-[80rem] lg:grid-cols-3" role="list">
+    {
+      tiles.map((tile) => (
+        <li class="w-[80vw] max-w-[30rem] md:w-auto md:max-w-none" data-reveal>
+          <ImageTile
+            id={tile.image}
+            href={localePath(lang, tile.href)}
+            title={t(lang, `home.focus.${tile.id}.title`)}
+            titleLang={langOf(lang, `home.focus.${tile.id}.title`)}
+            lines={Array.from({ length: tile.lines }, (_, i) => t(lang, `home.focus.${tile.id}.lines.${i}`))}
+            linesLang="en"
+            sizes="(min-width: 1024px) 410px, (min-width: 768px) 50vw, 80vw"
+            maxWidth={520}
+          />
+        </li>
+      ))
+    }
+  </ul>
+</section>
+
+<style>
+  @media (max-width: 47.99rem) {
+    .focus-grid {
+      gap: 2px;
+      padding-bottom: 0.5rem;
+    }
+  }
+</style>

@@ -1,0 +1,399 @@
+{
+  "ranAt": "2026-10-13T21:47:07.739Z",
+  "ok": [
+    {
+      "id": "logo-fsd-network",
+      "bytes": 38722
+    },
+    {
+      "id": "logo-official-png",
+      "bytes": 25205
+    },
+    {
+      "id": "logo-gates",
+      "bytes": 45262
+    },
+    {
+      "id": "logo-uk-intl-dev",
+      "bytes": 27231
+    },
+    {
+      "id": "logo-fsd-africa",
+      "bytes": 6496
+    },
+    {
+      "id": "logo-on-teal",
+      "bytes": 16490
+    },
+    {
+      "id": "app-icon",
+      "bytes": 39229
+    },
+    {
+      "id": "staff-hikmet-abdella",
+      "bytes": 125682
+    },
+    {
+      "id": "staff-abel-tadelle",
+      "bytes": 120896
+    },
+    {
+      "id": "staff-gosaye-warsa",
+      "bytes": 95168
+    },
+    {
+      "id": "staff-barnabas-getu",
+      "bytes": 146888
+    },
+    {
+      "id": "staff-melaku-kebede",
+      "bytes": 183071
+    },
+    {
+      "id": "staff-sinidu-fikadu",
+      "bytes": 132892
+    },
+    {
+      "id": "staff-bezawit-eshetu",
+      "bytes": 183301
+    },
+    {
+      "id": "staff-selamsew-tesfaye",
+      "bytes": 169732
+    },
+    {
+      "id": "staff-nurhassen-mensur",
+      "bytes": 191689
+    },
+    {
+      "id": "staff-hanna-leykun",
+      "bytes": 134588
+    },
+    {
+      "id": "staff-dawit-alem",
+      "bytes": 161650
+    },
+    {
+      "id": "staff-afomia-kassa",
+      "bytes": 138252
+    },
+    {
+      "id": "staff-hanna-hailu",
+      "bytes": 270673
+    },
+    {
+      "id": "staff-berhanu-alene",
+      "bytes": 2385922
+    },
+    {
+      "id": "staff-samson-berhane",
+      "bytes": 136947
+    },
+    {
+      "id": "staff-hmariam-misganaw",
+      "bytes": 187640
+    },
+    {
+      "id": "staff-eden-afework",
+      "bytes": 242185
+    },
+    {
+      "id": "staff-meron-dereje",
+      "bytes": 123248
+    },
+    {
+      "id": "staff-rahel-taddese",
+      "bytes": 301351
+    },
+    {
+      "id": "staff-ruth-zemene",
+      "bytes": 240202
+    },
+    {
+      "id": "staff-yosef-kefyalew",
+      "bytes": 2872837
+    },
+    {
+      "id": "staff-shalom-alemayehu",
+      "bytes": 86027
+    },
+    {
+      "id": "staff-tazezew-abrha",
+      "bytes": 4036697
+    },
+    {
+      "id": "staff-agare-kassahun",
+      "bytes": 141044
+    },
+    {
+      "id": "regional-tadesse-hailu",
+      "bytes": 120942
+    },
+    {
+      "id": "staff-abebayehu-milkias",
+      "bytes": 400036
+    },
+    {
+      "id": "regional-okello-oluch",
+      "bytes": 390022
+    },
+    {
+      "id": "regional-mubarak-ahmed",
+      "bytes": 133137
+    },
+    {
+      "id": "regional-ahmed-mohammed",
+      "bytes": 114444
+    },
+    {
+      "id": "regional-aklilu-tukela",
+      "bytes": 183954
+    },
+    {
+      "id": "regional-abinet-belay",
+      "bytes": 370840
+    },
+    {
+      "id": "regional-fekadu-mekonnen",
+      "bytes": 318769
+    },
+    {
+      "id": "board-admassu-tadesse",
+      "bytes": 135953
+    },
+    {
+      "id": "board-maleda-bisrat",
+      "bytes": 142833
+    },
+    {
+      "id": "cohort-mehret",
+      "bytes": 175815
+    },
+    {
+      "id": "cohort-hiwot-yohannes",
+      "bytes": 130805
+    },
+    {
+      "id": "cohort-selamawit-bekele",
+      "bytes": 164451
+    },
+    {
+      "id": "board-berhane-demissie",
+      "bytes": 927393
+    },
+    {
+      "id": "event-stakeholder-summit-2026",
+      "bytes": 108554
+    },
+    {
+      "id": "cohort-kokeb",
+      "bytes": 89884
+    },
+    {
+      "id": "event-gicfa-baku-2026",
+      "bytes": 398518
+    },
+    {
+      "id": "event-climate-summit-2026-group",
+      "bytes": 116182
+    },
+    {
+      "id": "event-access-influence-2026-1",
+      "bytes": 80138
+    },
+    {
+      "id": "event-access-influence-2026-2",
+      "bytes": 88430
+    },
+    {
+      "id": "event-access-influence-2026-3",
+      "bytes": 90156
+    },
+    {
+      "id": "event-insurance-workshop-2025",
+      "bytes": 107863
+    },
+    {
+      "id": "event-climate-summit-2026-plenary",
+      "bytes": 111335
+    },
+    {
+      "id": "event-insurance-workshop-2025-01",
+      "bytes": 74113
+    },
+    {
+      "id": "event-insurance-workshop-2025-02",
+      "bytes": 81269
+    },
+    {
+      "id": "event-greening-2025",
+      "bytes": 134646
+    },
+    {
+      "id": "event-womens-day-2025",
+      "bytes": 78513
+    },
+    {
+      "id": "event-climate-summit-2025",
+      "bytes": 93569
+    },
+    {
+      "id": "event-esx-academy-2025",
+      "bytes": 80122
+    },
+    {
+      "id": "event-finequity-2024",
+      "bytes": 57728
+    },
+    {
+      "id": "event-bimalab-2024-main",
+      "bytes": 100132
+    },
+    {
+      "id": "event-bimalab-2024-01",
+      "bytes": 32319
+    },
+    {
+      "id": "event-bimalab-2024-03",
+      "bytes": 118481
+    },
+    {
+      "id": "event-bimalab-2024-04",
+      "bytes": 93679
+    },
+    {
+      "id": "event-bimalab-2024-02",
+      "bytes": 49136
+    },
+    {
+      "id": "event-bimalab-2024-05",
+      "bytes": 99581
+    },
+    {
+      "id": "programme-fin01",
+      "bytes": 78221
+    },
+    {
+      "id": "event-esx-rulebook-2023",
+      "bytes": 73730
+    },
+    {
+      "id": "programme-climate-fina01",
+      "bytes": 86517
+    },
+    {
+      "id": "programme-acctocap01",
+      "bytes": 78239
+    },
+    {
+      "id": "programme-climate-finance2",
+      "bytes": 74185
+    },
+    {
+      "id": "programme-f-inc-01",
+      "bytes": 97254
+    },
+    {
+      "id": "tools-technical-assistance",
+      "bytes": 92590
+    },
+    {
+      "id": "tools-resources-data",
+      "bytes": 94428
+    },
+    {
+      "id": "tools-convening",
+      "bytes": 55438
+    },
+    {
+      "id": "skyline-panorama",
+      "bytes": 583414
+    },
+    {
+      "id": "skyline-about",
+      "bytes": 102728
+    },
+    {
+      "id": "news-gender-integration",
+      "bytes": 254750
+    },
+    {
+      "id": "news-open-finance",
+      "bytes": 240282
+    },
+    {
+      "id": "news-digital-east",
+      "bytes": 300257
+    },
+    {
+      "id": "news-india-dpi",
+      "bytes": 964673
+    },
+    {
+      "id": "news-women-digital",
+      "bytes": 79786
+    },
+    {
+      "id": "news-insurance-market",
+      "bytes": 108592
+    },
+    {
+      "id": "cover-landscape-climate-finance",
+      "bytes": 473217
+    },
+    {
+      "id": "cover-green-instruments",
+      "bytes": 485956
+    },
+    {
+      "id": "cover-nafir",
+      "bytes": 658098
+    },
+    {
+      "id": "cover-unlock-capital-markets",
+      "bytes": 410104
+    },
+    {
+      "id": "cover-cico-agents",
+      "bytes": 510831
+    },
+    {
+      "id": "cover-unlocking-potentials",
+      "bytes": 846901
+    },
+    {
+      "id": "cover-mobile-money",
+      "bytes": 414051
+    },
+    {
+      "id": "cover-ndps",
+      "bytes": 17033
+    },
+    {
+      "id": "cover-nfis",
+      "bytes": 685970
+    },
+    {
+      "id": "cover-climate-summit-report",
+      "bytes": 610095
+    },
+    {
+      "id": "cover-job-creation",
+      "bytes": 23345
+    },
+    {
+      "id": "cover-homegrown-reform",
+      "bytes": 41711
+    },
+    {
+      "id": "cover-ease-of-business",
+      "bytes": 21923
+    },
+    {
+      "id": "cover-ten-year-plan",
+      "bytes": 26818
+    }
+  ],
+  "skipped": [],
+  "failed": []
+}

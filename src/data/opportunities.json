@@ -1,0 +1,57 @@
+{
+  "_note": "Checked against the procurement and work-with-us pages on 13 October 2026. Open or closed is re-checked in the visitor’s browser from the deadline (end of day, Addis Ababa time).",
+  "procurementUrl": "https://fsdethiopia.org/procurement-opportunities/",
+  "careersUrl": "https://fsdethiopia.org/work-with-us-2/",
+  "procurement": [
+    {
+      "id": "investor-relations-2026",
+      "title": "Strengthening Investor Relations Capacity Among Listed, OTC-Traded, and Prospective Public Companies in Ethiopia’s Capital Market",
+      "kind": "Request for proposals",
+      "deadline": "2026-10-14",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/09/2026-9-30-FSDE-COMMUNICATION-TOR-04.pdf",
+      "shortTitle": "Investor relations capacity consultancy"
+    },
+    {
+      "id": "website-redesign-2026",
+      "title": "Website Redesign for FSD Ethiopia",
+      "kind": "Terms of reference",
+      "deadline": "2026-10-16",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/10/2026-10-05-FSDE-COMMUNICATION-TOR-Website-Redesign-for-FSD-Ethiopia.pdf",
+      "shortTitle": "Website redesign"
+    },
+    {
+      "id": "nsmabl-2026",
+      "title": "Formulation of a National Strategy for Movable Asset Based Lending",
+      "kind": "Request for proposals",
+      "deadline": "2026-02-20",
+      "url": "https://fsdethiopia.org/wp-content/pdf/Request%20for%20Proposal%20-%20NSMABF%20Formulation.pdf",
+      "shortTitle": "Movable asset based lending strategy"
+    },
+    {
+      "id": "climate-finance-strategy-2026",
+      "title": "Ethiopia’s National Climate Finance Strategy",
+      "kind": "Request for proposals",
+      "deadline": "2026-01-16",
+      "url": "https://fsdethiopia.org/wp-content/pdf/Request%20for%20Proposals%20-%20Ethiopia%E2%80%99s%20National%20Climate%20Finance%20Strategy%20(3).pdf",
+      "shortTitle": "National Climate Finance Strategy"
+    }
+  ],
+  "careers": [
+    {
+      "id": "internship-programme-support-2026",
+      "title": "Internship – Program Support (3 months, Addis Ababa)",
+      "kind": "Internship",
+      "deadline": "2026-10-02",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/09/2026-9-22-FSDE-COMMUNICATION-FSDE-Internship-Program-Support-2.pdf",
+      "shortTitle": "Programme support internship"
+    },
+    {
+      "id": "director-of-programmes-2026",
+      "title": "Director of Programmes",
+      "kind": "Vacancy",
+      "deadline": "2026-06-27",
+      "url": "https://fsdethiopia.org/wp-content/uploads/2026/06/Director-of-Programmes-Vacancy-1.pdf",
+      "shortTitle": "Director of Programmes"
+    }
+  ]
+}

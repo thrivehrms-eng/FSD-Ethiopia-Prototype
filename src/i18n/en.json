@@ -1,0 +1,391 @@
+{
+  "meta": {
+    "siteName": "FSD Ethiopia",
+    "home": {
+      "title": "FSD Ethiopia | Financial Sector Deepening Ethiopia",
+      "description": "FSD Ethiopia helps build innovative, inclusive and sustainable financial markets, working with regulators, policymakers and market actors on financial inclusion, access to capital and climate finance."
+    }
+  },
+  "a11y": {
+    "skip": "Skip to main content",
+    "mainNav": "Main",
+    "footerNav": "Footer",
+    "opensNewTab": "(opens in a new tab)",
+    "homeSuffix": "home page"
+  },
+  "nav": {
+    "about": "About",
+    "work": "Our work",
+    "boardReady": "Board Ready",
+    "insights": "Insights",
+    "opportunities": "Opportunities",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close menu",
+    "whoWeAre": "Who we are",
+    "ourWork": "Our work",
+    "newsroom": "Newsroom",
+    "search": "Search",
+    "menuTitle": "Site menu"
+  },
+  "lang": {
+    "label": "Language",
+    "en": "EN",
+    "am": "አማርኛ",
+    "enName": "English",
+    "amName": "Amharic",
+    "amNote": "Amharic sample – final copy supplied by FSD Ethiopia",
+    "noteLabel": "Language note"
+  },
+  "common": {
+    "source": "Source",
+    "illustrative": "Illustrative data",
+    "viewTable": "Show the data as a table",
+    "hideTable": "Hide the table",
+    "readMore": "Read more",
+    "toBeSupplied": "To be supplied",
+    "quotePending": "[Quote to be supplied by FSD Ethiopia]",
+    "retention": "[retention period to be confirmed]",
+    "captcha": "CAPTCHA placeholder: a privacy-friendly challenge appears here on the live site.",
+    "required": "required",
+    "deadline": "Deadline",
+    "closed": "Closed",
+    "open": "Open",
+    "sources": "Sources",
+    "downloadPdf": "Download PDF",
+    "photoCredit": "Photo: FSD Ethiopia"
+  },
+  "home": {
+    "h1": "FSD Ethiopia: Financial Sector Deepening Ethiopia",
+    "hero": {
+      "tablist": "Introduction",
+      "tabs": {
+        "who": "Who we are",
+        "work": "Our work",
+        "join": "Work with us"
+      },
+      "who": {
+        "eyebrow": "Financial Sector Deepening Ethiopia",
+        "title": "Finance that works for every Ethiopian",
+        "lead": "We find what holds Ethiopia’s financial system back and help market actors fix it, with technical assistance, grants and research.",
+        "cta1": "Explore our work",
+        "cta2": "Browse resources"
+      },
+      "work": {
+        "eyebrow": "Financial inclusion, capital and climate",
+        "title": "Closing Ethiopia’s finance gaps",
+        "lead": "Our programmes widen access to financial services, open up capital for businesses and mobilise finance for climate action.",
+        "cta1": "See where we focus",
+        "cta2": "View featured work"
+      },
+      "join": {
+        "eyebrow": "Careers, procurement and partnerships",
+        "title": "Build the financial future with us",
+        "lead": "We hire, procure and partner openly, and publish every opportunity with its deadline.",
+        "cta1": "View opportunities",
+        "cta2": "Contact us"
+      }
+    },
+    "stats": {
+      "title": "FSD Ethiopia at a glance"
+    },
+    "role": {
+      "eyebrow": "Who we are",
+      "title": "Fixing what holds Ethiopia’s financial markets back",
+      "body": "Established in 2022 with funding from the UK’s Foreign, Commonwealth & Development Office and the Gates Foundation, and incubated by FSD Africa, we look for the underlying causes of financial system failures and help market actors address them. Policymakers, regulators and market actors draw on our technical assistance, grants and research so that the financial sector serves a wide cross-section of Ethiopian people and businesses.",
+      "link": "More about FSD Ethiopia"
+    },
+    "how": {
+      "title": "How we work",
+      "intro": "Four tools, each aimed at a specific constraint in the market.",
+      "ta": {
+        "label": "Technical assistance",
+        "promise": "Expertise where reform needs it.",
+        "body": "We work alongside regulators, policymakers and market actors to design and deliver reforms."
+      },
+      "grants": {
+        "label": "Grants",
+        "promise": "Funding that de-risks new markets.",
+        "body": "Targeted grants help institutions test products and models the market would not yet fund alone."
+      },
+      "research": {
+        "label": "Research and data",
+        "promise": "Evidence before decisions.",
+        "body": "We publish research and data on access, usage and gaps, so policy and investment rest on facts."
+      },
+      "convening": {
+        "label": "Convening and advocacy",
+        "promise": "The right people at one table.",
+        "body": "Summits, dialogues and our knowledge series bring the sector together to agree what to change."
+      }
+    },
+    "featured": {
+      "title": "Featured work",
+      "region": "Featured work slides",
+      "noSecond": "Second photo to come"
+    },
+    "focus": {
+      "title": "Where we focus",
+      "fi": {
+        "title": "Financial inclusion",
+        "lines": [
+          "Digital payments",
+          "Agent networks",
+          "Open finance"
+        ]
+      },
+      "ac": {
+        "title": "Access to capital",
+        "lines": [
+          "Capital markets",
+          "Investor relations",
+          "ESX Academy"
+        ]
+      },
+      "cf": {
+        "title": "Climate finance",
+        "lines": [
+          "Green finance instruments",
+          "Climate Finance Summit",
+          "Islamic climate finance"
+        ]
+      },
+      "women": {
+        "title": "Women’s economic empowerment",
+        "lines": [
+          "Board Ready Women",
+          "Women’s digital finance"
+        ]
+      },
+      "insurance": {
+        "title": "Insurance and innovation",
+        "lines": [
+          "BimaLab accelerator",
+          "Insurance market reform"
+        ]
+      },
+      "research": {
+        "title": "Research and data",
+        "lines": [
+          "Publications",
+          "Data hub"
+        ]
+      }
+    },
+    "data": {
+      "title": "Data snapshot",
+      "mobileMoney": "Registered mobile money accounts, June 2025",
+      "mobileMoneyNote": "This counts accounts, not people: one person can hold several.",
+      "ownership": "Adults with an account, Global Findex 2025",
+      "ownershipWomen": "Women",
+      "ownershipMen": "Men",
+      "ownershipNote": "A 15-point gap between women and men.",
+      "chartTitle": "Account ownership by gender, Global Findex 2025",
+      "chartAxis": "Adults aged 15+ with an account (%)",
+      "chartWomen": "Women",
+      "chartMen": "Men",
+      "chartAll": "All adults",
+      "tableCaption": "Share of adults aged 15 and over with an account at a financial institution or mobile money provider (World Bank Global Findex 2025, as cited by FSD Ethiopia)",
+      "colGroup": "Group",
+      "colShare": "Share (%)",
+      "link": "Explore the data hub"
+    },
+    "boards": {
+      "eyebrow": "Women in leadership",
+      "title": "Preparing women for Ethiopia’s boardrooms",
+      "body": "With IFC, we have run three rounds of corporate governance training for women professionals preparing for board seats, with environmental, social and governance principles built into the curriculum.",
+      "stat": "women in the cohorts",
+      "cta1": "Read the story",
+      "cta2": "Meet the cohort",
+      "mosaicLabel": "Members of the Board Ready Program cohorts"
+    },
+    "people": {
+      "title": "The people behind the work",
+      "link": "Meet the full team"
+    },
+    "latest": {
+      "title": "Latest",
+      "tablist": "Latest updates",
+      "tabs": {
+        "news": "News",
+        "linkedin": "LinkedIn",
+        "x": "X"
+      },
+      "embed": "Live feed embeds here",
+      "embedNote": "The {network} feed loads only after you accept cookies, because {network} sets its own.",
+      "follow": "Follow FSD Ethiopia on {network}",
+      "region": "Latest news"
+    },
+    "pubs": {
+      "title": "Latest publications",
+      "download": "Download PDF",
+      "library": "Browse the resource library",
+      "pdf": "PDF"
+    },
+    "opps": {
+      "title": "Opportunities",
+      "careers": "Careers",
+      "procurement": "Procurement",
+      "open": "{n} open",
+      "openOne": "1 open",
+      "none": "No open listings right now",
+      "next": "Next deadline: {date}",
+      "careersCta": "See careers",
+      "procurementCta": "See procurement calls",
+      "careersBody": "Roles and internships in financial inclusion, capital markets and climate finance.",
+      "procurementBody": "Calls for proposals and tenders, with terms of reference and deadlines."
+    }
+  },
+  "footer": {
+    "tagline": "Accessible, inclusive and sustainable financial markets for Ethiopia.",
+    "contactTitle": "Contact",
+    "address": "6th Floor, Giant Eagle Building, Mexico Square, Roosevelt Street, next to the Sudan Embassy, Addis Ababa",
+    "hours": "Monday to Friday, 8:30 to 17:00",
+    "followTitle": "Follow us",
+    "socialPending": "link to be confirmed",
+    "networkTitle": "The FSD Network",
+    "legalTitle": "Your data and this site",
+    "privacy": "Privacy notice",
+    "accessibility": "Accessibility statement",
+    "cookies": "Cookie settings",
+    "copyright": "© {year} FSD Ethiopia",
+    "prototype": "Prototype by Digital Tailor Agency. Not the live FSD Ethiopia website.",
+    "contactCta": "Contact us",
+    "colWho": "Who we are",
+    "colWork": "Our work",
+    "colInsights": "Insights",
+    "colNews": "Newsroom",
+    "colOpps": "Opportunities",
+    "colContact": "Contact",
+    "aboutUs": "About us",
+    "team": "Our team",
+    "board": "Board",
+    "network": "FSD Network",
+    "fi": "Financial Inclusion",
+    "ac": "Access to Capital",
+    "cf": "Climate Finance",
+    "boardReadyWomen": "Board Ready Women",
+    "resources": "Resource library",
+    "data": "Data hub",
+    "newsletters": "Newsletters",
+    "news": "News",
+    "blogs": "Blogs",
+    "press": "Press releases",
+    "events": "Events",
+    "careers": "Careers",
+    "procurement": "Procurement",
+    "partnersTitle": "Funders, incubator and network",
+    "fundedBy": "Funded by",
+    "incubatedBy": "Incubated by",
+    "partOf": "Part of",
+    "regionalTitle": "Regional coordination",
+    "regionalIntro": "FSD Ethiopia has regional coordinators in seven regions.",
+    "legalLabel": "Legal and settings"
+  },
+  "newsletter": {
+    "title": "Get our newsletter",
+    "purpose": "We use your email address only to send the FSD Ethiopia newsletter. You can unsubscribe at any time.",
+    "email": "Email address",
+    "emailHint": "For example, name@organisation.org",
+    "consent": "I agree to FSD Ethiopia storing my email address to send me the newsletter, as described in the",
+    "consentLink": "privacy notice",
+    "retention": "We keep your address until you unsubscribe, then delete it within {period}.",
+    "submit": "Subscribe",
+    "errorEmail": "Enter an email address in the format name@organisation.org",
+    "errorConsent": "Tick the box to agree before subscribing",
+    "success": "Subscribed. On the live site, Mailchimp would now send a confirmation email. This prototype sent no data.",
+    "dialogClose": "Close newsletter sign-up"
+  },
+  "cookies": {
+    "title": "Cookies on this site",
+    "body": "We use necessary cookies to make the site work. With your permission, we would also use analytics cookies to understand how the site is used. Nothing optional loads until you choose.",
+    "accept": "Accept all",
+    "reject": "Reject all",
+    "prefs": "Preferences",
+    "prefsTitle": "Cookie preferences",
+    "necessary": "Necessary",
+    "necessaryBody": "Remember your language and cookie choices. Always on.",
+    "analytics": "Analytics",
+    "analyticsBody": "Count visits and popular pages, without identifying you.",
+    "save": "Save my choices",
+    "close": "Close preferences",
+    "statusOn": "Analytics scripts: loaded, because you consented.",
+    "statusOff": "Analytics scripts: not loaded.",
+    "alwaysOn": "Always on"
+  },
+  "stats": {
+    "established": "Year FSD Ethiopia was established",
+    "programmeAreas": "Programme areas",
+    "regionsWithCoordinators": "Regions with FSD regional coordinators",
+    "cohortWomen": "Women in the Board Ready cohorts"
+  },
+  "news": {
+    "types": {
+      "blog": "Blog",
+      "press": "Press release",
+      "event": "Event",
+      "news": "News"
+    }
+  },
+  "slider": {
+    "prev": "Previous",
+    "next": "Next",
+    "slideOf": "{n} of {total}",
+    "carousel": "carousel",
+    "slide": "slide"
+  },
+  "styleguide": {
+    "metaTitle": "Design system v2 | FSD Ethiopia prototype",
+    "metaDescription": "Colour tokens, type roles and components of the FSD Ethiopia website prototype, version 2.",
+    "title": "Design system v2",
+    "intro": "Tokens, type roles and components used across the FSD Ethiopia prototype. Images that have not been fetched yet show the gradient panel with the three-stroke mark.",
+    "colours": "Colour tokens",
+    "type": "Type roles",
+    "components": "Components",
+    "mapFrame": "Map frame",
+    "duotone": "Duotone",
+    "sectionTitle": "Section title and rule",
+    "sectionTitleSample": "Our work",
+    "buttons": "Buttons and links",
+    "stats": "Stats band",
+    "tiles": "Image tiles",
+    "portraits": "Portrait cards",
+    "newsCards": "News cards",
+    "slider": "Manual slider",
+    "sampleHero": "Financial markets that work for every Ethiopian",
+    "sampleLabel": "Financial Sector Deepening Ethiopia",
+    "sampleCard": "Card title in uppercase",
+    "sampleBody": "Body text in Poppins 400 at 16px on a 1.8 line height, for long reading on any screen.",
+    "primary": "Primary",
+    "outline": "Outline",
+    "onDark": "On dark",
+    "slideSample": "Slide {n}",
+    "slideSampleBody": "A slide in the manual slider. Use the arrow buttons or the left and right arrow keys."
+  },
+  "announce": {
+    "nowOpen": "Now open: {title} — closes {date}",
+    "fallback": "See current job and procurement opportunities",
+    "dismiss": "Dismiss this announcement",
+    "label": "Announcement"
+  },
+  "search": {
+    "title": "Search the site",
+    "label": "Search news, publications and pages",
+    "loading": "Loading search…",
+    "empty": "Type at least two letters to search.",
+    "noResults": "No results for “{q}”. Try a programme name, such as climate finance.",
+    "count": "{n} results",
+    "close": "Close search",
+    "types": {
+      "page": "Page",
+      "news": "News",
+      "publication": "Publication"
+    },
+    "publicationSummary": "PDF publication from the FSD Ethiopia resource library."
+  },
+  "closing": {
+    "tagline": "We help build innovative, inclusive, and sustainable financial markets for all.",
+    "subscribe": "Subscribe to our newsletter",
+    "contact": "Contact us"
+  }
+}

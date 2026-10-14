@@ -1,0 +1,94 @@
+---
+// Responsive image from src/data/images.json: AVIF and WebP srcsets, intrinsic
+// width and height, per-image object position, lazy by default.
+// When the original has not been fetched yet it renders the gradient panel with
+// the three-stroke mark (CLAUDE.md 3.6: no grey placeholders).
+import ThreeStrokes from './ThreeStrokes.astro';
+import { getImage, srcset, assertNoUpscale } from '../../lib/images';
+
+interface Props {
+  id: string;
+  /** sizes attribute; describe the slot's CSS width at each breakpoint. */
+  sizes: string;
+  /** Largest CSS width the slot reaches at any viewport, checked against the 1.25× upscale rule. */
+  maxWidth: number;
+  /** Eager for the LCP image only. */
+  priority?: boolean;
+  /** Empty alt for decorative images (duotone backgrounds). */
+  decorative?: boolean;
+  alt?: string;
+  class?: string;
+  imgClass?: string;
+  /** Override the manifest's object-position. */
+  position?: string;
+  /** Slot width ÷ height when the slot crops (object-cover), for the upscale check. */
+  aspect?: number;
+  /** "natural": full width at the image's own ratio (a skyline along the bottom); "logo": fixed height, own ratio. */
+  fit?: 'cover' | 'natural' | 'logo';
+  /** Where to show "Photo: FSD Ethiopia". */
+  credit?: 'overlay' | 'overlay-top' | 'below' | false;
+}
+
+const { id, sizes, maxWidth, aspect, fit = 'cover', priority = false, decorative = false, alt, class: className, imgClass, position, credit = false } = Astro.props;
+const image = getImage(id);
+// Title graphics are shown whole (never cropped or overlaid), so no crop-based upscale.
+assertNoUpscale(id, image, maxWidth, image.graphicWithText ? undefined : aspect);
+
+const altText = decorative || image.decorative ? '' : (alt ?? image.alt);
+const objectPosition = position ?? image.objectPosition;
+const largest = image.variants.webp.at(-1);
+const showCredit = credit && image.status === 'ok' && image.credit.startsWith('Photo');
+// Callers that position the image absolutely must not also get `relative`.
+const position_ = /(^|\s)(absolute|fixed)(\s|$)/.test(className ?? '') ? '' : 'relative';
+---
+
+{
+  image.status === 'ok' ? (
+    <span class:list={[position_, 'block', image.graphicWithText && 'bg-teal-900', className]} data-image={id} data-original-width={image.width} data-original-height={image.height} data-fit={fit !== 'cover' || image.graphicWithText ? 'contain' : 'cover'}>
+      <picture>
+        <source type="image/avif" srcset={srcset(image.variants.avif)} sizes={sizes} />
+        <source type="image/webp" srcset={srcset(image.variants.webp)} sizes={sizes} />
+        <img
+          src={largest!.src}
+          alt={altText}
+          width={image.width}
+          height={image.height}
+          loading={priority ? 'eager' : 'lazy'}
+          decoding={priority ? 'sync' : 'async'}
+          fetchpriority={priority ? 'high' : undefined}
+          class:list={[
+            'block',
+            fit === 'natural' ? 'h-auto w-full' : fit === 'logo' ? 'h-full w-auto' : ['h-full w-full', image.graphicWithText ? 'object-contain' : 'object-cover'],
+            imgClass,
+          ]}
+          style={`object-position:${objectPosition}`}
+        />
+      </picture>
+      {(credit === 'overlay' || credit === 'overlay-top') && showCredit && (
+        <span
+          class:list={['absolute right-2 z-[1] rounded-sm bg-teal-950/80 px-1.5 text-[0.75rem] leading-5 text-white', credit === 'overlay-top' ? 'top-2' : 'bottom-1.5']}
+          lang="en"
+        >
+          {image.credit}
+        </span>
+      )}
+      {credit === 'below' && showCredit && (
+        <span class="mt-1.5 block text-[0.75rem] text-slate" lang="en">
+          {image.credit}
+        </span>
+      )}
+    </span>
+  ) : (
+    <span
+      class:list={['brand-gradient flex items-center justify-center overflow-hidden', position_, className]}
+      data-image={id}
+      data-image-missing
+      data-original-width={image.width}
+      data-original-height={image.height}
+      data-fit={fit !== 'cover' || image.graphicWithText ? 'contain' : 'cover'}
+      aria-hidden="true"
+    >
+      <ThreeStrokes class="h-auto w-[38%] max-w-40 opacity-90" />
+    </span>
+  )
+}

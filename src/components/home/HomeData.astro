@@ -1,0 +1,66 @@
+---
+// 4.8 Data snapshot: two KPI tiles from figures.json with visible sources, and a
+// chart of account ownership by gender.
+import SectionTitle from '../ui/SectionTitle.astro';
+import ArrowLink from '../ui/ArrowLink.astro';
+import HBarChart from '../ui/HBarChart.astro';
+import figures from '../../data/figures.json';
+import { t, langOf, localePath, type Lang } from '../../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const mm = figures.mobileMoneyAccounts2025;
+const women = figures.accountOwnershipWomen2024;
+const men = figures.accountOwnershipMen2024;
+const all = figures.accountOwnershipAll2024;
+const k = (key: string) => t(lang, `home.data.${key}`);
+const tile = 'flex flex-col bg-white p-6 sm:p-7';
+---
+
+<section id="data-snapshot" class="section bg-mist" aria-labelledby="data-title">
+  <div class="container-site">
+    <SectionTitle lang={lang} k="home.data.title" id="data-title" />
+    <div class="mt-10 grid gap-6 lg:grid-cols-12 lg:gap-8">
+      <div class="grid gap-6 sm:grid-cols-2 lg:col-span-6 lg:grid-cols-1" lang="en">
+        <article class={tile} data-reveal>
+          <h3 class="t-label text-[0.8125rem] text-slate">{k('mobileMoney')}</h3>
+          <p class="t-stat mt-3">{mm.display}</p>
+          <p class="mt-2 text-[0.9375rem]">{k('mobileMoneyNote')}</p>
+          <p class="source-link mt-auto pt-4 text-slate">{t(lang, 'common.source')}: <a href={mm.sourceUrl}>{mm.sourceTitle}</a></p>
+        </article>
+        <article class={tile} data-reveal>
+          <h3 class="t-label text-[0.8125rem] text-slate">{k('ownership')}</h3>
+          <p class="mt-3 flex flex-wrap items-baseline gap-x-6 gap-y-1">
+            <span><span class="t-stat">{women.value}%</span> <span class="t-label text-[0.8125rem] text-slate">{k('ownershipWomen')}</span></span>
+            <span><span class="t-stat text-teal-900">{men.value}%</span> <span class="t-label text-[0.8125rem] text-slate">{k('ownershipMen')}</span></span>
+          </p>
+          <p class="mt-2 text-[0.9375rem]">{k('ownershipNote')}</p>
+          <p class="source-link mt-auto pt-4 text-slate">{t(lang, 'common.source')}: <a href={women.sourceUrl}>{women.sourceTitle}</a></p>
+        </article>
+      </div>
+      <div class="bg-white p-6 sm:p-7 lg:col-span-6" data-reveal>
+        <HBarChart
+          lang={lang}
+          id="ownership-chart"
+          title={k('chartTitle')}
+          axis={k('chartAxis')}
+          tableCaption={k('tableCaption')}
+          colLabel={k('colGroup')}
+          colValue={k('colShare')}
+          rows={[
+            { label: k('chartWomen'), value: women.value, colour: '#276C4B' },
+            { label: k('chartMen'), value: men.value, colour: '#0F3639' },
+            { label: k('chartAll'), value: all.value, colour: '#4A5560' },
+          ]}
+        />
+        <p class="source-link mt-4 text-slate" lang="en">
+          {t(lang, 'common.sources')}: <a href={women.sourceUrl}>{women.sourceTitle}</a>; <a href={all.sourceUrl}>{all.sourceTitle}</a>
+        </p>
+        <ArrowLink href={localePath(lang, '/data/')} class="mt-6" lang={langOf(lang, 'home.data.link')}>{k('link')}</ArrowLink>
+      </div>
+    </div>
+  </div>
+</section>

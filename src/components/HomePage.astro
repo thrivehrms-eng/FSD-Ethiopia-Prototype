@@ -1,0 +1,71 @@
+---
+// Homepage v2 (CLAUDE.md section 4), in the order the brief sets.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeHero from './home/HomeHero.astro';
+import HomeStats from './home/HomeStats.astro';
+import HomeRole from './home/HomeRole.astro';
+import HomeHow from './home/HomeHow.astro';
+import HomeFeatured from './home/HomeFeatured.astro';
+import HomeFocus from './home/HomeFocus.astro';
+import HomeData from './home/HomeData.astro';
+import HomeBoards from './home/HomeBoards.astro';
+import HomePeople from './home/HomePeople.astro';
+import HomeLatest from './home/HomeLatest.astro';
+import HomePublications from './home/HomePublications.astro';
+import HomeOpportunities from './home/HomeOpportunities.astro';
+import site from '../data/site.json';
+import { getImage, hasImage, srcset } from '../lib/images';
+import { t, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+// LCP candidates: the hero's first-tab photo everywhere, and the duotone skyline from
+// 768px (it is not shown, or downloaded, on phones).
+const preloadFor = (id: string, imagesizes: string, media?: string) => {
+  const img = getImage(id);
+  return hasImage(id) ? [{ href: img.variants.avif.at(-1)!.src, type: 'image/avif', imagesrcset: srcset(img.variants.avif), imagesizes, media }] : [];
+};
+const preload = [
+  ...preloadFor('event-stakeholder-summit-2026', '(min-width: 1024px) 460px, (min-width: 640px) 80vw, 90vw'),
+  ...preloadFor('skyline-panorama', '100vw', '(min-width: 768px)'),
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: site.name,
+  legalName: site.legalName,
+  url: Astro.site!.href,
+  logo: new URL('/brand/fsd-logo-colour.svg', Astro.site).href,
+  slogan: site.tagline,
+  email: site.email,
+  telephone: site.phone,
+  foundingDate: site.launch.date,
+  address: { '@type': 'PostalAddress', ...site.address },
+  sameAs: site.social.map((s) => s.url),
+  funder: [
+    { '@type': 'Organization', name: 'UK International Development' },
+    { '@type': 'Organization', name: 'Gates Foundation' },
+  ],
+  parentOrganization: { '@type': 'Organization', name: 'FSD Network' },
+};
+---
+
+<BaseLayout lang={lang} title={t(lang, 'meta.home.title')} description={t(lang, 'meta.home.description')} path="/" schema={schema} overlayHeader preload={preload}>
+  <HomeHero lang={lang} />
+  <HomeStats lang={lang} />
+  <HomeRole lang={lang} />
+  <HomeHow lang={lang} />
+  <HomeFeatured lang={lang} />
+  <HomeFocus lang={lang} />
+  <HomeData lang={lang} />
+  <HomeBoards lang={lang} />
+  <HomePeople lang={lang} />
+  <HomeLatest lang={lang} />
+  <HomePublications lang={lang} />
+  <HomeOpportunities lang={lang} />
+</BaseLayout>

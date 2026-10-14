@@ -1,0 +1,42 @@
+---
+// 4.12 Latest publications: four square covers (1920×1920 originals shown at about
+// 300px), each with its title and a Download PDF button, then a link to the library.
+import SectionTitle from '../ui/SectionTitle.astro';
+import ArrowLink from '../ui/ArrowLink.astro';
+import Img from '../ui/Img.astro';
+import { Download } from '@lucide/astro';
+import { getImage } from '../../lib/images';
+import { t, langOf, localePath, type Lang } from '../../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const ids = ['cover-landscape-climate-finance', 'cover-green-instruments', 'cover-nafir', 'cover-unlock-capital-markets'];
+const pubs = ids.map((id) => ({ id, ...getImage(id).publication! }));
+---
+
+<section id="publications" class="section bg-mist" aria-labelledby="pubs-title">
+  <div class="container-site">
+    <SectionTitle lang={lang} k="home.pubs.title" id="pubs-title" />
+    <ul class="mt-10 grid grid-cols-2 gap-x-5 gap-y-10 lg:grid-cols-4 lg:gap-x-8">
+      {
+        pubs.map((pub) => (
+          <li class="flex flex-col" data-reveal lang="en">
+            <div class="zoom-host aspect-square overflow-hidden bg-white shadow-[0_8px_24px_rgb(15_54_57/0.12)]">
+              <Img id={pub.id} sizes="(min-width: 1024px) 300px, 45vw" maxWidth={300} aspect={1} class="h-full w-full" />
+            </div>
+            <h3 class="mt-4 text-[0.9375rem] font-semibold leading-snug text-ink">{pub.title}</h3>
+            <a href={pub.pdf} class="btn btn-outline mt-4 self-start px-4">
+              <Download size={16} aria-hidden="true" />
+              <span lang={langOf(lang, 'home.pubs.download')}>{t(lang, 'home.pubs.download')}</span>
+              <span class="sr-only">: {pub.title} ({t(lang, 'home.pubs.pdf')})</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <ArrowLink href={localePath(lang, '/resources/')} class="mt-10" lang={langOf(lang, 'home.pubs.library')}>{t(lang, 'home.pubs.library')}</ArrowLink>
+  </div>
+</section>

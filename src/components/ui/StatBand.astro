@@ -1,0 +1,44 @@
+---
+// Four big numbers in the accent colour, each with its label beside it
+// (CLAUDE.md 4.3). Every figure comes from figures.json with a visible source.
+import figures from '../../data/figures.json';
+import { t, langOf, type Lang } from '../../i18n';
+
+interface Props {
+  lang: Lang;
+  /** figures.json keys, each with an i18n label at stats.<key>. */
+  keys: string[];
+  class?: string;
+}
+
+const { lang, keys, class: className } = Astro.props;
+type Figure = { value: number | string; sourceTitle: string; sourceUrl: string };
+const stats = keys.map((key) => ({ key, ...((figures as unknown as Record<string, Figure>)[key]) }));
+const sources = [...new Map(stats.map((s) => [s.sourceUrl, s])).values()];
+---
+
+<div class={className}>
+  <dl class="grid grid-cols-2 gap-x-6 gap-y-8 lg:grid-cols-4 lg:gap-x-10">
+    {
+      stats.map((s) => (
+        <div class="flex flex-row items-center gap-3 sm:gap-4">
+          <dt class="order-2 t-label max-w-[11rem] text-[0.75rem] font-medium tracking-[0.08em] text-slate sm:text-[0.8125rem] sm:tracking-[0.14em]" lang={langOf(lang, `stats.${s.key}`)}>
+            {t(lang, `stats.${s.key}`)}
+          </dt>
+          <dd class="order-1 t-stat shrink-0 text-[2.75rem] tabular-nums sm:text-[4rem]">{s.value}</dd>
+        </div>
+      ))
+    }
+  </dl>
+  <p class="mt-8 t-meta" lang="en">
+    {t(lang, 'common.sources')}:{' '}
+    {
+      sources.map((s, i) => (
+        <>
+          {i > 0 && '; '}
+          <a href={s.sourceUrl}>{s.sourceTitle}</a>
+        </>
+      ))
+    }
+  </p>
+</div>

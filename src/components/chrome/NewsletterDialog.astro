@@ -1,0 +1,36 @@
+---
+// The Mailchimp sign-up in a dialog, opened by "Subscribe to our newsletter".
+// The form itself (purpose, unticked consent, retention, CAPTCHA slot) is unchanged from v1.
+import { X } from '@lucide/astro';
+import NewsletterForm from '../NewsletterForm.astro';
+import { t, type Lang } from '../../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+
+<div x-data="modal">
+  <dialog
+    id="newsletter-dialog"
+    x-ref="dialog"
+    x-on:open-request="open($event.detail)"
+    x-on:close="restoreFocus()"
+    aria-labelledby="newsletter-title"
+    class="on-dark m-auto w-[min(34rem,calc(100%-2rem))] rounded-sm bg-teal-900 p-0 text-white backdrop:bg-teal-950/75"
+  >
+    <div class="relative p-6 sm:p-8">
+      <button
+        type="button"
+        x-on:click="close()"
+        class="absolute right-3 top-3 flex size-11 cursor-pointer items-center justify-center rounded-full text-white hover:bg-white/10"
+        aria-label={t(lang, 'newsletter.dialogClose')}
+      >
+        <X size={22} aria-hidden="true" />
+      </button>
+      <NewsletterForm lang={lang} />
+    </div>
+  </dialog>
+</div>
