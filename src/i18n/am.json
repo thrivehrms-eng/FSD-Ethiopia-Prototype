@@ -173,6 +173,14 @@
           "text": "ያግኙን",
           "review": "native-speaker"
         }
+      },
+      "play": {
+        "text": "ስላይድ ትዕይንቱን አጫውት",
+        "review": "native-speaker"
+      },
+      "pause": {
+        "text": "ስላይድ ትዕይንቱን ለአፍታ አቁም",
+        "review": "native-speaker"
       }
     },
     "stats": {

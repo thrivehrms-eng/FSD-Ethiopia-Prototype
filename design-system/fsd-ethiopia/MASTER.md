@@ -49,7 +49,7 @@ from r-o.com (patterns only, CLAUDE.md 2.3); everything visible is FSD's own.
 `Duotone`, `ThreeStrokes`, `GradientPanel`, `SectionTitle`, `ArrowButton`, `ArrowLink`,
 `StatBand`, `ImageTile`, `PortraitCard`, `NewsCard`, `HBarChart`, `Credit`.
 Behaviour lives in `src/scripts/app.ts`: `tabs`, `slider` (single and scroll modes),
-`latest`, `modal`, `siteHeader`, `announcement`, `siteSearch`, `cookieConsent`, `newsletterForm`.
+`heroTabs`, `latest`, `modal`, `siteHeader`, `announcement`, `siteSearch`, `cookieConsent`, `newsletterForm`.
 
 ## Rules worth repeating
 
@@ -57,4 +57,4 @@ Behaviour lives in `src/scripts/app.ts`: `tabs`, `slider` (single and scroll mod
 - At most two map frames visible per page. Each frame's strokes keep their logo shapes but sit nudged outwards (yellow left, green up, red right), so they ring the photo instead of crossing faces near its edges.
 - Portraits use the light duotone (`.duotone--portrait`): pale green highlights, teal-900 shadows, full colour on hover and focus.
 - No grey placeholders: a missing photo shows `GradientPanel`.
-- Nothing moves on its own; every animation is off under reduced motion.
+- Nothing moves on its own except the hero tabs. They advance every 7 seconds, with a pause/play button, pause on hover and stop on focus (CLAUDE.md 3.5). Every animation is off under reduced motion, and the hero does not start on its own then.
