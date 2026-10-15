@@ -1,9 +1,14 @@
 ---
-// 4.8 Data snapshot: two KPI tiles from figures.json with visible sources, and a
-// chart of account ownership by gender.
+// 4.8 Data snapshot: two KPI tiles from figures.json with visible sources, a chart of
+// account ownership by gender, and two climate finance charts from FSD's 2026
+// landscape report: a donut of finance by use and bars of yearly flows against the
+// annual need (one shared axis). The only section that shows sources on the page.
 import SectionTitle from '../ui/SectionTitle.astro';
 import ArrowLink from '../ui/ArrowLink.astro';
 import HBarChart from '../ui/HBarChart.astro';
+import DonutChart from '../ui/DonutChart.astro';
+import ComboChart from '../ui/ComboChart.astro';
+import { SERIES } from '../../scripts/chart-theme';
 import figures from '../../data/figures.json';
 import { t, langOf, localePath, type Lang } from '../../i18n';
 
@@ -16,7 +21,13 @@ const mm = figures.mobileMoneyAccounts2025;
 const women = figures.accountOwnershipWomen2024;
 const men = figures.accountOwnershipMen2024;
 const all = figures.accountOwnershipAll2024;
-const k = (key: string) => t(lang, `home.data.${key}`);
+const flows = figures.climateFinanceFlows;
+const need = figures.climateFinanceNeed;
+const byUse = figures.climateFinanceByUse2022_23;
+const k = (key: string, vars?: Record<string, string | number>) => t(lang, `home.data.${key}`, vars);
+const usd = (m: number) => (m >= 1000 ? `USD ${m / 1000} bn` : `USD ${m} m`);
+const useName = { adaptation: 'useAdaptation', mitigation: 'useMitigation', dual: 'useDual' } as const;
+const useColour = { adaptation: SERIES.green, mitigation: SERIES.blue, dual: SERIES.gold } as const;
 const tile = 'flex flex-col bg-white p-6 sm:p-7';
 ---
 
@@ -59,8 +70,46 @@ const tile = 'flex flex-col bg-white p-6 sm:p-7';
         <p class="source-link mt-4 text-slate" lang="en">
           {t(lang, 'common.sources')}: <a href={women.sourceUrl}>{women.sourceTitle}</a>; <a href={all.sourceUrl}>{all.sourceTitle}</a>
         </p>
-        <ArrowLink href={localePath(lang, '/data/')} class="mt-6" lang={langOf(lang, 'home.data.link')}>{k('link')}</ArrowLink>
+      </div>
+      <div class="flex flex-col bg-white p-6 sm:p-7 lg:col-span-5" data-reveal lang="en">
+        <DonutChart
+          lang={lang}
+          id="climate-use-chart"
+          title={k('donutTitle')}
+          centre={k('donutCentre', { value: byUse.total.value })}
+          centreSub={k('donutCentreSub')}
+          tableCaption={k('donutTableCaption')}
+          colLabel={k('colUse')}
+          colShare={k('colShare')}
+          colAmount={k('colAmount')}
+          parts={byUse.parts.map((p) => ({ label: k(useName[p.key as keyof typeof useName]), share: p.share, amount: usd(p.usdMillion), colour: useColour[p.key as keyof typeof useColour] }))}
+        />
+        <p class="mt-4 text-[0.9375rem]">{k('donutNote')}</p>
+        <p class="source-link mt-auto pt-4 text-slate">{t(lang, 'common.source')}: <a href={byUse.sourceUrl}>{byUse.sourceTitle}</a></p>
+      </div>
+      <div class="flex flex-col bg-white p-6 sm:p-7 lg:col-span-7" data-reveal lang="en">
+        <ComboChart
+          lang={lang}
+          id="climate-flows-chart"
+          title={k('comboTitle')}
+          axis={k('comboAxis')}
+          barLabel={k('comboBars')}
+          lineLabel={k('comboLine')}
+          lineValue={need.value}
+          lineTag={k('comboLineTag', { value: need.value })}
+          tableCaption={k('comboTableCaption')}
+          colLabel={k('colYear')}
+          colValue={k('colUsdBn')}
+          points={flows.series.map((p) => ({ label: String(p.year), value: p.value }))}
+          max={12}
+          barColour={SERIES.green}
+          lineColour={SERIES.blue}
+          valueFormat="USD {v} bn"
+        />
+        <p class="mt-4 text-[0.9375rem]">{k('comboNote')}</p>
+        <p class="source-link mt-auto pt-4 text-slate">{t(lang, 'common.source')}: <a href={flows.sourceUrl}>{flows.sourceTitle}</a></p>
       </div>
     </div>
+    <ArrowLink href={localePath(lang, '/data/')} class="mt-8" lang={langOf(lang, 'home.data.link')}>{k('link')}</ArrowLink>
   </div>
 </section>

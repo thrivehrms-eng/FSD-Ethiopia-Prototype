@@ -188,5 +188,90 @@
     ],
     "verifiedOn": "2026-10-13",
     "quote": "FSD Ethiopia, in collaboration with IFC, successfully conducted three rounds of a comprehensive Corporate Governance Training"
+  },
+  "climateFinanceFlows": {
+    "unit": "USD billion",
+    "label": "Tracked climate finance flows to Ethiopia, by year",
+    "series": [
+      {
+        "year": 2019,
+        "value": 1.1
+      },
+      {
+        "year": 2020,
+        "value": 2.3
+      },
+      {
+        "year": 2021,
+        "value": 1.9
+      },
+      {
+        "year": 2022,
+        "value": 2.4
+      },
+      {
+        "year": 2023,
+        "value": 2.3
+      }
+    ],
+    "sourceTitle": "Landscape of Climate Finance in Ethiopia (2026), FSD Ethiopia with Climate Policy Initiative",
+    "sourceUrl": "https://fsdethiopia.org/wp-content/pdf/Landscape-of-Climate-Finance-in-Ethiopia%20%281%29.pdf",
+    "verified": true,
+    "verifiedOn": "2026-10-15",
+    "quote": "Figure 3: Ethiopia’s climate finance flows versus needs 2019-2023 (USD bn): 1.1, 2.3, 1.9, 2.4, 2.3",
+    "note": "Values read from the labelled bars of Figure 3 (page 13). The text above the figure says flows fell by 13% between 2022 and 2023, which the rounded labels (2.4 to 2.3) do not show; the figure is used.",
+    "usedIn": [
+      "home data snapshot: climate finance combo chart"
+    ]
+  },
+  "climateFinanceNeed": {
+    "value": 10.6,
+    "unit": "USD billion a year",
+    "period": "2025–2035",
+    "label": "Annual climate finance need under Ethiopia’s NDC 3.0",
+    "sourceTitle": "Landscape of Climate Finance in Ethiopia (2026), FSD Ethiopia with Climate Policy Initiative",
+    "sourceUrl": "https://fsdethiopia.org/wp-content/pdf/Landscape-of-Climate-Finance-in-Ethiopia%20%281%29.pdf",
+    "verified": true,
+    "verifiedOn": "2026-10-15",
+    "quote": "well below the estimated USD 10.6 billion annual requirement under the NDC 3.0 (2025–2035)",
+    "usedIn": [
+      "home data snapshot: climate finance combo chart"
+    ]
+  },
+  "climateFinanceByUse2022_23": {
+    "unit": "% of tracked flows",
+    "period": "2022/23 annual average",
+    "total": {
+      "value": 2.3,
+      "unit": "USD billion a year",
+      "quote": "Annual average tracked climate finance to Ethiopia in 2022/23 amounted to USD 2.3 billion."
+    },
+    "label": "Tracked climate finance by use, 2022/23",
+    "parts": [
+      {
+        "key": "adaptation",
+        "share": 59,
+        "usdMillion": 1400
+      },
+      {
+        "key": "mitigation",
+        "share": 22,
+        "usdMillion": 520
+      },
+      {
+        "key": "dual",
+        "share": 19,
+        "usdMillion": 443
+      }
+    ],
+    "sourceTitle": "Landscape of Climate Finance in Ethiopia (2026), FSD Ethiopia with Climate Policy Initiative",
+    "sourceUrl": "https://fsdethiopia.org/wp-content/pdf/Landscape-of-Climate-Finance-in-Ethiopia%20%281%29.pdf",
+    "verified": true,
+    "verifiedOn": "2026-10-15",
+    "quote": "In 2022/23, on average, USD 1.4 billion was directed to adaptation, representing 59% of total flows. Mitigation and dual-benefit activities saw tracked flows of USD 520 million and USD 443 million, respectively",
+    "note": "Shares from Figure 10 (public plus private): adaptation 56% + 3%, mitigation 20% + 2%, dual benefit 19% + 0.2%, rounded to 59, 22 and 19.",
+    "usedIn": [
+      "home data snapshot: climate finance donut chart"
+    ]
   }
 }

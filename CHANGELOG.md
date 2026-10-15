@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.3.5 — 2026-10-15: two more charts in the data snapshot
+
+### Added
+- **Donut chart:** tracked climate finance by use, 2022/23 (adaptation 59%, mitigation 22%, dual benefit 19%).
+  - The USD 2.3 billion a year total sits in the centre.
+  - A legend beside it gives each share and amount.
+- **Bar and line combo:** yearly climate finance flows 2019–2023 (bars) against Ethiopia's USD 10.6 billion annual need for 2025–2035 (dashed line).
+  - Both series are in USD billion on one shared axis.
+  - Only the latest bar and the need line carry labels.
+- **Where the figures come from:** FSD's *Landscape of Climate Finance in Ethiopia* (2026, with Climate Policy Initiative). They are stored in `figures.json` with the report's wording and are shown with their source on the page.
+- **Data hub link:** "Explore the data hub" now closes the whole section.
+- **What both charts have:**
+  - hover tooltips;
+  - a "Show the data as a table" view and a screen-reader summary;
+  - lazy loading of Chart.js;
+  - no animation under reduced motion.
+- New components `DonutChart` and `ComboChart`, sharing their look through `src/scripts/chart-theme.ts`.
+
+### Checked
+- **Colours:** green #3E8740, blue #2A78D6 and gold #EDA100 pass the dataviz palette validator on white: colour-blind separation 15.0, normal-vision separation 24.1. The brand's dark teal and slate failed it, so they are not used as chart series. Gold is below 3:1 contrast, so it is always direct-labelled and in the table.
+- **Content audit:** the report's text claims a 13% fall in 2023 that its figure does not show; logged in `docs/content-audit.md`.
+- **Lighthouse:** Performance 96 on mobile and 100 on desktop; Accessibility 100; Best Practices 100; CLS at most 0.003.
+- **Other checks:** axe finds no violations; 39 browser checks and 43 autoplay checks pass; first load is 666 KB; no horizontal scroll at 390, 768, 1280 or 1440px.
+
 ## 0.3.4 — 2026-10-15: no banners, credits or sources outside the data snapshot
 
 ### Removed

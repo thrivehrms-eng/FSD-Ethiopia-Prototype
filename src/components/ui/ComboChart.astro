@@ -1,0 +1,186 @@
+---
+// Bars with a target line on one shared axis (Chart.js, loaded when it scrolls into
+// view). Both series use the same unit, so there is never a second y-scale. A legend
+// names both series; only the latest bar and the target line carry direct labels;
+// hover shows every value for a year, and a data table holds them all.
+import { t, type Lang } from '../../i18n';
+
+interface Point {
+  label: string;
+  value: number;
+}
+
+interface Props {
+  lang: Lang;
+  id: string;
+  title: string;
+  axis: string;
+  barLabel: string;
+  lineLabel: string;
+  lineValue: number;
+  /** Short text drawn beside the target line, e.g. "10.6 needed a year". */
+  lineTag: string;
+  tableCaption: string;
+  colLabel: string;
+  colValue: string;
+  points: Point[];
+  max: number;
+  barColour: string;
+  lineColour: string;
+  /** How the tooltip writes a value, e.g. "USD {v} bn". */
+  valueFormat?: string;
+}
+
+const { lang, id, title, axis, barLabel, lineLabel, lineValue, lineTag, tableCaption, colLabel, colValue, points, max, barColour, lineColour, valueFormat = '{v}' } = Astro.props;
+const summary = `${points.map((p) => `${p.label}: ${p.value}`).join(', ')}. ${lineLabel}: ${lineValue}`;
+---
+
+<figure class="combo" lang="en">
+  <figcaption class="t-label text-[0.8125rem] text-teal-700">{title}</figcaption>
+  <ul class="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-[0.875rem] text-ink" aria-hidden="true">
+    <li class="flex items-center gap-2"><span class="h-3 w-3 rounded-sm" style={`background:${barColour}`}></span>{barLabel}</li>
+    <li class="flex items-center gap-2">
+      <svg width="22" height="6" viewBox="0 0 22 6" class="shrink-0"><line x1="0" y1="3" x2="22" y2="3" stroke={lineColour} stroke-width="2" stroke-dasharray="6 4"></line></svg>{lineLabel}
+    </li>
+  </ul>
+  <div class="relative mt-3 h-64">
+    <canvas
+      id={id}
+      data-combo
+      data-points={JSON.stringify(points)}
+      data-config={JSON.stringify({ axis, barLabel, lineLabel, lineValue, lineTag, max, barColour, lineColour, valueFormat })}
+      role="img"
+      aria-label={`${title}. ${summary}.`}
+      width="560"
+      height="256"
+      class="max-w-full"
+    >
+      {summary}
+    </canvas>
+  </div>
+  <details class="mt-4">
+    <summary class="cursor-pointer text-[0.875rem] font-semibold text-green-600">{t(lang, 'common.viewTable')}</summary>
+    <table class="mt-3 w-full text-left text-[0.875rem]">
+      <caption class="sr-only">{tableCaption}</caption>
+      <thead>
+        <tr class="border-b-2 border-teal-700">
+          <th scope="col" class="py-2 pr-4">{colLabel}</th>
+          <th scope="col" class="py-2 text-right">{colValue}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          points.map((p) => (
+            <tr class="border-b border-line">
+              <th scope="row" class="py-2 pr-4 font-normal">{p.label}</th>
+              <td class="py-2 text-right tabular-nums">{p.value}</td>
+            </tr>
+          ))
+        }
+        <tr class="border-b border-line">
+          <th scope="row" class="py-2 pr-4 font-normal">{lineLabel}</th>
+          <td class="py-2 text-right tabular-nums">{lineValue}</td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
+</figure>
+
+<script>
+  import { INK, SLATE, GRID, SURFACE, FONT, tooltip, reduceMotion, whenVisible } from '../../scripts/chart-theme';
+
+  async function draw(el: HTMLCanvasElement) {
+    const { Chart, BarController, BarElement, LineController, LineElement, PointElement, CategoryScale, LinearScale, Tooltip } = await import('chart.js');
+    Chart.register(BarController, BarElement, LineController, LineElement, PointElement, CategoryScale, LinearScale, Tooltip);
+    const points: { label: string; value: number }[] = JSON.parse(el.dataset.points!);
+    const c = JSON.parse(el.dataset.config!);
+    const last = points.length - 1;
+
+    // Selective direct labels: the latest bar's value and the target line's tag.
+    const directLabels = {
+      id: 'directLabels',
+      afterDatasetsDraw(chart: InstanceType<typeof Chart>) {
+        const { ctx, chartArea } = chart;
+        const bar = chart.getDatasetMeta(0).data[last];
+        const line = chart.getDatasetMeta(1).data[0];
+        ctx.save();
+        ctx.fillStyle = INK;
+        ctx.textAlign = 'center';
+        ctx.font = '600 14px Poppins, sans-serif';
+        ctx.fillText(String(points[last].value), bar.x, bar.y - 8);
+        ctx.textAlign = 'left';
+        ctx.font = '600 13px Poppins, sans-serif';
+        ctx.fillText(c.lineTag, chartArea.left + 6, line.y - 8);
+        ctx.restore();
+      },
+    };
+
+    new Chart(el, {
+      type: 'bar',
+      data: {
+        labels: points.map((p) => p.label),
+        datasets: [
+          {
+            type: 'bar',
+            label: c.barLabel,
+            data: points.map((p) => p.value),
+            backgroundColor: c.barColour,
+            // Rounded data end, square at the baseline; a 2px gap between bars.
+            borderRadius: { topLeft: 4, topRight: 4 },
+            borderSkipped: 'bottom',
+            borderColor: SURFACE,
+            borderWidth: { left: 1, right: 1 },
+            maxBarThickness: 44,
+            order: 2,
+          },
+          {
+            type: 'line',
+            label: c.lineLabel,
+            data: points.map(() => c.lineValue),
+            borderColor: c.lineColour,
+            borderWidth: 2,
+            borderDash: [6, 4],
+            pointRadius: 0,
+            pointHoverRadius: 5,
+            pointHoverBorderColor: SURFACE,
+            pointHoverBorderWidth: 2,
+            pointHoverBackgroundColor: c.lineColour,
+            backgroundColor: c.lineColour,
+            fill: false,
+            order: 1,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: reduceMotion() ? false : { duration: 500 },
+        interaction: { mode: 'index', intersect: false },
+        layout: { padding: { top: 8 } },
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            ...tooltip,
+            // Bars first, then the target line, in the order of the legend.
+            itemSort: (a, b) => a.datasetIndex - b.datasetIndex,
+            callbacks: { label: (item) => ` ${item.dataset.label}: ${c.valueFormat.replace('{v}', String(item.parsed.y))}` },
+          },
+        },
+        scales: {
+          y: {
+            min: 0,
+            max: c.max,
+            ticks: { color: SLATE, font: FONT, stepSize: 2 },
+            title: { display: true, text: c.axis, color: INK, font: FONT },
+            grid: { color: GRID },
+            border: { display: false },
+          },
+          x: { ticks: { color: INK, font: FONT }, grid: { display: false } },
+        },
+      },
+      plugins: [directLabels],
+    });
+  }
+
+  whenVisible('[data-combo]', draw);
+</script>

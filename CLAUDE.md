@@ -267,7 +267,11 @@ In every section below, `uploads/` means `https://fsdethiopia.org/wp-content/upl
   - mobile money accounts, 139.5 million in 2025;
   - account ownership, women 42% versus men 57% in 2024.
 - **Right:** a Chart.js chart of account ownership by gender.
-- A link to `/data`.
+- **Second row: two climate finance charts** from FSD's *Landscape of Climate Finance in Ethiopia* (2026, with Climate Policy Initiative), both in `figures.json` with sources:
+  - a **donut** of tracked climate finance by use, 2022/23: adaptation 59%, mitigation 22%, dual benefit 19%, with the USD 2.3 billion a year total in the centre;
+  - a **bar and line combo** of yearly flows for 2019–2023 (bars) against the USD 10.6 billion annual need for 2025–2035 (dashed line), on one shared axis.
+- Every chart has hover tooltips, a direct-labelled legend and a data table. Series colours (logo green #3E8740, blue #2A78D6, gold #EDA100) pass the dataviz palette validator; gold is below 3:1 on white, so it is always direct-labelled. Never use two y-axes.
+- A link to `/data` closes the section.
 
 ### 4.9 Board Ready Women band
 - A teal-900 band.

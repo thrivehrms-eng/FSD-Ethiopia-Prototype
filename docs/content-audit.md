@@ -23,6 +23,8 @@ Status on 13 October 2026. Every fact below was checked against the live fsdethi
 | Second Climate Finance Summit | 5 March 2026, nearly 200 participants, "Landscape to Legacy" theme | Verified on the press release. |
 | BimaLab | 10 startups and 4 corporates, Demo Day 7 March 2024 | Verified on FSD's post. Shega reports 11 startups. |
 | Insurance workshop | 11 November 2025; more than 150 participants; premiums up about half; penetration below 1% of GDP | Verified. The workshop post gives the date and the penetration figure; the participant count and premium growth are in "Growing Ethiopia's Insurance Market". The homepage now shows the exact date. |
+| Climate finance flows, 2019–2023 | USD 1.1, 2.3, 1.9, 2.4 and 2.3 billion; need USD 10.6 billion a year (2025–2035) | Verified on Figure 3 of *Landscape of Climate Finance in Ethiopia* (2026). The report's text says flows fell 13% between 2022 and 2023, which its rounded labels (2.4 to 2.3) do not show; the figure is used. Raise with FSD. |
+| Climate finance by use, 2022/23 | Adaptation 59% (USD 1.4 billion), mitigation 22% (USD 520 million), dual benefit 19% (USD 443 million) | Verified in the same report, Figure 10 and section 5.3. |
 | ECMA board guideline | Minimum 30% women on issuers' boards | Verified in `FSD_call_to_action.pdf`, which calls it a draft guideline. Not shown on the homepage. |
 
 Removed from `figures.json` because the cited source does not contain them, and nothing displayed them:

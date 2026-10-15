@@ -1,0 +1,132 @@
+---
+// Donut chart for a part-to-whole share (Chart.js, loaded when it scrolls into view).
+// Three to six segments only. Each segment is direct-labelled in the legend beside it
+// (name, share and amount), so colour never carries meaning alone; the total sits in
+// the centre; hover shows the same values, and a data table holds them all.
+import { t, type Lang } from '../../i18n';
+
+interface Part {
+  label: string;
+  share: number;
+  amount: string;
+  colour: string;
+}
+
+interface Props {
+  lang: Lang;
+  id: string;
+  title: string;
+  centre: string;
+  centreSub: string;
+  tableCaption: string;
+  colLabel: string;
+  colShare: string;
+  colAmount: string;
+  parts: Part[];
+}
+
+const { lang, id, title, centre, centreSub, tableCaption, colLabel, colShare, colAmount, parts } = Astro.props;
+const summary = parts.map((p) => `${p.label}: ${p.share}% (${p.amount})`).join('. ');
+---
+
+<figure class="donut" lang="en">
+  <figcaption class="t-label text-[0.8125rem] text-teal-700">{title}</figcaption>
+  <div class="mt-5 flex flex-col items-center gap-6 sm:flex-row sm:items-center sm:gap-8">
+    <div class="relative size-48 shrink-0">
+      <canvas
+        id={id}
+        data-donut
+        data-parts={JSON.stringify(parts)}
+        role="img"
+        aria-label={`${title}. ${centre} ${centreSub}. ${summary}.`}
+        width="192"
+        height="192"
+        class="block size-full"
+      >
+        {summary}
+      </canvas>
+      <p class="pointer-events-none absolute inset-0 flex flex-col items-center justify-center text-center" aria-hidden="true">
+        <span class="font-display text-[2.5rem] font-bold leading-none text-ink">{centre}</span>
+        <span class="mt-1 max-w-[6.5rem] text-[0.75rem] leading-snug text-slate">{centreSub}</span>
+      </p>
+    </div>
+    <ul class="w-full min-w-0 space-y-3 text-[0.9375rem]">
+      {
+        parts.map((p) => (
+          <li class="grid grid-cols-[0.75rem_1fr_auto] items-baseline gap-x-3 border-b border-line pb-3 last:border-0 last:pb-0">
+            <span class="size-3 translate-y-px rounded-sm" style={`background:${p.colour}`} aria-hidden="true" />
+            <span class="text-ink">{p.label}</span>
+            <span class="font-semibold text-ink">{p.share}%</span>
+            <span class="col-start-2 text-[0.8125rem] text-slate">{p.amount}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <details class="mt-5">
+    <summary class="cursor-pointer text-[0.875rem] font-semibold text-green-600">{t(lang, 'common.viewTable')}</summary>
+    <table class="mt-3 w-full text-left text-[0.875rem]">
+      <caption class="sr-only">{tableCaption}</caption>
+      <thead>
+        <tr class="border-b-2 border-teal-700">
+          <th scope="col" class="py-2 pr-4">{colLabel}</th>
+          <th scope="col" class="py-2 pr-4 text-right">{colShare}</th>
+          <th scope="col" class="py-2 text-right">{colAmount}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          parts.map((p) => (
+            <tr class="border-b border-line">
+              <th scope="row" class="py-2 pr-4 font-normal">{p.label}</th>
+              <td class="py-2 pr-4 text-right tabular-nums">{p.share}</td>
+              <td class="py-2 text-right tabular-nums">{p.amount}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </details>
+</figure>
+
+<script>
+  import { SURFACE, tooltip, reduceMotion, whenVisible } from '../../scripts/chart-theme';
+
+  async function draw(el: HTMLCanvasElement) {
+    const { Chart, DoughnutController, ArcElement, Tooltip } = await import('chart.js');
+    Chart.register(DoughnutController, ArcElement, Tooltip);
+    const parts: { label: string; share: number; amount: string; colour: string }[] = JSON.parse(el.dataset.parts!);
+    new Chart(el, {
+      type: 'doughnut',
+      data: {
+        labels: parts.map((p) => p.label),
+        datasets: [
+          {
+            data: parts.map((p) => p.share),
+            backgroundColor: parts.map((p) => p.colour),
+            // 2px surface gap between segments instead of an outline.
+            borderColor: SURFACE,
+            borderWidth: 2,
+            hoverOffset: 6,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        cutout: '64%',
+        layout: { padding: 6 },
+        animation: reduceMotion() ? false : { duration: 500 },
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            ...tooltip,
+            callbacks: { label: (item) => ` ${parts[item.dataIndex].share}% · ${parts[item.dataIndex].amount}` },
+          },
+        },
+      },
+    });
+  }
+
+  whenVisible('[data-donut]', draw);
+</script>
