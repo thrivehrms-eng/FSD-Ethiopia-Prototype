@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.3.3 — 2026-10-15: featured slide 2 photo, shorter region name
+
+### Changed
+- **Featured work, slide 2 (Stakeholder Summit).** The second image is now the city skyline photo (`skyline-about`), replacing the gradient panel. FSD has only one photo of the summit, which is already the slide's main image, so a photo of another event would have looked like the summit. Its alt text describes it as a city skyline.
+- **Footer regional strip.** "Benishangul Gumuz" now reads "Gumuz", so every region name fits on one line. The list stays alphabetical: Afar, Amhara, Gambella, Gumuz, Oromia, Sidama, Somali.
+- CLAUDE.md sections 4.6 and 4.15 updated to match.
+
+### Checked
+- Build passes. 40 browser checks pass, axe finds no violations, the image audit is clean (nothing upscaled, no fallback panels), and there is no horizontal scroll at 390, 768, 1280 or 1440px.
+
 ## 0.3.2 — 2026-10-14: flags in the language toggle
 
 ### Added

@@ -244,7 +244,7 @@ In every section below, `uploads/` means `https://fsdethiopia.org/wp-content/upl
 | Item | Large image | Second image | Facts to use |
 | --- | --- | --- | --- |
 | Second Climate Finance Summit | `uploads/2026/03/FSD-Ethiopia352026.jpg` | `uploads/2026/03/FSD-Ethiopia352026_2.jpg` | 5 March 2026, Addis Ababa; nearly 200 participants; ahead of COP32 |
-| Stakeholder Summit: From Inception to Enduring Impact | `uploads/2026/07/1783776109015.jpeg` | none (use a gradient panel) | 9 July 2026 |
+| Stakeholder Summit: From Inception to Enduring Impact | `uploads/2026/07/1783776109015.jpeg` | `uploads/2022/06/about_us2022.jpg` (city skyline) | 9 July 2026 |
 | BimaLab Ethiopia insurtech accelerator | `uploads/2024/03/3_7_06_main.jpg` | `uploads/2024/03/3_7_03.jpg` | Demo Day on 7 March 2024; 10 startups and 4 corporates |
 | Access to Influence: women's digital financial inclusion | `uploads/2026/03/FSD-31126-1.jpg` | `uploads/2026/03/FSD-31126-2.jpg` | 10 March 2026, International Women's Day dialogue |
 | Insurance Industry Workshop | `uploads/2025/11/FSD-Ethiopia11242025.jpg` | `uploads/2025/11/FSD-Ethiopia11242025-01.jpg` | November 2025; insurance penetration below 1% of GDP |
@@ -318,7 +318,7 @@ In every section below, `uploads/` means `https://fsdethiopia.org/wp-content/upl
 - **Link columns:** Who We Are, Our Work, Insights, Newsroom, Opportunities, and Contact (comms@fsdethiopia.org, +251 9 93969696, Mon–Fri 8:30–17:00).
 - **Social links:** LinkedIn, X, Facebook.
 - **Partner row:** FSD Network, Gates Foundation, UK International Development and FSD Africa logos, shown in white monochrome via a CSS filter. Keep the originals if the filter makes one illegible.
-- **Regional strip:** a teal-950 rounded band titled "Regional coordination", with map-pin icons for Afar, Amhara, Benishangul Gumuz, Gambella, Oromia, Sidama and Somali.
+- **Regional strip:** a teal-950 rounded band titled "Regional coordination", with map-pin icons for Afar, Amhara, Gambella, Gumuz (Benishangul-Gumuz, shortened to one word), Oromia, Sidama and Somali.
 - **Legal row:** © 2026 FSD Ethiopia · Privacy · Accessibility statement · Cookie settings.
 
 ---
