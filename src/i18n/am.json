@@ -68,10 +68,6 @@
     "label": {
       "text": "ቋንቋ",
       "review": "native-speaker"
-    },
-    "amNote": {
-      "text": "የአማርኛ ናሙና – የመጨረሻው ጽሑፍ በFSD ኢትዮጵያ ይቀርባል",
-      "review": "native-speaker"
     }
   },
   "common": {
@@ -485,16 +481,6 @@
     },
     "next": {
       "text": "ቀጣይ",
-      "review": "native-speaker"
-    }
-  },
-  "announce": {
-    "fallback": {
-      "text": "ወቅታዊ የሥራና የግዥ ዕድሎችን ይመልከቱ",
-      "review": "native-speaker"
-    },
-    "dismiss": {
-      "text": "ይህን ማስታወቂያ ዝጋ",
       "review": "native-speaker"
     }
   },

@@ -1,6 +1,5 @@
 ---
 import '../styles/global.css';
-import AnnouncementBar from '../components/chrome/AnnouncementBar.astro';
 import SiteHeader from '../components/chrome/SiteHeader.astro';
 import ClosingBand from '../components/chrome/ClosingBand.astro';
 import SiteFooter from '../components/chrome/SiteFooter.astro';
@@ -92,16 +91,6 @@ const staging = import.meta.env.PUBLIC_STAGING !== 'false';
     >
       {t(lang, 'a11y.skip')}
     </a>
-    <AnnouncementBar lang={lang} />
-    {
-      lang === 'am' && (
-        <aside aria-label={t('en', 'lang.noteLabel')} class="relative z-50 bg-yellow-400 px-4 py-1.5 text-center text-[0.8125rem] font-medium leading-snug text-teal-900">
-          <span lang="am">{t('am', 'lang.amNote')}</span>
-          <span class="mx-2" aria-hidden="true">/</span>
-          <span lang="en">{t('en', 'lang.amNote')}</span>
-        </aside>
-      )
-    }
     <SiteHeader lang={lang} path={path} overlay={overlayHeader} />
     {!overlayHeader && <div class="h-[var(--header-h)]" aria-hidden="true"></div>}
     <main id="main" tabindex="-1" class="outline-none">

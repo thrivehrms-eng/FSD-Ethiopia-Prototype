@@ -7,8 +7,6 @@
 // edges. The side padding keeps the moved strokes inside the column at every width.
 import Img from './Img.astro';
 import ThreeStrokes from './ThreeStrokes.astro';
-import Credit from './Credit.astro';
-import { hasImage } from '../../lib/images';
 
 interface Props {
   id: string;
@@ -18,11 +16,10 @@ interface Props {
   priority?: boolean;
   alt?: string;
   class?: string;
-  credit?: 'overlay' | 'below' | false;
   position?: string;
 }
 
-const { id, sizes, maxWidth = 640, priority = false, alt, class: className, credit = 'below', position } = Astro.props;
+const { id, sizes, maxWidth = 640, priority = false, alt, class: className, position } = Astro.props;
 ---
 
 <figure class:list={['map-frame relative mx-auto w-full pl-[9%] pr-[3%]', className]} style={`max-width:${maxWidth}px`}>
@@ -39,13 +36,6 @@ const { id, sizes, maxWidth = 640, priority = false, alt, class: className, cred
       offsets={[[-3.6, 0], [0, -1.4], [1, 0]]}
     />
   </div>
-  {
-    credit === 'below' && hasImage(id) && (
-      <figcaption class="map-frame__credit mt-3 text-right text-[0.75rem]" lang="en">
-        <Credit id={id} />
-      </figcaption>
-    )
-  }
 </figure>
 
 <style>

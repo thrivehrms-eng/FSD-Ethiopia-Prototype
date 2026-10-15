@@ -54,9 +54,6 @@ const cohortSize = figures.cohortWomen;
         <span class="t-stat text-yellow-400">{cohortSize.value}</span>
         <span class="t-label max-w-40 text-[0.8125rem] text-white">{t(lang, 'home.boards.stat')}</span>
       </p>
-      <p class="source-link mt-2 text-on-dark-muted" lang="en">
-        {t(lang, 'common.source')}: <a href={cohortSize.sourceUrl} class="text-white hover:text-yellow-400">{cohortSize.sourceTitle}</a>
-      </p>
       <div class="mt-8 flex flex-wrap gap-3">
         <a href={localePath(lang, '/stories/board-ready-women/')} class="btn btn-on-dark" lang={langOf(lang, 'home.boards.cta1')}>{t(lang, 'home.boards.cta1')}</a>
         <a href={localePath(lang, '/stories/board-ready-women/#cohort')} class="btn btn-outline-on-dark" lang={langOf(lang, 'home.boards.cta2')}>{t(lang, 'home.boards.cta2')}</a>

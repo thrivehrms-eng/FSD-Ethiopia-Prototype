@@ -33,9 +33,7 @@
     "en": "EN",
     "am": "አማርኛ",
     "enName": "English",
-    "amName": "Amharic",
-    "amNote": "Amharic sample – final copy supplied by FSD Ethiopia",
-    "noteLabel": "Language note"
+    "amName": "Amharic"
   },
   "common": {
     "source": "Source",
@@ -52,8 +50,7 @@
     "closed": "Closed",
     "open": "Open",
     "sources": "Sources",
-    "downloadPdf": "Download PDF",
-    "photoCredit": "Photo: FSD Ethiopia"
+    "downloadPdf": "Download PDF"
   },
   "home": {
     "h1": "FSD Ethiopia: Financial Sector Deepening Ethiopia",
@@ -363,12 +360,6 @@
     "onDark": "On dark",
     "slideSample": "Slide {n}",
     "slideSampleBody": "A slide in the manual slider. Use the arrow buttons or the left and right arrow keys."
-  },
-  "announce": {
-    "nowOpen": "Now open: {title} — closes {date}",
-    "fallback": "See current job and procurement opportunities",
-    "dismiss": "Dismiss this announcement",
-    "label": "Announcement"
   },
   "search": {
     "title": "Search the site",

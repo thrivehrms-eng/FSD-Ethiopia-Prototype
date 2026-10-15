@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.3.4 — 2026-10-15: no banners, credits or sources outside the data snapshot
+
+### Removed
+- **Banners, in English and Amharic.**
+  - The announcement bar ("Now open: … — closes …") is gone. Open calls still show in the Opportunities section, which re-checks deadlines in the browser.
+  - The yellow Amharic sample note on `/am/` is gone. The Amharic strings are still samples, flagged for native-speaker review in `am.json`.
+- **Photo credits and captions**, everywhere: the "Photo: FSD Ethiopia" lines under the hero and Our role frames and the featured image, and the overlay labels on the focus tiles and opportunity cards. Each image still records its credit in `assets/manifest.json`.
+- **Source lines outside the Data snapshot**: under the stats band and the Board Ready "40". The Data snapshot keeps its three source lines. Every figure still carries its source in `figures.json`.
+- Unused code: the `AnnouncementBar` and `Credit` components, the `announcement` script, the `credit` option on `Img`, and their interface strings.
+- CLAUDE.md (sections 2.2, 3.6, 4.0, 4.3, 4.8 and 8), the design system notes and the content audit updated to match.
+
+### Checked
+- Build passes. No banners, credits or sources outside the Data snapshot remain in the built English, Amharic or styleguide pages.
+- 39 browser checks and 43 autoplay checks pass; axe finds no violations; the image audit is clean (654 KB first load); there is no horizontal scroll at 390, 768, 1280 or 1440px.
+- With the clock set to 14 and 16 October, the procurement card still shows two and then one open call.
+
 ## 0.3.3 — 2026-10-15: featured slide 2 photo, shorter region name
 
 ### Changed

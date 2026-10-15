@@ -6,7 +6,6 @@ import ArrowButton from '../ui/ArrowButton.astro';
 import ArrowLink from '../ui/ArrowLink.astro';
 import Img from '../ui/Img.astro';
 import GradientPanel from '../ui/GradientPanel.astro';
-import Credit from '../ui/Credit.astro';
 import featured from '../../data/featured.json';
 import { formatDate, formatMonth } from '../../lib/opportunities';
 import { t, langOf, type Lang } from '../../i18n';
@@ -57,9 +56,6 @@ const total = featured.length;
               <div class="zoom-host aspect-[16/10] max-w-[640px] overflow-hidden">
                 <Img id={item.image} sizes="(min-width: 640px) 640px, 92vw" maxWidth={640} aspect={1.6} class="h-full w-full" />
               </div>
-              <figcaption class="mt-2 text-slate">
-                <Credit id={item.image} />
-              </figcaption>
             </figure>
             <div class="flex flex-col lg:col-span-5">
               <p class="t-label text-[0.75rem] text-slate">{t(lang, 'slider.slideOf', { n: i + 1, total })}</p>

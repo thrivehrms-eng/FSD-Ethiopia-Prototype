@@ -65,7 +65,7 @@ Board affiliations match the team page exactly, and Maleda Bisrat is on the curr
   - "Strengthening Investor Relations Capacity Among Listed, OTC-Traded, and Prospective Public Companies in Ethiopia's Capital Market", closes 14 October 2026;
   - "Website Redesign for FSD Ethiopia", closes 16 October 2026.
 - Jobs: none open. The Program Support internship closed on 2 October 2026.
-- Open or closed is re-checked in the visitor's browser. Checked with the clock set to 14, 16 and 17 October: after the 16th the bar reads "See current job and procurement opportunities" and both cards show no open listings.
+- Open or closed is re-checked in the visitor's browser. Checked with the clock set to 14, 16 and 17 October: the procurement card goes from two open calls, to one, to none. (The announcement bar was removed on 15 October 2026.)
 
 ## Links
 

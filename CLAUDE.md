@@ -60,7 +60,7 @@ The reference is https://r-o.com/ (Rogers-O'Brien Construction, Texas), inspecte
 | Curved hero bottom edge | An angled bottom edge with a thin red-to-yellow line along the cut |
 | Background video and auto-advancing pager | Three hero tabs that advance every 7 seconds, with a visible pause button and a countdown line; no video |
 | Regional office strip | Regional coordination strip: the seven regions where FSD has coordinators |
-| "We're hiring" announcement bar | A live "open opportunities" bar fed from `opportunities.json` |
+| "We're hiring" announcement bar | Not used (removed 15 October 2026): open calls show in the Opportunities section (4.13) |
 | Skyline closing band | FSD's own city skyline photo, duotoned teal-green, with the three-stroke mark |
 
 ### 2.3 Do not copy
@@ -150,7 +150,7 @@ Under `:lang(am)`, switch off `text-transform` and `letter-spacing`. Ge'ez scrip
 
 **Alt text and credits**
 - Every image gets alt text describing what it shows. Decorative duotone backgrounds get `alt=""`.
-- Editorial images carry the credit "Photo: FSD Ethiopia".
+- Photos show no visible credit or caption (decided 15 October 2026). Each image keeps its credit ("Photo: FSD Ethiopia") in `assets/manifest.json`.
 
 **Real people**
 - Staff photos are used only for staff, and cohort photos only on the Board Ready pages.
@@ -166,10 +166,7 @@ Under `:lang(am)`, switch off `text-transform` and `letter-spacing`. Ge'ez scrip
 In every section below, `uploads/` means `https://fsdethiopia.org/wp-content/uploads/`.
 
 ### 4.0 Announcement bar
-- A green-600 bar with one line of white 14px text.
-- It shows the next open opportunity from `opportunities.json`, as "Now open: <title> — closes <date>", linking to `/opportunities`.
-- When nothing is open, it reads "See current job and procurement opportunities".
-- It can be dismissed.
+- Removed on 15 October 2026, in English and Amharic. Open calls show in the Opportunities section (4.13), which re-checks deadlines in the visitor's browser.
 
 ### 4.1 Header
 - Fixed and transparent over the hero, with white text.
@@ -201,7 +198,7 @@ In every section below, `uploads/` means `https://fsdethiopia.org/wp-content/upl
 
 ### 4.3 Stats band
 - White background. Four stats in a row (2×2 on mobile), each a Khand green number with its label beside it.
-- Store them in `figures.json` with their sources:
+- Store them in `figures.json` with their sources. The sources are not shown on the page:
 
 | Number | Label | Source |
 | --- | --- | --- |
@@ -266,7 +263,7 @@ In every section below, `uploads/` means `https://fsdethiopia.org/wp-content/upl
 
 ### 4.8 Data snapshot
 - A mist band with title and rule.
-- **Left:** two KPI tiles, both from `figures.json` with visible sources:
+- **Left:** two KPI tiles, both from `figures.json` with visible sources. This is the only section that shows sources on the page:
   - mobile money accounts, 139.5 million in 2025;
   - account ownership, women 42% versus men 57% in 2024.
 - **Right:** a Chart.js chart of account ownership by gender.
@@ -575,12 +572,13 @@ Newsletters, three issues from 2023–24 with no cover images: see https://fsdet
 
 **Honest content.**
 - Never invent statistics. Every number is sourced in `figures.json`, or labelled "Illustrative data".
+- Sources are shown on the page only in the Data snapshot (4.8). Everywhere else they stay in `figures.json`.
 - Quote slots read "[Quote to be supplied by FSD Ethiopia]" and unsourced results read "To be supplied".
 - Fetch content from fsdethiopia.org and rewrite it for the web; don't paste long passages.
 
 **Amharic.**
 - Amharic covers navigation, buttons, hero text and headings only.
-- The toggle note reads "Amharic sample – final copy supplied by FSD Ethiopia".
+- There is no on-page Amharic note (removed 15 October 2026). The Amharic strings are still samples, flagged in `am.json`.
 - Every Amharic string is flagged for review by a native speaker.
 
 **Accessibility (WCAG 2.1 AA).**
@@ -628,7 +626,7 @@ Copy each line into Claude Code in turn.
 
 1. **Assets:** "Do section 7 of CLAUDE.md: manifest, fetch script and optimise script. Run them and show me the failure summary."
 2. **Design system:** "Apply section 3. Update the Tailwind tokens and type scale. Build MapFrame, Duotone, SectionTitle, ArrowButton, StatBand, ImageTile, PortraitCard, NewsCard and a manual Slider. Update /styleguide to show all of them, then screenshot it."
-3. **Global chrome:** "Build sections 4.0, 4.1, 4.14 and 4.15: announcement bar, header, closing band and footer with the regional strip. Screenshot in English and Amharic."
+3. **Global chrome:** "Build sections 4.1, 4.14 and 4.15: header, closing band and footer with the regional strip. Screenshot in English and Amharic."
 4. **Homepage:** "Rebuild the homepage, sections 4.2 to 4.13, with the exact images listed. Check that no image is upscaled more than 1.25×. Screenshot at 1440 and 390px."
 5. **About and team:** "Build /about and /about/team from section 5, with the regional coordinator map."
 6. **Programmes and story:** "Restyle the three programme pages and the Board Ready Women story from section 5, including the cohort grid from section 6.4."

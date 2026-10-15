@@ -197,37 +197,6 @@ document.addEventListener('click', (event) => {
 type Listing = { id: string; text: string; closesAt: string };
 const stillOpen = (l: Listing) => new Date(l.closesAt).getTime() >= Date.now();
 
-// Announcement bar (4.0): the next open opportunity, else the general pointer.
-// Dismissal is remembered per opportunity.
-Alpine.data('announcement', () => ({
-  visible: true,
-  key: 'general',
-  text: '',
-  textLang: 'en',
-  init() {
-    const el = this.$el as HTMLElement;
-    const listings: Listing[] = JSON.parse(el.dataset.listings ?? '[]');
-    const next = listings.filter(stillOpen).sort((a, b) => a.closesAt.localeCompare(b.closesAt))[0];
-    this.key = next?.id ?? 'general';
-    this.text = next ? next.text : (el.dataset.fallback ?? '');
-    this.textLang = next ? 'en' : (el.dataset.fallbackLang ?? 'en');
-    try {
-      this.visible = localStorage.getItem(`fsd-announce:${this.key}`) !== 'dismissed';
-    } catch {
-      /* show it */
-    }
-  },
-  dismiss() {
-    this.visible = false;
-    try {
-      localStorage.setItem(`fsd-announce:${this.key}`, 'dismissed');
-    } catch {
-      /* ignore */
-    }
-    document.getElementById('main')?.focus();
-  },
-}));
-
 // Opportunity cards (4.13): open count and next deadline, recomputed in the browser.
 Alpine.data('openListings', () => ({
   count: 0,

@@ -34,7 +34,7 @@ const countText = (open: Opportunity[]) =>
       {
         cards.map((card) => (
           <article class="opp-card on-dark zoom-host relative isolate flex min-h-[22rem] overflow-hidden bg-teal-900 text-white" data-reveal>
-            <Img id={card.image} sizes="(min-width: 768px) 50vw, 100vw" maxWidth={720} aspect={2} class="absolute inset-0 -z-20 h-full w-full" credit="overlay-top" />
+            <Img id={card.image} sizes="(min-width: 768px) 50vw, 100vw" maxWidth={720} aspect={2} class="absolute inset-0 -z-20 h-full w-full" />
             <span class="absolute inset-0 -z-10 bg-gradient-to-t from-teal-950/95 via-teal-900/80 to-teal-900/35" aria-hidden="true"></span>
             <div class="mt-auto flex w-full flex-col gap-3 p-6 sm:p-8">
               <h3 class="t-section text-[2rem] text-white" lang={langOf(lang, `home.opps.${card.id}`)}>{t(lang, `home.opps.${card.id}`)}</h3>
